@@ -1,3 +1,4 @@
+
 import React from 'react'
 import "../css/filter.css"
 
@@ -8,7 +9,7 @@ const Filter = () => {
          <div className="filter-carry" >
              <div className="filter-flex"><p>Filter</p></div>
                          
-        <div className="clear"><p>clear</p></div>
+        <div className="clear"><p>clear all</p></div>
         </div>  
         <div className="filter-boxes">
         <select
@@ -138,3 +139,4 @@ const Filter = () => {
 };
 
 export default Filter;
+
