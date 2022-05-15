@@ -1,0 +1,23 @@
+footer {
+  background-color: #000000e5;
+  height: 321px;
+  width: 100vw;
+  left: 0px;
+  top: 198px;
+  border-radius: 0px;
+  padding: 48px, 175px, 31px, 175px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+}
+.footer-links1 .nav-link,
+.footer-link2 .nav-link {
+  color: #f3f3f3;
+ padding: 16px;
+}
+.find-us-on p {
+  padding: 0.5rem 1rem;
+  color: #f3f3f3;
+}
