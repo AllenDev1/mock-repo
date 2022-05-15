@@ -1,0 +1,26 @@
+body {
+  background-color: #fafafa;
+}
+.navBar{
+  height: 85px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.searchBar {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 372px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+}
+.navbtnRight{
+  text-align: right;
+}
+
+.loginbtnNav {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000cc !important;
+}
