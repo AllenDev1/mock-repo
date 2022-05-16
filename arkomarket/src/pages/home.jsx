@@ -12,7 +12,10 @@ import Footer from "../component/footer";
 const Home = () => {
   return (
     <>
+    <NavBar />
+    <Filter />
      <Sort/>
+     <Footer />
     </>
   );
 };
