@@ -2,12 +2,14 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "../css/sort.css";
 import "../scss/sort.scss";
+import eye from "../Asset/eye.svg"
 
 const Sort = () => {
   return (
     <>
       <Container>
         <div className="sort-container">
+            <Container>
           <div className="top-section">
             <div className="filter-buttons">
               <button className="Sale">Sale</button>
@@ -29,93 +31,137 @@ const Sort = () => {
               </select>
             </div>
           </div>
-
-          <div class="card-group">
+          </Container>
+          <Container>
+            <div class="row">
             <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+              <img src="https://picsum.photos/200/300" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
+                <div class="card-title"><h5>The Codes and Conventions of TV Serial Dramas</h5></div>
+                <div class="lower-text">
+                <div class="card-price">
+                 <p> Rs.13,000</p>
+                </div>
+                <div class="card-space">
+                <div class="card-age">
+                   <p>Brand New</p> 
+                  
+                </div>
+                <div class="card-seen">
+                    <img src={eye} alt=".seen" />
+                    <p>20000000</p>
+                  </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+              <img src="https://picsum.photos/200/300" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
+                <div class="card-title"><h5>The Codes and Conventions of TV Serial Dramas</h5></div>
+                <div class="lower-text">
+                <div class="card-price">
+                 <p> Rs.13,000</p>
+                </div>
+                <div class="card-space">
+                <div class="card-age">
+                   <p>Brand New</p> 
+                  
+                </div>
+                <div class="card-seen">
+                <img src={eye} alt=".seen" />
+                    <p>20000000</p>
+                  </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+              <img src="https://picsum.photos/200/300" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
+                <div class="card-title"><h5>The Codes and Conventions of TV Serial Dramas</h5></div>
+                <div class="lower-text">
+                <div class="card-price">
+                 <p> Rs.13,000</p>
+                </div>
+                <div class="card-space">
+                <div class="card-age">
+                   <p>Brand New</p> 
+                  
+                </div>
+                <div class="card-seen">
+                <img src={eye} alt=".seen" />
+                    <p>20000000</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/200/300" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-title"><h5>The Codes and Conventions of TV Serial Dramas</h5></div>
+                <div class="lower-text">
+                <div class="card-price">
+                 <p> Rs.13,000</p>
+                </div>
+                <div class="card-space">
+                <div class="card-age">
+                   <p>Brand New</p> 
+                  
+                </div>
+                <div class="card-seen">
+                <img src={eye} alt=".seen" />
+                    <p>20000000</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/200/300" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-title"><h5>The Codes and Conventions of TV Serial Dramas</h5></div>
+                <div class="lower-text">
+                <div class="card-price">
+                 <p> Rs.13,000</p>
+                </div>
+                <div class="card-space">
+                <div class="card-age">
+                   <p>Brand New</p> 
+                  
+                </div>
+                <div class="card-seen">
+                <img src={eye} alt=".seen" />
+                    <p>20000000</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/200/300" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-title"><h5>The Codes and Conventions of TV Serial Dramas</h5></div>
+                <div class="lower-text">
+                <div class="card-price">
+                 <p> Rs.13,000</p>
+                </div>
+                <div class="card-space">
+                <div class="card-age">
+                   <p>Brand New</p> 
+                  
+                </div>
+                <div class="card-seen">
+                    <img src={eye} alt=".seen" />
+                    <p>20000000</p>
+                  </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card-group">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
-          </div>
+          </Container>
         </div>
       </Container>
     </>
