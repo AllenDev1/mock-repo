@@ -1,10 +1,11 @@
-
-import React from 'react'
-import "../css/filter.css"
+import React from "react";
+import { Container } from "react-bootstrap";
+import "../css/filter.css";
 
 const Filter = () => {
   return (
-    <div className="filter-container">
+    <Container>
+      <div className="filter-container">
         <div className="filter-display">
          <div className="filter-carry" >
              <div className="filter-flex"><p>Filter</p></div>
@@ -14,9 +15,7 @@ const Filter = () => {
         <div className="filter-boxes">
         <select
               className="Condition"
-              name="find"
-             
-            >
+              name="find">
               <option value selected>
                 Condition
               </option>
@@ -28,13 +27,9 @@ const Filter = () => {
               <option value="Word of Mouth">Word of Mouth</option>
               <option value="Others">Others</option>
             </select>
-            <select
-              className="Gurantee"
-              name="find"
-             
-            >
+            <select className="Gurantee" name="find">
               <option value selected>
-              Gurantee
+                Gurantee
               </option>
               <option value="Instagram">Instagram</option>
               <option value="FaceBook">FaceBook</option>
@@ -44,13 +39,9 @@ const Filter = () => {
               <option value="Word of Mouth">Word of Mouth</option>
               <option value="Others">Others</option>
             </select>
-            <select
-              className="State"
-              name="find"
-             
-            >
+            <select className="State" name="find">
               <option value selected>
-              State
+                State
               </option>
               <option value="Instagram">Instagram</option>
               <option value="FaceBook">FaceBook</option>
@@ -60,7 +51,6 @@ const Filter = () => {
               <option value="Word of Mouth">Word of Mouth</option>
               <option value="Others">Others</option>
             </select>
-            
 
             <input
               className="city"
@@ -68,21 +58,16 @@ const Filter = () => {
               name="city"
               placeholder="City"
             />
-             <input
-              
+            <input
               className="Price-from"
               type="text"
               name=""
               placeholder="Price From"
             />
-           
-            <select
-              className="Year-from"
-              name="from"
-             
-            >
+
+            <select className="Year-from" name="from">
               <option value selected>
-              Year-from
+                Year-from
               </option>
               <option value="Instagram">Instagram</option>
               <option value="FaceBook">FaceBook</option>
@@ -92,13 +77,9 @@ const Filter = () => {
               <option value="Word of Mouth">Word of Mouth</option>
               <option value="Others">Others</option>
             </select>
-            <select
-              className="Year-to"
-              name="to"
-             
-            >
+            <select className="Year-to" name="to">
               <option value selected>
-              Year To
+                Year To
               </option>
               <option value="Instagram">Instagram</option>
               <option value="FaceBook">FaceBook</option>
@@ -108,7 +89,6 @@ const Filter = () => {
               <option value="Word of Mouth">Word of Mouth</option>
               <option value="Others">Others</option>
             </select>
-            
 
             <input
               className="price-to"
@@ -116,27 +96,24 @@ const Filter = () => {
               name="Price To"
               placeholder="Price To"
             />
-             <input
-          
+            <input
               className="fd"
               type="text"
               name="LName"
               placeholder="Last Name"
             />
-             <input
-            
+            <input
               className="fd"
               type="text"
               name="LName"
               placeholder="Last Name"
             />
-
+          </div>
+          <button className="filter-search">Search</button>
         </div>
-        <button className="filter-search">Search</button>
-    </div>
-    </div>
+      </div>
+    </Container>
   );
 };
 
 export default Filter;
-

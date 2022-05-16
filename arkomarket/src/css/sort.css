@@ -1,0 +1,44 @@
+*.sort-container{
+    width: 1090px;
+    margin-left:188px;
+
+}
+
+.top-section{
+    display:flex;
+    justify-content:space-between;
+    border-bottom: 1px solid rgba(36, 39, 65, 0.15);
+    height: 69px;
+    padding: 17px 0;
+    margin-bottom: 30px;
+
+
+}
+.filter-buttons{
+display:inline-flex;
+gap:8px;
+}
+
+
+.filter-buttons button{
+border: 1px solid rgba(0, 0, 0, 0.3);
+border-radius: 100px;
+width: 107px;
+height: 35px;
+}
+.sort-section select{
+width: 192px;
+height: 39px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+}
+.Card{
+    Width: 340px;
+    height:302px;
+}
+.content{
+    Width: 340px;
+    height:250px;
+    background:orange;
+}
