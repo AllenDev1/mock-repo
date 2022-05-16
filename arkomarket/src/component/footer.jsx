@@ -12,9 +12,9 @@ import appStore from "../Asset/app store 1.svg";
 const Footer = () => {
   return (
     <>
-      <img src={banner} alt=".banner " />
+      <img src={banner} alt=".banner " style={{width:'100vw'}}/>
       <footer>
-        <Container className="footer-container mt-5">
+        <Container className="footer-container">
           <div href="/" className="logo">
             <img
               src={logo}

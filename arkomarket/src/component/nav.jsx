@@ -13,7 +13,6 @@ const NavBar = () => {
       <Navbar bg="white" expand="lg" className="ml-5 navBar" style={{}}>
         <Container>
           <div style={{ display: "flex" }}>
-            {" "}
             <Navbar.Brand href="/" className="logo">
               <img src={logo} alt=".logo" className="align-middle" />
             </Navbar.Brand>
@@ -45,39 +44,17 @@ const NavBar = () => {
         </Container>
         <Container className="mt-2 nav-footer-container">
           <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
-            <Nav.Link href="#">
-            Vehicles 
-            </Nav.Link>
-            <Nav.Link href="#">
-            Properties 
-            </Nav.Link>
-            <Nav.Link href="#">
-            Mobiles
-            </Nav.Link>
-            <Nav.Link href="#">
-            Family Needs
-            </Nav.Link>
-            <Nav.Link href="#">
-            Services
-            </Nav.Link>
-            <Nav.Link href="#">
-            Electronics & Appliances
-            </Nav.Link>
-            <Nav.Link href="#">
-            Furnitures
-            </Nav.Link>
-            <Nav.Link href="#">
-            Books, Sports & Hobbies
-            </Nav.Link>
-            <Nav.Link href="#">
-            Travels & Trips
-            </Nav.Link>
-            <Nav.Link href="#">
-            Pets
-            </Nav.Link>
-            <Nav.Link href="#" >
-            Others
-            </Nav.Link>
+            <Nav.Link href="#">Vehicles</Nav.Link>
+            <Nav.Link href="#">Properties</Nav.Link>
+            <Nav.Link href="#">Mobiles</Nav.Link>
+            <Nav.Link href="#">Family Needs</Nav.Link>
+            <Nav.Link href="#">Services</Nav.Link>
+            <Nav.Link href="#">Electronics & Appliances</Nav.Link>
+            <Nav.Link href="#">Furnitures</Nav.Link>
+            <Nav.Link href="#">Books, Sports & Hobbies</Nav.Link>
+            <Nav.Link href="#">Travels & Trips</Nav.Link>
+            <Nav.Link href="#">Pets</Nav.Link>
+            <Nav.Link href="#">Others</Nav.Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>
