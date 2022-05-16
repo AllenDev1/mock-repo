@@ -7,17 +7,15 @@ const Filter = () => {
     <Container>
       <div className="filter-container">
         <div className="filter-display">
-          <div className="filter-carry">
-            <div className="filter-flex">
-              <p>Filter</p>
-            </div>
-
-            <div className="clear">
-              <p>clear all</p>
-            </div>
-          </div>
-          <div className="filter-boxes">
-            <select className="Condition" name="find">
+         <div className="filter-carry" >
+             <div className="filter-flex"><p>Filter</p></div>
+                         
+        <div className="clear"><p>clear all</p></div>
+        </div>  
+        <div className="filter-boxes">
+        <select
+              className="Condition"
+              name="find">
               <option value selected>
                 Condition
               </option>
