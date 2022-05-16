@@ -4,13 +4,13 @@ import "../css/filter.css";
 
 const Filter = () => {
   return (
-    <Container>
+    <Container className="mt-5">
       <div className="filter-container">
         <div className="filter-display">
          <div className="filter-carry" >
              <div className="filter-flex"><p>Filter</p></div>
                          
-        <div className="clear"><p>clear all</p></div>
+        <div className="clear"><a href="#">clear all</a></div>
         </div>  
         <div className="filter-boxes">
         <select
