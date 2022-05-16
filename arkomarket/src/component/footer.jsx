@@ -12,7 +12,7 @@ import appStore from "../Asset/app store 1.svg";
 const Footer = () => {
   return (
     <>
-      <img src={banner} alt=".banner " style={{width:'100vw'}} />
+      <img src={banner} alt=".banner " style={{ width: "100vw" }} />
       <footer>
         <Container className="footer-container">
           <div href="/" className="logo">
@@ -39,9 +39,15 @@ const Footer = () => {
           <div className="find-us-on">
             <p>Find us on</p>
             <div className="iconsSocailMedia">
-              <img src={twitter} alt=".twitter" />
-              <img src={insta} alt=".insta" />
-              <img src={facebook} alt=".facebook" />
+              <a href="#">
+                <img src={twitter} alt=".twitter" />
+              </a>
+              <a href="#">
+                <img src={insta} alt=".insta" />
+              </a>
+              <a href="#">
+                <img src={facebook} alt=".facebook" />
+              </a>
             </div>
           </div>
         </Container>

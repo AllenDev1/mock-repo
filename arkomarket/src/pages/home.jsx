@@ -8,6 +8,7 @@ import { Card, CardGroup, Button, Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "../component/nav";
 import Footer from "../component/footer";
+import Productdetails from "./productdetails";
 
 const Home = () => {
   return (

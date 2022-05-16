@@ -13,7 +13,6 @@ const NavBar = () => {
       <Navbar bg="white" expand="lg" className="ml-5 navBar" style={{}}>
         <Container>
           <div style={{ display: "flex" }}>
-            {" "}
             <Navbar.Brand href="/" className="logo">
               <img src={logo} alt=".logo" className="align-middle" />
             </Navbar.Brand>
@@ -38,7 +37,6 @@ const NavBar = () => {
                 <img src={userIcon} alt="user" className="px-2" />
                 Login
               </Nav.Link>
-
               <button className="freeadsbtn">Post Free Ads</button>
             </Nav>
           </Navbar.Collapse>
