@@ -16,7 +16,7 @@ const Filter = () => {
         <select
               className="Condition"
               name="find">
-              <option value selected>
+              <option>
                 Condition
               </option>
               <option value="Instagram">Instagram</option>
@@ -61,7 +61,7 @@ const Filter = () => {
             <input
               className="Price-from"
               type="text"
-              name=""
+              name="text"
               placeholder="Price From"
             />
 

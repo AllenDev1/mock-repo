@@ -2,6 +2,7 @@ import React from "react";
 import "../css/style.css";
 import Filter from "../component/filter";
 import Sort from "../component/sort";
+import profile from "../component/profile";
 import "bootstrap/dist/css/bootstrap.min.css";   
 
 import { Card, CardGroup, Button, Container, Row } from "react-bootstrap";
@@ -17,6 +18,7 @@ const Home = () => {
     <Filter />
      <Sort/>
      <Footer />
+     <profile/>
     </>
   );
 };
