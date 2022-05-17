@@ -9,9 +9,10 @@
   border-radius: 4px;
   border: none;
   margin-top: 3px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   color: #ffffff;
+
 }
 .filter-boxes select {
   width: 182px;
@@ -22,6 +23,10 @@
   border-radius: 4px;
   margin-right: 13px;
   margin-bottom: 7px;
+  padding: 0px 16px;
+  font-weight: 500;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.6);
 }
 
 .filter-boxes input {
@@ -33,6 +38,12 @@
   border-radius: 4px;
   margin-right: 13px;
   margin-bottom: 7px;
+  padding: 0px 16px;
+  font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: rgba(0, 0, 0, 0.6);
+
 }
 .clear {
   flex: 1;
@@ -63,4 +74,9 @@
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 18px;
+}
+
+::placeholder { 
+  color:rgba(0, 0, 0, 0.3);
+   
 }

@@ -20,8 +20,10 @@ footer {
 }
 .find-us-on p {
   padding: 0.5rem 1rem;
-  color: #f3f3f3;
-  /* margin-top: 42px; */
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #F3F3F3!important;
 }
 .find-us-on .iconsSocailMedia img {
   padding: 15px 15px;

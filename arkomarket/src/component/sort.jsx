@@ -160,7 +160,14 @@ const Sort = () => {
                 </div>
               </div>
             </div>
+            <div class="page-container">
+              <div class="page-box"></div>
+              <button class="">1</button>
+              <button class="">2</button>
+              <button class="">3</button>
           </div>
+          </div>
+        
           </Container>
         </div>
       </Container>

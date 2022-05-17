@@ -18,17 +18,30 @@ gap:8px;
 
 
 .filter-buttons button{
-border: 1px solid rgba(0, 0, 0, 0.3);
+border: 1px solid rgba(0, 0, 0, 0.15);
 border-radius: 100px;
-width: 107px;
+width: auto;
 height: 35px;
+padding:0px 18px;
+background-color:white;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: rgba(0, 0, 0, 0.5);
+
+
 }
 .sort-section select{
 width: 192px;
 height: 39px;
 background: #FFFFFF;
-border: 1px solid rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+font-weight: 500;
+font-size: 16px;
+color: rgba(0, 0, 0, 0.5);
+padding: 0px 16px;
+
 }
 .Card{
     Width: 340px;

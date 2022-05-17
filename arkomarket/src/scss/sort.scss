@@ -3,6 +3,9 @@
     height:302px !important;
     border: 0px !important;
     overflow:hidden !important;
+    background-color: #FAFAFA !important;
+    border-radius: 0px !important;
+
  .card-title{
     h5{font-size: 14px !important;
     line-height: 17px  !important;
@@ -26,6 +29,7 @@
 }
 .card img{
 max-height: 250px !important;
+border-radius: 2px !important;
 
 }
 .card-age{
@@ -38,6 +42,8 @@ p{
     font-size: 10px;
     margin:0px !important;
     padding-top:7px !important;
+    text-align:center;
+    color: rgba(0, 0, 0, 0.6);
     
     }
 }
@@ -45,20 +51,24 @@ p{
 font-weight: 400;
 font-size: 12px;
 line-height: 15px;
-color: rgba(0, 0, 0, 0.6);
 display:flex;
 img{
-width: 14px;
-height: 14px;
+width: 12.27px;
+height: 9px;
 object-fit: cover;
+margin-top: 3.3px;
+margin-right: 4px;
+}
 
 }
-}
+p{color: rgba(0, 0, 0, 0.6) !important;}
+
 
 
 .lower-text{
     display: inline-flex;
-    height: 16px !important;
+    height: 19px !important;
+    
 }
 .card-price{
 p{
@@ -66,7 +76,7 @@ padding:0px !important;
 font-weight: 700;
 font-size: 14px;
 line-height: 17px;
-color: rgba(0, 0, 0, 0.8);
+color: rgba(0, 0, 0, 0.8)!important;
 padding-right: 10px !important;
 
     }
@@ -75,7 +85,8 @@ padding-right: 10px !important;
     display:flex !important;
     justify-content: space-between !important;
     width: 266px !important;
-    height: 16px !important;
+    height: 19px !important;
+    margin-top: 1.5px !important;
 }
 
 

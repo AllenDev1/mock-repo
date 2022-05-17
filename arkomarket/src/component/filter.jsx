@@ -90,23 +90,24 @@ const Filter = () => {
               <option value="Others">Others</option>
             </select>
 
+           
             <input
+              className="Kilometer-from"
+              type="text"
+              name="LName"
+              placeholder="Kilometer From"
+            />
+            <input
+              className="Kilometer-to"
+              type="text"
+              name="LName"
+              placeholder="Kilometer To"
+            />
+             <input
               className="price-to"
               type="text"
               name="Price To"
               placeholder="Price To"
-            />
-            <input
-              className="fd"
-              type="text"
-              name="LName"
-              placeholder="Last Name"
-            />
-            <input
-              className="fd"
-              type="text"
-              name="LName"
-              placeholder="Last Name"
             />
           </div>
           <button className="filter-search">Search</button>
