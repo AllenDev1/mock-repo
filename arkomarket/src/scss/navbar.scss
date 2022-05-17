@@ -43,4 +43,14 @@
 }
 .navbar-collapse {
   flex-grow: 0;
+  
+}
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 1090px !important;
+  display: flex;
 }

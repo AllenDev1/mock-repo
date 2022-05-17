@@ -7,6 +7,7 @@ import {
 import React from "react";
 import Home from "./pages/home";
 import Productdetails from "./pages/productdetails";
+import UserProfile from "./pages/user-profile";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route path="/product-details" element={<Productdetails/>} />
+      <Route path="/user-profile" element={<UserProfile/>} />
     </Routes>
 
   </Router>
