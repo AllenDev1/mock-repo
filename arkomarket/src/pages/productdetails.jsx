@@ -8,7 +8,8 @@ import whatsapp from "../Asset/whatsapp.svg";
 import viber from "../Asset/viber.svg";
 import location from "../Asset/location.svg";
 import eye from "../Asset/eye.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -129,7 +130,10 @@ const Productdetails = () => {
                   </div>
 
                   <div className="profile-brief">
-                    <h4>Aabid</h4>
+                    <a href="user-profile">
+                      <h4>Aabid</h4>
+                    </a>
+
                     <text className="member-since">Member since May 2021</text>
                     <text className="last-active ">
                       <div className="dot"></div>

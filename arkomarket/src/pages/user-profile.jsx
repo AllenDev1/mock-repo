@@ -8,10 +8,7 @@ import "../scss/userprofile.scss";
 const UserProfile = () => {
   return (
     <>
-      <UserNav />
-      <Container>
-        <Profile/>
-      </Container>
+     
     </>
   );
 };

@@ -15,6 +15,8 @@ import NotFound from "./pages/NotFound";
 import Appformessage from "./component/Appformessage";
 import Usernotification from "./component/Usernotification";
 import PostNewAds from "./pages/PostNewAds";
+import UserProfileEdit from "./pages/UserProfileEdit";
+import Profile from "./component/profile";
 function App() {
   return (
     <>
@@ -24,10 +26,11 @@ function App() {
           <Route exact index element={<Home />} />
           <Route path="product-details" element={<Productdetails />} />
           <Route path="*" element={<NotFound />} />
-          
+
           {/* is user logged in function need to be added here */}
-          <Route path="user-profile" element={<UserProfile />}>
-            <Route path="editprofile" element={<Editprofile />} />
+          <Route path="user-profile" element={<Profile />} />
+          <Route path="user-profile-edit" element={<UserProfileEdit />}>
+            <Route index exact element={<Editprofile />} />
             <Route path="appformessage" element={<Appformessage />} />
             <Route path="user-notification" element={<Usernotification />} />
             <Route path="*" element={<NotFound />} />
