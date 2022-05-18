@@ -1,108 +1,41 @@
 import React from "react";
-import $ from "jquery";
+import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import "../scss/sidebar.scss";
 const Sidebar = () => {
-  $("#myTab a").on("click", function (e) {
-    e.preventDefault();
-    $(this).tab("show");
-  });
-  $(function () {
-    $("#myTab li:last-child a").tab("show");
-    $('#someTab').tab('show')
-  });
- 
   return (
     <>
-      <div>
-        {/* Nav tabs */}
-        <ul className="nav nav-tabs" id="myTab" role="tablist">
-          <li className="nav-item">
-            <a
-              className="nav-link active"
-              id="home-tab"
-              data-toggle="tab"
-              href="#home"
-              role="tab"
-              aria-controls="home"
-              aria-selected="true"
-            >
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className="nav-link"
-              id="profile-tab"
-              data-toggle="tab"
-              href="#profile"
-              role="tab"
-              aria-controls="profile"
-              aria-selected="false"
-            >
-              Profile
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className="nav-link"
-              id="messages-tab"
-              data-toggle="tab"
-              href="#messages"
-              role="tab"
-              aria-controls="messages"
-              aria-selected="false"
-            >
-              Messages
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className="nav-link"
-              id="settings-tab"
-              data-toggle="tab"
-              href="#settings"
-              role="tab"
-              aria-controls="settings"
-              aria-selected="false"
-            >
-              Settings
-            </a>
-          </li>
-        </ul>
-        {/* Tab panes */}
-        <div className="tab-content">
-          <div
-            className="tab-pane active"
-            id="home"
-            role="tabpanel"
-            aria-labelledby="home-tab"
-          >
-            ...
+      <div className="main-sec-user-profile">
+        <Container className="mt-5">
+          <div className="sidebar">
+            <div className="sidebarWrapper">
+              <div className="sidebarMenu">
+                <ul className="sidebarList">
+                  <Link to="editprofile" className="link">
+                    Edit Profile
+                  </Link>
+                  <Link to="appformessage" className="link">
+                    Link App for Messages
+                  </Link>
+                  <Link to="user-notification" className="link">
+                    Notifications
+                  </Link>
+                  <Link to="#" className="link">
+                    Logout from all devices
+                  </Link>
+                  <Link to="#" className="link">
+                    Feedback & Help
+                  </Link>
+                  <Link to="#" className="link">
+                    Log out
+                  </Link>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div
-            className="tab-pane"
-            id="profile"
-            role="tabpanel"
-            aria-labelledby="profile-tab"
-          >
-            ...
-          </div>
-          <div
-            className="tab-pane"
-            id="messages"
-            role="tabpanel"
-            aria-labelledby="messages-tab"
-          >
-            ...
-          </div>
-          <div
-            className="tab-pane"
-            id="settings"
-            role="tabpanel"
-            aria-labelledby="settings-tab"
-          >
-            apple
-          </div>
-        </div>
+        </Container>
+       
+       
       </div>
     </>
   );

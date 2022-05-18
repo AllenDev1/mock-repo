@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, Nav } from "react-bootstrap";
-import Footer from "../component/footer";
-import NavBar from "../component/nav";
 import "../css/productdetails.css";
 import "../scss/productdetails.scss";
 import share from "../Asset/share.svg";
 import heart from "../Asset/heart.svg";
 import whatsapp from "../Asset/whatsapp.svg";
 import viber from "../Asset/viber.svg";
-import location from "../Asset/location.svg"
+import location from "../Asset/location.svg";
+import eye from "../Asset/eye.svg";
+import { NavLink } from "react-router-dom";
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -18,7 +18,6 @@ import {
 const Productdetails = () => {
   return (
     <>
-      <NavBar />
       <Container className="mt-4">
         <MDBCarousel showControls interval={9999999}>
           <MDBCarouselInner>
@@ -49,7 +48,7 @@ const Productdetails = () => {
             <div className="details-product border">
               <div className="m-4">
                 <div className="addedon-time-share-btn">
-                  <div className="time-add-product mt-3">
+                  <div className="time-add-product mt-2">
                     <p>Added on Mar 21, 2022</p>
                     <p>Views : 23,498</p>
                   </div>
@@ -62,11 +61,11 @@ const Productdetails = () => {
                     </Nav.Link>
                   </div>
                 </div>
-                <div className="title-price mt-4">
+                <div className="title-price mt-3">
                   <div className="title">
                     <h2>Lorem ipsum dolor sit amet, consectetur </h2>
                   </div>
-                  <div className="price mb-4 mt-3">
+                  <div className="price mb-4 mt-1">
                     <h3> Rs.1,400/- </h3>
                     <button className="freeadsbtn quality">Used/Perfect</button>
                   </div>
@@ -119,7 +118,7 @@ const Productdetails = () => {
           </div>
           <div className="user-map-sec">
             <div className="user-details-sec ">
-              <div className="seller-details px-1 pt-3">
+              <div className="seller-details px-1">
                 <text>Seller details</text>
                 <div className="seller-profile-brief">
                   <div className="user-img mt-4">
@@ -159,10 +158,9 @@ const Productdetails = () => {
               <div className="location-text">
                 <h4>Location</h4>
                 <div className="location-details-text">
-                <img src={location} alt=".location" />
-                <text>Setopull, Kathmandu, NP</text>
+                  <img src={location} alt=".location" />
+                  <text>Setopull, Kathmandu, NP</text>
                 </div>
-               
               </div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.43915461777!2d85.33363151522076!3d27.703724082793478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19008861ae05%3A0x4ddd56d922a1cf9f!2sAlwazebrand!5e0!3m2!1sen!2snp!4v1652757324809!5m2!1sen!2snp"
@@ -177,16 +175,131 @@ const Productdetails = () => {
             </div>
           </div>
         </div>
-      
       </Container>
       <Container>
-      <div className="similar-Ads">
-            <div className="see-more-btn">
-                <button>view more</button>
+        <div className="similar-Ads">
+          <h4>Similar Ads</h4>
+          <Container>
+            <div class="row">
+              <div class="card">
+                <NavLink to="/product-details">
+                  <img
+                    src="https://picsum.photos/200/300"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>The Codes and Conventions of TV Serial Dramas</h5>
+                    </div>
+                    <div class="lower-text">
+                      <div class="card-price">
+                        <p> Rs.13,000</p>
+                      </div>
+                      <div class="card-space">
+                        <div class="card-age">
+                          <p>Brand New</p>
+                        </div>
+                        <div class="card-seen">
+                          <img src={eye} alt=".seen" />
+                          <p>20000000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </NavLink>
+              </div>
+              <div class="card">
+                <NavLink to="/product-details">
+                  <img
+                    src="https://picsum.photos/200/300"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>The Codes and Conventions of TV Serial Dramas</h5>
+                    </div>
+                    <div class="lower-text">
+                      <div class="card-price">
+                        <p> Rs.13,000</p>
+                      </div>
+                      <div class="card-space">
+                        <div class="card-age">
+                          <p>Brand New</p>
+                        </div>
+                        <div class="card-seen">
+                          <img src={eye} alt=".seen" />
+                          <p>20000000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </NavLink>
+              </div>
+              <div class="card">
+                <NavLink to="/product-details">
+                  <img
+                    src="https://picsum.photos/200/300"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>The Codes and Conventions of TV Serial Dramas</h5>
+                    </div>
+                    <div class="lower-text">
+                      <div class="card-price">
+                        <p> Rs.13,000</p>
+                      </div>
+                      <div class="card-space">
+                        <div class="card-age">
+                          <p>Brand New</p>
+                        </div>
+                        <div class="card-seen">
+                          <img src={eye} alt=".seen" />
+                          <p>20000000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </NavLink>
+              </div>
+              <div class="card">
+                <NavLink to="/product-details">
+                  <img
+                    src="https://picsum.photos/200/300"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>The Codes and Conventions of TV Serial Dramas</h5>
+                    </div>
+                    <div class="lower-text">
+                      <div class="card-price">
+                        <p> Rs.13,000</p>
+                      </div>
+                      <div class="card-space">
+                        <div class="card-age">
+                          <p>Brand New</p>
+                        </div>
+                        <div class="card-seen">
+                          <img src={eye} alt=".seen" />
+                          <p>20000000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </NavLink>
+              </div>
             </div>
+          </Container>
+          <div className="see-more-btn">
+            <button>view more</button>
+          </div>
         </div>
       </Container>
-      <Footer />
     </>
   );
 };

@@ -7,11 +7,18 @@ import userIcon from "../Asset/user.svg";
 import Navbar from "react-bootstrap/Navbar";
 import "../scss/navbar.scss";
 import { Container, Nav, Form, FormControl } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-bootstrap";
-const NavBar = () => {
+const UserNav = () => {
+  let navigate = useNavigate();
   return (
     <>
-      <Navbar bg="white" expand="lg" className="ml-5 navBar" style={{}}>
+      <Navbar
+        bg="white"
+        expand="lg"
+        className="ml-5 navBar"
+        style={{ height: "auto" }}
+      >
         <Container>
           <div style={{ display: "flex" }}>
             <Navbar.Brand href="/" className="logo">
@@ -21,7 +28,7 @@ const NavBar = () => {
               <FormControl
                 type="search"
                 placeholder="Search products, services"
-                className="me-2 searchBar "
+                className="me-2 searchBar"
                 aria-label="Search"
                 aria-hidden="true"
               />
@@ -36,25 +43,17 @@ const NavBar = () => {
               </NavLink>
               <NavLink href="#" className="loginbtnNav ">
                 <img src={userIcon} alt="user" className="px-2" />
-                Login
               </NavLink>
-              <button className="freeadsbtn">Post Free Ads</button>
+              <button
+                className="freeadsbtn"
+                type="button"
+                onClick={() => {
+                  navigate("post-new-ads");
+                }}
+              >
+                New Ads
+              </button>
             </Nav>
-          </Navbar.Collapse>
-        </Container>
-        <Container className="mt-2 nav-footer-container">
-          <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
-            <NavLink href="/product-details" >Vehicles</NavLink>
-            <NavLink href="/product-details">Properties</NavLink>
-            <NavLink href="#">Mobiles</NavLink>
-            <NavLink href="#">Family Needs</NavLink>
-            <NavLink href="#">Services</NavLink>
-            <NavLink href="#">Electronics & Appliances</NavLink>
-            <NavLink href="#">Furnitures</NavLink>
-            <NavLink href="#">Books, Sports & Hobbies</NavLink>
-            <NavLink href="#">Travels & Trips</NavLink>
-            <NavLink href="#">Pets</NavLink>
-            <NavLink href="#">Others</NavLink>
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -62,4 +61,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default UserNav;

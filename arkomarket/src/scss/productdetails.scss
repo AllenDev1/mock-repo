@@ -38,6 +38,9 @@
         .share-btn-product {
           top: 4.5px;
           display: flex;
+          .nav-link {
+            padding: 0px 1rem;
+          }
         }
       }
       .title-price {
@@ -247,7 +250,7 @@
             line-height: 16px;
             letter-spacing: 0em;
             text-align: left;
-            padding: 20.14px 0px;
+            padding: 20.14px 0 0 0px;
           }
         }
       }
@@ -286,12 +289,24 @@
   }
 }
 .similar-Ads {
-    margin-bottom: 30px;
-    width: 100%;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  width: 100%;
+  h4 {
+    width: 137px;
+    height: 29px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 24px;
+  }
   .see-more-btn {
-      justify-content: center;
-      display: flex;
-      width: 100%;
+    margin-top: 40.5px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
     button {
       height: 39px;
       width: 120px;

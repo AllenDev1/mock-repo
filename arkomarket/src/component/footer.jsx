@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Nav } from "react-bootstrap";
+import { Container, Nav } from "react-bootstrap";
 import logo from "../Asset/footerImage.svg";
 import banner from "../Asset/banner 1.svg";
 import "../css/footer.css";
@@ -24,7 +24,7 @@ const Footer = () => {
             />
           </div>
           <div className="footer-links1">
-            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#">Contact Us</Nav.Link>
             <Nav.Link href="#">Feedback & Help</Nav.Link>
             <Nav.Link href="#">Terms & Conditions</Nav.Link>

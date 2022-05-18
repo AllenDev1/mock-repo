@@ -12,30 +12,29 @@
   font-weight: 600;
   font-size: 16px;
   color: #ffffff;
-
 }
 .filter-boxes select {
   width: 182px;
 
   height: 41px;
-padding: 0px;
-background: #ffffff;
-border: 1px solid rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-margin-right: 13px;
-margin-bottom: 7px;
-padding: 0px 16px;
-font-weight: 500;
-font-size: 14px;
-color: rgba(0, 0, 0, 0.6);
--webkit-appearance: none;
--moz-appearance: none;
-background: url("../Asset/push.svg");
-background-repeat: no-repeat;
-background-size: 12.98px;
-background-position-x: 90%;
-background-position-y: 15px;
-z-index: 97;
+  padding: 0px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-right: 13px;
+  margin-bottom: 7px;
+  padding: 0px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../Asset/push.svg");
+  background-repeat: no-repeat;
+  background-size: 12.98px;
+  background-position-x: 90%;
+  background-position-y: 15px;
+  z-index: 97;
 }
 
 .filter-boxes input {
@@ -49,10 +48,9 @@ z-index: 97;
   margin-bottom: 7px;
   padding: 0px 16px;
   font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-color: rgba(0, 0, 0, 0.6);
-
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.6);
 }
 .clear {
   flex: 1;
@@ -78,14 +76,12 @@ color: rgba(0, 0, 0, 0.6);
   margin-left: 230px;
   text-decoration: none;
   color: #00000099;
-  ;
   padding: 0px;
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 18px;
 }
 
-::placeholder { 
-  color:rgba(0, 0, 0, 0.3);
-   
+::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
