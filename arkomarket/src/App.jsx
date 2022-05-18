@@ -30,7 +30,8 @@ function App() {
           {/* is user logged in function need to be added here */}
           <Route path="user-profile" element={<Profile />} />
           <Route path="user-profile-edit" element={<UserProfileEdit />}>
-            <Route index exact element={<Editprofile />} />
+            <Route index element={<Editprofile />} />
+            <Route index path="editprofile" element={<Editprofile />} />
             <Route path="appformessage" element={<Appformessage />} />
             <Route path="user-notification" element={<Usernotification />} />
             <Route path="*" element={<NotFound />} />

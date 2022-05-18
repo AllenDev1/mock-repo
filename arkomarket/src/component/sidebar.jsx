@@ -11,7 +11,7 @@ const Sidebar = () => {
             <div className="sidebarWrapper">
               <div className="sidebarMenu">
                 <ul className="sidebarList">
-                  <Link to="/" className="link">
+                  <Link to="editprofile" className="link">
                     Edit Profile
                   </Link>
                   <Link to="appformessage" className="link">

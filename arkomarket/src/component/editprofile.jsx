@@ -1,63 +1,88 @@
 import React from "react";
 import "../scss/editprofile.scss";
-import PhoneInput from "react-phone-number-input";
+import PhoneInput, { isPossiblePhoneNumber } from "react-phone-number-input";
+import { NavLink } from "react-bootstrap";
 import { useState } from "react";
 const Editprofile = () => {
   const [value, setValue] = useState();
+
   return (
     <>
       <div className="basic-info">
-        <div className="basic-info-form">
-          <h4>Basic Information</h4>
-          <form>
-            <div className="form-row">
-              <div className="form-group ">
-                <label htmlFor="inputEmail4">First Name</label>
+        <div style={{ borderBottom: "0.5px solid rgba(0, 0, 0, 0.15)" }}>
+          <div className="basic-info-form">
+            <h4>Basic Information</h4>
+            <form>
+              <div className="form-row">
+                <div className="form-group ">
+                  <label htmlFor="inputEmail4">First Name</label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="inputEmail4"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div className="form-group ">
+                  <label htmlFor="inputPassword4">Last Name</label>
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="inputPassword4"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div className="form-group">
+                <label htmlFor="inputAddress">Email Address</label>
                 <input
-                  type="email"
+                  type="text"
                   className="form-control"
-                  id="inputEmail4"
-                  placeholder="First Name"
+                  id="inputAddress"
+                  placeholder="example@example.com"
                 />
               </div>
-              <div className="form-group ">
-                <label htmlFor="inputPassword4">Last Name</label>
-                <input
-                  type="password"
+              <label htmlFor="Phone Number">Email Address</label>
+              <PhoneInput
+                placeholder="Enter phone number"
+                value={value}
+                onChange={setValue}
+                defaultCountry="NP"
+                international
+                // withCountryCallingCode
+                error={value && isPossiblePhoneNumber(value) ? "true" : "false"}
+              />
+              <div className="form-group">
+                <label htmlFor="exampleFormControlTextarea1">About</label>
+                <textarea
                   className="form-control"
-                  id="inputPassword4"
-                  placeholder="Last Name"
+                  id="exampleFormControlTextarea1"
+                  rows={3}
+                  defaultValue={""}
                 />
               </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="inputAddress">Email Address</label>
-              <input
-                type="text"
-                className="form-control"
-                id="inputAddress"
-                placeholder="example@example.com"
+            </form>
+          </div>
+        </div>
+
+        <div className="profile-picture-edit">
+          <h4>Profile Picture </h4>
+          <div className="profile-picture-edit-sec">
+            <div className="profile-pricute-image">
+              <img
+                src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHVwcHklMjBkb2d8ZW58MHx8MHx8&w=1000&q=80"
+                alt=""
               />
             </div>
-            <label htmlFor="Phone Number">Email Address</label>
-            <PhoneInput
-              placeholder="Enter phone number"
-              value={value}
-              onChange={setValue}
-              defaultCountry="Nepal"
-              international
-              withCountryCallingCode
-            />
-            <div className="form-group">
-              <label htmlFor="exampleFormControlTextarea1">About</label>
-              <textarea
-                className="form-control"
-                id="exampleFormControlTextarea1"
-                rows={3}
-                defaultValue={""}
-              />
+            <div className="upload-remove-sec">
+              <button>Upload</button>
+              <NavLink href="#">Remove</NavLink>
             </div>
-          </form>
+            <div className="upload-from-sol-med">
+              <button>Upload from facebook</button>
+              <button>Upload from Google</button>
+            </div>
+          </div>
         </div>
       </div>
     </>
