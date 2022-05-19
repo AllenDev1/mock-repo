@@ -44,15 +44,10 @@ const UserNav = () => {
               <NavLink href="#" className="loginbtnNav ">
                 <img src={userIcon} alt="user" className="px-2" />
               </NavLink>
-              <button
-                className="freeadsbtn"
-                type="button"
-                onClick={() => {
-                  navigate("post-new-ads");
-                }}
-              >
+
+              <a className="new-ads-btn" type="button" href="post-new-ads">
                 New Ads
-              </button>
+              </a>
             </Nav>
           </Navbar.Collapse>
         </Container>

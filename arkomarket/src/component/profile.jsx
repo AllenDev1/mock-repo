@@ -7,11 +7,12 @@ import edit from "../Asset/Edit.svg";
 import myads from "../Asset/ads.svg";
 import heart from "../Asset/heart.svg";
 import { Container } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import UserNav from "./user-nav";
 
 function Profile() {
   return (
     <>
+      <UserNav />
       <Container>
         <div className="Main-profile">
           <div className="profile-container">
@@ -30,7 +31,7 @@ function Profile() {
                 <a href="user-profile-edit">
                   <div className="profile-edit">
                     <img src={edit} />
-                    <p>Edit</p>
+                    <p>Edit Profile</p>
                   </div>
                 </a>
                 <div className="profile-share">

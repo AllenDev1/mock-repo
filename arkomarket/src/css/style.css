@@ -2,3 +2,6 @@
     justify-content: center;
     display: grid;
 }
+a{
+    text-decoration: none !important;
+}

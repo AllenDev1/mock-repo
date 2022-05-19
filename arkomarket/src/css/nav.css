@@ -64,3 +64,18 @@ body {
   padding: 0px;
   color: #000000cc;
 }
+.new-ads-btn {
+  height: 39px;
+  width: 119px;
+  left: 111.931640625px;
+  top: 0.5px;
+  border-radius: 4px;
+  border: 1px solid #000000cc;
+  padding: 8px 16px;
+  color: #000000CC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}

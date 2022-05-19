@@ -94,6 +94,9 @@
           background: #f5f5f5;
         }
       }
+      .phone-number-lebel{
+        margin-bottom: -15px;
+      }
     }
   }
   .profile-picture-edit {
@@ -167,6 +170,39 @@
           font-size: 16px;
           line-height: 19px;
         }
+      }
+    }
+    .save-discard-changes {
+      display: flex;
+      gap: 24px;
+      margin-top: 51.87px;
+      button {
+        padding: 10px 12px;
+        gap: 10px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        height: 37px;
+        width: 120px;
+        /* identical to box height */
+        background-color: #ffffff;
+        text-align: center;
+        border: none;
+        border-radius: 4px;
+        color: #ffffff;
+        height: 37px;
+        width: 120px;
+        border: none;
+        background: #0071e2;
+      }
+      .nav-link {
+        color: #00000099;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
       }
     }
   }

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../scss/editprofile.scss";
 import PhoneInput, { isPossiblePhoneNumber } from "react-phone-number-input";
 import { NavLink } from "react-bootstrap";
 import { useState } from "react";
 const Editprofile = () => {
   const [value, setValue] = useState();
+  const inputFile = useRef(null);
+  const handleFileUpload = (e) => {
+    inputFile.current.click();
+  };
 
   return (
     <>
@@ -42,7 +46,7 @@ const Editprofile = () => {
                   placeholder="example@example.com"
                 />
               </div>
-              <label htmlFor="Phone Number">Email Address</label>
+              <label htmlFor="Phone Number" className="phone-number-lebel">Email Address</label>
               <PhoneInput
                 placeholder="Enter phone number"
                 value={value}
@@ -75,13 +79,28 @@ const Editprofile = () => {
               />
             </div>
             <div className="upload-remove-sec">
-              <button>Upload</button>
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+
+              <button onClick={handleFileUpload}>
+                Upload
+              </button>
+
               <NavLink href="#">Remove</NavLink>
             </div>
             <div className="upload-from-sol-med">
               <button>Upload from facebook</button>
               <button>Upload from Google</button>
             </div>
+          </div>
+          <div className="save-discard-changes">
+            <button>Save Changes</button>
+            <NavLink href="#">Discard</NavLink>
           </div>
         </div>
       </div>
