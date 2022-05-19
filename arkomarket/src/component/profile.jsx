@@ -14,7 +14,7 @@ function Profile() {
     <>
       <UserNav />
       <Container>
-        <div className="Main-profile">
+        <div className="Main-profile mb-5">
           <div className="profile-container">
             <div className="profile-image">
               <img className="pp" src="https://picsum.photos/200/300" />

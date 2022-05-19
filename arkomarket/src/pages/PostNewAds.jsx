@@ -1,7 +1,16 @@
 import React from "react";
 import { Container, Form } from "react-bootstrap";
 import "../scss/postnewads.scss";
+import { useState, useRef } from "react";
+import photo from "../Asset/Addphoto.svg";
+
 const PostNewAds = () => {
+  const [value, setValue] = useState();
+  const inputFile = useRef(null);
+  const handleFileUpload = (e) => {
+    inputFile.current.click();
+  };
+
   return (
     <>
       <Container>
@@ -45,6 +54,160 @@ const PostNewAds = () => {
           </div>
           <div className="upload-photos">
             <h3>Upload upto 12 images</h3>
+            <label htmlFor="selectCat">Sub Category*</label>
+            <div className="hold-photos">
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+              <button onClick={handleFileUpload}>
+                <img src={photo} />
+                <p>Add Photo</p>
+              </button>
+
+              <input
+                ref={inputFile}
+                id="file"
+                type="file"
+                style={{ display: "none" }}
+                multiple="{false}"
+              />
+            </div>
           </div>
         </div>
       </Container>

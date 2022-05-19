@@ -3,6 +3,7 @@ import "../scss/editprofile.scss";
 import PhoneInput, { isPossiblePhoneNumber } from "react-phone-number-input";
 import { NavLink } from "react-bootstrap";
 import { useState } from "react";
+
 const Editprofile = () => {
   const [value, setValue] = useState();
   const inputFile = useRef(null);
