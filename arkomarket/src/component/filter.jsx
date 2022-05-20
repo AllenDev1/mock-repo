@@ -1,6 +1,8 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container,Form } from "react-bootstrap";
 import "../css/filter.css";
+import Fil from "../Asset/filter.svg";
+import Pull from "../Asset/pull.svg";
 
 const Filter = () => {
   return (
@@ -8,49 +10,32 @@ const Filter = () => {
       <div className="filter-container">
         <div className="filter-display">
          <div className="filter-carry" >
-             <div className="filter-flex"><p>Filter</p></div>
+             <div className="filter-flex">
+               <img className="fill" src={Fil}/>
+               <p>Filters</p>
+               <img className="Pull" src={Pull}/></div>
                          
         <div className="clear"><a href="#">clear all</a></div>
         </div>  
         <div className="filter-boxes">
-        <select
-              className="Condition"
-              name="find">
-              <option>
-                Condition
-              </option>
-              <option value="Instagram">Instagram</option>
-              <option value="FaceBook">FaceBook</option>
-              <option value="LinkedIn">LinkedIn</option>
-              <option value="Google">Google</option>
-              <option value="Articles">Articles</option>
-              <option value="Word of Mouth">Word of Mouth</option>
-              <option value="Others">Others</option>
-            </select>
-            <select className="Gurantee" name="find">
-              <option value selected>
-                Gurantee
-              </option>
-              <option value="Instagram">Instagram</option>
-              <option value="FaceBook">FaceBook</option>
-              <option value="LinkedIn">LinkedIn</option>
-              <option value="Google">Google</option>
-              <option value="Articles">Articles</option>
-              <option value="Word of Mouth">Word of Mouth</option>
-              <option value="Others">Others</option>
-            </select>
-            <select className="State" name="find">
-              <option value selected>
-                State
-              </option>
-              <option value="Instagram">Instagram</option>
-              <option value="FaceBook">FaceBook</option>
-              <option value="LinkedIn">LinkedIn</option>
-              <option value="Google">Google</option>
-              <option value="Articles">Articles</option>
-              <option value="Word of Mouth">Word of Mouth</option>
-              <option value="Others">Others</option>
-            </select>
+        <Form.Select aria-label="Default select ">
+                  <option> Condition </option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </Form.Select>
+                <Form.Select aria-label="Default select ">
+                  <option> Gurantee </option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </Form.Select>
+                <Form.Select aria-label="Default select ">
+                  <option> State </option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </Form.Select>
 
             <input
               className="city"
@@ -65,30 +50,18 @@ const Filter = () => {
               placeholder="Price From"
             />
 
-            <select className="Year-from" name="from">
-              <option value selected>
-                Year-from
-              </option>
-              <option value="Instagram">Instagram</option>
-              <option value="FaceBook">FaceBook</option>
-              <option value="LinkedIn">LinkedIn</option>
-              <option value="Google">Google</option>
-              <option value="Articles">Articles</option>
-              <option value="Word of Mouth">Word of Mouth</option>
-              <option value="Others">Others</option>
-            </select>
-            <select className="Year-to" name="to">
-              <option value selected>
-                Year To
-              </option>
-              <option value="Instagram">Instagram</option>
-              <option value="FaceBook">FaceBook</option>
-              <option value="LinkedIn">LinkedIn</option>
-              <option value="Google">Google</option>
-              <option value="Articles">Articles</option>
-              <option value="Word of Mouth">Word of Mouth</option>
-              <option value="Others">Others</option>
-            </select>
+<Form.Select aria-label="Default select ">
+                  <option> Kilometer From </option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </Form.Select>
+                <Form.Select aria-label="Default select ">
+                  <option> Kilometer To </option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </Form.Select>
 
            
             <input

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container,Form } from "react-bootstrap";
 import "../css/sort.css";
 import "../scss/sort.scss";
 import eye from "../Asset/eye.svg";
@@ -17,18 +17,13 @@ const Sort = () => {
                 <button className="Required">Required</button>
               </div>
               <div className="sort-section">
-                <select className="Sort">
-                  <option value selected>
-                    Sort By
-                  </option>
-                  <option value="Instagram">Instagram</option>
-                  <option value="FaceBook">FaceBook</option>
-                  <option value="LinkedIn">LinkedIn</option>
-                  <option value="Google">Google</option>
-                  <option value="Articles">Articles</option>
-                  <option value="Word of Mouth">Word of Mouth</option>
-                  <option value="Others">Others</option>
-                </select>
+              
+                <Form.Select aria-label="Default select ">
+                  <option> Sort By </option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </Form.Select>
               </div>
             </div>
           </Container>

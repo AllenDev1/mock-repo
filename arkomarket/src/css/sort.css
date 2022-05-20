@@ -31,16 +31,23 @@ color: rgba(0, 0, 0, 0.5);
 
 
 }
-.sort-section select{
+.sort-section .form-select{
 width: 192px;
 height: 39px;
 background: #FFFFFF;
 border: 1px solid rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 font-weight: 500;
-font-size: 16px;
 color: rgba(0, 0, 0, 0.5);
 padding: 0px 16px;
+-webkit-appearance: none;
+-moz-appearance: none;
+background: url("../Asset/push.svg");
+background-repeat: no-repeat;
+background-size: 12.98px;
+background-position-x: 90%;
+background-position-y: 15px;
+z-index: 97;
 
 }
 .Card{

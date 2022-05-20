@@ -13,9 +13,12 @@
   font-size: 16px;
   color: #ffffff;
 }
-.filter-boxes select {
+.filter-boxes{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.filter-boxes .form-select {
   width: 182px;
-
   height: 41px;
   padding: 0px;
   background: #ffffff;
@@ -38,8 +41,8 @@
 }
 
 .filter-boxes input {
-  width: 180px;
-  height: 39px;
+  width: 182px;
+  height: 41px;
   padding: 0px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -66,11 +69,26 @@
 
 .filter-flex {
   flex: 1;
+  display: flex;
 }
 .filter-flex p {
   margin: 0px;
   font-weight: 500;
   font-size: 16px;
+}
+.fill{
+  width: 12px;
+  height: 12px;
+  margin-right: 9px;
+  margin-top: -5px;
+}
+.Pull{
+  width: 12.98px;
+  height: 7.4px;
+  margin-left:12px;
+  margin-top: -2px;
+  
+
 }
 .clear a {
   margin-left: 230px;

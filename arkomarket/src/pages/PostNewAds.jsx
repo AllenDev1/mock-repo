@@ -207,8 +207,67 @@ const PostNewAds = () => {
                 style={{ display: "none" }}
                 multiple="{false}"
               />
-            </div>
+              <div className="Title-discription">
+                <h3>Title and Description</h3>
+                <div className="title-discription-holder">
+                  <div className="title-class">
+                    <label htmlFor="selectCat">Ad Title*</label>
+                    <input
+                      className="title-sup"
+                      type="text"
+                      name="LName"
+                      placeholder="Title"
+                    />
+                  </div>
+                  <div className="discription-class">
+                    <label htmlFor="selectCat">Ad Discription*</label>
+
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="add-price">
+                <h3>Add Price</h3>
+                  <div className="add-pri">
+                    <label htmlFor="selectCat">Price*</label>
+                    <input
+                      className="Price-add"
+                      type="text"
+                      name="LName"
+                      placeholder="0"
+                    />
           </div>
+        </div>
+        <div className="provide-location">
+                <h3>Provide Location</h3>
+                  <div className="add-state">
+                    <label htmlFor="selectst">State*</label>
+                    <Form.Select aria-label="Default select ">
+                  <option> select </option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </Form.Select>
+          </div>
+          <div className="add-city">
+                    <label htmlFor="selecci">City*</label>
+                    <input
+                      className="add-city"
+                      type="text"
+                      name="LName"
+                      placeholder="City"
+                    />
+          </div>
+          <button className="Post-but">Post Now</button>
+        </div>
+        </div>
+        </div>
         </div>
       </Container>
     </>
