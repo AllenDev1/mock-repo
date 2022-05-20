@@ -44,6 +44,7 @@ const NavBar = () => {
         </Container>
         <Container className="mt-2 nav-footer-container">
           <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
+            <div className="vehicle-hover">
             <NavLink className="nav-Vehicles" href="/product-details">
               Vehicles
               <div class="dropdown-content">
@@ -51,7 +52,9 @@ const NavBar = () => {
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
               </div>
+              
             </NavLink>
+            </div>
             <NavLink href="/product-details">Properties</NavLink>
             <NavLink href="#">Mobiles</NavLink>
             <NavLink href="#">Family Needs</NavLink>
