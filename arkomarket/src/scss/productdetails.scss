@@ -138,13 +138,15 @@
       }
       .des-and-comment-sec {
         height: 100%;
-        text {
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 22px;
-          letter-spacing: 0em;
-          text-align: left;
-          color: #000000cc;
+        .dec-sec {
+          text {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #000000cc;
+          }
         }
       }
     }

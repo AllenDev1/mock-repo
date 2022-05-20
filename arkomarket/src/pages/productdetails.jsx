@@ -16,6 +16,7 @@ import {
   MDBCarouselItem,
   MDBCarouselElement,
 } from "mdb-react-ui-kit";
+import { Carousel } from "bootstrap";
 const Productdetails = () => {
   return (
     <>
@@ -97,23 +98,29 @@ const Productdetails = () => {
             <div className="des-comment-sec border">
               <div className="header-comment-des p-4 ">
                 <Nav.Link href="#"> Description</Nav.Link>
-                <Nav.Link href="#">Comment </Nav.Link>
+                <Nav.Link href="comments">Comment </Nav.Link>
               </div>
               <div className="des-and-comment-sec m-4">
-                <text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Tellus pellentesque nam dignissim amet, accumsan vitae
-                  sollicitudin lectus. Lacus, nulla semper dignissim non sit fus
-                  ce faucibus adipiscing in. Ullamcorper scelerisque eleifend
-                  etiam elementum nunc nulla augue volutpat. Placerat quam
-                  dignissim nullam quis dictum dignissim nunc purus. In velit,
-                  sapien cursus in arcu. Mi id sed mauris potenti aliquam sed
-                  mauris a. Posuere consequat sed mollis vestibulum. Morbi nunc,
-                  sagittis euismod pellentesque. Dui at turpis pretium molestie
-                  hendrerit. Risus, est ultrices dolor suspendisse placerat
-                  convallis enim. In scelerisque mi vulputate vitae nulla
-                  mauris. Posuere sapien neque, sagittis facilisis a.
-                </text>
+                <div className="dec-sec">
+                  <text>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Tellus pellentesque nam dignissim amet, accumsan vitae
+                    sollicitudin lectus. Lacus, nulla semper dignissim non sit
+                    fus ce faucibus adipiscing in. Ullamcorper scelerisque
+                    eleifend etiam elementum nunc nulla augue volutpat. Placerat
+                    quam dignissim nullam quis dictum dignissim nunc purus. In
+                    velit, sapien cursus in arcu. Mi id sed mauris potenti
+                    aliquam sed mauris a. Posuere consequat sed mollis
+                    vestibulum. Morbi nunc, sagittis euismod pellentesque. Dui
+                    at turpis pretium molestie hendrerit. Risus, est ultrices
+                    dolor suspendisse placerat convallis enim. In scelerisque mi
+                    vulputate vitae nulla mauris. Posuere sapien neque, sagittis
+                    facilisis a.
+                  </text>
+                </div>
+                <div className="comment-sec">
+                  <text>hello I am comment!s</text>
+                </div>
               </div>
             </div>
           </div>
