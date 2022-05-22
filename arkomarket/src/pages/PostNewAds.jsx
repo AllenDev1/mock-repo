@@ -3,6 +3,7 @@ import { Container, Form } from "react-bootstrap";
 import "../scss/postnewads.scss";
 import { useState, useRef } from "react";
 import photo from "../Asset/Addphoto.svg";
+import UserNav from "../component/user-nav";
 
 const PostNewAds = () => {
   const [value, setValue] = useState();
@@ -13,6 +14,7 @@ const PostNewAds = () => {
 
   return (
     <>
+    <UserNav/>
       <Container>
         <div className="post-new-add-container">
           <h3>POST YOUR AD</h3>

@@ -1,5 +1,5 @@
-import React from "react";
-import { Container, Nav } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import "../css/productdetails.css";
 import "../scss/productdetails.scss";
 import share from "../Asset/share.svg";
@@ -9,7 +9,8 @@ import viber from "../Asset/viber.svg";
 import location from "../Asset/location.svg";
 import eye from "../Asset/eye.svg";
 import { NavLink, Link } from "react-router-dom";
-
+import NavBar from "../component/nav";
+import "../js/new.js"
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -18,8 +19,11 @@ import {
 } from "mdb-react-ui-kit";
 import { Carousel } from "bootstrap";
 const Productdetails = () => {
+
+const [showDec, setShowDec] = useState(true);
   return (
     <>
+      <NavBar />
       <Container className="mt-4">
         <MDBCarousel showControls interval={9999999}>
           <MDBCarouselInner>
@@ -31,13 +35,13 @@ const Productdetails = () => {
             </MDBCarouselItem>
             <MDBCarouselItem>
               <MDBCarouselElement
-                src="https://mdbootstrap.com/img/new/slides/042.webp"
+                src="https://qph.cf2.quoracdn.net/main-qimg-841fdbdf80e64d93c34b9c663eb31a76-lq"
                 alt="..."
               />
             </MDBCarouselItem>
             <MDBCarouselItem>
               <MDBCarouselElement
-                src="https://mdbootstrap.com/img/new/slides/043.webp"
+                src="https://i.pinimg.com/736x/c5/6a/13/c56a13dff431d0898f9a930024951dbb.jpg"
                 alt="..."
               />
             </MDBCarouselItem>
@@ -95,13 +99,19 @@ const Productdetails = () => {
                 </div>
               </div>
             </div>
+
+          
             <div className="des-comment-sec border">
-              <div className="header-comment-des p-4 ">
-                <Nav.Link href="#"> Description</Nav.Link>
-                <Nav.Link href="comments">Comment </Nav.Link>
-              </div>
-              <div className="des-and-comment-sec m-4">
-                <div className="dec-sec">
+               <div className="header-comment-des p-4 ">
+                <a href="#dec-sec" className="selected" onClick={() =>{setShowDec(false)}}>
+                  Description
+                </a>
+                <a href="#comment-sec">Comment </a>
+              </div> 
+           
+
+             { showDec? <div className="des-and-comment-sec m-4">
+                <div role="tabpanel" id="dec-sec" className="dec-sec">
                   <text>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Tellus pellentesque nam dignissim amet, accumsan vitae
@@ -118,10 +128,10 @@ const Productdetails = () => {
                     facilisis a.
                   </text>
                 </div>
-                <div className="comment-sec">
+                <div id="comment-sec">
                   <text>hello I am comment!s</text>
                 </div>
-              </div>
+              </div>: null }
             </div>
           </div>
           <div className="user-map-sec">
@@ -311,6 +321,7 @@ const Productdetails = () => {
           </div>
         </div>
       </Container>
+      <script src="../js/new.js"></script>
     </>
   );
 };

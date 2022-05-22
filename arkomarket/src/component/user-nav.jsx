@@ -9,6 +9,7 @@ import "../scss/navbar.scss";
 import { Container, Nav, Form, FormControl } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-bootstrap";
+import { Link } from "react-router-dom";
 const UserNav = () => {
   let navigate = useNavigate();
   return (

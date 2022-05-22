@@ -2,14 +2,11 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Outlet,
 } from "react-router-dom";
 import React from "react";
 import Home from "./pages/home";
 import Productdetails from "./pages/productdetails";
-import UserProfile from "./pages/user-profile";
 import Editprofile from "./component/editprofile";
-import NavBar from "./component/nav";
 import Footer from "./component/footer";
 import NotFound from "./pages/NotFound";
 import Appformessage from "./component/Appformessage";
@@ -20,7 +17,6 @@ import Profile from "./component/profile";
 function App() {
   return (
     <>
-      <NavBar />
       <Router>
         <Routes>
           <Route exact index element={<Home />} />
@@ -36,7 +32,7 @@ function App() {
             <Route path="user-notification" element={<Usernotification />} />
             <Route path="*" element={<NotFound />} />
           </Route>
-          <Route path="post-new-ads" element={<PostNewAds />} />
+          <Route path="post-new-ads"  element={<PostNewAds />} />
         </Routes>
       </Router>
       <Footer />
