@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="footer-links1">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#">Contact Us</Nav.Link>
-            <Nav.Link href="#">Feedback & Help</Nav.Link>
+            <Nav.Link href="helpdesk">Feedback & Help</Nav.Link>
             <Nav.Link href="#">Terms & Conditions</Nav.Link>
             <Nav.Link href="#">Privacy</Nav.Link>
           </div>

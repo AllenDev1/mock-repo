@@ -18,15 +18,15 @@
   flex-wrap: wrap;
 }
 .filter-boxes .form-select {
-  width: 182px;
+  width: auto;
   height: 41px;
-  padding: 0px;
+  padding: 8px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-right: 13px;
   margin-bottom: 7px;
-  padding: 0px 16px;
+  padding: 0px 37px 0px 16px;
   font-weight: 500;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
@@ -36,28 +36,14 @@
   background-repeat: no-repeat;
   background-size: 12.98px;
   background-position-x: 90%;
-  background-position-y: 15px;
+  background-position-y: 16px;
   z-index: 97;
-}
+  border-radius: 100px;
 
-.filter-boxes input {
-  width: 182px;
-  height: 41px;
-  padding: 0px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin-right: 13px;
-  margin-bottom: 7px;
-  padding: 0px 16px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(0, 0, 0, 0.6);
 }
 .clear {
-  flex: 1;
-  text-align: center;
+  margin-top: 20px;
+ 
 }
 
 .filter-carry {
@@ -67,37 +53,15 @@
   margin-bottom: 7px;
 }
 
-.filter-flex {
-  flex: 1;
-  display: flex;
-}
-.filter-flex p {
-  margin: 0px;
-  font-weight: 500;
-  font-size: 16px;
-}
-.fill{
-  width: 12px;
-  height: 12px;
-  margin-right: 9px;
-  margin-top: -5px;
-}
-.Pull{
-  width: 12.98px;
-  height: 7.4px;
-  margin-left:12px;
-  margin-top: -2px;
-  
-
-}
 .clear a {
-  margin-left: 230px;
+
   text-decoration: none;
   color: #00000099;
   padding: 0px;
   font-weight: 400;
   font-size: 14px;
-  margin-bottom: 18px;
+  text-align: center;
+  
 }
 
 ::placeholder {

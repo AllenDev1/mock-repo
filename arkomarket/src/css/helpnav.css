@@ -1,0 +1,28 @@
+.help-nav {
+  display: inline-flex;
+  width: 1090px;
+  height: 58px;
+  justify-content: space-between;
+}
+
+.help-logo img {
+  width: 165.330px;
+  height: 40px;
+}
+
+.help-button button{
+  padding: 10px 16px;
+  gap: 10px;
+  width: 139px;
+  height: 39px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  padding: 10px 16px;
+  gap: 10px;
+
+  width: 139px;
+  height: 39px;
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+}
