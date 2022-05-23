@@ -8,19 +8,19 @@ import whatsapp from "../Asset/whatsapp.svg";
 import viber from "../Asset/viber.svg";
 import location from "../Asset/location.svg";
 import eye from "../Asset/eye.svg";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import NavBar from "../component/nav";
-import "../js/new.js"
+import "../js/new.js";
 import {
   MDBCarousel,
   MDBCarouselInner,
   MDBCarouselItem,
   MDBCarouselElement,
 } from "mdb-react-ui-kit";
-import { Carousel } from "bootstrap";
 const Productdetails = () => {
+  const [showDec, setShowDec] = useState(true);
+  const [showComment, setComment] = useState(false);
 
-const [showDec, setShowDec] = useState(true);
   return (
     <>
       <NavBar />
@@ -100,38 +100,75 @@ const [showDec, setShowDec] = useState(true);
               </div>
             </div>
 
-          
             <div className="des-comment-sec border">
-               <div className="header-comment-des p-4 ">
-                <a href="#dec-sec" className="selected" onClick={() =>{setShowDec(false)}}>
+              <div className="header-comment-des p-4 ">
+                <a
+                  className="selected"
+                  id="dec-a"
+                  onClick={() => {
+                    if (!setComment(true)) {
+                      setShowDec(true);
+                    }
+                    setComment(false);
+                    setShowDec(true);
+                    document.getElementById("comment-sec").style.display =
+                      "none";
+                    document
+                      .getElementById("comment-a")
+                      .classList.remove("selected");
+                    document.getElementById("dec-a").classList.add("selected");
+                  }}
+                >
                   Description
                 </a>
-                <a href="#comment-sec">Comment </a>
-              </div> 
-           
+                <a
+                  className="comment-a"
+                  id="comment-a"
+                  onClick={() => {
+                    if (!setShowDec(true)) {
+                      setComment(true);
+                    }
+                    setComment(true);
+                    setShowDec(false);
+                    document.getElementById("dec-sec").style.display = "none";
+                    document
+                      .getElementById("dec-a")
+                      .classList.remove("selected");
+                    document
+                      .getElementById("comment-a")
+                      .classList.add("selected");
+                  }}
+                >
+                  Comment
+                </a>
+              </div>
 
-             { showDec? <div className="des-and-comment-sec m-4">
-                <div role="tabpanel" id="dec-sec" className="dec-sec">
-                  <text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tellus pellentesque nam dignissim amet, accumsan vitae
-                    sollicitudin lectus. Lacus, nulla semper dignissim non sit
-                    fus ce faucibus adipiscing in. Ullamcorper scelerisque
-                    eleifend etiam elementum nunc nulla augue volutpat. Placerat
-                    quam dignissim nullam quis dictum dignissim nunc purus. In
-                    velit, sapien cursus in arcu. Mi id sed mauris potenti
-                    aliquam sed mauris a. Posuere consequat sed mollis
-                    vestibulum. Morbi nunc, sagittis euismod pellentesque. Dui
-                    at turpis pretium molestie hendrerit. Risus, est ultrices
-                    dolor suspendisse placerat convallis enim. In scelerisque mi
-                    vulputate vitae nulla mauris. Posuere sapien neque, sagittis
-                    facilisis a.
-                  </text>
-                </div>
-                <div id="comment-sec">
-                  <text>hello I am comment!s</text>
-                </div>
-              </div>: null }
+              <div className="des-and-comment-sec m-4">
+                {showDec ? (
+                  <div role="tabpanel" id="dec-sec" className="dec-sec">
+                    <text>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Tellus pellentesque nam dignissim amet, accumsan vitae
+                      sollicitudin lectus. Lacus, nulla semper dignissim non sit
+                      fus ce faucibus adipiscing in. Ullamcorper scelerisque
+                      eleifend etiam elementum nunc nulla augue volutpat.
+                      Placerat quam dignissim nullam quis dictum dignissim nunc
+                      purus. In velit, sapien cursus in arcu. Mi id sed mauris
+                      potenti aliquam sed mauris a. Posuere consequat sed mollis
+                      vestibulum. Morbi nunc, sagittis euismod pellentesque. Dui
+                      at turpis pretium molestie hendrerit. Risus, est ultrices
+                      dolor suspendisse placerat convallis enim. In scelerisque
+                      mi vulputate vitae nulla mauris. Posuere sapien neque,
+                      sagittis facilisis a.
+                    </text>
+                  </div>
+                ) : null}
+                {showComment ? (
+                  <div id="comment-sec">
+                    <text>i am comment section yet to be made</text>
+                  </div>
+                ) : null}
+              </div>
             </div>
           </div>
           <div className="user-map-sec">

@@ -134,9 +134,29 @@
         a {
           color: #00000080;
           padding: 0px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+          letter-spacing: 0em;
+          height: 33px;
         }
-        a:active{
-          color: red;
+        a:hover {
+          color: #000000cc;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+          letter-spacing: 0em;
+          padding: 0%;
+          cursor: pointer;
+        }
+        a.selected{
+          color: #000000cc;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+          letter-spacing: 0em;
+          padding: 0%;
+          border-bottom: 2px solid #0071E2 ;
         }
       }
       .des-and-comment-sec {
