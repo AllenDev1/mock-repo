@@ -46,9 +46,9 @@ const UserNav = () => {
                 <img src={userIcon} alt="user" className="px-2" />
               </NavLink>
 
-              <a className="new-ads-btn" type="button" href="post-new-ads">
+              <NavLink className="new-ads-btn" type="button" href="post-new-ads">
                 New Ads
-              </a>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

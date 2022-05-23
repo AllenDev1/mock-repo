@@ -1,11 +1,10 @@
 footer {
   background-color: #000000e5;
   height: 321px;
-  width: 100vw;
+  width: 100%;
   left: 0px;
   top: 198px;
   border-radius: 0px;
-  padding: 0px 175px 31px 175px !important;
 }
 .footer-container {
   display: flex;
