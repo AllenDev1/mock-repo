@@ -1,27 +1,20 @@
-import React from 'react';
-import {Container} from "react-bootstrap";
+import React from "react";
+import { Container } from "react-bootstrap";
 import Help from "../Asset/Arko-help.svg";
 import "../scss/helpnav.scss";
 
- const Helpnav = () => {
+const Helpnav = () => {
   return (
     <div main-cont>
-        
-    <Container>
-        <div className="help-nav">
-            <div className="help-logo">
-                <img src={Help}/>
-                
-            </div>
-            <div className="help-button">
-                <button>Post Free Ads</button>
-            </div>
+      <div className="help-nav">
+        <div className="help-logo">
+          <img src={Help} />
         </div>
-
-
-    </Container>
-
+        <div className="help-button">
+          <button>Post Free Ads</button>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 export default Helpnav;

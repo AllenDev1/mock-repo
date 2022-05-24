@@ -1,14 +1,12 @@
-import React from 'react'
+import React from "react";
 import { Container } from "react-bootstrap";
 import "../scss/querieslink.scss";
-
+import { Link } from "react-router-dom";
 const Querieslink = () => {
   return (
-    
-      
-      <div className="main-link-head">
+    <div className="main-link-head">
       <div className="link-heads">
-        <a href="#">Buyer's FAQs</a>
+        <a href="buyers">Buyer's FAQs</a>
         <a href="#">Seller's FAQs</a>
         <a href="#">General Queries</a>
         <a href="#">Trust and Saftey</a>
@@ -16,13 +14,8 @@ const Querieslink = () => {
         <a href="#">Terms of use</a>
         <a href="#">Community Terms</a>
       </div>
-      
-      </div>
-
-   
-    
-  )
-}
+    </div>
+  );
+};
 
 export default Querieslink;
-

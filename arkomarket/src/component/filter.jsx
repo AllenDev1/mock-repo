@@ -1,30 +1,26 @@
 import React from "react";
-import { Container, Form } from "react-bootstrap";
+import { useState, useRef, useEffect } from "react";
+import { Container } from "react-bootstrap";
 import "../css/filter.css";
 import "../scss/filter.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-  import {  } from '@fortawesome/free-solid-svg-icons';
 import Arrow from "../Asset/push.svg";
-
 const Filter = () => {
-  function myFunction() {
+  const [isOpen, setIsOpen] = useState(false);
+  function myFunction(e) {
     document.getElementById("myDropdown").classList.toggle("show");
+    setIsOpen(true);
+    console.log("find me here!")
   }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches(".dropdown-button")) {
-      var dropdowns = document.getElementsByClassName("dropdown-menu");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains("show")) {
-          openDropdown.classList.remove("show");
-        }
-      }
+  window.onclick = function(e) {
+    if(isOpen === true){
+      document.getElementById("myDropdown").classList.toggle("show");
+      console.log("helo")
     }
-    return false;
+
+  // console.log("find me on click");
   };
+
+  console.log(isOpen);
   return (
     <Container className="filter-main-div mt-3">
       <div className="filter-container">
@@ -32,8 +28,12 @@ const Filter = () => {
           <div className="filter-boxes">
             <div class="dropdown">
               <div class="flex-container">
-                <button onClick={myFunction} class="dropdown-button">
-                  Brand <i class="fa-solid fa-chevron-down"></i>
+                <button
+                  onClick={myFunction}
+                  class="dropdown-button"
+                  type="button"
+                >
+                  testing <img src={Arrow} alt="" srcSet="" />
                 </button>
                 <ul id="myDropdown" className="dropdown-menu">
                   <li>
@@ -51,7 +51,7 @@ const Filter = () => {
                 </ul>
 
                 <button class="dropdown-button">
-                  Fuel Type <img src={Arrow} />
+                  Fuel Type <img src={Arrow} alt="" srcSet="" />
                 </button>
                 <ul class="dropdown-menu">
                   <li>
@@ -65,7 +65,7 @@ const Filter = () => {
                   </li>
                 </ul>
                 <button class="dropdown-button">
-                  Gear Type <img src={Arrow} />
+                  Gear Type <img src={Arrow} alt="" srcSet="" />
                 </button>
                 <ul class="dropdown-menu">
                   <li>
@@ -79,7 +79,7 @@ const Filter = () => {
                   </li>
                 </ul>
                 <button class="dropdown-button">
-                  Kilometers <img src={Arrow} />
+                  Kilometers <img src={Arrow} alt="" srcSet="" />
                 </button>
                 <ul class="dropdown-menu">
                   <li>
@@ -93,7 +93,7 @@ const Filter = () => {
                   </li>
                 </ul>
                 <button class="dropdown-button">
-                  Condition <img src={Arrow} />
+                  Condition <img src={Arrow} alt="" srcSet="" />
                 </button>
                 <ul class="dropdown-menu">
                   <li>
@@ -107,7 +107,7 @@ const Filter = () => {
                   </li>
                 </ul>
                 <button class="dropdown-button">
-                  Price <img src={Arrow} />
+                  Price <img src={Arrow} alt="" srcSet="" />
                 </button>
                 <ul class="dropdown-menu">
                   <li>
@@ -121,7 +121,7 @@ const Filter = () => {
                   </li>
                 </ul>
                 <button class="dropdown-button">
-                  Location <img src={Arrow} />
+                  Location <img src={Arrow} alt="" srcSet="" />
                 </button>
                 <ul class="dropdown-menu">
                   <li>
@@ -135,7 +135,7 @@ const Filter = () => {
                   </li>
                 </ul>
                 <button class="dropdown-button">
-                  Price <img src={Arrow} />
+                  Price <img src={Arrow} alt="" srcSet="" />
                 </button>
                 <ul class="dropdown-menu">
                   <li>

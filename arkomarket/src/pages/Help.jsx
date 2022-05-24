@@ -3,21 +3,28 @@ import Helpnavbar from "../component/Helpnavbar";
 import Helpbody from "../component/helpbody.jsx";
 import Queriesnav from "../component/queriesnav";
 import Querieslink from "../component/querieslink";
-import { Container} from "react-bootstrap";
-
+import { Container } from "react-bootstrap";
+import {
+  Outlet,
+  Route,
+  Routes,
+  BrowserRouter as Router,
+} from "react-router-dom";
 
 const Help = () => {
   return (
     <>
-      <Helpnavbar />
-      <Helpbody />
-      <Container>
-      <Querieslink/>
-      <Queriesnav />
-      </Container>
-      
-
-      
+      <div className="help-background">
+        <Container>
+          <Helpnavbar />
+          <Helpbody />
+        </Container>
+        <div className="sec-change-help-sec">
+          <Container>
+            <Querieslink />
+          </Container>
+        </div>
+      </div>
     </>
   );
 };

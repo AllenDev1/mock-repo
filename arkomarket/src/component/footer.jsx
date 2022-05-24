@@ -8,6 +8,7 @@ import facebook from "../Asset/facebook.svg";
 import insta from "../Asset/insta.svg";
 import playStore from "../Asset/play store 1.svg";
 import appStore from "../Asset/app store 1.svg";
+import { NavLink } from "react-bootstrap";
 
 const Footer = () => {
   return (
@@ -26,7 +27,7 @@ const Footer = () => {
           <div className="footer-links1">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#">Contact Us</Nav.Link>
-            <Nav.Link href="helpdesk">Feedback & Help</Nav.Link>
+            <NavLink href="helpdesk">Feedback & Help</NavLink>
             <Nav.Link href="#">Terms & Conditions</Nav.Link>
             <Nav.Link href="#">Privacy</Nav.Link>
           </div>
