@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from "react-bootstrap";
 import Help from "../Asset/Arko-help.svg";
-import "../css/helpnav.css";
+import "../scss/helpnav.scss";
 
  const Helpnav = () => {
   return (

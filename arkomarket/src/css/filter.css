@@ -17,32 +17,9 @@
   display: inline-flex;
   flex-wrap: wrap;
 }
-.filter-boxes .form-select {
-  width: auto;
-  height: 41px;
-  padding: 8px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin-right: 13px;
-  margin-bottom: 7px;
-  padding: 0px 37px 0px 16px;
-  font-weight: 500;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.6);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: url("../Asset/push.svg");
-  background-repeat: no-repeat;
-  background-size: 12.98px;
-  background-position-x: 90%;
-  background-position-y: 16px;
-  z-index: 97;
-  border-radius: 100px;
-
-}
 .clear {
   margin-top: 20px;
+  padding-left: 16px;
  
 }
 
@@ -67,3 +44,5 @@
 ::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
+
+

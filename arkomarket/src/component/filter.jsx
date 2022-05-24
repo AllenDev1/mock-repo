@@ -1,66 +1,158 @@
 import React from "react";
 import { Container, Form } from "react-bootstrap";
 import "../css/filter.css";
-import Fil from "../Asset/filter.svg";
-import Pull from "../Asset/pull.svg";
+import "../scss/filter.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+  import {  } from '@fortawesome/free-solid-svg-icons';
+import Arrow from "../Asset/push.svg";
 
 const Filter = () => {
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches(".dropdown-button")) {
+      var dropdowns = document.getElementsByClassName("dropdown-menu");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
+      }
+    }
+    return false;
+  };
   return (
     <Container className="filter-main-div mt-3">
       <div className="filter-container">
         <div className="filter-display">
           <div className="filter-boxes">
-            <Form.Select aria-label="Default select ">
-              <option> Brand </option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
-            <Form.Select aria-label="Default select ">
-              <option> Fuel Type </option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
-            <Form.Select aria-label="Default select ">
-              <option> Gear Type </option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
+            <div class="dropdown">
+              <div class="flex-container">
+                <button onClick={myFunction} class="dropdown-button">
+                  Brand <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul id="myDropdown" className="dropdown-menu">
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                  <li>
+                    <button href="#">JavaScript</button>
+                  </li>
+                </ul>
 
-            <Form.Select aria-label="Default select ">
-              <option> Manifacture Year </option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
-            <Form.Select aria-label="Default select ">
-              <option> Kilometer</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
-            <Form.Select aria-label="Default select ">
-              <option>Condition</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
-            <Form.Select aria-label="Default select ">
-              <option>Location</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
-            <Form.Select aria-label="Default select ">
-              <option>Price</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
-            <div className="clear">
-              <a href="#">Reset all</a>
+                <button class="dropdown-button">
+                  Fuel Type <img src={Arrow} />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                </ul>
+                <button class="dropdown-button">
+                  Gear Type <img src={Arrow} />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                </ul>
+                <button class="dropdown-button">
+                  Kilometers <img src={Arrow} />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                </ul>
+                <button class="dropdown-button">
+                  Condition <img src={Arrow} />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                </ul>
+                <button class="dropdown-button">
+                  Price <img src={Arrow} />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                </ul>
+                <button class="dropdown-button">
+                  Location <img src={Arrow} />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                </ul>
+                <button class="dropdown-button">
+                  Price <img src={Arrow} />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                </ul>
+
+                <a class="clear" href="#">
+                  Reset all
+                </a>
+              </div>
             </div>
           </div>
         </div>

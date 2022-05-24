@@ -14,7 +14,7 @@ import Usernotification from "./component/Usernotification";
 import PostNewAds from "./pages/PostNewAds";
 import UserProfileEdit from "./pages/UserProfileEdit";
 import Profile from "./component/profile";
-import Helpnav from "./component/Helpnavbar";
+import Help from "./pages/Help";
 function App() {
   return (
     <>
@@ -34,7 +34,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Route>
           <Route path="post-new-ads" element={<PostNewAds />} />
-          <Route path="helpdesk" element={<Helpnav />} />
+          <Route path="helpdesk" element={<Help/>} />
         </Routes>
       </Router>
       <Footer />
