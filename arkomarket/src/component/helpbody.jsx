@@ -18,24 +18,7 @@ const Helpbody = () => {
             </Form>
         </div>
     </div>
-    <Container>
-      <div className="main-link-head">
-      <div className="link-heads">
-        <a href="#">Buyer's FAQs</a>
-        <a href="#">Seller's FAQs</a>
-        <a href="#">General Queries</a>
-        <a href="#">Trust and Saftey</a>
-        <a href="#">Privacy</a>
-        <a href="#">Terms of use</a>
-        <a href="#">Community Terms</a>
-      </div>
-      <div className="var-queries">
-        
-      </div>
-
-      </div>
-
-    </Container>
+    
     </>
   );
 };
