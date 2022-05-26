@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="footer-link2">
             <Nav.Link href="#">Login</Nav.Link>
             <Nav.Link href="#">Register</Nav.Link>
-            <Nav.Link href="#">Fotgot Your Password</Nav.Link>
+            <Nav.Link href="#">Forgot Your Password</Nav.Link>
             <Nav.Link href="#">FAQs</Nav.Link>
           </div>
           <div className="find-us-on">

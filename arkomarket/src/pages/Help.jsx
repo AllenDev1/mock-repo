@@ -14,17 +14,18 @@ import {
 const Help = () => {
   return (
     <>
-      <div className="help-background">
-        <Container>
-          <Helpnavbar />
+     
+       
+          <Container><Helpnavbar /></Container>
           <Helpbody />
-        </Container>
-        <div className="sec-change-help-sec">
+        
+
           <Container>
             <Querieslink />
+            <Queriesnav/>
           </Container>
-        </div>
-      </div>
+        
+     
     </>
   );
 };

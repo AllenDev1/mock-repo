@@ -19,7 +19,7 @@ gap:8px;
 
 .filter-buttons button{
 border: 1px solid rgba(0, 0, 0, 0.15);
-border-radius: 100px;
+border-radius: 4px;
 width: auto;
 height: 35px;
 padding:0px 18px;
@@ -33,7 +33,7 @@ color: rgba(0, 0, 0, 0.5);
 }
 .sort-section .form-select{
 width: 192px;
-height: 39px;
+height: 35px;
 background: #FFFFFF;
 border: 1px solid rgba(0, 0, 0, 0.15);
 border-radius: 4px;
