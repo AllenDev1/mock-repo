@@ -1,6 +1,6 @@
 .link-app-for-message {
   box-sizing: border-box;
-
+width: 100%;
   /* Auto layout */
   margin-top: 33px;
   display: flex;
@@ -21,6 +21,7 @@
   order: 1;
   flex-grow: 0;
   .link-message {
+    width: 100%;
     h5 {
       color: #000000cc;
       font-size: 16px;
@@ -38,9 +39,8 @@
   }
   .Whatsapp-link {
     display: flex;
-    justify-self: space-between;
+    justify-content: space-between;
     width: 100%;
-    grid-gap: 442px;
 
     .whatsapp-contain {
       display: flex;
@@ -60,15 +60,13 @@
   }
   .viber-link {
     display: flex;
-    justify-self: space-between;
+    justify-content: space-between;
     width: 100%;
-    grid-gap: 442px;
     margin-top: 24px;
 
     .viber-contain {
       display: flex;
-      justify-self: space-between;
-      width: 126px;
+      justify-content: space-between;
       height: 32px;
       grid-gap: 16px;
 

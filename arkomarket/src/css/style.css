@@ -1,10 +1,32 @@
-.mainBody{
-    justify-content: center;
-    display: grid;
+.mainBody {
+  justify-content: center;
+  display: grid;
 }
-a{
-    text-decoration: none !important;
+a {
+  text-decoration: none !important;
 }
-img{
-    object-fit: cover !important;
+img {
+  object-fit: cover !important;
+}
+input:focus-visible {
+  outline: none !important;
+  border: 2px solid  !important;
+/* border-color: !important ; */
+ 
+
+}
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.form-select:focus {
+  box-shadow: none !important;
+}
+
+input:-internal-autofill-selected{
+    background-color: #f5f5f5 !important;
+}
+.dropdown-button:focus{
+    border-color: rgba(0, 0, 0, 0.6) !important;
 }

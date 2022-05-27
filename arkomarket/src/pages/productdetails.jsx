@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav } from "react-bootstrap";
 import "../css/productdetails.css";
 import "../scss/productdetails.scss";
 import share from "../Asset/share.svg";

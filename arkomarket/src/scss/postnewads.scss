@@ -7,7 +7,6 @@
   align-items: center;
   gap: 9px;
   h3 {
-    margin-bottom: 36px;
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -16,18 +15,22 @@
     color: #000000;
   }
   .choose-category {
-    box-sizing: border-box;
-
-    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 32px;
     gap: 10px;
     width: 653px;
-    height: 173px;
-    left: 394px;
-    top: 166px;
+
     background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
     h3 {
       text-align: left;
       font-style: normal;
@@ -35,7 +38,6 @@
       font-size: 16px;
       line-height: 19px;
       color: rgba(0, 0, 0, 0.8);
-      margin-bottom: 16px;
     }
     .category-sec {
       display: flex;
@@ -46,7 +48,7 @@
         gap: 8px;
         .form-select {
           width: 286.5px;
-          height: 51px;
+          height: 39px;
           background-color: #ffffff;
           border: 1px solid rgba(0, 0, 0, 0.1);
           border-radius: 4px;
@@ -70,20 +72,16 @@
   }
   .basic-details {
     box-sizing: border-box;
-
     /* Auto layout */
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 32px;
     gap: 10px;
-
     width: 653px;
-    height: 173px;
+    // height: 173px;
     left: 394px;
     top: 348px;
-
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -102,7 +100,7 @@
       gap: 8px;
       .form-select {
         width: 286.5px;
-        height: 51px;
+        height: 39px;
         background-color: #ffffff;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 4px;
@@ -146,7 +144,7 @@
       font-size: 16px;
       line-height: 19px;
       color: rgba(0, 0, 0, 0.8);
-      margin-bottom: 16px;
+      // margin-bottom: 12px;
     }
     label {
       font-style: normal;
@@ -161,8 +159,7 @@
       flex-wrap: wrap;
       gap: 6px;
       width: 348px;
-      margin-top: 16px;
-
+      margin-top: 10px;
       button {
         width: 112px;
         height: 87px;
@@ -182,6 +179,9 @@
         }
       }
     }
+    .addPrice-adLocation {
+      width: 381px;
+    }
   }
   .Title-discription {
     width: 584px;
@@ -198,7 +198,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-bottom: 32px;
+      padding-bottom: 16px;
       gap: 8px;
       width: 100%;
       label {
@@ -209,7 +209,7 @@
       }
       input {
         width: 100%;
-        padding: 16px;
+        padding: 10px 16px;
         gap: 10px;
         width: 584px;
         background: #ffffff;
@@ -266,7 +266,7 @@
       }
       input {
         width: 381px;
-        height: 51px;
+        height: 39px;
         padding: 16px;
         gap: 10px;
         background: #ffffff;
@@ -276,8 +276,6 @@
     }
   }
   .provide-location {
-    width: 584px;
-
     h3 {
       font-weight: 600;
       font-size: 16px;
@@ -288,7 +286,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-bottom: 32px;
+      padding-bottom: 12px;
       gap: 8px;
       width: 100%;
       label {
@@ -299,7 +297,7 @@
       }
       .form-select {
         width: 100%;
-        height: 51px;
+        height: 39px;
         background-color: #ffffff;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 4px;
@@ -329,7 +327,7 @@
         padding: 16px;
         gap: 10px;
         width: 381px;
-        height: 51px;
+        height: 39px;
         background: #ffffff;
         border: 1px solid rgba(0, 0, 0, 0.15);
         border-radius: 4px;
@@ -337,18 +335,209 @@
     }
   }
   .Post-but {
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 48px;
     gap: 10px;
-    width: 122px !important;
-    height: 39px !important;
-    background: #0071e2 !important;
-    border-radius: 4px !important;
+    margin-top: 10px;
+    height: 39px;
+
+    background: #0071e2;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+    border: none;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: #ffffff;
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    border: 0px !important;;
+  }
+  .check-contact-info {
+    box-sizing: border-box;
 
-    color: #ffffff;
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 12px;
+    width: 653px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000000cc;
+    }
+    .check-contact-info-form {
+      width: 381px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      input {
+        box-sizing: border-box;
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px 16px;
+        gap: 10px;
+        height: 39px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+      .PhoneInput {
+        display: flex;
+        appearance: none;
+        justify-content: space-between;
+        width: 100%;
+
+        .PhoneInputCountry {
+          display: flex;
+          appearance: none;
+          select {
+            height: 39px;
+            width: 110px;
+            left: 0px;
+            top: 0px;
+            border-radius: 4px;
+            padding: 10px 16px;
+            background-image: url("../Asset/push.svg");
+            background-repeat: no-repeat;
+            appearance: initial;
+            background-position: 80%;
+            box-sizing: border-box;
+            line-height: normal;
+            /* Auto layout */
+            border: 1px solid rgba(0, 0, 0, 0.1);
+          }
+        }
+        input {
+          width: 263px;
+          height: 39px;
+
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 4px;
+        }
+       
+      }
+    }
+    .firstName-lastName {
+      display: flex;
+      gap: 16px;
+      input {
+        width: 182.5px;
+      }
+    }
+    .link-message {
+      width: 100%;
+      h5 {
+        color: #000000cc;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 24px;
+      }
+      .link-viber-whatsapp {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .Whatsapp-link {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          .whatsapp-contain {
+            display: flex;
+            justify-self: space-between;
+            width: 126px;
+            height: 32px;
+            grid-gap: 16px;
+
+            p {
+              margin-top: 5px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              color: rgba(0, 0, 0, 0.8);
+            }
+          }
+        }
+        .viber-link {
+          display: flex;
+          width: 100%;
+          margin-top: 24px;
+          justify-content: space-between;
+          .viber-contain {
+            display: flex;
+            justify-self: space-between;
+            width: 126px;
+            height: 32px;
+            grid-gap: 16px;
+
+            p {
+              margin-top: 5px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              color: rgba(0, 0, 0, 0.8);
+            }
+          }
+        }
+      }
+
+      button {
+        width: 96px;
+        height: 31px;
+        background: #0071e2;
+        border-radius: 4px;
+        border: 0px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+      }
+    }
+    .check-box-policy {
+      display: flex;
+      justify-content: space-between;
+      gap: 14.63px;
+      label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        color: rgba(0, 0, 0, 0.8);
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+      }
+    }
   }
 }
