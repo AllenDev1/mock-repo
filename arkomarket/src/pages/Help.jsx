@@ -11,6 +11,7 @@ import {
   BrowserRouter as Router,
 } from "react-router-dom";
 
+
 const Help = () => {
   return (
     <>
@@ -18,8 +19,6 @@ const Help = () => {
        
           <Container><Helpnavbar /></Container>
           <Helpbody />
-        
-
           <Container>
             <Querieslink />
             <Queriesnav/>

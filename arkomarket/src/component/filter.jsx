@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import "../css/filter.css";
 import "../scss/filter.scss";
 import Arrow from "../Asset/push.svg";
+
 const Filter = () => {
   const [isOpen, setIsOpen] = useState(false);
   function myFunction(e) {
@@ -149,6 +150,7 @@ const Filter = () => {
           </div>
         </div>
       </div>
+      
     </Container>
   );
 };
