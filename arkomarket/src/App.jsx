@@ -10,7 +10,7 @@ import Usernotification from "./component/Usernotification";
 import PostNewAds from "./pages/PostNewAds";
 import UserProfileEdit from "./pages/UserProfileEdit";
 import Profile from "./component/profile";
-import Help from "./pages/Help";
+import Querieslink from "./component/querieslink";
 function App() {
   return (
     <>
@@ -19,7 +19,7 @@ function App() {
           <Route exact index element={<Home />} />
           <Route path="product-details" element={<Productdetails />} />
           <Route path="post-new-ads" element={<PostNewAds />} />
-          <Route path="helpdesk" element={<Help />} />
+          <Route path="helpdesk" element={< Querieslink/>} />
           {/* is user logged in function need to be added here */}
           <Route path="user-profile" element={<Profile />} />
           <Route path="user-profile-edit" element={<UserProfileEdit />}>

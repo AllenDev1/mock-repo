@@ -1,5 +1,5 @@
 import React from "react";
-import { Container,Form } from "react-bootstrap";
+import { Container, Form } from "react-bootstrap";
 import "../css/sort.css";
 import "../scss/sort.scss";
 import eye from "../Asset/eye.svg";
@@ -17,7 +17,6 @@ const Sort = () => {
                 <button className="Required">Required</button>
               </div>
               <div className="sort-section">
-              
                 <Form.Select aria-label="Default select ">
                   <option> Sort By </option>
                   <option value="1">One</option>
@@ -141,7 +140,7 @@ const Sort = () => {
                   </div>
                 </NavLink>
               </div>
-            
+
               <div class="page-container">
                 <div class="page-box">
                   <button class="">1</button>

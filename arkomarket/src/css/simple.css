@@ -1,0 +1,27 @@
+.react-multiple-carousel__arrow {
+  /* background-image: url("../Asset/library/testing.svg") !important; */
+  /* background-color: rgba(0, 0, 0, 0.6) !important; */
+  border-radius: 00px !important ;
+  border: none !important;
+  /* background-color: #ddd !important; */
+  background: #FAFAFA !important;
+
+  /* background:  transparent !important ; */
+}
+.react-multiple-carousel__arrow--right {
+  right: calc(0% + 0px);
+}
+.react-multiple-carousel__arrow--left {
+  left: calc(0% + 0px);
+}
+.react-multiple-carousel__arrow::before {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.react-multiple-carousel__arrow:hover {
+  color: rgba(0, 0, 0, 0.9) !important;
+  background-color: #ddd !important;
+}
+.react-multi-carousel-track{
+    transition: transform 100ms ease-in-out 0s !important;
+    gap: 50px;
+}
