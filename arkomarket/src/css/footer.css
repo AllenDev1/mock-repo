@@ -13,7 +13,8 @@ footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.19);
 }
 .footer-links1 .nav-link,
-.footer-link2 .nav-link {
+.footer-link2 .nav-link,
+.footer-links3 .nav-link{
   color: #f3f3f3;
   padding: 16px;
 }

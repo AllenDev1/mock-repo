@@ -165,7 +165,12 @@ const Productdetails = () => {
                 ) : null}
                 {showComment ? (
                   <div id="comment-sec">
-                    <text>i am comment section yet to be made</text>
+                    <div className="comment-container">
+                      <div className="comment-input">
+                        <input></input>
+                        <button type="button">Comment</button>
+                      </div>
+                    </div>
                   </div>
                 ) : null}
               </div>

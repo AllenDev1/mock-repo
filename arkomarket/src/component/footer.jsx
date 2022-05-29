@@ -27,15 +27,22 @@ const Footer = () => {
           <div className="footer-links1">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#">Contact Us</Nav.Link>
-            <NavLink href="helpdesk">Feedback & Help</NavLink>
-            <Nav.Link href="#">Terms & Conditions</Nav.Link>
-            <Nav.Link href="#">Privacy</Nav.Link>
+            <Nav.Link href="#">About</Nav.Link>
+
+           
           </div>
           <div className="footer-link2">
-            <Nav.Link href="#">Login</Nav.Link>
-            <Nav.Link href="#">Register</Nav.Link>
-            <Nav.Link href="#">Forgot Your Password</Nav.Link>
-            <Nav.Link href="#">FAQs</Nav.Link>
+          <Nav.Link href="/">Buyer FAQ</Nav.Link>
+            <Nav.Link href="#">Seller FAQ</Nav.Link>
+            <Nav.Link href="#">Career</Nav.Link>
+            <Nav.Link href="#">Newsroom</Nav.Link>
+          </div>
+          <div className="footer-links3">
+          <NavLink href="helpdesk">Feedback & Help</NavLink>
+          <Nav.Link href="#">Trust & Saftey</Nav.Link>
+            <Nav.Link href="#">Community Terms</Nav.Link>
+            <Nav.Link href="#">Privacy</Nav.Link>
+            <Nav.Link href="#">Terms of use</Nav.Link>
           </div>
           <div className="find-us-on">
             <p>Find us on</p>

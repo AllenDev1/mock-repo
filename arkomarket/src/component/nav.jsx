@@ -44,27 +44,156 @@ const NavBar = () => {
         </Container>
         <Container className="mt-2 nav-footer-container">
           <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
-            <div className="vehicle-hover">
+            <div className="total-hover">
             <NavLink className="nav-Vehicles" href="/product-details">
               Vehicles
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Kitchen & other Appliances</a>
-                <a href="#">Link 3</a>
+                <a href="#">All</a>
+                <a href="#">Cars</a>
+                <a href="#">Motorcycles</a>
+                <a href="#">Scooters</a>
+                <a href="#">Bicycle</a>
+                <a href="#">Other parts</a>
+                <a href="#">Spare parts</a>
+
               </div>
               
             </NavLink>
             </div>
-            <NavLink href="/product-details">Properties</NavLink>
-            <NavLink href="#">Mobiles</NavLink>
-            <NavLink href="#">Family Needs</NavLink>
-            <NavLink href="#">Services</NavLink>
-            <NavLink href="#">Electronics & Appliances</NavLink>
-            <NavLink href="#">Furnitures</NavLink>
-            <NavLink href="#">Books, Sports & Hobbies</NavLink>
-            <NavLink href="#">Travels & Trips</NavLink>
-            <NavLink href="#">Pets</NavLink>
-            <NavLink href="#">Others</NavLink>
+            <div className="total-hover">
+            <NavLink href="/product-details">Properties
+            <div class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Lands & plots</a>
+                <a href="#">Shops & Offices</a>
+                <a href="#">Houses & Apartments</a>
+                <a href="#">Rooms & Flats</a>
+                
+              </div>
+              </NavLink>
+              </div>
+              <div className="total-hover">
+            <NavLink href="#">Mobiles
+            <div class="dropdown-content">
+                 <a href="#">All</a>
+                <a href="#">Mobiles</a>
+                <a href="#">Tablets</a>
+                <a href="#">Wearables</a>
+                <a href="#">Accessories</a>
+                
+              </div>
+              </NavLink>
+              </div>
+              <div className="total-hover">
+            <NavLink href="#">Family Needs
+            <div class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Men stuffs</a>
+                <a href="#">Women stuffs</a>
+                <a href="#">Kids stuffs</a>
+                <a href="#">Jobs</a>
+                <a href="#">Foods</a>
+                <a href="#">Gifts</a>
+               
+              </div>
+              </NavLink>
+              </div>
+              <div className="total-hover">
+            <NavLink href="#">Services
+            <div class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Cleaning</a>
+                <a href="#">Education & Classes</a>
+                <a href="#">Move Furnitures</a>
+                <a href="#">Agriculture</a>
+                <a href="#">Construction</a>
+                <a href="#">Maintainance</a>
+                <a href="#">Occassion</a>
+                <a href="#">Health & Beauty</a>
+                <a href="#">Other services</a>
+              </div>
+              </NavLink>
+              </div>
+              <div className="total-hover">
+            <NavLink href="#">Electronics & Appliances
+            <div class="dropdown-content">
+            <a href="#">All</a>
+                <a href="#">Printers & monitors</a>
+                <a href="#">Computers & Laptops</a>
+                <a href="#">Accessories & parts</a>
+                <a href="#">Cameras & Lenses</a>
+                <a href="#">Game and Entertainment</a>
+                <a href="#">TV, Audio & Video</a>
+                <a href="#">Fridge</a>
+                <a href="#">ACs & Heater</a>
+                <a href="#">Washing machines</a>
+                <a href="#">Kitchen & other Appliances</a>
+              </div>
+              </NavLink>
+              </div>
+              <div className="total-hover">
+            <NavLink href="#">Furnitures
+            <div class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Office Furnitures</a>
+                <a href="#">Bed & mattresses</a>
+                <a href="#">Sofa sets</a>
+                <a href="#">Other Home Furnitures</a>
+                <a href="#">Kid's Furnitures</a>
+                <a href="#">Home. Decor and Garden</a>
+                <a href="#">Other Household Items</a>
+                
+              </div>
+              </NavLink>
+              </div>
+              <div className="total-hover">
+            <NavLink href="#">Books, Sports & Hobbies
+            <div class="dropdown-content">
+            <a href="#">All</a>
+                <a href="#">Books</a>
+                <a href="#">Gyn & fitness</a>
+                <a href="#">Musical Instruments</a>
+                <a href="#">Sports Equipments</a>
+                <a href="#">Other Hobbies</a>
+              </div>
+              </NavLink>
+              </div>
+              <div className="total-hover">
+            <NavLink href="#">Travels & Trips
+            <div class="dropdown-content">
+            <a href="#">All</a>
+                <a href="#">Tourism</a>
+                <a href="#">Trips & Camping</a>
+                <a href="#">Cars & Bike Rentals</a>
+                <a href="#">Hotels & Homestays</a>
+                <a href="#">Other</a>
+             
+              </div>
+              </NavLink>
+              </div>
+              <div className="total-hover">
+            <NavLink href="#">Pets
+            <div class="dropdown-content">
+            <a href="#">All</a>
+                <a href="#">Fishes & Aquarium</a>
+                <a href="#">Pet foods & Accessories</a>
+                <a href="#">Dogs & Cats</a>
+                <a href="#">Birds</a>
+                <a href="#">Goat,Buffalo and other pets</a>
+              </div>
+              </NavLink>
+              </div>
+              <div className="total-hover">
+            <NavLink href="#">Others
+            <div class="dropdown-content">
+            <a href="#">All</a>
+                <a href="#">Arts & Handicrafts</a>
+                <a href="#">Antique Items</a>
+                <a href="#">Charity</a>
+                <a href="#">Others</a>
+              </div>
+              </NavLink>
+              </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
