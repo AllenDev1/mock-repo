@@ -89,6 +89,10 @@
             letter-spacing: 0em;
             text-align: left;
           }
+          .quality:hover{
+            outline: 0 !important;
+
+          }
         }
       }
       .details-sec {
@@ -366,7 +370,8 @@
       letter-spacing: 0em;
     }
     button:hover {
-      background:#3e6fa0;
+      background: #0064C9;
+
     }
   }
 }
@@ -398,7 +403,8 @@
       color: #ffffff;
     }
     button:hover {
-      background:#3e6fa0;
+      background: #0064C9;
+
     }
    
   }

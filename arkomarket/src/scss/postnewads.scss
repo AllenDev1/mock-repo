@@ -358,6 +358,10 @@
     line-height: 19px;
     text-align: center;
   }
+  button:hover {
+    background: #0064C9;
+
+  }
   .check-contact-info {
     box-sizing: border-box;
 
@@ -517,6 +521,10 @@
         font-size: 16px;
         line-height: 19px;
         color: #ffffff;
+      }
+      button:hover{
+        background: #0064C9;
+
       }
     }
     .check-box-policy {
