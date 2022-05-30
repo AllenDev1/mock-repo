@@ -61,10 +61,10 @@ const Productdetails = () => {
                   </div>
                   <div className="share-btn-product ">
                     <Nav.Link>
-                      <img src={share} alt="" />
+                      <img src={share} alt="" className="share-btn" />
                     </Nav.Link>
                     <Nav.Link>
-                      <img src={heart} alt="" />
+                      <img src={heart} alt=""  className="heart-btn"/>
                     </Nav.Link>
                   </div>
                 </div>

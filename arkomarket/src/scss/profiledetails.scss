@@ -11,41 +11,34 @@
     height: 236px;
 
     .profile-heads {
-        width: 100%;
-        height: 47px;
-        padding:14px 16px;
-        display:flex;
-        gap:16px;
+      width: 100%;
+      height: 47px;
+      padding: 14px 16px;
+      display: flex;
+      gap: 16px;
 
-        h5{
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
-            color: rgba(0, 0, 0, 0.8);
-            }
-                
-                
-                
-         
-            
-
-
-
+      h5 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.8);
+      }
     }
     .profile-heads-logout {
-        display:flex;
-        gap:16px;
-        width: 100%;
-        height: 47px;
-        padding:14px 16px;
-        img{color: #A50D00;}
-        h5{
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
-            color: #A50D00;
-            
-  }
-}
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      height: 47px;
+      padding: 14px 16px;
+      img {
+        color: #a50d00;
+      }
+      h5 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #a50d00;
+      }
+    }
   }
 }

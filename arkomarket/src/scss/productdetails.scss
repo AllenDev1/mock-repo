@@ -51,6 +51,20 @@
           display: flex;
           .nav-link {
             padding: 0px 1rem;
+            .heart-btn {
+              height: 22px;
+              width: 24.644760131835938px;
+              left: 48px;
+              top: 1px;
+              border-radius: 0px;
+            }
+            .share-btn {
+              height: 21.023591995239258px;
+              width: 19.518817901611328px;
+              left: 1.48095703125px;
+              top: 1.4764094352722168px;
+              border-radius: 0px;
+            }
           }
         }
       }
@@ -89,9 +103,8 @@
             letter-spacing: 0em;
             text-align: left;
           }
-          .quality:hover{
+          .quality:hover {
             outline: 0 !important;
-
           }
         }
       }
@@ -235,7 +248,7 @@
               padding: 0%;
               margin: 0%;
             }
-            h4:hover{
+            h4:hover {
               text-decoration: underline;
             }
             .member-since {
@@ -370,8 +383,7 @@
       letter-spacing: 0em;
     }
     button:hover {
-      background: #0064C9;
-
+      background: #0064c9;
     }
   }
 }
@@ -403,10 +415,8 @@
       color: #ffffff;
     }
     button:hover {
-      background: #0064C9;
-
+      background: #0064c9;
     }
-   
   }
   .comment-desc {
     display: flex;

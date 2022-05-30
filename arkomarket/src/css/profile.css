@@ -100,9 +100,13 @@
 }
 
 .saved-ads img {
-  height: 13.062501907348633px;
-  color: rgba(0, 0, 0, 0.5);
-  margin-top: 5px;
+  height: 14.062501907348633px;
+width: 15.753042221069336px;
+left: 1.123046875px;
+top: 2.25px;
+border-radius: 0px;
+
+  margin-top: 1px;
 }
 
 .user-ads img {
