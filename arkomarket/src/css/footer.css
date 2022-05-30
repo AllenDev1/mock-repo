@@ -47,3 +47,7 @@ footer {
 .Below-footer-items-right p{
     margin-right: 9px;
 }
+.nav-link:hover{
+  text-decoration: underline!important;
+
+}

@@ -11,6 +11,7 @@ import eye from "../Asset/eye.svg";
 import { NavLink } from "react-router-dom";
 import NavBar from "../component/nav";
 import "../js/new.js";
+
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -167,8 +168,28 @@ const Productdetails = () => {
                   <div id="comment-sec">
                     <div className="comment-container">
                       <div className="comment-input">
-                        <input></input>
+                        <input
+                        placeholder="Type comment...."></input>
                         <button type="button">Comment</button>
+                      </div>
+                      <div className="comment-view">
+                        <img/>
+                        <div className="comment-desc">
+                          <img src="https://dragonball.guru/wp-content/uploads/2021/01/goku-dragon-ball-guru.jpg"
+                      alt=".user"/>
+                      <div className="commenter-details">
+                        <div className="commenter-name">
+                          Jane Cooper
+                        </div>
+                        <div className="comment-description">
+                        I found a 2007 study on effects of hand sanitizers on blood  effects of hand sanitizers effects of hand sanitizers on blood  effects o alcohol level.
+                        </div>
+                        <div className="comment-time">
+                        21h ago
+                        </div>
+                        </div>
+                        </div>
+                       
                       </div>
                     </div>
                   </div>
