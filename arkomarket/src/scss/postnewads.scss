@@ -59,6 +59,7 @@
           color: rgba(0, 0, 0, 0.5);
           background-image: url(../Asset/select-icon.svg);
         }
+      
         label {
           font-style: normal;
           font-weight: 400;
@@ -548,4 +549,20 @@
       }
     }
   }
+}
+.form-select:hover{
+  border: 2px solid #00000033 !important;
+  background:url(../Asset/select-icon.svg) ;
+  background-repeat: no-repeat;
+  background-position: right .75rem center !important;
+  background-color:  #0000000D !important;
+  
+}
+input:hover{
+  background-color:  #0000000D !important;
+  outline: 2px solid #00000033 !important;
+}
+textarea:hover{
+  background-color:  #0000000D !important;
+  outline: 2px solid #00000033 !important;
 }
