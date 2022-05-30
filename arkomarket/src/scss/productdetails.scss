@@ -231,6 +231,9 @@
               padding: 0%;
               margin: 0%;
             }
+            h4:hover{
+              text-decoration: underline;
+            }
             .member-since {
               font-size: 14px;
               font-weight: 400;
@@ -276,6 +279,10 @@
             padding: 10px, 24px, 10px, 24px;
             background-color: #2f8f6f;
             color: #ffffff;
+          }
+          .call-seller-green-btn:hover {
+            outline: none;
+            background-color: #2d715a;
           }
         }
         .view-seller-ads-link {
@@ -358,6 +365,9 @@
       line-height: 19px;
       letter-spacing: 0em;
     }
+    button:hover {
+      background:#3e6fa0;
+    }
   }
 }
 .comment-container {
@@ -387,6 +397,10 @@
       line-height: 17px;
       color: #ffffff;
     }
+    button:hover {
+      background:#3e6fa0;
+    }
+   
   }
   .comment-desc {
     display: flex;

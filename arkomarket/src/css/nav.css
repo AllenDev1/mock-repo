@@ -99,7 +99,9 @@ body {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   z-index: 100;
-  margin-top: 5px;
+  margin-top:5px;
+  
+  
 }
 
 .dropdown-content a {
@@ -111,8 +113,10 @@ body {
   gap: 10px;
   width: auto;
   font-weight: 500;
-  font-size: 13px;
-  color: rgba(0, 0, 0, 0.5);
+font-size: 13px;
+color: rgba(0, 0, 0, 0.5);
+
+
 }
 
 .dropdown-content a:hover {
@@ -125,6 +129,16 @@ body {
 
 .total-hover:hover .dropdown-content {
   display: block;
+ 
+
+}
+.drop-r{
+  right: 0;
+}
+.total-hover:hover .drop-c {
+  margin-right:1111px;
+ 
+
 }
 
 .dropdown-notification {

@@ -6,11 +6,6 @@ import Install from "../Asset/install.svg";
 import Logout from "../Asset/logout.svg";
 import Setting from "../Asset/setting.svg";
 
-
-
-
-
-
 const Profiledetails = () => {
   return (
     <div className="profile-cont">
@@ -19,7 +14,6 @@ const Profiledetails = () => {
                 <img src={Profile}/>
                 <h5>My Profile</h5>
             </div>
-
             <div className="profile-heads">
                 <img src={Setting}/>
                 <h5>Setting</h5>

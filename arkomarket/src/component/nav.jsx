@@ -194,7 +194,7 @@ const NavBar = () => {
             <div className="total-hover">
               <NavLink href="#">
                 Pets
-                <div class="dropdown-content">
+                <div class="dropdown-content drop-r">
                   <a href="#">All</a>
                   <a href="#">Fishes & Aquarium</a>
                   <a href="#">Pet foods & Accessories</a>
@@ -207,7 +207,7 @@ const NavBar = () => {
             <div className="total-hover">
               <NavLink href="#">
                 Others
-                <div class="dropdown-content"   align={{ md: 'end' }}>
+                <div class="dropdown-content drop-r">
                   <a href="#">All</a>
                   <a href="#">Arts & Handicrafts</a>
                   <a href="#">Antique Items</a>
