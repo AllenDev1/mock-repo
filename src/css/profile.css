@@ -1,0 +1,120 @@
+* .Main-profile {
+  max-width: 1090px;
+  
+}
+
+.profile-box {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 27px 36px;
+  height: 66px;
+}
+
+.Mem-name p {
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.mem-time p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.profile-discription p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 19px;
+}
+
+.profile-discription {
+  width: 332px;
+  margin-top: 27px;
+}
+.profile-edit {
+  gap:12.49px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0 14px;
+  margin-left: 14px;
+  margin-top: -12px;
+}
+.profile-edit img {
+  width: 18.57px;
+  height: 20px;
+  margin-top: 5px;
+}
+.profile-share {
+  width: 15.51px;
+  height: 15.51px;
+  margin-top: -11px;
+}
+.profile-edit p {
+  margin-top: 14px;
+}
+.profile-share img {
+  margin-top: 5px;
+  margin-left: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.profile-image {
+  height: 98px !important;
+  margin-top: 43px;
+}
+.Ads-title {
+  display: inline-flex;
+  grid-gap: 35px;
+  height: 55px;
+  padding-top: 10px;
+}
+.saved-ads {
+  height: 35px;
+  display: inline-flex;
+  grid-gap: 11.25px;
+  padding: 10px;
+}
+.user-ads {
+  height: 35px;
+  display: inline-flex;
+  grid-gap: 11.25px;
+  padding: 10px;
+}
+
+.user-ads p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.saved-ads p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.saved-ads img {
+  height: 13.062501907348633px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+}
+
+.user-ads img {
+  height: 21.062501907348633px;
+  width: 16.753042221069336px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.title-c {
+  width: 100%;
+  height: 55px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+  margin-top: 62px;
+  height: 55px;
+  margin-bottom: 36px;
+}

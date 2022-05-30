@@ -1,0 +1,355 @@
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex !important;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.des-product-section {
+  display: flex;
+  gap: 8px;
+  .details-comments {
+    gap: 8px 0px;
+    display: flex;
+    flex-direction: column;
+    .details-product {
+      height: auto;
+      width: 754px;
+      left: 0px;
+      top: 0px;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.15) !important;
+      .addedon-time-share-btn {
+        display: flex;
+        justify-content: space-between;
+        .time-add-product {
+          height: 15px;
+          font-size: 12px;
+          font-weight: 400;
+          width: 432px;
+          left: 0px;
+          top: 4.5px;
+          gap: 16px;
+          display: flex;
+          color: #00000099;
+          justify-content: flex-start;
+        }
+        .share-btn-product {
+          top: 4.5px;
+          display: flex;
+          .nav-link {
+            padding: 0px 1rem;
+          }
+        }
+      }
+      .title-price {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        .title {
+          h2 {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+        .price {
+          display: flex;
+          gap: 16px;
+          h3 {
+            font-size: 24px !important;
+            font-weight: 700;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #000000cc !important;
+          }
+
+          .quality {
+            border: 1px solid rgba(0, 0, 0, 0.6) !important;
+            border-radius: 4px;
+            color: #000000cc !important;
+            padding: 0px 10px;
+            height: 30px;
+            font-size: 14px !important;
+            font-weight: 500;
+            // line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+      }
+      .details-sec {
+        h2 {
+          color: #000000cc;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        .key-value-data {
+          display: grid;
+          .owner {
+            display: flex;
+            height: 17px;
+            gap: 24px;
+            margin: 4px 0px;
+            .owner-title {
+              width: 95px;
+              color: #00000080;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 17px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+            .owner-name {
+              color: #000000cc;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 17px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    .des-comment-sec {
+      height: auto;
+      width: 754px;
+      left: 0px;
+      top: 350px;
+      border-radius: 4px;
+
+      .header-comment-des {
+        height: 58px;
+        width: 754px;
+        left: 0px;
+        gap: 48px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        a {
+          color: #00000080;
+          padding: 0px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+          letter-spacing: 0em;
+          height: 33px;
+        }
+        a:hover {
+          color: #000000cc;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+          letter-spacing: 0em;
+          padding: 0%;
+          cursor: pointer;
+        }
+        a.selected{
+          color: #000000cc;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+          letter-spacing: 0em;
+          padding: 0%;
+          border-bottom: 2px solid #0071E2 ;
+        }
+      }
+      .des-and-comment-sec {
+        height: 100%;
+        .dec-sec {
+          text {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #000000cc;
+          }
+        }
+      }
+    }
+  }
+  .user-map-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .user-details-sec {
+      width: 328px;
+      left: 0px;
+      top: 0px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      padding: 20px;
+      .seller-details {
+        display: flex;
+        flex-direction: column;
+        text {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #000000cc;
+        }
+        .seller-profile-brief {
+          display: flex;
+          gap: 28px;
+          .user-img {
+            img {
+              border-radius: 100px;
+              width: 90px;
+              height: 90px;
+            }
+          }
+          .profile-brief {
+            display: grid;
+            width: 100%;
+            margin-top: 35px;
+            h4 {
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 19px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: #000000cc;
+              padding: 0%;
+              margin: 0%;
+            }
+            .member-since {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 1px;
+              letter-spacing: 0em;
+              text-align: left;
+
+              color: #000000cc;
+            }
+            .last-active {
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 15px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: #00000099;
+              margin-top: 8px;
+              display: flex;
+              gap: 8px;
+              .dot {
+                height: 8px;
+                width: 8px;
+
+                margin-top: 4px;
+                border: 1px solid #c4c4c4;
+                border-radius: 100px;
+                background-color: #c4c4c4;
+              }
+            }
+          }
+        }
+        .call-seller-btn {
+          margin-top: 19.14px;
+          display: flex;
+          gap: 20.25px;
+          .call-seller-green-btn {
+            height: 39px;
+            width: 141px;
+            left: 0px;
+            top: 0.1399993896484375px;
+            border-radius: 4px;
+            border: none;
+            padding: 10px, 24px, 10px, 24px;
+            background-color: #2f8f6f;
+            color: #ffffff;
+          }
+        }
+        .view-seller-ads-link {
+          .nav-link {
+            color: #00000099;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding: 20.14px 0 0 0px;
+          }
+        }
+      }
+    }
+    .loc-map-sec {
+      height: auto;
+      width: 327px;
+      left: 0px;
+      top: 0px;
+      border-radius: 4px;
+      padding: 24px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      .location-text {
+        h4 {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #000000cc;
+        }
+        .location-details-text {
+          gap: 8px;
+          display: flex;
+          text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #00000099;
+          }
+        }
+      }
+    }
+  }
+}
+.similar-Ads {
+  margin-bottom: 30px;
+  margin-top: 50px;
+  width: 100%;
+  h4 {
+    width: 137px;
+    height: 29px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 24px;
+  }
+  .see-more-btn {
+    margin-top: 40.5px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    button {
+      height: 39px;
+      width: 120px;
+      left: 661px;
+      top: 2158px;
+      border-radius: 4px;
+      padding: 10px, 20px, 10px, 20px;
+      background: #0071e2;
+      border: none;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      letter-spacing: 0em;
+    }
+  }
+}
+.comment-container{
+  
+
+}
