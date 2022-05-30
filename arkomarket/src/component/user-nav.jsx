@@ -1,17 +1,23 @@
 import React from "react";
 import "../css/filter.css";
 import "../css/nav.css";
+import "../scss/navbar.scss";
 import NotificaionIcon from "../Asset/notification.svg";
 import logo from "../Asset/ArkoMarket.svg";
 import userIcon from "../Asset/user.svg";
+import plus from "../Asset/plus.svg"
 import Navbar from "react-bootstrap/Navbar";
 import "../scss/navbar.scss";
 import { Container, Nav, Form, FormControl } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 const UserNav = () => {
-  let navigate = useNavigate();
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = `/post-new-ads`; 
+    navigate(path);
+  }
   return (
     <>
       <Navbar
@@ -38,7 +44,7 @@ const UserNav = () => {
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav float-end ">
-            <Nav className="me-auto float-end">
+            <Nav className="me-auto float-end user-nav-btn">
               <NavLink href="#" className="notificationicon">
                 <img src={NotificaionIcon} alt="notification.jpeg" />
               </NavLink>
@@ -46,9 +52,9 @@ const UserNav = () => {
                 <img src={userIcon} alt="user" className="px-2" />
               </NavLink>
 
-              <NavLink className="new-ads-btn" type="button" href="post-new-ads">
-                New Ads
-              </NavLink>
+              <button className="new-ads-btn user-new-ads-btn" type="button" onClick={routeChange}>
+               <img src={plus} alt="" srcset="" /> New Ads
+              </button>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -1,25 +1,41 @@
-.sidebar{
-    .sidebarWrapper{
-        .sidebarMenu{
-            .sidebarList{
-                padding: 0px;
-                gap: 20px;
-                display: flex;
-                flex-direction: column;
-                a{
-                    padding:  0% ;
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 19px;
-                    letter-spacing: 0em;
-                    text-align: left;
-                    color: #00000080;
-                    text-decoration: none;
-                }
-            }
+.sidebar {
+  .sidebarWrapper {
+    .sidebarMenu {
+      .sidebarList {
+        padding: 0px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        a {
+          padding: 0%;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #00000080;
+          text-decoration: none;
         }
+        a:hover {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #000000cc;
+        }
+        a:focus {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #000000cc;
+        }
+      }
     }
+  }
 }
-.main-sec-user-profile{
-    display: flex;
+.main-sec-user-profile {
+  display: flex;
 }

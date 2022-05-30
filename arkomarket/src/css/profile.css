@@ -1,6 +1,5 @@
 * .Main-profile {
   max-width: 1090px;
-  
 }
 
 .profile-box {
@@ -34,7 +33,7 @@
   margin-top: 27px;
 }
 .profile-edit {
-  gap:12.49px;
+  gap: 12.49px;
   height: 32px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -44,6 +43,10 @@
   padding: 0 14px;
   margin-left: 14px;
   margin-top: -12px;
+}
+.profile-edit:hover {
+  background: rgba(0, 0, 0, 0.05);
+  outline: 2px solid rgba(0, 0, 0, 0.3);
 }
 .profile-edit img {
   width: 18.57px;
@@ -101,10 +104,10 @@
 
 .saved-ads img {
   height: 14.062501907348633px;
-width: 15.753042221069336px;
-left: 1.123046875px;
-top: 2.25px;
-border-radius: 0px;
+  width: 15.753042221069336px;
+  left: 1.123046875px;
+  top: 2.25px;
+  border-radius: 0px;
 
   margin-top: 1px;
 }

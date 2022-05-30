@@ -33,6 +33,10 @@ body {
   color: #000000cc !important;
   padding: 10px 0px !important;
 }
+.loginbtnNav:hover{
+  text-decoration: underline !important;
+ 
+}
 .freeadsbtn {
   border: 1px solid rgba(0, 0, 0, 0.8);
   color: rgba(0, 0, 0, 0.8);
@@ -129,4 +133,10 @@ body {
 
 .drop-r {
   right: 0;
+}
+.user-new-ads-btn:hover{
+  text-decoration: none !important;
+}
+.new-ads-btn:hover{
+  text-decoration: none !important;
 }
