@@ -30,9 +30,11 @@ line-height: 19px;
 color: rgba(0, 0, 0, 0.5);
 }
 .filter-buttons button:hover{
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.03);
     border-radius: 4px;
-    color: #FFFFFF;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+border:1px solid rgba(0, 0, 0, 0.1);
+   
 
 }
 .sort-section .form-select{
@@ -60,8 +62,8 @@ background-size: 12.98px;
 background-position-x: 90%;
 background-position-y: 15px;
 z-index: 97;
-    outline: 1px solid rgba(0, 0, 0, 0.1);
-    border:1px solid rgba(0, 0, 0, 0.1)
+outline: 1px solid rgba(0, 0, 0, 0.1);
+border:1px solid rgba(0, 0, 0, 0.1);
     
     }
 .Card{
