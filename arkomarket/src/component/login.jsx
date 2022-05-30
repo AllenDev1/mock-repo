@@ -1,6 +1,5 @@
 import React from "react";
 import "../scss/login.scss";
-import Cross from "../Asset/Cross.svg";
 import Google from "../Asset/Google.svg";
 import Facebook from "../Asset/Facebook-1.svg";
 

@@ -21,30 +21,60 @@
       width: 332px;
       margin-top: 24px;
       margin-bottom: 24px;
+      row-gap: 8px;
+      display: flex;
+      flex-direction: column;
       img {
         width: 20px;
         height: 20px;
-        margin: 9px 16px;
       }
       .google-login {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 16px;
+        gap: 14px;
+
+        width: 332px;
         height: 40px;
+
         background: rgba(0, 0, 0, 0.05);
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 4px;
-        margin-bottom: 8px;
+        a {
+          display: flex;
+          gap: 16.12px;
+          height: 100%;
+          h5 {
+            font-weight: 500;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.8);
+          }
+        }
       }
       .facebook-login {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 16px;
+        gap: 14px;
+
+        width: 332px;
         height: 40px;
+
         background: rgba(0, 0, 0, 0.05);
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 4px;
-      }
-      h5 {
-        font-weight: 500;
-        font-size: 16px;
-        color: rgba(0, 0, 0, 0.8);
-        margin-top: -31.5px;
-        margin-left: 50px;
+        a {
+          display: flex;
+          gap: 16.12px;
+          height: 100%;
+          h5 {
+            font-weight: 500;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.8);
+          }
+        }
       }
     }
     p {
@@ -81,12 +111,25 @@
 
       background: #ffffff;
       border-radius: 4px;
+      .modal-header{
+        .btn-close{
+          background-image: url(../Asset/Cross.svg);
+        }
+        .btn-close:hover{
+          color: rgba(0, 0, 0, 1) !important;
+          opacity: 1;
+        }
+        .btn-close:focus{
+          box-shadow: none;
+          opacity: 1;
+        }
+      }
     }
   }
 }
 .modal {
   background: #000000bf;
 }
-.login-popup-modal{
+.login-popup-modal {
   display: none;
 }

@@ -5,7 +5,18 @@
   justify-content: center;
   border-radius: 4px;
 }
-
+.carousel {
+  .carousel-control-prev {
+    .carousel-control-prev-icon {
+      background-image: url(../Asset/leftarrow.svg);
+    }
+  }
+  .carousel-control-next {
+    .carousel-control-next-icon {
+      background-image: url(../Asset/rightarrow.svg);
+    }
+  }
+}
 .des-product-section {
   display: flex;
   gap: 8px;
@@ -379,38 +390,37 @@
   }
   .comment-desc {
     display: flex;
-    gap:16px;
-    margin-top:32px;
+    gap: 16px;
+    margin-top: 32px;
     img {
       width: 40px;
       height: 40px;
       border-radius: 100px;
     }
-    .commenter-details{
+    .commenter-details {
       margin-top: -4px;
 
-    .commenter-name {
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 17px;
-      color: rgba(0, 0, 0, 0.8);
-      
+      .commenter-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+      .comment-description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(0, 0, 0, 0.8);
+        margin-top: 8px;
+        width: 606px;
+      }
+      .comment-time {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        margin-top: 8px;
+      }
     }
-    .comment-description {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      color: rgba(0, 0, 0, 0.8);
-      margin-top: 8px;
-      width: 606px;
-    }
-    .comment-time {
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 15px;
-      color: rgba(0, 0, 0, 0.5);
-      margin-top: 8px;
-    }
-  }
   }
 }

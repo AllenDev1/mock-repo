@@ -18,7 +18,7 @@ const Sort = () => {
               </div>
               <div className="sort-section">
                 <Form.Select aria-label="Default select ">
-                  <option> Sort By </option>
+                  <option disabled> Sort By </option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>

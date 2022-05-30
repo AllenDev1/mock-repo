@@ -56,3 +56,39 @@
   max-width: 1090px !important;
   display: flex;
 }
+.dropdown-notification {
+  .btn {
+    background-color: transparent;
+    border: none;
+    appearance: none;
+    padding: 0px !important;
+    line-height: 0px;
+  }
+  .dropdown-menu{
+    padding: 0px;
+  }
+}
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: transparent !important;
+  border: none;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.btn-check:active + .btn-primary:focus,
+.btn-check:checked + .btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-check:focus+.btn, .btn:focus{
+  box-shadow: none;
+}
+.dropdown-menu[data-bs-popper]{
+  margin-top: 9px;
+}

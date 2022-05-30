@@ -10,6 +10,8 @@ import { Container, Nav, Form, FormControl } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import { NavLink } from "react-bootstrap";
 import Login from "./login.jsx";
+import Generalnotification from "./Generalnotifi";
+import Dropdown from 'react-bootstrap/Dropdown'
 const NavBar = () => {
   const [show, setShow] = useState(false);
   return (
@@ -35,7 +37,15 @@ const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav float-end ">
             <Nav className="me-auto float-end">
               <NavLink href="#" className="notificationicon">
-                <img src={NotificaionIcon} alt="notification.jpeg" />
+                <Dropdown className="dropdown-notification" align={{ md: 'end' }}>
+                  <Dropdown.Toggle  >
+                    <img src={NotificaionIcon} alt="notification.jpeg" />
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Generalnotification />
+                  </Dropdown.Menu>
+                </Dropdown>
               </NavLink>
               <NavLink
                 href="#"
@@ -197,7 +207,7 @@ const NavBar = () => {
             <div className="total-hover">
               <NavLink href="#">
                 Others
-                <div class="dropdown-content">
+                <div class="dropdown-content"   align={{ md: 'end' }}>
                   <a href="#">All</a>
                   <a href="#">Arts & Handicrafts</a>
                   <a href="#">Antique Items</a>
