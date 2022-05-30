@@ -11,7 +11,7 @@ img {
 input:focus-visible {
   outline:  2px solid !important;
   box-shadow:1px (0, 0, 0, 0.6) ;
-/* border-color: !important ; */
+  border-radius: 4px !important;
  
 
 }
@@ -29,4 +29,17 @@ input:-internal-autofill-selected{
 }
 .dropdown-button:focus{
     border-color: rgba(0, 0, 0, 0.6) !important;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  background-size: 12px;
+  width: 15px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-image:url(../Asset/Cross.svg);
+  cursor:pointer;
+
+
+
+
 }
