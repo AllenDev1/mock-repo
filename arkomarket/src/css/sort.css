@@ -25,10 +25,13 @@
   line-height: 19px;
   color: rgba(0, 0, 0, 0.5);
 }
-.filter-buttons button:hover {
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 4px;
-  color: #ffffff;
+.filter-buttons button:hover{
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+border:1px solid rgba(0, 0, 0, 0.1);
+   
+
 }
 .sort-section .form-select {
   width: 192px;
