@@ -9,8 +9,7 @@ img {
   object-fit: cover !important;
 }
 input:focus-visible {
-  outline: none !important;
-  border: 2px solid  !important;
+  outline:  2px solid !important;
   box-shadow:1px (0, 0, 0, 0.6) ;
 /* border-color: !important ; */
  
