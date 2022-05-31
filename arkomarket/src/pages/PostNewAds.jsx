@@ -58,6 +58,7 @@ const PostNewAds = () => {
             <h3>Upload upto 12 images</h3>
             <div className="hold-photos">
               <input
+              className="focus-propotities-for-input-tag"
                 ref={inputFile}
                 id="file"
                 type="file"
@@ -74,7 +75,7 @@ const PostNewAds = () => {
               <div className="title-discription-holder">
                 <div className="title-class">
                   <input
-                    className="title-sup"
+                    className="title-sup focus-propotities-for-input-tag"
                     type="text"
                     name="LName"
                     placeholder="Title"
@@ -96,7 +97,7 @@ const PostNewAds = () => {
                 <h3>Add Price</h3>
                 <div className="add-pri">
                   <input
-                    className="Price-add"
+                    className="Price-add focus-propotities-for-input-tag"
                     type="text"
                     name="LName"
                     placeholder="0"
@@ -115,7 +116,7 @@ const PostNewAds = () => {
                 </div>
                 <div className="add-city">
                   <input
-                    className="add-city"
+                    className="add-city focus-propotities-for-input-tag"
                     type="text"
                     name="LName"
                     placeholder="City"
@@ -128,10 +129,10 @@ const PostNewAds = () => {
             <h4>Check Contact Info</h4>
             <div className="check-contact-info-form">
               <div className="firstName-lastName">
-                <input type="text" placeholder="First Name" />
-                <input type="text" placeholder="Last Name" />
+                <input type="text" placeholder="First Name" className="focus-propotities-for-input-tag" />
+                <input type="text" placeholder="Last Name" className="focus-propotities-for-input-tag"/>
               </div>
-              <input type="email address" placeholder="email address" />
+              <input type="email address" placeholder="email address" className="focus-propotities-for-input-tag" />
               <PhoneInput
                 layout="first"
                 withShadow

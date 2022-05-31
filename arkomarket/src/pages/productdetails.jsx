@@ -169,6 +169,7 @@ const Productdetails = () => {
                     <div className="comment-container">
                       <div className="comment-input">
                         <input
+                        className="focus-propotities-for-input-tag"
                         placeholder="Type comment...."></input>
                         <button type="button">Comment</button>
                       </div>

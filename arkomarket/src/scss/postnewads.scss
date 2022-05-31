@@ -443,6 +443,16 @@
           border: 1px solid rgba(0, 0, 0, 0.1);
           border-radius: 4px;
         }
+        input:hover {
+          background-color: rgba(0, 0, 0, 0.03) !important;
+          outline: 1px solid #00000033 !important;
+          border: #00000033;
+        }
+        input:focus {
+          background-color: #ffffff !important;
+          outline: 2px solid rgba(0, 0, 0, 0.8) !important;
+          border: rgba(0, 0, 0, 0.8) !important;
+        }
       }
     }
     .firstName-lastName {
@@ -549,13 +559,13 @@
 }
 .form-select:hover {
   outline: 1px solid #00000033 !important;
-  background: url(../Asset/select-icon.svg);
+  background-image: url(../Asset/select-icon.svg);
   background-repeat: no-repeat;
   background-position: right 0.75rem center !important;
   background-color: rgba(0, 0, 0, 0.03) !important;
   border: #00000033;
 }
-input:hover {
+.focus-propotities-for-input-tag:hover {
   background-color: rgba(0, 0, 0, 0.03) !important;
   outline: 1px solid #00000033 !important;
   border: #00000033;
@@ -568,18 +578,18 @@ textarea:hover {
 }
 
 textarea:focus {
-  background: #ffffff !important;
+  background-color: #ffffff !important;
   outline: 2px solid rgba(0, 0, 0, 0.8) !important;
   border-color: rgba(0, 0, 0, 0.8) !important;
   border: none !important;
 }
-input:focus {
-  background: #ffffff !important;
+.focus-propotities-for-input-tag:focus {
+  background-color: #ffffff !important;
   outline: 2px solid rgba(0, 0, 0, 0.8) !important;
   border: rgba(0, 0, 0, 0.8) !important;
 }
 .form-select:focus {
-  background: #ffffff !important;
+  background-color: #ffffff !important;
   outline: 2px solid rgba(0, 0, 0, 0.8) !important;
   border: rgba(0, 0, 0, 0.8) !important;
 }

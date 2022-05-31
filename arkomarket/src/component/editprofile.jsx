@@ -23,7 +23,7 @@ const Editprofile = () => {
                   <label htmlFor="inputEmail4">First Name</label>
                   <input
                     type="email"
-                    className="form-control"
+                    className="form-control focus-propotities-for-input-tag"
                     id="inputEmail4"
                     placeholder="First Name"
                   />
@@ -32,7 +32,7 @@ const Editprofile = () => {
                   <label htmlFor="inputPassword4">Last Name</label>
                   <input
                     type="password"
-                    className="form-control"
+                    className="form-control focus-propotities-for-input-tag"
                     id="inputPassword4"
                     placeholder="Last Name"
                   />
@@ -42,7 +42,7 @@ const Editprofile = () => {
                 <label htmlFor="inputAddress">Email Address</label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control focus-propotities-for-input-tag"
                   id="inputAddress"
                   placeholder="example@example.com"
                 />
@@ -86,6 +86,7 @@ const Editprofile = () => {
                 type="file"
                 style={{ display: "none" }}
                 multiple="{false}"
+                className="focus-propotities-for-input-tag"
               />
 
               <button onClick={handleFileUpload}>
