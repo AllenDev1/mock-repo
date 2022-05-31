@@ -10,11 +10,13 @@ const Usernotification = () => {
           <div className="notification-update">
             <div className="notification-update-Head">
               <div className="notification-update-details">
-                <h5>Receive updates & Offers</h5>
+                <h5>Comments</h5>
               </div>
               <div className="notification-update-toggel">
                 <div class="form-check form-switch">
-                <p>Get notified for special offers, updates and more</p>
+                <p>Get updates if anybody comments on your ad.
+
+</p>
                   <input
                     class="form-check-input"
                     type="checkbox"
@@ -30,11 +32,30 @@ const Usernotification = () => {
 
           <div className="notification-recommendation">
             <div className="notification-update-recommendations">
-              <h5>Recommendations</h5>
+              <h5>Views </h5>
             </div>
             <div className="notification-recommendation-toggel">
               <div class="form-check form-switch">
-              <p>Receive recommendations based on your activity</p>
+              <p>Receive updates on every 1000 views on your ad.</p>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div className="Expiry-recommendation">
+            <div className="expiry-update-recommendations">
+              <h5>Expire</h5>
+            </div>
+            <div className="expiry-recommendation-toggel">
+              <div class="form-check form-switch">
+              <p>Get updates when your ad about to expire.</p>
                 <input
                   class="form-check-input"
                   type="checkbox"

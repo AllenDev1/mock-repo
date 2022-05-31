@@ -1,16 +1,16 @@
-.form-check{
-  width:100%;
+.form-check {
+  width: 100%;
   display: inline-flex;
   justify-content: space-between;
   padding-left: 0px;
-  
-  p{
- 
-  font-weight: 400;
-font-size: 12px;
-line-height: 15px;
-color: rgba(0, 0, 0, 0.8);
-}
+
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    width:300px;
+  }
 }
 .user-notification-tab {
   box-sizing: border-box;
@@ -24,65 +24,80 @@ color: rgba(0, 0, 0, 0.8);
   gap: 16px;
 
   width: 818px;
-  height: 246px;
+  height: auto;
 
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  /* Inside auto layout */
+  /* Inside auto layout*/
 
   flex: none;
   order: 1;
   flex-grow: 0;
 
-.notification-update{
-  
-width: 754px;
-height: 68px;
-margin-bottom:8px;
-background: #FFFFFF;
-border: 1px solid rgba(0, 0, 0, 0.1);
-border-radius: 4px;
-padding:14px 16px;
+  .notification-update {
+    width: 754px;
+    height: 68px;
+    margin-bottom: 8px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 14px 16px;
 
-.notification-update-details{
-  margin-bottom:8px;
-}
-}
-.form-switch .form-check-input {
-  margin-left: 24.5em;
-  margin-top: -14px;
-  width: 37px;
-  height: 23.12px;
+    .notification-update-details {
+      margin-bottom: 8px;
+    }
+  }
+  .form-switch .form-check-input {
+    margin-left: 24.5em;
+    margin-top: -14px;
+    width: 37px;
+    height: 23.12px;
+  }
+  .form-switch .form-check-input:focus {
+    color: none !important;
+    border: none !important;
+    background-color: none !important;
+  }
 
-}
-.notification-recommendation{
-width: 754px;
-height: 68px;
+  .notification-recommendation {
+    width: 754px;
+    height: 68px;
+    margin-bottom: 8px;
 
-background: #FFFFFF;
-border: 1px solid rgba(0, 0, 0, 0.1);
-border-radius: 4px;
-padding:14px 16px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 14px 16px;
 
-.notification-recommendation-toggel{
-  display:inline-flex;
-  width: 100%;
-  justify-content: space-between;
-
-}
-
-}
+    .notification-recommendation-toggel {
+      display: inline-flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
 
   h5 {
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     color: rgba(0, 0, 0, 0.8);
-  
   }
+  .Expiry-recommendation {
+    width: 754px;
+    height: 68px;
+    margin-bottom: 8px;
 
-
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 14px 16px;
+    h5 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
 }
-
