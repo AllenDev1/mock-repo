@@ -59,7 +59,7 @@
           color: rgba(0, 0, 0, 0.5);
           background-image: url(../Asset/select-icon.svg);
         }
-      
+
         label {
           font-style: normal;
           font-weight: 400;
@@ -360,8 +360,7 @@
     text-align: center;
   }
   button:hover {
-    background: #0064C9;
-
+    background: #0064c9;
   }
   .check-contact-info {
     box-sizing: border-box;
@@ -444,7 +443,6 @@
           border: 1px solid rgba(0, 0, 0, 0.1);
           border-radius: 4px;
         }
-       
       }
     }
     .firstName-lastName {
@@ -523,9 +521,8 @@
         line-height: 19px;
         color: #ffffff;
       }
-      button:hover{
-        background: #0064C9;
-
+      button:hover {
+        background: #0064c9;
       }
     }
     .check-box-policy {
@@ -550,19 +547,37 @@
     }
   }
 }
-.form-select:hover{
-  border: 2px solid #00000033 !important;
-  background:url(../Asset/select-icon.svg) ;
+.form-select:hover {
+  outline: 1px solid #00000033 !important;
+  background: url(../Asset/select-icon.svg);
   background-repeat: no-repeat;
-  background-position: right .75rem center !important;
-  background-color:  #0000000D !important;
-  
+  background-position: right 0.75rem center !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  border: #00000033;
 }
-input:hover{
-  background-color:  #0000000D !important;
-  outline: 2px solid #00000033 !important;
+input:hover {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  outline: 1px solid #00000033 !important;
+  border: #00000033;
 }
-textarea:hover{
-  background-color:  #0000000D !important;
-  outline: 2px solid #00000033 !important;
+textarea:hover {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  outline: 1px solid #00000033 !important;
+  border: #00000033;
+}
+
+textarea:focus {
+  background: #ffffff !important;
+  outline: 2px solid rgba(0, 0, 0, 0.8) !important;
+  border: rgba(0, 0, 0, 0.8) !important;
+}
+input:focus {
+  background: #ffffff !important;
+  outline: 2px solid rgba(0, 0, 0, 0.8);
+  border: rgba(0, 0, 0, 0.8) !important;
+}
+.form-select:focus {
+  background: #ffffff !important;
+  outline: 2px solid rgba(0, 0, 0, 0.8);
+  border: rgba(0, 0, 0, 0.8) !important;
 }

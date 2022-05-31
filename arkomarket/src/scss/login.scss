@@ -28,6 +28,12 @@
         width: 20px;
         height: 20px;
       }
+      .google-login:hover {
+        background: rgba(0, 0, 0, 0.05);
+        outline: 2px solid rgba(0, 0, 0, 0.3);
+        color: black;
+        text-decoration: underline !important;
+      }
       .google-login {
         display: flex;
         flex-direction: row;
@@ -51,7 +57,7 @@
             color: rgba(0, 0, 0, 0.8);
           }
         }
-        a:hover{
+        a:hover {
           color: black;
           text-decoration: underline !important;
         }
@@ -79,7 +85,7 @@
             color: rgba(0, 0, 0, 0.8);
           }
         }
-        a:hover{
+        a:hover {
           color: black;
           text-decoration: underline !important;
         }
@@ -93,9 +99,8 @@
       color: rgba(0, 0, 0, 0.8);
       width: 332px;
       height: 29.17px;
-      a:hover{
+      a:hover {
         text-decoration: underline !important;
-        
       }
     }
   }
@@ -123,15 +128,15 @@
 
       background: #ffffff;
       border-radius: 4px;
-      .modal-header{
-        .btn-close{
+      .modal-header {
+        .btn-close {
           background-image: url(../Asset/Cross.svg);
         }
-        .btn-close:hover{
+        .btn-close:hover {
           color: rgba(0, 0, 0, 1) !important;
           opacity: 1;
         }
-        .btn-close:focus{
+        .btn-close:focus {
           box-shadow: none;
           opacity: 1;
         }
