@@ -563,21 +563,23 @@ input:hover {
 textarea:hover {
   background-color: rgba(0, 0, 0, 0.03) !important;
   outline: 1px solid #00000033 !important;
-  border: #00000033;
+  border-color: #00000033;
+  border: none !important;
 }
 
 textarea:focus {
   background: #ffffff !important;
   outline: 2px solid rgba(0, 0, 0, 0.8) !important;
-  border: rgba(0, 0, 0, 0.8) !important;
+  border-color: rgba(0, 0, 0, 0.8) !important;
+  border: none !important;
 }
 input:focus {
   background: #ffffff !important;
-  outline: 2px solid rgba(0, 0, 0, 0.8);
+  outline: 2px solid rgba(0, 0, 0, 0.8) !important;
   border: rgba(0, 0, 0, 0.8) !important;
 }
 .form-select:focus {
   background: #ffffff !important;
-  outline: 2px solid rgba(0, 0, 0, 0.8);
+  outline: 2px solid rgba(0, 0, 0, 0.8) !important;
   border: rgba(0, 0, 0, 0.8) !important;
 }
