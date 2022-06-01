@@ -446,7 +446,7 @@
         input:hover {
           background-color: rgba(0, 0, 0, 0.03) !important;
           outline: 1px solid #00000033 !important;
-          border: #00000033;
+          // border: #00000033;
         }
         input:focus {
           background-color: #ffffff !important;
@@ -573,8 +573,6 @@
 textarea:hover {
   background-color: rgba(0, 0, 0, 0.03) !important;
   outline: 1px solid #00000033 !important;
-  border-color: #00000033;
-  border: none !important;
 }
 
 textarea:focus {

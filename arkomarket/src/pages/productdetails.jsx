@@ -6,13 +6,14 @@ import share from "../Asset/share.svg";
 import heart from "../Asset/heart.svg";
 import whatsapp from "../Asset/whatsapp.svg";
 import viber from "../Asset/viber.svg";
+import cross from "../Asset/whiteCross.svg";
 import fullscreen from "../Asset/fullscreen.svg";
 import location from "../Asset/location.svg";
 import eye from "../Asset/eye.svg";
 import { NavLink } from "react-router-dom";
 import NavBar from "../component/nav";
 import "../js/new.js";
-
+import Modal from 'react-bootstrap/Modal'
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -22,27 +23,43 @@ import {
 const Productdetails = () => {
   const [showDec, setShowDec] = useState(true);
   const [showComment, setComment] = useState(false);
-  function openFullscreen() {
-    var elem = document.getElementById("full-screen-image-view");
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) {
-      /* Safari */
-      elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) {
-      /* IE11 */
-      elem.msRequestFullscreen();
-    }
-  }
+  // function openFullscreen() {
+  //   var elem = document.getElementById("full-screen-image-view");
+  //   if (elem.requestFullscreen) {
+  //     elem.requestFullscreen();
+  //     document.getElementById("fullScreenCancle-btn").style.display = "block";
+  //     document.getElementById("fullScreen-btn").style.display = "none";
+  //   } else if (elem.webkitRequestFullscreen) {
+  //     /* Safari */
+  //     elem.webkitRequestFullscreen();
+  //     document.getElementById("fullScreenCancle-btn").style.display = "block";
+  //     document.getElementById("fullScreen-btn").style.display = "none";
+  //   } else if (elem.msRequestFullscreen) {
+  //     /* IE11 */
+  //     elem.msRequestFullscreen();
+  //     document.getElementById("fullScreenCancle-btn").style.display = "block";
+  //     document.getElementById("fullScreen-btn").style.display = "none";
+  //   }
+  // }
+  // function closeBtn() {
+  //   window.location.reload(false);
+  // }
+
+  const [show, setShow] = useState(false);
   return (
     <>
       <NavBar />
       <Container className="mt-4">
+      <button variant="primary" onClick={() => setShow(true)}>
+        Custom Width Modal
+      </button>
+      
+      
         <MDBCarousel
           showControls
           interval={9999999}
           id="full-screen-image-view"
-        >
+        >  <Modal show={show}>
           <MDBCarouselInner>
             <MDBCarouselItem className="active">
               <MDBCarouselElement
@@ -62,11 +79,25 @@ const Productdetails = () => {
                 alt="..."
               />
             </MDBCarouselItem>
+             {/* <button
+              onClick={openFullscreen}
+              className="fullScreen-btn"
+              id="fullScreen-btn"
+            >
+              <img src={fullscreen} alt=".fullscree" />
+            </button>
+            <button
+              onClick={closeBtn}
+              className="fullScreenCancle-btn"
+              id="fullScreenCancle-btn"
+            >
+              <img src={cross} alt=".cross" />
+            </button>  */}
           </MDBCarouselInner>
-        </MDBCarousel>
-        <button onClick={openFullscreen}>
-          <img src={fullscreen} alt=".fullscree" />
-        </button>
+          </Modal>
+        </MDBCarousel> 
+   
+     
       </Container>
 
       <Container>

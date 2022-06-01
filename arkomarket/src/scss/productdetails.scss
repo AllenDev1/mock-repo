@@ -4,14 +4,39 @@
   display: flex !important;
   justify-content: center;
   border-radius: 4px;
- width: 100%;
+  width: 100%;
   align-items: center;
   height: 100%;
 }
 .carousel {
   width: -webkit-fill-available;
-  .carousel-inner{
+  .carousel-inner {
     height: 100%;
+    .fullScreen-btn {
+      z-index: 1;
+      position: relative;
+      background-color: transparent;
+      border: none;
+      float: right;
+      padding-right: 32px;
+      padding-bottom: 32px;
+      bottom: -88%;
+    }
+    .fullScreenCancle-btn {
+      z-index: 1;
+      position: relative;
+      background-color: transparent;
+      border: none;
+      float: right;
+      display: none;
+      padding-right: 32px;
+      padding-top: 32px;
+    }
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 50%;
+    bottom: 50%;
   }
   .carousel-control-prev {
     .carousel-control-prev-icon {
