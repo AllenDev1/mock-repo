@@ -18,14 +18,14 @@ const Helpform = () => {
         <label htmlFor="inputEmail4">First Name</label>
         <input
           type="email"
-          className="form-control"
+          className="form-control focus-propotities-for-input-tag"
           id="inputEmail4"
           placeholder="First Name"
         />
       </div>
       <div className="form-group ">
         <label htmlFor="input">Last Name</label>
-        <input className="form-control" placeholder="Last Name" />
+        <input className="form-control focus-propotities-for-input-tag" placeholder="Last Name" />
       </div>
       <label htmlFor="select" className="selct-label" > Select help category</label>
       <Form.Select aria-label="Default select ">

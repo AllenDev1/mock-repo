@@ -6,6 +6,7 @@ import share from "../Asset/share.svg";
 import heart from "../Asset/heart.svg";
 import whatsapp from "../Asset/whatsapp.svg";
 import viber from "../Asset/viber.svg";
+import fullscreen from "../Asset/fullscreen.svg";
 import location from "../Asset/location.svg";
 import eye from "../Asset/eye.svg";
 import { NavLink } from "react-router-dom";
@@ -21,12 +22,27 @@ import {
 const Productdetails = () => {
   const [showDec, setShowDec] = useState(true);
   const [showComment, setComment] = useState(false);
-
+  function openFullscreen() {
+    var elem = document.getElementById("full-screen-image-view");
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+      /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  }
   return (
     <>
       <NavBar />
       <Container className="mt-4">
-        <MDBCarousel showControls interval={9999999}>
+        <MDBCarousel
+          showControls
+          interval={9999999}
+          id="full-screen-image-view"
+        >
           <MDBCarouselInner>
             <MDBCarouselItem className="active">
               <MDBCarouselElement
@@ -48,7 +64,11 @@ const Productdetails = () => {
             </MDBCarouselItem>
           </MDBCarouselInner>
         </MDBCarousel>
+        <button onClick={openFullscreen}>
+          <img src={fullscreen} alt=".fullscree" />
+        </button>
       </Container>
+
       <Container>
         <div className="des-product-section mt-3 mb-3">
           <div className="details-comments ">
@@ -64,7 +84,7 @@ const Productdetails = () => {
                       <img src={share} alt="" className="share-btn" />
                     </Nav.Link>
                     <Nav.Link>
-                      <img src={heart} alt=""  className="heart-btn"/>
+                      <img src={heart} alt="" className="heart-btn" />
                     </Nav.Link>
                   </div>
                 </div>
@@ -169,28 +189,28 @@ const Productdetails = () => {
                     <div className="comment-container">
                       <div className="comment-input">
                         <input
-                        className="focus-propotities-for-input-tag"
-                        placeholder="Type comment...."></input>
+                          className="focus-propotities-for-input-tag"
+                          placeholder="Type comment...."
+                        ></input>
                         <button type="button">Comment</button>
                       </div>
                       <div className="comment-view">
-                        <img/>
+                        <img />
                         <div className="comment-desc">
-                          <img src="https://dragonball.guru/wp-content/uploads/2021/01/goku-dragon-ball-guru.jpg"
-                      alt=".user"/>
-                      <div className="commenter-details">
-                        <div className="commenter-name">
-                          Jane Cooper
+                          <img
+                            src="https://dragonball.guru/wp-content/uploads/2021/01/goku-dragon-ball-guru.jpg"
+                            alt=".user"
+                          />
+                          <div className="commenter-details">
+                            <div className="commenter-name">Jane Cooper</div>
+                            <div className="comment-description">
+                              I found a 2007 study on effects of hand sanitizers
+                              on blood effects of hand sanitizers effects of
+                              hand sanitizers on blood effects o alcohol level.
+                            </div>
+                            <div className="comment-time">21h ago</div>
+                          </div>
                         </div>
-                        <div className="comment-description">
-                        I found a 2007 study on effects of hand sanitizers on blood  effects of hand sanitizers effects of hand sanitizers on blood  effects o alcohol level.
-                        </div>
-                        <div className="comment-time">
-                        21h ago
-                        </div>
-                        </div>
-                        </div>
-                       
                       </div>
                     </div>
                   </div>

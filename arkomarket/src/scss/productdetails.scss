@@ -4,8 +4,15 @@
   display: flex !important;
   justify-content: center;
   border-radius: 4px;
+ width: 100%;
+  align-items: center;
+  height: 100%;
 }
 .carousel {
+  width: -webkit-fill-available;
+  .carousel-inner{
+    height: 100%;
+  }
   .carousel-control-prev {
     .carousel-control-prev-icon {
       background-image: url(../Asset/leftarrow.svg);

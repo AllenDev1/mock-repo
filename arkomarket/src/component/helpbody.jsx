@@ -11,7 +11,7 @@ const Helpbody = () => {
               <FormControl
                 type="search"
                 placeholder="Search products, services"
-                className="me-2 searchBar"
+                className="me-2 searchBar focus-propotities-for-input-tag"
                 aria-label="Search"
                 aria-hidden="true"
               />

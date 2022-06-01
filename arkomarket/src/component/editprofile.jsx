@@ -31,7 +31,7 @@ const Editprofile = () => {
                 <div className="form-group ">
                   <label htmlFor="inputPassword4">Last Name</label>
                   <input
-                    type="password"
+                    type="text"
                     className="form-control focus-propotities-for-input-tag"
                     id="inputPassword4"
                     placeholder="Last Name"
