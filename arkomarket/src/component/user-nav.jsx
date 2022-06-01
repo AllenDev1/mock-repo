@@ -8,9 +8,11 @@ import userIcon from "../Asset/user.svg";
 import plus from "../Asset/plus.svg"
 import Navbar from "react-bootstrap/Navbar";
 import "../scss/navbar.scss";
-import { Container, Nav, Form, FormControl } from "react-bootstrap";
+import { Container, Nav, Form, FormControl,Dropdown } from "react-bootstrap";
 import { NavLink } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import Profiledetails from "./profiledetails";
+import Generalnotification from "./Generalnotifi"
 
 const UserNav = () => {
   let navigate = useNavigate(); 
@@ -46,10 +48,26 @@ const UserNav = () => {
           <Navbar.Collapse id="basic-navbar-nav float-end ">
             <Nav className="me-auto float-end user-nav-btn">
               <NavLink href="#" className="notificationicon">
+                <Dropdown className="dropdown-notification"  align={{ md: 'end' }}>
+                  <Dropdown.Toggle>
                 <img src={NotificaionIcon} alt="notification.jpeg" />
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                    <Generalnotification />
+                  </Dropdown.Menu>
+                </Dropdown>
               </NavLink>
               <NavLink href="#" className="loginbtnNav ">
-                <img src={userIcon} alt="user" className="px-2" />
+              <Dropdown className="dropdown-notification"  align={{ md: 'end' }}>
+                  <Dropdown.Toggle>
+                  <img src={userIcon} alt="user" className="px-2" />
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                    <Profiledetails />
+                  </Dropdown.Menu>
+                </Dropdown>
+
+                
               </NavLink>
 
               <button className="new-ads-btn user-new-ads-btn" type="button" onClick={routeChange}>

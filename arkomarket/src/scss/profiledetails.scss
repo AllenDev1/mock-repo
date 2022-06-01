@@ -9,6 +9,10 @@
   .profile-list {
     width: 210px;
     height: 236px;
+    .nav-link {
+      padding: 0px !important;
+      
+    
 
     .profile-heads {
       width: 100%;
@@ -16,6 +20,9 @@
       padding: 14px 16px;
       display: flex;
       gap: 16px;
+      .profile-pad{
+        padding-right:5px;
+      }
 
       h5 {
         font-weight: 500;
@@ -40,5 +47,10 @@
         color: #a50d00;
       }
     }
+  }
+  .nav-link:hover{
+    background: rgba(0, 0, 0, 0.05);
+    text-decoration: none!important;
+  }
   }
 }
