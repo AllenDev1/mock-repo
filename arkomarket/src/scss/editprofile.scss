@@ -165,6 +165,10 @@
           line-height: 19px;
           text-align: center;
         }
+        .nav-link:hover{
+          color: #b53529!important;
+          text-decoration: none!important;
+        }
       }
       .upload-from-sol-med {
         margin-top: 25px;
@@ -214,12 +218,17 @@
         background: #0064c9;
       }
       .nav-link {
-        color: #00000099;
+        color: rgba(0, 0, 0, 0.6);
         font-size: 14px;
         font-weight: 500;
         line-height: 17px;
         letter-spacing: 0em;
         text-align: center;
+      }
+      .nav-link:hover{
+        color: rgba(0, 0, 0, 0.8);
+        text-decoration: none!important;
+
       }
     }
   }
