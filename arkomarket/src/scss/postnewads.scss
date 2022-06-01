@@ -439,19 +439,19 @@
         input {
           width: 263px;
           height: 39px;
-
           border: 1px solid rgba(0, 0, 0, 0.1);
           border-radius: 4px;
         }
         input:hover {
-          background-color: rgba(0, 0, 0, 0.03) !important;
-          outline: 1px solid #00000033 !important;
-          // border: #00000033;
+          background-color: solid rgba(0, 0, 0, 0.03) !important;
+          outline: 1px solid rgba(0, 0, 0, 0.3) !important;
+          border: 1px solid rgba(0, 0, 0, 0.3) !important;
+          
         }
         input:focus {
           background-color: #ffffff !important;
-          outline: 2px solid rgba(0, 0, 0, 0.8) !important;
-          border: rgba(0, 0, 0, 0.8) !important;
+          outline: 1px solid rgba(0, 0, 0, 0.8) !important;
+          border: 1px solid rgba(0, 0, 0, 0.8) !important;
         }
       }
     }
@@ -563,31 +563,35 @@
   background-repeat: no-repeat;
   background-position: right 0.75rem center !important;
   background-color: rgba(0, 0, 0, 0.03) !important;
-  border: #00000033;
+  border: 1px solid rgba(0, 0, 0, 0.3)!important;
+  outline: 1px solid rgba(0, 0, 0, 0.3) !important;
+
 }
 .focus-propotities-for-input-tag:hover {
   background-color: rgba(0, 0, 0, 0.03) !important;
-  outline: 1px solid #00000033 !important;
-  border: #00000033;
+  outline: 1px solid rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(0, 0, 0, 0.3)!important;
 }
 textarea:hover {
   background-color: rgba(0, 0, 0, 0.03) !important;
-  outline: 1px solid #00000033 !important;
+  outline: 1px solid rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(0, 0, 0, 0.3)!important;
+  
 }
 
 textarea:focus {
   background-color: #ffffff !important;
-  outline: 2px solid rgba(0, 0, 0, 0.8) !important;
-  border-color: rgba(0, 0, 0, 0.8) !important;
-  border: none !important;
+  outline: 1px solid rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid rgba(0, 0, 0, 0.8) !important;
+  
 }
 .focus-propotities-for-input-tag:focus {
   background-color: #ffffff !important;
-  outline: 2px solid rgba(0, 0, 0, 0.8) !important;
-  border: rgba(0, 0, 0, 0.8) !important;
+  outline: 1px solid rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid rgba(0, 0, 0, 0.8) !important;
 }
 .form-select:focus {
   background-color: #ffffff !important;
-  outline: 2px solid rgba(0, 0, 0, 0.8) !important;
-  border: rgba(0, 0, 0, 0.8) !important;
+  outline: 1px solid rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid rgba(0, 0, 0, 0.8) !important;
 }
