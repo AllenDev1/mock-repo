@@ -32,7 +32,7 @@
         background: rgba(0, 0, 0, 0.05);
         outline: 2px solid rgba(0, 0, 0, 0.3);
         color: black;
-        text-decoration: underline !important;
+        text-decoration: none !important;
       }
       .google-login {
         display: flex;
@@ -59,8 +59,14 @@
         }
         a:hover {
           color: black;
-          text-decoration: underline !important;
+          text-decoration: none !important;
         }
+      }
+      .facebook-login:hover{
+        background: rgba(0, 0, 0, 0.05);
+        outline: 2px solid rgba(0, 0, 0, 0.3);
+        color: black;
+        text-decoration: none !important;
       }
       .facebook-login {
         display: flex;
@@ -87,7 +93,7 @@
         }
         a:hover {
           color: black;
-          text-decoration: underline !important;
+          text-decoration: none !important;
         }
       }
     }
