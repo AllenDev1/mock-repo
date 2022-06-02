@@ -13,7 +13,11 @@ import eye from "../Asset/eye.svg";
 import { NavLink } from "react-router-dom";
 import NavBar from "../component/nav";
 import "../js/new.js";
-import Modal from 'react-bootstrap/Modal'
+import ImageGallery from "react-image-gallery";
+//SCSS
+import "react-image-gallery/styles/scss/image-gallery.scss";
+
+import "react-image-gallery/styles/css/image-gallery.css";
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -23,81 +27,41 @@ import {
 const Productdetails = () => {
   const [showDec, setShowDec] = useState(true);
   const [showComment, setComment] = useState(false);
-  // function openFullscreen() {
-  //   var elem = document.getElementById("full-screen-image-view");
-  //   if (elem.requestFullscreen) {
-  //     elem.requestFullscreen();
-  //     document.getElementById("fullScreenCancle-btn").style.display = "block";
-  //     document.getElementById("fullScreen-btn").style.display = "none";
-  //   } else if (elem.webkitRequestFullscreen) {
-  //     /* Safari */
-  //     elem.webkitRequestFullscreen();
-  //     document.getElementById("fullScreenCancle-btn").style.display = "block";
-  //     document.getElementById("fullScreen-btn").style.display = "none";
-  //   } else if (elem.msRequestFullscreen) {
-  //     /* IE11 */
-  //     elem.msRequestFullscreen();
-  //     document.getElementById("fullScreenCancle-btn").style.display = "block";
-  //     document.getElementById("fullScreen-btn").style.display = "none";
-  //   }
-  // }
-  // function closeBtn() {
-  //   window.location.reload(false);
-  // }
 
-  const [show, setShow] = useState(false);
+  const images = [
+    {
+      original:
+        "https://i.pinimg.com/originals/0e/27/6b/0e276b5fa0eb38dbe3d88337ef79ee6a.jpg",
+
+    },
+    {
+      original:
+        "https://live.staticflickr.com/7393/12850134144_1465c0aee6_b.jpg",
+     
+    },
+    {
+      original:"https://www.gardeningknowhow.com/wp-content/uploads/2020/04/fruit-seed-400x300.jpg",
+    },
+    {
+      original:"https://images.theconversation.com/files/250919/original/file-20181217-185258-1gc7soo.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
+    }
+
+  ];
   return (
     <>
       <NavBar />
       <Container className="mt-4">
-      <button variant="primary" onClick={() => setShow(true)}>
-        Custom Width Modal
-      </button>
-      
-      
-        <MDBCarousel
-          showControls
-          interval={9999999}
-          id="full-screen-image-view"
-        >  <Modal show={show}>
-          <MDBCarouselInner>
-            <MDBCarouselItem className="active">
-              <MDBCarouselElement
-                src="https://i.pinimg.com/originals/0e/27/6b/0e276b5fa0eb38dbe3d88337ef79ee6a.jpg"
-                alt="..."
-              />
-            </MDBCarouselItem>
-            <MDBCarouselItem>
-              <MDBCarouselElement
-                src="https://qph.cf2.quoracdn.net/main-qimg-841fdbdf80e64d93c34b9c663eb31a76-lq"
-                alt="..."
-              />
-            </MDBCarouselItem>
-            <MDBCarouselItem>
-              <MDBCarouselElement
-                src="https://i.pinimg.com/736x/c5/6a/13/c56a13dff431d0898f9a930024951dbb.jpg"
-                alt="..."
-              />
-            </MDBCarouselItem>
-             {/* <button
-              onClick={openFullscreen}
-              className="fullScreen-btn"
-              id="fullScreen-btn"
-            >
-              <img src={fullscreen} alt=".fullscree" />
-            </button>
-            <button
-              onClick={closeBtn}
-              className="fullScreenCancle-btn"
-              id="fullScreenCancle-btn"
-            >
-              <img src={cross} alt=".cross" />
-            </button>  */}
-          </MDBCarouselInner>
-          </Modal>
-        </MDBCarousel> 
-   
-     
+        <ImageGallery
+          items={images}
+          showPlayButton={false}
+          showThumbnails={false}
+          showIndex={true}
+          flickThreshold={0.0}
+          swipeThreshold={1}
+          useTranslate3D={false}
+          useBrowserFullscreen={false}
+          slideDuration={0}
+        />
       </Container>
 
       <Container>

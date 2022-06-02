@@ -1,53 +1,56 @@
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
-  display: flex !important;
-  justify-content: center;
-  border-radius: 4px;
-  width: 100%;
-  align-items: center;
-  height: 100%;
-}
-.carousel {
+.image-gallery{
   width: -webkit-fill-available;
-  .carousel-inner {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+ 
+  .image-gallery-content{
     height: 100%;
-    .fullScreen-btn {
-      z-index: 1;
-      position: relative;
-      background-color: transparent;
-      border: none;
-      float: right;
-      padding-right: 32px;
-      padding-bottom: 32px;
-      bottom: -88%;
-    }
-    .fullScreenCancle-btn {
-      z-index: 1;
-      position: relative;
-      background-color: transparent;
-      border: none;
-      float: right;
-      display: none;
-      padding-right: 32px;
-      padding-top: 32px;
+    .image-gallery-slide-wrapper{
+      height: 100%;
+      .image-gallery-left-nav{
+        background: url(../Asset/leftarrow.svg);
+        background-repeat: no-repeat;
+       left: 30px;
+        .image-gallery-svg{
+          display: none;
+        }
+      }
+      .image-gallery-right-nav{
+        background: url(../Asset/rightarrow.svg);
+        background-repeat: no-repeat;
+       right: 30px;
+        .image-gallery-svg{
+          display: none;
+        }
+      }
+      
+      .image-gallery-index{
+        background: transparent;
+      }
+      .image-gallery-swipe{
+        height: 100%;
+        .image-gallery-slides{
+          height: 100%;
+          .image-gallery-slide{
+            top:20%;
+          }
+          img{
+            width: auto;
+            height: 520px;
+          }
+        
+        }
+      }
     }
   }
-  .carousel-control-next,
-  .carousel-control-prev {
-    top: 50%;
-    bottom: 50%;
-  }
-  .carousel-control-prev {
-    .carousel-control-prev-icon {
-      background-image: url(../Asset/leftarrow.svg);
-    }
-  }
-  .carousel-control-next {
-    .carousel-control-next-icon {
-      background-image: url(../Asset/rightarrow.svg);
-    }
-  }
+}
+.image-gallery.fullscreen-modal{
+  background: transparent !important;
+}
+.image-gallery-content.fullscreen{
+  background: rgba(0, 0, 0, 0.8) !important;
+  top: 50% !important;
+  height: 100%;
 }
 .des-product-section {
   display: flex;
