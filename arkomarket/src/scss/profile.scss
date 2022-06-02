@@ -87,6 +87,60 @@
   border-radius: 100px;
 }
 .Main-profile {
+  .title-c {
+    .Ads-title {
+      .nav-link:hover {
+        text-decoration: none !important;
+      }
+      .nav-link {
+        .user-ads {
+          p:hover {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: rgba(0, 0, 0, 0.8);
+          }
+          p:focus {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: rgba(0, 0, 0, 0.8);
+          }
+        }
+        .saved-ads {
+          p:hover {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: rgba(0, 0, 0, 0.8);
+          }
+          p:focus {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: rgba(0, 0, 0, 0.8);
+          }
+        }
+      }
+      .nav-link:focus {
+        border-bottom: 3px solid #0071e2 !important;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
   .profile-container {
     .profile-image {
       .profile-box {

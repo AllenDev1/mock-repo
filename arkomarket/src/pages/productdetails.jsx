@@ -14,16 +14,9 @@ import { NavLink } from "react-router-dom";
 import NavBar from "../component/nav";
 import "../js/new.js";
 import ImageGallery from "react-image-gallery";
-//SCSS
 import "react-image-gallery/styles/scss/image-gallery.scss";
-
 import "react-image-gallery/styles/css/image-gallery.css";
-import {
-  MDBCarousel,
-  MDBCarouselInner,
-  MDBCarouselItem,
-  MDBCarouselElement,
-} from "mdb-react-ui-kit";
+
 const Productdetails = () => {
   const [showDec, setShowDec] = useState(true);
   const [showComment, setComment] = useState(false);
@@ -61,6 +54,7 @@ const Productdetails = () => {
           useTranslate3D={false}
           useBrowserFullscreen={false}
           slideDuration={0}
+         
         />
       </Container>
 

@@ -6,7 +6,7 @@ import share from "../Asset/share.svg";
 import edit from "../Asset/Edit.svg";
 import myads from "../Asset/ads.svg";
 import heart from "../Asset/heart.svg";
-import { Container } from "react-bootstrap";
+import { Container, Nav } from "react-bootstrap";
 import UserNav from "./user-nav";
 
 function Profile() {
@@ -45,15 +45,18 @@ function Profile() {
           </div>
           <div class="title-c">
             <div className="Ads-title">
-              <div className="user-ads">
-                <img src={myads} />
-                <p>My Ads</p>
-              </div>
-
-              <div className="saved-ads">
-                <img src={heart} />
-                <p>Saved Ads</p>
-              </div>
+              <Nav.Link>
+                <div className="user-ads">
+                  <img src={myads} />
+                  <p>My Ads</p>
+                </div>
+              </Nav.Link>
+              <Nav.Link>
+                <div className="saved-ads">
+                  <img src={heart} />
+                  <p>Saved Ads</p>
+                </div>
+              </Nav.Link>
             </div>
           </div>
           <div class="row">

@@ -79,13 +79,13 @@
   padding-top: 10px;
 }
 .saved-ads {
-  height: 35px;
+  height: 100%;
   display: inline-flex;
   grid-gap: 11.25px;
   padding: 10px;
 }
 .user-ads {
-  height: 35px;
+  height: 100%;
   display: inline-flex;
   grid-gap: 11.25px;
   padding: 10px;
