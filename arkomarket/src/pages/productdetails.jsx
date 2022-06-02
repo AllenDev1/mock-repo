@@ -6,8 +6,6 @@ import share from "../Asset/share.svg";
 import heart from "../Asset/heart.svg";
 import whatsapp from "../Asset/whatsapp.svg";
 import viber from "../Asset/viber.svg";
-import cross from "../Asset/whiteCross.svg";
-import fullscreen from "../Asset/fullscreen.svg";
 import location from "../Asset/location.svg";
 import eye from "../Asset/eye.svg";
 import { NavLink } from "react-router-dom";
@@ -25,36 +23,43 @@ const Productdetails = () => {
     {
       original:
         "https://i.pinimg.com/originals/0e/27/6b/0e276b5fa0eb38dbe3d88337ef79ee6a.jpg",
-
     },
     {
       original:
         "https://live.staticflickr.com/7393/12850134144_1465c0aee6_b.jpg",
-     
     },
     {
-      original:"https://www.gardeningknowhow.com/wp-content/uploads/2020/04/fruit-seed-400x300.jpg",
+      original:
+        "https://www.gardeningknowhow.com/wp-content/uploads/2020/04/fruit-seed-400x300.jpg",
     },
     {
-      original:"https://images.theconversation.com/files/250919/original/file-20181217-185258-1gc7soo.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
-    }
-
+      original:
+        "https://images.theconversation.com/files/250919/original/file-20181217-185258-1gc7soo.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop",
+    },
+    {
+      original:
+        "https://images.unsplash.com/photo-1553615738-d8e0829f1d61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80",
+    },
+    {
+      original:
+        "https://images.unsplash.com/photo-1646174783602-d42483b35797?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=500&q=60",
+    },
   ];
   return (
     <>
       <NavBar />
       <Container className="mt-4">
         <ImageGallery
+          scroll={false}
           items={images}
           showPlayButton={false}
           showThumbnails={false}
           showIndex={true}
           flickThreshold={0.0}
           swipeThreshold={1}
-          useTranslate3D={false}
+          useTranslate3D={true}
           useBrowserFullscreen={false}
-          slideDuration={0}
-         
+          slideDuration={450}
         />
       </Container>
 
