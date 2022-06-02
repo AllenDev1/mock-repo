@@ -1,0 +1,129 @@
+body {
+  background-color: #fafafa;
+}
+
+.navBar {
+  height: 87px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+}
+.logo {
+  padding-top: 10px;
+}
+.searchBar {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 372px;
+  height: 39px;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px 10px 50px;
+  border: none;
+  background-image: url("../Asset/searchicon.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position: 16px;
+}
+.navbtnRight {
+  text-align: right;
+}
+
+.loginbtnNav {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000cc !important;
+  padding: 10px 0px !important;
+}
+.freeadsbtn {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1rem !important;
+  font-weight: 500;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0px 16px;
+  background-color: #fff;
+}
+.freeadsbtn:hover {
+  border: 1px solid black;
+  color: black;
+}
+.notificationicon {
+  padding: 10px 0px !important;
+}
+.nav-footer-Btn {
+  display: flex;
+  grid-gap: 27.6px;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+}
+.nav-footer-Btn .nav-link {
+  padding: 0px;
+  color: #000000cc;
+}
+.new-ads-btn {
+  height: 39px;
+  width: 119px;
+  left: 111.931640625px;
+  top: 0.5px;
+  border-radius: 4px;
+  border: 1px solid #000000cc;
+  padding: 8px 16px;
+  color: #000000CC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+
+
+.total-hover{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 195px;
+  padding:4px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  z-index: 100;
+  padding-top:2.9px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  padding: 4px 10px;
+  gap: 10px;
+  width: auto;
+  font-weight: 500;
+font-size: 13px;
+color: rgba(0, 0, 0, 0.5);
+
+}
+
+.dropdown-content a:hover {
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+color: rgba(0, 0, 0, 0.8);
+
+
+}
+
+.total-hover:hover .dropdown-content {
+  display: block;
+}
+

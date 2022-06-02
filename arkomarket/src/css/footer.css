@@ -1,11 +1,10 @@
 footer {
   background-color: #000000e5;
   height: 321px;
-  width: 100vw;
+  width: 100%;
   left: 0px;
   top: 198px;
   border-radius: 0px;
-  padding: 48px, 175px, 31px, 175px;
 }
 .footer-container {
   display: flex;
@@ -14,9 +13,11 @@ footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.19);
 }
 .footer-links1 .nav-link,
-.footer-link2 .nav-link {
+.footer-link2 .nav-link,
+.footer-links3 .nav-link{
   color: #f3f3f3;
   padding: 16px;
+  font-size: 14px;
 }
 .find-us-on p {
   padding: 0.5rem 1rem;
@@ -46,4 +47,8 @@ footer {
 }
 .Below-footer-items-right p{
     margin-right: 9px;
+}
+.nav-link:hover{
+  text-decoration: underline!important;
+
 }

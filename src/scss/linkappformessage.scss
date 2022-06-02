@@ -1,0 +1,94 @@
+.link-app-for-message {
+  box-sizing: border-box;
+width: 100%;
+  /* Auto layout */
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+
+  width: 818px;
+  height: 196.2px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  .link-message {
+    width: 100%;
+    h5 {
+      color: #000000cc;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .link-viber-whatsapp{
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+  .Whatsapp-link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .whatsapp-contain {
+      display: flex;
+      justify-self: space-between;
+      width: 126px;
+      height: 32px;
+      grid-gap: 16px;
+
+      p {
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+  .viber-link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 24px;
+
+    .viber-contain {
+      display: flex;
+      justify-content: space-between;
+      height: 32px;
+      grid-gap: 16px;
+
+      p {
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+
+  button {
+    width: 96px;
+    height: 31px;
+    background: #0071e2;
+    border-radius: 4px;
+    border: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+}

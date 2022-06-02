@@ -1,0 +1,10 @@
+.carousel-item {
+  width: 1090px;
+  height: 520px;
+  background-color: #000000E5;
+  
+}
+.carousel-item img{
+  width: auto !important;
+  height: 520px !important;
+}

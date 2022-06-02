@@ -1,0 +1,88 @@
+.form-check{
+  width:100%;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  
+  p{
+ 
+  font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: rgba(0, 0, 0, 0.8);
+}
+}
+.user-notification-tab {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 16px;
+
+  width: 818px;
+  height: 246px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+.notification-update{
+  
+width: 754px;
+height: 68px;
+margin-bottom:8px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+padding:14px 16px;
+
+.notification-update-details{
+  margin-bottom:8px;
+}
+}
+.form-switch .form-check-input {
+  margin-left: 24.5em;
+  margin-top: -14px;
+  width: 37px;
+  height: 23.12px;
+
+}
+.notification-recommendation{
+width: 754px;
+height: 68px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+padding:14px 16px;
+
+.notification-recommendation-toggel{
+  display:inline-flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+}
+
+  h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.8);
+  
+  }
+
+
+}
+
