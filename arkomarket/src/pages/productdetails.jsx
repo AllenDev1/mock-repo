@@ -76,9 +76,9 @@ const Productdetails = () => {
                     <Nav.Link>
                       <img src={share} alt="" className="share-btn" />
                     </Nav.Link>
-                    <input type="checkbox" />
-                      
-                   
+                    <Nav.Link type="checkbox">
+                      <img src={heart} alt="" className="heart-btn" />
+                    </Nav.Link>
                   </div>
                 </div>
                 <div className="title-price mt-3">
