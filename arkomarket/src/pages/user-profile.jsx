@@ -8,7 +8,7 @@ import "../scss/userprofile.scss";
 const UserProfile = () => {
   return (
     <>
-     
+  
     </>
   );
 };
