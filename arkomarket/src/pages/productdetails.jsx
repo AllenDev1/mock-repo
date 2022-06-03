@@ -50,7 +50,6 @@ const Productdetails = () => {
       <NavBar />
       <Container className="mt-4">
         <ImageGallery
-          scroll={false}
           items={images}
           showPlayButton={false}
           showThumbnails={false}
@@ -77,9 +76,9 @@ const Productdetails = () => {
                     <Nav.Link>
                       <img src={share} alt="" className="share-btn" />
                     </Nav.Link>
-                    <Nav.Link>
-                      <img src={heart} alt="" className="heart-btn" />
-                    </Nav.Link>
+                    <input type="checkbox" />
+                      
+                   
                   </div>
                 </div>
                 <div className="title-price mt-3">
