@@ -1,12 +1,12 @@
 /* .react-multiple-carousel__arrow {
   /* background-image: url("../Asset/library/testing.svg") !important; */
-  /* background-color: rgba(0, 0, 0, 0.6) !important; */
-  /* border-radius: 00px !important ;
+/* background-color: rgba(0, 0, 0, 0.6) !important; */
+/* border-radius: 00px !important ;
   border: none !important;
   /* background-color: #ddd !important; */
-  /* background: #FAFAFA !important; */ 
+/* background: #FAFAFA !important; */
 
-  /* background:  transparent !important ; 
+/* background:  transparent !important ; 
 }*/
 /* .react-multiple-carousel__arrow--right {
   right: calc(0% + 0px);
@@ -26,8 +26,8 @@
     gap: 50px;
 } */
 
-.testing{
-
+.testing {
+  overflow-x: clip;
+  overflow-y: visible;
   display: flex;
-  
 }
