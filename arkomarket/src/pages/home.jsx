@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <Container style={{display:'flex', flexDirection:'column', overFlow:'hidden'}}>
+      <Container className="letsSee">
         <Filter />
         <Sort />
       </Container>
