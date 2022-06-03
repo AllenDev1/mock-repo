@@ -183,7 +183,7 @@ const Productdetails = () => {
                     <div className="comment-container">
                       <div className="comment-input">
                         <input
-                          className="focus-propotities-for-input-tag"
+                          className="searchBar"
                           placeholder="Type comment...."
                         ></input>
                         <button type="button">Comment</button>
