@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "react-multi-carousel/lib/styles.css";
 import "../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../scss/filter.scss";
