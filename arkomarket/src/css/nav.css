@@ -23,6 +23,16 @@ body {
   background-position-y: center;
   background-position: 16px;
 }
+.searchBar:hover{
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  outline: 2px solid rgba(0, 0, 0, 0.3) !important;
+  border: rgba(0, 0, 0, 0.3)!important;
+}
+.searchBar:focus{
+  background-color: #ffffff !important;
+  outline: 2px solid rgba(0, 0, 0, 0.8) !important;
+  border: rgba(0, 0, 0, 0.8) !important;
+}
 .navbtnRight {
   text-align: right;
 }
