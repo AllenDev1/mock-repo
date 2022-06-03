@@ -25,7 +25,7 @@ body {
 }
 .searchBar:hover{
   background-color: rgba(0, 0, 0, 0.03) !important;
-  outline: 2px solid rgba(0, 0, 0, 0.3) !important;
+  outline: 1px solid rgba(0, 0, 0, 0.3) !important;
   border: rgba(0, 0, 0, 0.3)!important;
 }
 .searchBar:focus{

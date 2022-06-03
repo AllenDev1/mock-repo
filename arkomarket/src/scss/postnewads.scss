@@ -444,7 +444,7 @@
         }
         input:hover {
           background-color: solid rgba(0, 0, 0, 0.03) !important;
-          outline: 1px solid rgba(0, 0, 0, 0.3) !important;
+          outline:rgba(0, 0, 0, 0.3) !important;
           border: 1px solid rgba(0, 0, 0, 0.3) !important;
           
         }
@@ -564,17 +564,17 @@
   background-position: right 0.75rem center !important;
   background-color: rgba(0, 0, 0, 0.03) !important;
   border: 1px solid rgba(0, 0, 0, 0.3)!important;
-  outline: 1px solid rgba(0, 0, 0, 0.3) !important;
+  outline: rgba(0, 0, 0, 0.3) !important;
 
 }
 .focus-propotities-for-input-tag:hover {
   background-color: rgba(0, 0, 0, 0.03) !important;
-  outline: 1px solid rgba(0, 0, 0, 0.3) !important;
+  outline:  rgba(0, 0, 0, 0.3) !important;
   border: 1px solid rgba(0, 0, 0, 0.3)!important;
 }
 textarea:hover {
   background-color: rgba(0, 0, 0, 0.03) !important;
-  outline: 1px solid rgba(0, 0, 0, 0.3) !important;
+  outline:  rgba(0, 0, 0, 0.3) !important;
   border: 1px solid rgba(0, 0, 0, 0.3)!important;
   
 }
