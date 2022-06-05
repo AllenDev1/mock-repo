@@ -168,6 +168,7 @@
         border: 1px solid rgba(0, 0, 0, 0.8);
         border-radius: 4px;
 
+
         img {
           margin-top: 5px;
         }
@@ -178,6 +179,12 @@
 
           color: rgba(0, 0, 0, 0.5);
         }
+      }
+      button:hover{
+        outline: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        cursor: pointer;
       }
     }
     .addPrice-adLocation {
@@ -425,7 +432,7 @@
             left: 0px;
             top: 0px;
             border-radius: 4px;
-            padding: 10px 16px;
+            padding: 1px 16px;
             background-image: url("../Asset/push.svg");
             background-repeat: no-repeat;
             appearance: initial;

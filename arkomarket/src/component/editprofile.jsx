@@ -47,7 +47,7 @@ const Editprofile = () => {
                   placeholder="example@example.com"
                 />
               </div>
-              <label htmlFor="Phone Number" className="phone-number-lebel">Email Address</label>
+              <label htmlFor="Phone Number" className="phone-number-lebel">Contact Number</label>
               <PhoneInput
                 placeholder="Enter phone number"
                 value={value}

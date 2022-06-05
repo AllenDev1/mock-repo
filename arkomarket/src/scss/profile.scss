@@ -96,48 +96,39 @@
         .user-ads {
           p:hover {
             font-style: normal;
-            font-weight: 600;
             font-size: 16px;
             line-height: 19px;
-
             color: rgba(0, 0, 0, 0.8);
           }
-          p:focus {
+          p:focus{
             font-style: normal;
-            font-weight: 600;
             font-size: 16px;
             line-height: 19px;
-
-            color: rgba(0, 0, 0, 0.8);
+            color: rgba(0, 0, 0, 0.8)!important;
           }
         }
         .saved-ads {
           p:hover {
             font-style: normal;
-            font-weight: 600;
             font-size: 16px;
             line-height: 19px;
-
-            color: rgba(0, 0, 0, 0.8);
+            color: rgba(0, 0, 0, 0.8)!important;
           }
           p:focus {
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
             line-height: 19px;
-
-            color: rgba(0, 0, 0, 0.8);
+            color: rgba(0, 0, 0, 0.8)!important;
           }
         }
       }
       .nav-link:focus {
         border-bottom: 3px solid #0071e2 !important;
         font-style: normal;
-        font-weight: 600;
         font-size: 16px;
         line-height: 19px;
-
-        color: rgba(0, 0, 0, 0.8);
+        color: rgba(0, 0, 0, 0.8)!important;
       }
     }
   }
