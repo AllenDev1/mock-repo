@@ -49,7 +49,9 @@ const Querieslink = () => {
   return (
     <>
       <div className="help-nav-center">
-        <Helpnav />
+        <Container className="fix-help-nav">
+          <Helpnav />
+        </Container>
       </div>
       <Helpbody />
       <Container className="help-landing-page">

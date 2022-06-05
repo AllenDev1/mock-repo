@@ -3,9 +3,9 @@
   display: flex;
   height: 58px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  background: #FFFFFF;
+  background: #ffffff;
 }
-.tab-content{
+.tab-content {
   float: right;
 }
 .help-landing-page {
@@ -29,8 +29,8 @@
           font-size: 16px;
           line-height: 19px;
           padding: 0%;
-          color: rgba(0, 0, 0, 0.5)!important;
-          text-decoration: none!important;
+          color: rgba(0, 0, 0, 0.5) !important;
+          text-decoration: none !important;
         }
         button:hover {
           font-style: normal;
@@ -38,7 +38,7 @@
           line-height: 19px;
           background-color: transparent;
           border-color: transparent;
-          color: rgba(0, 0, 0, 0.8);
+          color: rgba(0, 0, 0, 0.8) !important;
         }
         button.active {
           font-style: normal;
@@ -46,7 +46,7 @@
           line-height: 19px;
           background-color: transparent;
           border-color: transparent;
-          color: rgba(0, 0, 0, 0.8);
+          color: rgba(0, 0, 0, 0.8) !important;
         }
       }
       .nav-item:hover {
@@ -106,7 +106,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 32px;
-  
+
   position: absolute;
   width: 430px;
   .modal-header {
@@ -121,7 +121,15 @@
     padding: 0%;
   }
 }
-.modal-backdrop{
-  background:  #494949;
- 
+.modal-backdrop {
+  background: #494949;
+}
+.fix-help-nav {
+  width: 1437px;
+  height: 58px;
+  left: 1px;
+  top: 0px;
+
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }

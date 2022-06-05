@@ -9,7 +9,7 @@ const Help = () => {
  
   return (
     <>
-      <Container>
+      <Container >
         <Helpnavbar />
       </Container>
       <Helpbody />
