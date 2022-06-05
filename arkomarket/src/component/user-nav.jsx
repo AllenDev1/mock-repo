@@ -21,8 +21,7 @@ const UserNav = () => {
     navigate(path);
   };
   window.onscroll = function () {
-    document.getElementById("navBar").style.borderBottom =
-      "1px solid rgba(0, 0, 0, 0.15)";
+    document.getElementById("user-naveBar").style.borderBottom = "1px solid rgba(0, 0, 0, 0.15)";
   };
  
   return (
@@ -31,7 +30,7 @@ const UserNav = () => {
         bg="white"
         expand="lg"
         className="ml-5 navBar"
-        id="navBar"
+        id="user-naveBar"
         style={{ paddingBottom: "9.5px", height: "58px" }}
       >
         <Container className="user-nav-sec " id="upper-nav-sec" >

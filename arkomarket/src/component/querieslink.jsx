@@ -18,7 +18,7 @@ import Logo from "../Asset/Arko-help.svg";
 import Helpform from "./helpform";
 const Querieslink = () => {
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 240) {
+    if (window.scrollY > 183) {
       document.querySelector(".apple").style.position = "fixed";
       document.querySelector(".apple").style.top = "70px";
       document.querySelector(".main-link-head").style.display = "block";

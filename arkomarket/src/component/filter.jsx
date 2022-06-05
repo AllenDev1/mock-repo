@@ -7,7 +7,7 @@ import Arrow from "../Asset/push.svg";
 import Simple from "./Simple";
 const Filter = () => {
   return (
-    <Container className="filter-main-div mt-3">
+    <Container className="filter-main-div ">
       <div className="filter-container">
         <div className="filter-boxes">
           <div class="flex-container">

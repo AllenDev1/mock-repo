@@ -14,6 +14,15 @@ import Generalnotification from "./Generalnotifi";
 import Dropdown from 'react-bootstrap/Dropdown'
 const NavBar = () => {
   const [show, setShow] = useState(false);
+  // window.addEventListener("scroll", () => {
+  //   if (window.scrollY > 30) {
+  //     document.querySelector(".nav-footer-container").style.display="none"
+      
+  //   } else {
+  //     document.querySelector(".upper-nav-sec").style.borderBottom = "none";
+  //     document.querySelector(". nav-footer-container").style.display="flex"
+  //   }
+  // });
   return (
     <>
       <Navbar bg="white" expand="lg" className="ml-5 navBar" style={{}}>

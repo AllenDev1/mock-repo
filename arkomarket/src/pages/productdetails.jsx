@@ -48,7 +48,7 @@ const Productdetails = () => {
   return (
     <>
       <NavBar />
-      <Container className="mt-4">
+      <Container className="">
         <ImageGallery
           items={images}
           showPlayButton={false}
