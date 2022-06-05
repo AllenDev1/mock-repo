@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <>
       <Navbar bg="white" expand="lg" className="ml-5 navBar" style={{}}>
-        <Container>
+        <Container className="upper-nav-sec">
           <div style={{ display: "flex" }}>
             <Navbar.Brand href="/" className="logo">
               <img src={logo} alt=".logo" className="align-middle" />
@@ -60,7 +60,7 @@ const NavBar = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
-        <Container className="mt-2 nav-footer-container">
+        <Container className=" nav-footer-container">
           <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
             <div className="total-hover">
               <NavLink className="nav-Vehicles" href="/product-details">

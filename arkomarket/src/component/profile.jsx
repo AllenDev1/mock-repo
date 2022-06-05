@@ -13,7 +13,7 @@ function Profile() {
   return (
     <>
       <UserNav />
-      <Container>
+      <Container  className=" mt-5">
         <div className="Main-profile mb-5">
           <div className="profile-container">
             <div className="profile-image">
