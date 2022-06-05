@@ -56,7 +56,7 @@ const PostNewAds = () => {
           </div>
           <div className="upload-photos">
             <h3>Upload upto 12 images</h3>
-            <div className="hold-photos">
+            <div className="hold-photos ">
               <input
               className="focus-propotities-for-input-tag"
                 ref={inputFile}
@@ -65,7 +65,7 @@ const PostNewAds = () => {
                 style={{ display: "none" }}
                 multiple="{false}"
               />
-              <button onClick={handleFileUpload}>
+              <button onClick={handleFileUpload} >
                 <img src={photo} />
                 <p>Add Photo</p>
               </button>
