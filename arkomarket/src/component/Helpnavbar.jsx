@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Help from "../Asset/Arko-help.svg";
+import Help from "../Asset/help.svg";
 import "../scss/helpnav.scss";
 
 const Helpnav = () => {
