@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Queriesnav from "./helpdesk/queriesnav";
 import "../scss/querieslink.scss";
@@ -17,6 +17,16 @@ import Modal from "react-bootstrap/Modal";
 import Logo from "../Asset/Arko-help.svg";
 import Helpform from "./helpform";
 const Querieslink = () => {
+  const [ScrollValue, setScrollValue] = useState()
+  window.addEventListener('scroll', () =>{
+    console.log(window.scrollY)
+    
+    if (window.scrollY > 291){
+      var helpSideBar = document.querySelector(".helpSideBar")
+      document.querySelector("#uncontrolled-tab-example").style.position= "fixed"
+      console.log("hello")
+    }
+  })
   function MyVerticallyCenteredModal(props) {
     return (
       <Modal
@@ -51,7 +61,7 @@ const Querieslink = () => {
           <Tabs
             defaultActiveKey="Buyer FAQs"
             id="uncontrolled-tab-example"
-            className="mb-3"
+            className="mb-3 helpSideBar"
           >
             <Tab eventKey="Buyer FAQs" title="Buyer FAQs">
               <Queriesnav />

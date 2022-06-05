@@ -24,6 +24,7 @@ const UserNav = () => {
     document.getElementById("navBar").style.borderBottom =
       "1px solid rgba(0, 0, 0, 0.15)";
   };
+ 
   return (
     <>
       <Navbar
