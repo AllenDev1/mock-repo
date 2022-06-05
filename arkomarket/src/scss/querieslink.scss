@@ -4,6 +4,9 @@
   height: 58px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   background: #ffffff;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
 }
 .tab-content {
   float: right;
@@ -14,7 +17,7 @@
   .main-link-head {
     display: flex;
     margin-top: 50px;
-    column-gap: 140px;
+    column-gap: 143px;
     .nav-tabs {
       display: flex;
       flex-direction: column;
