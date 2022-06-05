@@ -14,18 +14,19 @@ import Generalnotification from "./Generalnotifi";
 import Dropdown from 'react-bootstrap/Dropdown'
 const NavBar = () => {
   const [show, setShow] = useState(false);
-  // window.addEventListener("scroll", () => {
-  //   if (window.scrollY > 30) {
-  //     document.querySelector(".nav-footer-container").style.display="none"
-      
-  //   } else {
-  //     document.querySelector(".upper-nav-sec").style.borderBottom = "none";
-  //     document.querySelector(". nav-footer-container").style.display="flex"
-  //   }
-  // });
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 30) {
+      document.querySelector(".nav-footer-container").style.display="none"
+      document.querySelector(".upper-nav-sec").style.borderBottom = "none";
+      document.querySelector(".nBS").style.paddingBottom = "0px";
+    } else {
+      document.querySelector(".upper-nav-sec").style.borderBottom = "none";
+      document.querySelector(".nfc").style.display="flex"
+    }
+  });
   return (
     <>
-      <Navbar bg="white" expand="lg" className="ml-5 navBar" style={{}}>
+      <Navbar bg="white" expand="lg" className="ml-5 navBar nBS" style={{}}>
         <Container className="upper-nav-sec">
           <div style={{ display: "flex" }}>
             <Navbar.Brand href="/" className="logo">
@@ -69,7 +70,7 @@ const NavBar = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
-        <Container className=" nav-footer-container">
+        <Container className=" nav-footer-container nfc">
           <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
             <div className="total-hover">
               <NavLink className="nav-Vehicles" href="/product-details">
