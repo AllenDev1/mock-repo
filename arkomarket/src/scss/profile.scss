@@ -92,7 +92,8 @@
       .nav-link:hover {
         text-decoration: none !important;
       }
-      .nav-link {
+
+            .nav-link {
         .user-ads {
           p:hover {
             font-style: normal;
@@ -100,12 +101,7 @@
             line-height: 19px;
             color: rgba(0, 0, 0, 0.8);
           }
-          p:focus{
-            font-style: normal;
-            font-size: 16px;
-            line-height: 19px;
-            color: rgba(0, 0, 0, 0.8)!important;
-          }
+         
         }
         .saved-ads {
           p:hover {
@@ -114,9 +110,7 @@
             line-height: 19px;
             color: rgba(0, 0, 0, 0.8)!important;
           }
-          p:focus {
-            font-style: normal;
-            font-weight: 600;
+          p:focus{
             font-size: 16px;
             line-height: 19px;
             color: rgba(0, 0, 0, 0.8)!important;
@@ -145,3 +139,9 @@
     }
   }
 }
+ p:focus{
+            font-style: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(0, 0, 0, 0.8)!important;
+          }

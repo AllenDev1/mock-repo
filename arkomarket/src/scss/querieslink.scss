@@ -22,7 +22,8 @@
           font-size: 16px;
           line-height: 19px;
           padding: 0%;
-          color: rgba(0, 0, 0, 0.5);
+          color: rgba(0, 0, 0, 0.5)!important;
+          text-decoration: none!important;
         }
         button:hover {
           font-style: normal;
