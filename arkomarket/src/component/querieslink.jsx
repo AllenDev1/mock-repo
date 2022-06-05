@@ -17,29 +17,25 @@ import Modal from "react-bootstrap/Modal";
 import Logo from "../Asset/Arko-help.svg";
 import Helpform from "./helpform";
 const Querieslink = () => {
-  const [ScrollValue, setScrollValue] = useState()
-  window.addEventListener('scroll', () =>{
-    console.log(window.scrollY)
-    
-    if (window.scrollY > 291){
-      var helpSideBar = document.querySelector(".helpSideBar")
-      document.querySelector("#uncontrolled-tab-example").style.position= "fixed"
-      console.log("hello")
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 240) {
+      document.querySelector(".apple").style.position = "fixed";
+      document.querySelector(".apple").style.top = "70px";
+      document.querySelector(".main-link-head").style.display = "block";
+    } else {
+      document.querySelector(".apple").style.position = "relative";
+      document.querySelector(".apple").style.top = "0px";
+      document.querySelector(".main-link-head").style.display = "flex";
     }
-  })
+  });
   function MyVerticallyCenteredModal(props) {
     return (
-      <Modal
-        {...props}
-        
-        aria-labelledby="contained-modal-title-center"
-        centered
-      >
+      <Modal {...props} aria-labelledby="contained-modal-title-center" centered>
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-center">
-          <div className="top-help">
-          <img className="Logo" src={Logo} />
-        </div>
+            <div className="top-help">
+              <img className="Logo" src={Logo} />
+            </div>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -58,11 +54,7 @@ const Querieslink = () => {
       <Helpbody />
       <Container className="help-landing-page">
         <div className="main-link-head">
-          <Tabs
-            defaultActiveKey="Buyer FAQs"
-            id="uncontrolled-tab-example"
-            className="mb-3 helpSideBar"
-          >
+          <Tabs defaultActiveKey="Buyer FAQs" className="mb-3 apple">
             <Tab eventKey="Buyer FAQs" title="Buyer FAQs">
               <Queriesnav />
             </Tab>

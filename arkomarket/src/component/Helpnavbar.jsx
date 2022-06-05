@@ -5,16 +5,18 @@ import "../scss/helpnav.scss";
 
 const Helpnav = () => {
   return (
-    <div main-cont>
-      <div className="help-nav">
-        <div className="help-logo ">
-          <img src={Help}  />
-        </div>
-        <div className="help-button">
-          <button>Post Free Ads</button>
+    <Container>
+      <div main-cont className="help-nav-fix">
+        <div className="help-nav">
+          <div className="help-logo ">
+            <img src={Help} />
+          </div>
+          <div className="help-button">
+            <button>Post Free Ads</button>
+          </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 export default Helpnav;
