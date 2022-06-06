@@ -18,10 +18,29 @@ import Logo from "../Asset/Arko-help.svg";
 import Helpform from "./helpform";
 const Querieslink = () => {
   window.addEventListener("scroll", () => {
+    var maxValueScrollY = Math.max(
+      document.body.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.clientHeight,
+      document.documentElement.scrollHeight,
+      document.documentElement.offsetHeight
+    );
+    console.log(maxValueScrollY, window.scrollY, maxValueScrollY - 1847);
     if (window.scrollY > 183) {
       document.querySelector(".apple").style.position = "fixed";
-      document.querySelector(".apple").style.top = "70px";
+      document.querySelector(".apple").style.top = "100px";
       document.querySelector(".main-link-head").style.display = "block";
+      if (maxValueScrollY > 1947) {
+        if (window.scrollY > 2000) {
+          document.querySelector(".apple").style.top = "0px";
+          console.log("apple");
+        }
+      }
+      if (maxValueScrollY < 1947 ) {
+        if (window.scrollY > 900) {
+          document.querySelector(".apple").style.top = "0px";
+        }
+      } 
     } else {
       document.querySelector(".apple").style.position = "relative";
       document.querySelector(".apple").style.top = "0px";
