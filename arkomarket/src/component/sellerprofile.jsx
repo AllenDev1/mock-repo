@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/profile.css";
-import "../scss/profile.scss";
+import "../scss/sellerprofile.scss";
 import eye from "../Asset/eye.svg";
 import share from "../Asset/share.svg";
 import { Container, Nav } from "react-bootstrap";
@@ -29,9 +29,18 @@ function SellerProfile() {
                   <div className="mem-time">
                     <p>Member since May 2021</p>
                   </div>
+                  <text className="las-active">
+                      <div className="dott"></div>
+                      Active 34m ago
+                    </text>
+                    
                 </div>
               </div>
             </div>
+            <div className="sellerads">
+                      <div className="first-ads">Seller Ads</div>
+                      <div className="second-ads">4 Ads</div>
+                    </div>
           </div>
           <div class="row">
             <div class="card">
