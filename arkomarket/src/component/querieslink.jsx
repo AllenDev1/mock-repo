@@ -33,11 +33,15 @@ const Querieslink = () => {
       if (maxValueScrollY > 1947) {
         if (window.scrollY > 2000) {
           document.querySelector(".apple").style.position = "relative";
+          document.querySelector(".apple").style.top = "0px";
+          document.querySelector(".main-link-head").style.display = "flex";
         }
       }
       if (maxValueScrollY < 1947) {
         if (window.scrollY > 900) {
           document.querySelector(".apple").style.position = "relative";
+          document.querySelector(".apple").style.top = "0px";
+          document.querySelector(".main-link-head").style.display = "flex";
         }
       }
     } else {
