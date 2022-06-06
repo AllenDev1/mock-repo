@@ -10,7 +10,7 @@ function SellerProfile() {
   return (
     <>
       <UserNav />
-      <Container>
+      <Container className="seller-profile-margin-bottom">
         <div className="Main-profile mb-5">
           <div className="profile-container">
             <div className="profile-head">
