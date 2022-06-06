@@ -6,13 +6,21 @@ import Install from "../Asset/install.svg";
 import Logout from "../Asset/logout.svg";
 import Setting from "../Asset/setting.svg";
 import {NavLink} from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+
 
 const Profiledetails = () => {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/user-profile`;
+    navigate(path);
+  }
+
 
   return (
     <div className="profile-cont">
       <div className="profile-list">
-        <NavLink to="#">
+        <NavLink type="button" onClick={routeChange}>
           <div className="profile-heads">
             <img className="profile-pad" src={Profile} />
             <h5>My Profile</h5>

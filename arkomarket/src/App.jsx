@@ -11,6 +11,7 @@ import PostNewAds from "./pages/PostNewAds";
 import UserProfileEdit from "./pages/UserProfileEdit";
 import Profile from "./component/profile";
 import Querieslink from "./component/querieslink";
+import SellerProfile from "./component/sellerprofile";
 function App() {
   return (
     <>
@@ -22,6 +23,8 @@ function App() {
           <Route path="helpdesk" element={< Querieslink/>} />
           {/* is user logged in function need to be added here */}
           <Route path="user-profile" element={<Profile />} />
+          <Route path="seller-profile" element={<SellerProfile />} />
+
           <Route path="user-profile-edit" element={<UserProfileEdit />}>
             <Route index element={<Editprofile />} />
             <Route index path="editprofile" element={<Editprofile />} />

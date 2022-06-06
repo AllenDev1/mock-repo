@@ -133,7 +133,7 @@
       }
     }
     .profile-container {
-      .profile-image {
+      .profile-img {
         .profile-box {
           a {
             font-style: normal;
@@ -144,5 +144,10 @@
         }
       }
     }
+  }
+  .profile-head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
   }
   
