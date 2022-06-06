@@ -17,7 +17,7 @@
   .main-link-head {
     display: flex;
     margin-top: 50px;
-    column-gap: 143px;
+    justify-content: space-between;
     .nav-tabs {
       height: 100%!important;
       display: flex;

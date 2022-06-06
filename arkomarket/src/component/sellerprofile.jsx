@@ -3,9 +3,6 @@ import "../css/profile.css";
 import "../scss/profile.scss";
 import eye from "../Asset/eye.svg";
 import share from "../Asset/share.svg";
-import edit from "../Asset/Edit.svg";
-import myads from "../Asset/ads.svg";
-import heart from "../Asset/heart.svg";
 import { Container, Nav } from "react-bootstrap";
 import UserNav from "./user-nav";
 
@@ -16,7 +13,12 @@ function SellerProfile() {
       <Container>
         <div className="Main-profile mb-5">
           <div className="profile-container">
-            <div className="profile-image">
+            <div className="profile-head">
+              <h5>Seller Profile</h5>
+              <img src={share} />
+            </div>
+
+            <div className="profile-img">
               <img className="pp" src="https://picsum.photos/200/300" />
 
               <div className="profile-box">
@@ -28,29 +30,7 @@ function SellerProfile() {
                     <p>Member since May 2021</p>
                   </div>
                 </div>
-                <div className="profile-share">
-                  <img src={share} />
-                </div>
               </div>
-            </div>
-            <div className="profile-discription">
-              <p>New Academy for New Generation in Nepal. Learn any courses.</p>
-            </div>
-          </div>
-          <div class="title-c">
-            <div className="Ads-title">
-              <Nav.Link>
-                <div className="user-ads">
-                  <img src={myads} />
-                  <p>My Ads</p>
-                </div>
-              </Nav.Link>
-              <Nav.Link>
-                <div className="saved-ads">
-                  <img src={heart} />
-                  <p>Saved Ads</p>
-                </div>
-              </Nav.Link>
             </div>
           </div>
           <div class="row">

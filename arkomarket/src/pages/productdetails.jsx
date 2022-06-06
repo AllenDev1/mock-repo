@@ -230,7 +230,7 @@ const Productdetails = () => {
                   </div>
 
                   <div className="profile-brief">
-                    <a href="user-profile">
+                    <a href="seller-profile">
                       <h4>Aabid</h4>
                     </a>
 
