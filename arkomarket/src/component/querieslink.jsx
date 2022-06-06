@@ -32,18 +32,16 @@ const Querieslink = () => {
       document.querySelector(".main-link-head").style.display = "block";
       if (maxValueScrollY > 1947) {
         if (window.scrollY > 2000) {
-          document.querySelector(".apple").style.position = "relative";
-          document.querySelector(".apple").style.top = "0px";
-          document.querySelector(".main-link-head").style.display = "flex";
+          document.querySelector(".apple").style.top = "-100px";
         }
       }
       if (maxValueScrollY < 1947) {
-        if (window.scrollY > 900) {
-          document.querySelector(".apple").style.position = "relative";
-          document.querySelector(".apple").style.top = "0px";
-          document.querySelector(".main-link-head").style.display = "flex";
+        
+        if (window.scrollY > 700) {
+          document.querySelector(".apple").style.top = "-100px";
         }
       }
+      
     } else {
       document.querySelector(".apple").style.position = "relative";
       document.querySelector(".apple").style.top = "0px";

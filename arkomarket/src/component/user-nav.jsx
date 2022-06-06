@@ -21,9 +21,10 @@ const UserNav = () => {
     navigate(path);
   };
   window.onscroll = function () {
-    document.getElementById("user-naveBar").style.borderBottom = "1px solid rgba(0, 0, 0, 0.15)";
+    document.getElementById("user-naveBar").style.borderBottom =
+      "1px solid rgba(0, 0, 0, 0.15)";
   };
- 
+
   return (
     <>
       <Navbar
@@ -33,7 +34,7 @@ const UserNav = () => {
         id="user-naveBar"
         style={{ paddingBottom: "9.5px", height: "58px" }}
       >
-        <Container className="user-nav-sec " id="upper-nav-sec" >
+        <Container className="user-nav-sec " id="upper-nav-sec">
           <div style={{ display: "flex" }}>
             <Navbar.Brand href="/" className="logo">
               <img src={logo} alt=".logo" className="align-middle" />
