@@ -73,7 +73,7 @@ const NavBar = () => {
         <Container className=" nav-footer-container nfc">
           <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
             <div className="total-hover">
-              <NavLink className="nav-Vehicles" href="/product-details">
+              <NavLink className="nav-Vehicles" href="#">
                 Vehicles
                 <div class="dropdown-content">
                   <a href="#">All</a>
@@ -87,7 +87,7 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="/product-details">
+              <NavLink href="#">
                 Properties
                 <div class="dropdown-content">
                   <a href="#">All</a>
