@@ -32,15 +32,14 @@ const Querieslink = () => {
       document.querySelector(".main-link-head").style.display = "block";
       if (maxValueScrollY > 1947) {
         if (window.scrollY > 2000) {
-          document.querySelector(".apple").style.top = "0px";
-          console.log("apple");
+          document.querySelector(".apple").style.position = "relative";
         }
       }
-      if (maxValueScrollY < 1947 ) {
+      if (maxValueScrollY < 1947) {
         if (window.scrollY > 900) {
-          document.querySelector(".apple").style.top = "0px";
+          document.querySelector(".apple").style.position = "relative";
         }
-      } 
+      }
     } else {
       document.querySelector(".apple").style.position = "relative";
       document.querySelector(".apple").style.top = "0px";
