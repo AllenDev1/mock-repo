@@ -13,6 +13,7 @@
   height: auto;
   gap:16px;
   margin-bottom: 16px;
+
   .profile-pp {
     width: 40px;
     height: 40px;
@@ -41,4 +42,9 @@
       margin-bottom: 0px;
     }
   }
+}
+.notification-cotainer:hover{
+  background: rgba(0, 0, 0, 0.05);
+  border-radius:4px;
+  
 }
