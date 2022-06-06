@@ -90,6 +90,8 @@
 .image-gallery.fullscreen-modal {
   background: transparent !important;
   overflow: hidden;
+  margin-top: 0px;
+  z-index: 1000 !important;
   .image-gallery-content {
     .image-gallery-slide-wrapper {
       .image-gallery-swipe {
