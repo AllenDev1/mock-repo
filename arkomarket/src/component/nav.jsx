@@ -81,7 +81,7 @@ const NavBar = () => {
                   <a href="#">Motorcycles</a>
                   <a href="#">Scooters</a>
                   <a href="#">Bicycle</a>
-                  <a href="#">Other parts</a>
+                  <a href="#">Other vehicles</a>
                   <a href="#">Spare parts</a>
                 </div>
               </NavLink>
@@ -169,7 +169,7 @@ const NavBar = () => {
                   <a href="#">Sofa sets</a>
                   <a href="#">Other Home Furnitures</a>
                   <a href="#">Kid's Furnitures</a>
-                  <a href="#">Home. Decor and Garden</a>
+                  <a href="#">Home, Decor and Garden</a>
                   <a href="#">Other Household Items</a>
                 </div>
               </NavLink>
