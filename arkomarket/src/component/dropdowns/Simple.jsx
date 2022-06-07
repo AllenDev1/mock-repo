@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../css/simple.css";
+import "../../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
-import "../scss/filter.scss";
+import "../../scss/filter.scss";
 const Simple = () => {
   return (
     <>
