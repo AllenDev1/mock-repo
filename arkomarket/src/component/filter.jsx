@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 import "../css/filter.css";
 import "../scss/filter.scss";
 import Arrow from "../Asset/push.svg";
-import Simple from "./Simple";
+import Simple from "../component/dropdowns/Simple";
 const Filter = () => {
   return (
     <Container className="filter-main-div ">
