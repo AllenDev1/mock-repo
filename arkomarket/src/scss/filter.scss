@@ -5,26 +5,6 @@
   .flex-container {
     flex: 1;
     width: 100%;
-
-    .react-multi-carousel-list {
-      width: 999px;
-      height: auto;
-    }
-    // .sc-ifAKCX {
-    //   width: 100%;
-    //   .sc-EHOje {
-    //     margin: 0px;
-    //     .sc-bZQynM {
-    //       transition: transform 5s cubic-bezier(0.2,1,0.3,1) 0s;
-    //       grid-template-columns: repeat(1000,100%)
-    //     }
-    //     .extdSs{
-    //       transition: transform 5s cubic-bezier(1,1,0.3,1) 0s;
-
-    //     }
-    //   }
-    // }
-  }
   .clear-all {
     border-radius: 0px;
     padding: 10px 0px 10px 16px;
@@ -102,7 +82,4 @@
   .show {
     display: block;
   }
-}
-.filter-main-div {
-  // margin-top: 100px;
-}
+  }}
