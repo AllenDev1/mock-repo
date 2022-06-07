@@ -10,20 +10,22 @@ import { Container, Nav, Form, FormControl } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import { NavLink } from "react-bootstrap";
 import Login from "./login.jsx";
+import Cars from "../component/dropdowns/Vehicles/cars";
 import Generalnotification from "./Generalnotifi";
-import Dropdown from 'react-bootstrap/Dropdown'
+import Dropdown from "react-bootstrap/Dropdown";
 const NavBar = () => {
   const [show, setShow] = useState(false);
   window.addEventListener("scroll", () => {
     if (window.scrollY > 30) {
-      document.querySelector(".nav-footer-container").style.display="none"
+      document.querySelector(".nav-footer-container").style.display = "none";
       document.querySelector(".upper-nav-sec").style.borderBottom = "none";
       document.querySelector(".nBS").style.paddingBottom = "0px";
     } else {
       document.querySelector(".upper-nav-sec").style.borderBottom = "none";
-      document.querySelector(".nfc").style.display="flex"
+      document.querySelector(".nfc").style.display = "flex";
     }
   });
+
   return (
     <>
       <Navbar bg="white" expand="lg" className="ml-5 navBar nBS" style={{}}>
@@ -47,8 +49,11 @@ const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav float-end ">
             <Nav className="me-auto float-end">
               <NavLink href="#" className="notificationicon">
-                <Dropdown className="dropdown-notification" align={{ md: 'end' }}>
-                  <Dropdown.Toggle  >
+                <Dropdown
+                  className="dropdown-notification"
+                  align={{ md: "end" }}
+                >
+                  <Dropdown.Toggle>
                     <img src={NotificaionIcon} alt="notification.jpeg" />
                   </Dropdown.Toggle>
 

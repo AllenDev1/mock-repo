@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../../css/simple.css";
+import "../../../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
-import "../../scss/filter.scss";
-import Push from "../../Asset/push.svg"
+import "../../../scss/filter.scss";
+import Push from "../../../Asset/push.svg"
 
 const Cars = () => {
   return (

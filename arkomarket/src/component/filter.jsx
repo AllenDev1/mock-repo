@@ -11,7 +11,7 @@ const Filter = () => {
       <div className="filter-container">
         <div className="filter-boxes">
           <div class="flex-container">
-            <Simple />
+            {/* <Simple /> */}
           </div>
           <div className="clear-all">
             <a class="clear" href="#">

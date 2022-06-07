@@ -27,7 +27,7 @@ const Sort = () => {
             </div>
           </Container>
           <Container>
-            <div class="row">
+            <div class="row sm md lg">
               <div class="card">
                 <NavLink to="/product-details">
                   <img
