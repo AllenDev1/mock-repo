@@ -48,13 +48,13 @@ function Profile() {
               <Nav.Link>
                 <div className="user-ads">
                   <img src={myads} />
-                  <p>My Ads</p>
+                  My Ads
                 </div>
               </Nav.Link>
               <Nav.Link>
                 <div className="saved-ads">
                   <img src={heart} />
-                  <p>Saved Ads</p>
+                  Saved Ads
                 </div>
               </Nav.Link>
             </div>

@@ -23,7 +23,7 @@
           text-align: left;
           color: #000000cc;
         }
-        a:focus {
+        a:focus-within {
           font-size: 16px;
           line-height: 19px;
           letter-spacing: 0em;
@@ -37,3 +37,4 @@
 .main-sec-user-profile {
   display: flex;
 }
+

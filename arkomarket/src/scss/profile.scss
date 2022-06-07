@@ -90,45 +90,32 @@
   .title-c {
     .Ads-title {
       .nav-link:hover {
-        text-decoration: none !important;
+        text-decoration: none;
       }
-
+      .nav-link:focus{
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+      .nav-link:hover{
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.8);
+      }
       .nav-link {
-        .user-ads {
-          p:hover {
-            font-style: normal;
-            font-size: 16px;
-            line-height: 19px;
-            color: rgba(0, 0, 0, 0.8) !important;
-          }
-          p:focus {
-            font-size: 16px;
-            line-height: 19px;
-            color: rgba(0, 0, 0, 0.8) !important;
-          }
-        }
-        .saved-ads {
-          p:hover {
-            font-style: normal;
-            font-size: 16px;
-            line-height: 19px;
-            color: rgba(0, 0, 0, 0.8) !important;
-          }
-          p:focus {
-            font-size: 16px;
-            line-height: 19px;
-            color: rgba(0, 0, 0, 0.8) !important;
-          }
-        }
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.5);
       }
       .nav-link:focus {
-        border-bottom: 3px solid #0071e2 !important;
+        border-bottom: 3px solid #0071e2;
         font-style: normal;
         font-size: 16px;
         line-height: 19px;
-        color: rgba(0, 0, 0, 0.8) !important;
+        color: rgba(0, 0, 0, 0.8);
       }
-    
     }
   }
   .profile-container {
@@ -143,10 +130,4 @@
       }
     }
   }
-}
-p:focus {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: rgba(0, 0, 0, 0.8) !important;
 }

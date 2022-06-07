@@ -9,8 +9,6 @@
     .react-multi-carousel-list {
       width: 999px;
       height: auto;
-      
-
     }
     // .sc-ifAKCX {
     //   width: 100%;
@@ -28,15 +26,11 @@
     // }
   }
   .clear-all {
-    height: 37px;
-    width: 91px;
-    left: 993.85986328125px;
-    top: 2px;
     border-radius: 0px;
-    padding: 10px 16px;
+    padding: 10px 0px 10px 16px;
     a {
       font-style: normal;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 14px;
       line-height: 17px;
       /* identical to box height */
@@ -48,6 +42,9 @@
       flex: none;
       order: 0;
       flex-grow: 0;
+    }
+    a:hover{
+      color: rgba(0, 0, 0, 0.9);
     }
   }
   .flex-container {
@@ -75,7 +72,6 @@
       margin-left: 6px;
     }
   }
-
 
   .dropdown {
     position: relative;
