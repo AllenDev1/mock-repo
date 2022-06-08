@@ -3,4 +3,32 @@
   max-width: 1000px;
   flex-wrap: wrap;
   gap: 6px;
+  margin-top: 100px;
+}
+.simle-margin-top {
+  margin-top: 48px;
+  margin-bottom: 86.6px;
+}
+.Conrainer-for-filter-sec {
+  justify-content: space-between;
+}
+.clear-all-btn {
+  margin-top: 110px;
+}
+.clear {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: rgba(0, 0, 0, 0.6);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: transparent;
+  border: none;
 }

@@ -10,7 +10,6 @@ import { Container, Nav, Form, FormControl } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import { NavLink } from "react-bootstrap";
 import Login from "./login.jsx";
-import Cars from "../component/dropdowns/Vehicles/cars";
 import Generalnotification from "./Generalnotifi";
 import Dropdown from "react-bootstrap/Dropdown";
 const NavBar = () => {
@@ -78,59 +77,59 @@ const NavBar = () => {
         <Container className=" nav-footer-container nfc">
           <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
             <div className="total-hover">
-              <NavLink className="nav-Vehicles" href="#">
+              <NavLink className="nav-Vehicles" href="vehicles">
                 Vehicles
                 <div class="dropdown-content">
-                  <a href="#">All</a>
-                  <a href="#">Cars</a>
-                  <a href="#">Motorcycles</a>
-                  <a href="#">Scooters</a>
-                  <a href="#">Bicycle</a>
-                  <a href="#">Other vehicles</a>
-                  <a href="#">Spare parts</a>
+                  <a href="vehicles">All</a>
+                  <a href="cars">Cars</a>
+                  <a href="motorcycles">Motorcycles</a>
+                  <a href="scooters">Scooters</a>
+                  <a href="bicycle">Bicycle</a>
+                  <a href="other-vehicles">Other vehicles</a>
+                  <a href="spare-parts">Spare parts</a>
                 </div>
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="#">
+              <NavLink href="properties">
                 Properties
                 <div class="dropdown-content">
-                  <a href="#">All</a>
-                  <a href="#">Lands & plots</a>
-                  <a href="#">Shops & Offices</a>
-                  <a href="#">Houses & Apartments</a>
-                  <a href="#">Rooms & Flats</a>
+                  <a href="properties">All</a>
+                  <a href="lands-plots">Lands & plots</a>
+                  <a href="shops-offices">Shops & Offices</a>
+                  <a href="housesapartments">Houses & Apartments</a>
+                  <a href="roomsflats">Rooms & Flats</a>
                 </div>
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="#">
+              <NavLink href="mobile">
                 Mobiles
                 <div class="dropdown-content">
-                  <a href="#">All</a>
-                  <a href="#">Mobiles</a>
-                  <a href="#">Tablets</a>
-                  <a href="#">Wearables</a>
-                  <a href="#">Accessories</a>
+                  <a href="mobile">All</a>
+                  <a href="mobile-phones">Mobile Phones</a>
+                  <a href="tablets">Tablets</a>
+                  <a href="wearables">Wearables</a>
+                  <a href="accessories">Accessories</a>
                 </div>
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="#">
+              <NavLink href="family-needs">
                 Family Needs
                 <div class="dropdown-content">
-                  <a href="#">All</a>
-                  <a href="#">Men stuffs</a>
-                  <a href="#">Women stuffs</a>
-                  <a href="#">Kids stuffs</a>
-                  <a href="#">Jobs</a>
-                  <a href="#">Foods</a>
-                  <a href="#">Gifts</a>
+                  <a href="family-needs">All</a>
+                  <a href="men-stuffs">Men stuffs</a>
+                  <a href="women-stuffs">Women stuffs</a>
+                  <a href="kids-stuffs">Kids stuffs</a>
+                  <a href="jobs">Jobs</a>
+                  <a href="foods">Foods</a>
+                  <a href="gifts">Gifts</a>
                 </div>
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="#">
+              <NavLink href="Services">
                 Services
                 <div class="dropdown-content">
                   <a href="#">All</a>
@@ -147,7 +146,7 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="#">
+              <NavLink href="electronics-appliances">
                 Electronics & Appliances
                 <div class="dropdown-content">
                   <a href="#">All</a>
@@ -165,7 +164,7 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="#">
+              <NavLink href="furnitures">
                 Furnitures
                 <div class="dropdown-content">
                   <a href="#">All</a>
@@ -180,7 +179,7 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="#">
+              <NavLink href="books-sports-hobbies">
                 Books, Sports & Hobbies
                 <div class="dropdown-content">
                   <a href="#">All</a>
@@ -193,7 +192,7 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="#">
+              <NavLink href="travels-trips">
                 Travels & Trips
                 <div class="dropdown-content">
                   <a href="#">All</a>
@@ -207,7 +206,7 @@ const NavBar = () => {
             </div>
 
             <div className="total-hover">
-              <NavLink href="#">
+              <NavLink href="pets">
                 Pets
                 <div class="dropdown-content drop-r">
                   <a href="#">All</a>
@@ -220,7 +219,7 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="#">
+              <NavLink href="others">
                 Others
                 <div class="dropdown-content drop-r">
                   <a href="#">All</a>

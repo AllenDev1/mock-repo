@@ -10,8 +10,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <Container className="letsSee">
-        <Filter />
+      <Container>
         <Sort />
       </Container>
     </>

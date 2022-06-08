@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import "../../../../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
-import "../../../../scss/dropdown.scss";
 import "../../../../scss/filter.scss";
 import Push from "../../../../Asset/push.svg";
-import { Container } from "react-bootstrap";
-import Simple from "../../Simple";
 import NavBar from "../../../nav";
-const Cars = () => {
+import Simple from "../../Simple";
+import { Container } from "react-bootstrap";
+const MobilesPhones = () => {
   return (
     <>
       <NavBar />
       <Container className="Conrainer-for-filter-sec">
-        <div className="testing" >
+        <div className="testing">
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -42,7 +41,7 @@ const Cars = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Type <img src={Push} />
+              Brand <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -55,8 +54,7 @@ const Cars = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                {" "}
-                Brand <img src={Push} />
+              Condition <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -69,60 +67,8 @@ const Cars = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Condition <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Fuel Type <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                {" "}
-                Gear Type <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                KM Driven <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Manufacture Year <img src={Push} />
+              Owner Type 
+                <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -144,4 +90,4 @@ const Cars = () => {
   );
 };
 
-export default Cars;
+export default MobilesPhones;

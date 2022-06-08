@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 const Sort = () => {
   return (
     <>
-      <Container>
-        <div className="sort-container">
+      <Container className="">
+        <div className="sort-container ">
           <Container>
             <div className="top-section">
               <div className="filter-buttons">
