@@ -16,7 +16,7 @@ import Vehicles from "../src/component/dropdowns/Vehicles/Vehicles";
 import Properties from "./component/dropdowns/Properties/Properties";
 import Mobile from "./component/dropdowns/Mobile/Mobile";
 import FamilyNeeds from "./component/dropdowns/Family Needs/FamilyNeeds";
-import Services from "./component/dropdowns/Services/Cleaning";
+import Cleaning from "./component/dropdowns/Services/Cleaning";
 import Cars from "./component/dropdowns/Vehicles/sub-Vehicles/cars";
 import Motorcycles from "./component/dropdowns/Vehicles/sub-Vehicles/Motorcycles";
 import Scooter from "./component/dropdowns/Vehicles/sub-Vehicles/Scooter";
@@ -79,7 +79,7 @@ function App() {
           <Route path="foods" element={<Foods />} />
           <Route path="family-needs" element={<FamilyNeeds />} />
           {/**************************************************************** */}
-          <Route path="services" element={<Services />} />
+          {/* <Route path="services" element={<Cleaning />} /> */}
           {/**************************************************************** */}
 
           {/* is user logged in function need to be added here */}
