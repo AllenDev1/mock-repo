@@ -97,7 +97,7 @@ function App() {
           <Route path="electronics-repair" element={<ElectronicsRepair />} />
           <Route path="occassion" element={<Occasions />} />
           <Route path="health-beauty" element={<HealthBeauty />} />
-          <Route path="Cleaning" element={<Cleaning />} />
+          <Route path="cleaning" element={<Cleaning />} />
           <Route path="other-services" element={<OtherServices />} />
           {/**************************************************************** */}
 
