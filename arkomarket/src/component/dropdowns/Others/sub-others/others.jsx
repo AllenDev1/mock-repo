@@ -1,19 +1,19 @@
-import React from "react";
-import NavBar from "../../nav";
-import Simple from "../Simple";
-import "../../../css/simple.css";
+import React, { useState } from "react";
+import "../../../../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
-import "../../../scss/dropdown.scss";
-import "../../../scss/filter.scss";
-import Push from "../../../Asset/push.svg";
+import "../../../../scss/filter.scss";
+import Push from "../../../../Asset/push.svg";
+import NavBar from "../../../nav";
+import Simple from "../../Simple";
 import { Container } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
   Condition,
   ManufactureYear,
-} from "../DropdownComponents";
-const Others = () => {
+  MobileBrand
+} from "../../DropdownComponents";
+const Otherss = () => {
   return (
     <>
       <NavBar />
@@ -26,7 +26,7 @@ const Others = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <LocationComponent />
+                <LocationComponent/>
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -37,40 +37,37 @@ const Others = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <PriceRange/>
+               <PriceRange />
               </Dropdown.Menu>
             </Dropdown>
           </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Device Type<img src={Push} />
+              Brand <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <MobileBrand />
               </Dropdown.Menu>
             </Dropdown>
           </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                 Condition <img src={Push} />
+              Condition <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Condition />
+               <Condition />
               </Dropdown.Menu>
             </Dropdown>
           </div>
-         
-         
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Owner Type <img src={Push} />
+              Owner Type 
+                <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -82,14 +79,14 @@ const Others = () => {
           </div>
         </div>
         <div className="clear-all-btn">
-          <button class="clear" href="#">
-            Reset all
-          </button>
-        </div>
+            <button class="clear" href="#">
+              Reset all
+            </button>
+          </div>
       </Container>
       <Simple />
     </>
   );
 };
 
-export default Others;
+export default Otherss;
