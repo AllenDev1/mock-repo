@@ -10,7 +10,7 @@ import { Container, Nav, Form, FormControl } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import { NavLink } from "react-bootstrap";
 import Login from "./login.jsx";
-import Cars from "../component/dropdowns/Vehicles/cars";
+// import Cars from "../component/dropdowns/Vehicles/cars";
 import Generalnotification from "./Generalnotifi";
 import Dropdown from "react-bootstrap/Dropdown";
 const NavBar = () => {
