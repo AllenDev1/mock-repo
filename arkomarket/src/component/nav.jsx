@@ -169,12 +169,12 @@ const NavBar = () => {
                 <div class="dropdown-content">
                   <a href="furnitures">All</a>
                   <a href="office-furnitures">Office Furnitures</a>
-                  <a href="#">Bed & mattresses</a>
-                  <a href="#">Sofa sets</a>
-                  <a href="#">Other Home Furnitures</a>
-                  <a href="#">Kid's Furnitures</a>
-                  <a href="#">Home, Decor and Garden</a>
-                  <a href="#">Other Household Items</a>
+                  <a href="bed-mat">Bed & mattresses</a>
+                  <a href="sofa">Sofa sets</a>
+                  <a href="home-furnitures">Other Home Furnitures</a>
+                  <a href="kids-furnitures">Kid's Furnitures</a>
+                  <a href="decor">Home, Decor and Garden</a>
+                  <a href="household-furnitures">Other Household Items</a>
                 </div>
               </p>
             </div>
@@ -184,7 +184,7 @@ const NavBar = () => {
                 <div class="dropdown-content">
                   <a href="books-sports-hobbies">All</a>
                   <a href="#">Books</a>
-                  <a href="#">Gyn & fitness</a>
+                  <a href="#">Gym & fitness</a>
                   <a href="#">Musical Instruments</a>
                   <a href="#">Sports Equipments</a>
                   <a href="#">Other Hobbies</a>

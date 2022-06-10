@@ -47,6 +47,17 @@ import Mainrainance from "./component/dropdowns/Services/sub-Services/Maintainan
 import Occasions from "./component/dropdowns/Services/sub-Services/Occasions";
 import HealthBeauty from "./component/dropdowns/Services/sub-Services/HealthBeauty";
 import Cleaning from "./component/dropdowns/Services/sub-Services/Cleaning";
+import Furniture from "./component/dropdowns/Furniture/Furniture";
+import Decor from "./component/dropdowns/Furniture/sub-furniture/Decor";
+import Bedmat from "./component/dropdowns/Furniture/sub-furniture/Bedmat";
+import Homefurniture from "./component/dropdowns/Furniture/sub-furniture/Homefurniture";
+import Sofa from "./component/dropdowns/Furniture/sub-furniture/sofa";
+import Householdf from "./component/dropdowns/Furniture/sub-furniture/Householdf";
+import Kidsfurniture from "./component/dropdowns/Furniture/sub-furniture/Kidsfurniture";
+import Officefurniture from "./component/dropdowns/Furniture/sub-furniture/Officefurniture";
+
+
+
 function App() {
   return (
     <>
@@ -99,6 +110,31 @@ function App() {
           <Route path="health-beauty" element={<HealthBeauty />} />
           <Route path="Cleaning" element={<Cleaning />} />
           <Route path="other-services" element={<OtherServices />} />
+          {/**************************************************************** */}
+          <Route path="furnitures" element={<Furniture/>} />
+          <Route path="office-furnitures" element={<Officefurniture/>} />
+          <Route path="bed-mat" element={<Bedmat/>} />
+          <Route path="kids-furnitures" element={<Kidsfurniture/>} />
+          <Route path="sofa" element={<Sofa />} />
+          <Route path="household-furnitures" element={<Householdf/>} />
+          <Route path="decor" element={<Decor/>} />
+          <Route path="home-furnitures" element={<Homefurniture />} />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           {/**************************************************************** */}
 
           {/* is user logged in function need to be added here */}
