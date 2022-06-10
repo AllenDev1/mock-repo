@@ -11,6 +11,7 @@ import {
   PriceRange,
   Condition,
   ManufactureYear,
+  WearablesBrand
 } from "../../DropdownComponents";
 const Wearables = () => {
   return (
@@ -47,9 +48,7 @@ const Wearables = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+               <WearablesBrand/>
               </Dropdown.Menu>
             </Dropdown>
           </div>

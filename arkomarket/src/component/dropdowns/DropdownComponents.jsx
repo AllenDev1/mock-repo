@@ -523,7 +523,7 @@ export const MobileBrand = () => {
           </div>
           <div className="check-btn-component">
             <Form.Check aria-label="option 1" />
-            <p> BHonorMW</p>
+            <p> Honor</p>
           </div>
           <div className="check-btn-component">
             <Form.Check aria-label="option 1" />
@@ -614,6 +614,276 @@ export const MobileBrands = () => {
           <div className="check-btn-component">
             <Form.Check aria-label="option 1" />
             <p> Other Brands</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const WearablesBrand = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Samsung</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Apple / iPhone</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Mi / Xiaomi</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Huawei</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Google</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other Brands</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const WomenSelecStuff = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Jewelry</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Perfumes</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Wallets</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Bags</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Watches</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Hats</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Glasses</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Shoes</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Clothings</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Tradtional Clothings</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other women stuffs</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const MenSelecStuff = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Wallets</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Bags</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Watches</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Hats</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Glasses</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Shoes</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Clothings</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Tradtional Clothings</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other men stuffs</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const KidSelecStuff = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Kids Games</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Stroller</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Beds</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Shoes</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Bags</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Clothings</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Tradtional Clothings</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other kids stuffs</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const FoodsSelecStuff = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Vegetables</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Fruits</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Milk & Yogurts</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Ice Cream</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Cake</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Restaurant Foods</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Street Foods</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other Foods</p>
           </div>
         </div>
       </Form>

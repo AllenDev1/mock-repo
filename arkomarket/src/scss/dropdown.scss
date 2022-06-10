@@ -68,7 +68,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 1); 
+  background: rgba(0, 0, 0, 0.8); 
   border-radius: 10px;
 }
 
@@ -177,7 +177,7 @@
     }
   }
   .brand-components{
-    max-height: 300px;
+    max-height: 310px;
     overflow-y: scroll;
    
   }

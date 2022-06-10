@@ -12,6 +12,7 @@ import {
   PriceRange,
   Condition,
   ManufactureYear,
+  FoodsSelecStuff
 } from "../../DropdownComponents";
 const Foods = () => {
   return (
@@ -37,9 +38,7 @@ const Foods = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+               <FoodsSelecStuff />
               </Dropdown.Menu>
             </Dropdown>
           </div>

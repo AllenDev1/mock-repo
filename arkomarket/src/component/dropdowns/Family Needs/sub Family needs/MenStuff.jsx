@@ -11,6 +11,7 @@ import {
   LocationComponent,
   PriceRange,
   Condition,
+  MenSelecStuff,
   ManufactureYear,
 } from "../../DropdownComponents";
 const MenStuffs = () => {
@@ -37,9 +38,7 @@ const MenStuffs = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+               <MenSelecStuff />
               </Dropdown.Menu>
             </Dropdown>
           </div>
