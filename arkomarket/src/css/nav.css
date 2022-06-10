@@ -83,6 +83,15 @@ body {
   color: #000000cc;
   padding-bottom: 5px;
 }
+.nav-footer-Btn p {
+  margin-bottom: 7px;
+  padding: 0px;
+  color: #000000cc;
+  padding-bottom: 5px;
+}
+.nav-footer-Btn p:hover {
+  text-decoration: underline;
+}
 .new-ads-btn {
   height: 39px;
   width: 119px;
