@@ -18,7 +18,7 @@ const NavBar = () => {
     if (window.scrollY > 30) {
       document.querySelector(".nav-footer-container").style.display = "none";
       document.querySelector(".upper-nav-sec").style.borderBottom = "none";
-      document.querySelector(".nBS").style.paddingBottom = "0px";
+      document.querySelector(".nBS").style.marginBottom = "7px";
     } else {
       document.querySelector(".upper-nav-sec").style.borderBottom = "none";
       document.querySelector(".nfc").style.display = "flex";
