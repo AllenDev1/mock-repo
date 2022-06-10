@@ -9,9 +9,8 @@ import Push from "../../../../Asset/push.svg";
 import { Container } from "react-bootstrap";
 import {
   LocationComponent,
-  PriceRange,
-  Condition,
-  ManufactureYear,
+  JobCategory,
+  JobType,
 } from "../../DropdownComponents";
 const Jobs = () => {
   return (
@@ -37,9 +36,7 @@ const Jobs = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <JobCategory />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -47,26 +44,11 @@ const Jobs = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Job Type <img src={Push} />
+                Job Type <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Salary <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <JobType />
               </Dropdown.Menu>
             </Dropdown>
           </div>

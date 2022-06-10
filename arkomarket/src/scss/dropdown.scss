@@ -141,8 +141,9 @@
   }
   .show-cancle-btn {
     display: flex;
-    justify-content: space-between;
     margin-top: 32px;
+    gap: 12px;
+    justify-content: flex-end;
     .cancel-btn {
       font-style: normal;
       font-weight: 500;
@@ -177,7 +178,7 @@
     }
   }
   .brand-components{
-    max-height: 310px;
+    max-height: 330px;
     overflow-y: scroll;
    
   }
@@ -211,7 +212,8 @@
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
-      line-height: 17px;
+      line-height: 24px;
+      padding-bottom: 0%;
       /* identical to box height */
       margin: 0%;
       color: rgba(0, 0, 0, 0.8);

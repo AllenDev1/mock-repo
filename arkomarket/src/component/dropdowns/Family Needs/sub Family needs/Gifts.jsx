@@ -10,8 +10,7 @@ import { Container } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
-  Condition,
-  ManufactureYear,
+  GiftSelectOptions
 } from "../../DropdownComponents";
 const Gifts = () => {
   return (
@@ -37,9 +36,7 @@ const Gifts = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <GiftSelectOptions />
               </Dropdown.Menu>
             </Dropdown>
           </div>
