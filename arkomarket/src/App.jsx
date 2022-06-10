@@ -16,7 +16,6 @@ import Vehicles from "../src/component/dropdowns/Vehicles/Vehicles";
 import Properties from "./component/dropdowns/Properties/Properties";
 import Mobile from "./component/dropdowns/Mobile/Mobile";
 import FamilyNeeds from "./component/dropdowns/Family Needs/FamilyNeeds";
-import Cleaning from "./component/dropdowns/Services/Cleaning";
 import Cars from "./component/dropdowns/Vehicles/sub-Vehicles/cars";
 import Motorcycles from "./component/dropdowns/Vehicles/sub-Vehicles/Motorcycles";
 import Scooter from "./component/dropdowns/Vehicles/sub-Vehicles/Scooter";
@@ -37,8 +36,18 @@ import Gifts from "./component/dropdowns/Family Needs/sub Family needs/Gifts";
 import KidsStuffs from "./component/dropdowns/Family Needs/sub Family needs/KidsStuff";
 import Jobs from "./component/dropdowns/Family Needs/sub Family needs/Jobs";
 import WomenStuffs from "./component/dropdowns/Family Needs/sub Family needs/WomenStuffs";
+import OtherServices from "./component/dropdowns/Services/sub-Services/OtherServices";
+import Services from "./component/dropdowns/Services/Services";
+import EducationClasses from "./component/dropdowns/Services/sub-Services/EducationClasses";
+import MoveFurniture from "./component/dropdowns/Services/sub-Services/MoveFurniture";
+import ElectronicsRepair from "./component/dropdowns/Services/sub-Services/ElectronicsRepair";
+import Agriculture from "./component/dropdowns/Services/sub-Services/Agriculture";
+import Constructions from "./component/dropdowns/Services/sub-Services/Constructions";
+import Mainrainance from "./component/dropdowns/Services/sub-Services/Maintainance";
+import Occasions from "./component/dropdowns/Services/sub-Services/Occasions";
+import HealthBeauty from "./component/dropdowns/Services/sub-Services/HealthBeauty";
+import Cleaning from "./component/dropdowns/Services/sub-Services/Cleaning";
 function App() {
-
   return (
     <>
       <Router>
@@ -79,7 +88,17 @@ function App() {
           <Route path="foods" element={<Foods />} />
           <Route path="family-needs" element={<FamilyNeeds />} />
           {/**************************************************************** */}
-          {/* <Route path="services" element={<Cleaning />} /> */}
+          <Route path="services" element={<Services />} />
+          <Route path="education-classes" element={<EducationClasses />} />
+          <Route path="move-furnitures" element={<MoveFurniture />} />
+          <Route path="agriculture" element={<Agriculture />} />
+          <Route path="maintainance" element={<Mainrainance />} />
+          <Route path="construction" element={<Constructions />} />
+          <Route path="electronics-repair" element={<ElectronicsRepair />} />
+          <Route path="occassion" element={<Occasions />} />
+          <Route path="health-beauty" element={<HealthBeauty />} />
+          <Route path="Cleaning" element={<Cleaning />} />
+          <Route path="other-services" element={<OtherServices />} />
           {/**************************************************************** */}
 
           {/* is user logged in function need to be added here */}

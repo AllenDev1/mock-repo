@@ -38,20 +38,20 @@ export const Condition = () => {
         {["radio"].map((type) => (
           <div key={`default-${type}`} className="check-btn">
             <div className="check-btn-component">
-              <Form.Check type={type} id={`default-${type}`} name="group1" />
+              <Form.Check aria-label="option 1" />
               <p> Used</p>
             </div>
 
             <div className="check-btn-component">
-              <Form.Check type={type} id={`default-${type}`} name="group1" />
+              <Form.Check aria-label="option 1" />
               <p> Like New</p>
             </div>
             <div className="check-btn-component">
-              <Form.Check type={type} id={`default-${type}`} name="group1" />
+              <Form.Check aria-label="option 1" />
               <p> Not working</p>
             </div>
             <div className="check-btn-component">
-              <Form.Check type={type} id={`default-${type}`} name="group1" />
+              <Form.Check aria-label="option 1" />
               <p> Brand new</p>
             </div>
           </div>
@@ -73,20 +73,20 @@ export const FuelType = () => {
         {["radio"].map((type) => (
           <div key={`default-${type}`} className="check-btn">
             <div className="check-btn-component">
-              <Form.Check type={type} id={`default-${type}`} name="group1" />
+              <Form.Check aria-label="option 1" />
               <p> Petrol</p>
             </div>
 
             <div className="check-btn-component">
-              <Form.Check type={type} id={`default-${type}`} name="group1" />
+              <Form.Check aria-label="option 1" />
               <p> Diesel</p>
             </div>
             <div className="check-btn-component">
-              <Form.Check type={type} id={`default-${type}`} name="group1" />
+              <Form.Check aria-label="option 1" />
               <p> Electric</p>
             </div>
             <div className="check-btn-component">
-              <Form.Check type={type} id={`default-${type}`} name="group1" />
+              <Form.Check aria-label="option 1" />
               <p> Other</p>
             </div>
           </div>
@@ -108,12 +108,12 @@ export const GearType = () => {
         {["radio"].map((type) => (
           <div key={`default-${type}`} className="check-btn">
             <div className="check-btn-component">
-              <Form.Check type={type} id={`default-${type}`} name="group1" />
+              <Form.Check aria-label="option 1" />
               <p> Manual</p>
             </div>
 
             <div className="check-btn-component">
-              <Form.Check type={type} id={`default-${type}`} name="group1" />
+              <Form.Check aria-label="option 1" />
               <p> Automatic</p>
             </div>
           </div>
@@ -128,7 +128,7 @@ export const GearType = () => {
   );
 };
 
-export const ManufactureYear  = () => {
+export const ManufactureYear = () => {
   return (
     <>
       <input className="price-range" type="text" placeholder="From 2004" />
@@ -141,11 +141,43 @@ export const ManufactureYear  = () => {
   );
 };
 
-export const KMDriven  = () => {
+export const KMDriven = () => {
   return (
     <>
       <input className="price-range" type="text" placeholder="From 500KM" />
       <input type="text" placeholder="to 700KM" />
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const CarBrand = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Petrol</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Diesel</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Electric</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other</p>
+          </div>
+        </div>
+      </Form>
+
       <div className="show-cancle-btn">
         <button className="cancel-btn">Cancel</button>
         <button className="show-btn">Show results </button>
