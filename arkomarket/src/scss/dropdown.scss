@@ -195,6 +195,13 @@
     .check-btn-component {
       display: flex;
       gap: 0px 8px;
+      .form-check-input:checked[type=checkbox]{
+        background-image:url("../Asset/library 3/Vector 4.svg");
+        background-repeat: no-repeat;
+        margin: auto;
+        background-position: 4px;
+        
+      }
     }
     .form-check-input {
       height: 24px;
@@ -206,7 +213,7 @@
       margin-top: 0%;
     }
     .form-check-input:focus{
-      border-color: initial;
+      border-color: transparent;
     }
     p {
       font-style: normal;
