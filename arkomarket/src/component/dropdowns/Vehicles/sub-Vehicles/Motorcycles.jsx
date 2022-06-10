@@ -13,6 +13,7 @@ import {
   Condition,
   ManufactureYear,
   KMDriven,
+  MotercycleBrand
 } from "../../DropdownComponents";
 const Motorcycles = () => {
   return (
@@ -45,14 +46,11 @@ const Motorcycles = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                {" "}
                 Brand <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+               <MotercycleBrand />
               </Dropdown.Menu>
             </Dropdown>
           </div>
