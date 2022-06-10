@@ -7,7 +7,7 @@ import Push from "../../../../Asset/push.svg";
 import { Container } from "react-bootstrap";
 import Simple from "../../Simple";
 import NavBar from "../../../nav";
-import {LocationComponent, Condition, PriceRange, FuelType, GearType, ManufactureYear, KMDriven} from "../../DropdownComponents.jsx"
+import {LocationComponent, Condition, PriceRange, FuelType, GearType, ManufactureYear, KMDriven, CarBrand} from "../../DropdownComponents.jsx"
 import $ from "jquery";
 const Cars = () => {
   $(".mdb-select").on("click", (e) => {
@@ -43,14 +43,11 @@ const Cars = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                {" "}
                 Brand <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <CarBrand />
               </Dropdown.Menu>
             </Dropdown>
           </div>

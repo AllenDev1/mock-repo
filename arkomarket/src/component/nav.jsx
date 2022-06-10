@@ -129,37 +129,37 @@ const NavBar = () => {
               </p>
             </div>
             <div className="total-hover">
-              <p href="/">
+              <p>
                 Services
                 <div class="dropdown-content">
-                  <a href="#">All</a>
-                  <a href="#">Cleaning</a>
-                  <a href="#">Education & Classes</a>
-                  <a href="#">Move Furnitures</a>
-                  <a href="#">Agriculture</a>
-                  <a href="#">Construction</a>
-                  <a href="#">Maintainance</a>
-                  <a href="#">Occassion</a>
-                  <a href="#">Health & Beauty</a>
-                  <a href="#">Other services</a>
+                  <a href="services">All</a>
+                  <a href="cleaning">Cleaning</a>
+                  <a href="education-classes">Education & Classes</a>
+                  <a href="move-furnitures">Move Furnitures</a>
+                  <a href="agriculture">Agriculture</a>
+                  <a href="construction">Construction</a>
+                  <a href="maintainance">Maintainance</a>
+                  <a href="occassion">Occassion</a>
+                  <a href="health-beauty">Health & Beauty</a>
+                  <a href="other-services">Other services</a>
                 </div>
               </p>
             </div>
             <div className="total-hover">
-              <p href="/">
+              <p >
                 Electronics & Appliances
                 <div class="dropdown-content">
                   <a href="electronics-appliances">All</a>
-                  <a href="#">Printers & monitors</a>
-                  <a href="#">Computers & Laptops</a>
-                  <a href="#">Accessories & parts</a>
-                  <a href="#">Cameras & Lenses</a>
-                  <a href="#">Game and Entertainment</a>
-                  <a href="#">TV, Audio & Video</a>
-                  <a href="#">Fridge</a>
-                  <a href="#">ACs & Heater</a>
-                  <a href="#">Washing machines</a>
-                  <a href="#">Kitchen & other Appliances</a>
+                  <a href="printers-monitors">Printers & monitors</a>
+                  <a href="computers-laptops">Computers & Laptops</a>
+                  <a href="accessories-parts">Accessories & parts</a>
+                  <a href="cameras-lenses">Cameras & Lenses</a>
+                  <a href="game-entertainment">Game and Entertainment</a>
+                  <a href="tv-audio-video">TV, Audio & Video</a>
+                  <a href="Fridge">Fridge</a>
+                  <a href="ac-heater">ACs & Heater</a>
+                  <a href="washing-machines">Washing machines</a>
+                  <a href="kitchen-other-appliances">Kitchen & other Appliances</a>
                 </div>
               </p>
             </div>
@@ -168,7 +168,7 @@ const NavBar = () => {
                 Furnitures
                 <div class="dropdown-content">
                   <a href="furnitures">All</a>
-                  <a href="#">Office Furnitures</a>
+                  <a href="office-furnitures">Office Furnitures</a>
                   <a href="#">Bed & mattresses</a>
                   <a href="#">Sofa sets</a>
                   <a href="#">Other Home Furnitures</a>
