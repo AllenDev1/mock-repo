@@ -70,7 +70,8 @@
 }
 .sort-container {
   margin-bottom: 76px;
-  /* margin-top:48px; */
+  margin-top:140px;
+  position: relative;
 }
 .page-container {
   width: 100%;

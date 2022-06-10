@@ -1,110 +1,103 @@
 import React, { useState } from "react";
-import "../../../css/simple.css";
+import "../../../../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
-import "../../../scss/filter.scss";
-import Push from "../../../Asset/push.svg"
-
+import "../../../../scss/dropdown.scss";
+import "../../../../scss/filter.scss";
+import Push from "../../../../Asset/push.svg";
+import { Container } from "react-bootstrap";
+import Simple from "../../Simple";
+import NavBar from "../../../nav";
+import {
+  LocationComponent,
+  PriceRange,
+  Condition,
+  ManufactureYear,
+  KMDriven,
+} from "../../DropdownComponents";
 const Scooter = () => {
   return (
     <>
-      <div className="testing">
-        <div>
-          <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Location <img src={Push}/>  
-            </Dropdown.Toggle>
+      <NavBar />
+      <Container className="Conrainer-for-filter-sec">
+        <div className="testing">
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Location <img src={Push} />
+              </Dropdown.Toggle>
 
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </div>
-        <div>
-          <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Price Range <img src={Push}/>  
-            </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <LocationComponent /> {/* location component dropdown  */}
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Price Range <img src={Push} />
+              </Dropdown.Toggle>
 
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </div>
-        <div>
-          <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-              
-            </Dropdown.Toggle>
-            Type <img src={Push}/>  
+              <Dropdown.Menu>
+                <PriceRange /> {/* Price range component dropdown  */}
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                {" "}
+                Brand <img src={Push} />
+              </Dropdown.Toggle>
 
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </div>
-        <div>
-          <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-              
-            </Dropdown.Toggle>
-            Brand <img src={Push}/>  
+              <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Condition <img src={Push} />
+              </Dropdown.Toggle>
 
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </div>
-        <div>
-          <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Condition
-            </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Condition /> {/* Conditioncomponent dropdown  */}
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
 
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </div>
-        <div>
-          <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-              
-            </Dropdown.Toggle>
-            Manufacture Year <img src={Push}/>  
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Manufacture Year <img src={Push} />
+              </Dropdown.Toggle>
 
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </div>
-        <div>
-          <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-              
-            </Dropdown.Toggle>
-            KM Driven <img src={Push}/>  
+              <Dropdown.Menu>
+                <ManufactureYear /> {/** ManufactureYear dropdown */}
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                KM Driven <img src={Push} />
+              </Dropdown.Toggle>
 
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+              <Dropdown.Menu>
+                <KMDriven /> {/** KM driven dropdown */}
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
         </div>
-      </div>
-     
+        <div className="clear-all-btn">
+          <button class="clear" href="#">
+            Reset all
+          </button>
+        </div>
+      </Container>
+      <Simple />
     </>
   );
 };

@@ -1,14 +1,12 @@
-import React from "react";
-import NavBar from "../../nav";
-import Simple from "../Simple";
-import "../../../css/simple.css";
+import React, { useState } from "react";
+import "../../../../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
-import "../../../scss/dropdown.scss";
-import "../../../scss/filter.scss";
-import Push from "../../../Asset/push.svg";
+import "../../../../scss/filter.scss";
+import Push from "../../../../Asset/push.svg";
+import NavBar from "../../../nav";
+import Simple from "../../Simple";
 import { Container } from "react-bootstrap";
-import { LocationComponent, PriceRange } from "../DropdownComponents";
-const Properties = () => {
+const MobilesPhones = () => {
   return (
     <>
       <NavBar />
@@ -21,7 +19,9 @@ const Properties = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-               <LocationComponent />
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -32,14 +32,16 @@ const Properties = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-             <PriceRange />
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Price per Sq. ft. <img src={Push} />
+              Brand <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -52,8 +54,7 @@ const Properties = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                {" "}
-                Plot Area <img src={Push} />
+              Condition <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -66,7 +67,8 @@ const Properties = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Owner Type <img src={Push} />
+              Owner Type 
+                <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -78,14 +80,14 @@ const Properties = () => {
           </div>
         </div>
         <div className="clear-all-btn">
-          <button class="clear" href="#">
-            Reset all
-          </button>
-        </div>
+            <button class="clear" href="#">
+              Reset all
+            </button>
+          </div>
       </Container>
       <Simple />
     </>
   );
 };
 
-export default Properties;
+export default MobilesPhones;
