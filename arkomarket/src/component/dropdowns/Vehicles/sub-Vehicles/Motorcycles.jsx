@@ -7,6 +7,13 @@ import Push from "../../../../Asset/push.svg";
 import { Container } from "react-bootstrap";
 import Simple from "../../Simple";
 import NavBar from "../../../nav";
+import {
+  LocationComponent,
+  PriceRange,
+  Condition,
+  ManufactureYear,
+  KMDriven,
+} from "../../DropdownComponents";
 const Motorcycles = () => {
   return (
     <>
@@ -20,9 +27,7 @@ const Motorcycles = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <LocationComponent /> {/* location component dropdown  */}
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -33,16 +38,14 @@ const Motorcycles = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <PriceRange /> {/* Price range component dropdown  */}
               </Dropdown.Menu>
             </Dropdown>
           </div>
-         
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
+                {" "}
                 Brand <img src={Push} />
               </Dropdown.Toggle>
 
@@ -60,26 +63,11 @@ const Motorcycles = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <Condition /> {/* Conditioncomponent dropdown  */}
               </Dropdown.Menu>
             </Dropdown>
           </div>
 
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                KM Driven <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -87,18 +75,27 @@ const Motorcycles = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <ManufactureYear /> {/** ManufactureYear dropdown */}
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                KM Driven <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <KMDriven /> {/** KM driven dropdown */}
               </Dropdown.Menu>
             </Dropdown>
           </div>
         </div>
         <div className="clear-all-btn">
-            <button class="clear" href="#">
-              Reset all
-            </button>
-          </div>
+          <button class="clear" href="#">
+            Reset all
+          </button>
+        </div>
       </Container>
       <Simple />
     </>

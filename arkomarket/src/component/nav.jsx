@@ -77,7 +77,7 @@ const NavBar = () => {
         <Container className=" nav-footer-container nfc">
           <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
             <div className="total-hover">
-              <NavLink className="nav-Vehicles" href="vehicles">
+              <NavLink className="nav-Vehicles" href="/">
                 Vehicles
                 <div class="dropdown-content">
                   <a href="vehicles">All</a>
@@ -91,7 +91,7 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="properties">
+              <NavLink href="/">
                 Properties
                 <div class="dropdown-content">
                   <a href="properties">All</a>
@@ -103,7 +103,7 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="mobile">
+              <NavLink href="/">
                 Mobiles
                 <div class="dropdown-content">
                   <a href="mobile">All</a>
@@ -115,7 +115,7 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="family-needs">
+              <NavLink href="/">
                 Family Needs
                 <div class="dropdown-content">
                   <a href="family-needs">All</a>
@@ -129,7 +129,7 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="Services">
+              <NavLink href="/">
                 Services
                 <div class="dropdown-content">
                   <a href="#">All</a>
@@ -146,10 +146,10 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="electronics-appliances">
+              <NavLink href="/">
                 Electronics & Appliances
                 <div class="dropdown-content">
-                  <a href="#">All</a>
+                  <a href="electronics-appliances">All</a>
                   <a href="#">Printers & monitors</a>
                   <a href="#">Computers & Laptops</a>
                   <a href="#">Accessories & parts</a>
@@ -167,7 +167,7 @@ const NavBar = () => {
               <NavLink href="furnitures">
                 Furnitures
                 <div class="dropdown-content">
-                  <a href="#">All</a>
+                  <a href="furnitures">All</a>
                   <a href="#">Office Furnitures</a>
                   <a href="#">Bed & mattresses</a>
                   <a href="#">Sofa sets</a>
@@ -179,10 +179,10 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="books-sports-hobbies">
+              <NavLink href="/">
                 Books, Sports & Hobbies
                 <div class="dropdown-content">
-                  <a href="#">All</a>
+                  <a href="books-sports-hobbies">All</a>
                   <a href="#">Books</a>
                   <a href="#">Gyn & fitness</a>
                   <a href="#">Musical Instruments</a>
@@ -192,10 +192,10 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="travels-trips">
+              <NavLink href="/">
                 Travels & Trips
                 <div class="dropdown-content">
-                  <a href="#">All</a>
+                  <a href="travels-trips">All</a>
                   <a href="#">Tourism</a>
                   <a href="#">Trips & Camping</a>
                   <a href="#">Cars & Bike Rentals</a>
@@ -206,10 +206,10 @@ const NavBar = () => {
             </div>
 
             <div className="total-hover">
-              <NavLink href="pets">
+              <NavLink href="/">
                 Pets
                 <div class="dropdown-content drop-r">
-                  <a href="#">All</a>
+                  <a href="pets">All</a>
                   <a href="#">Fishes & Aquarium</a>
                   <a href="#">Pet foods & Accessories</a>
                   <a href="#">Dogs & Cats</a>
@@ -219,10 +219,10 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="total-hover">
-              <NavLink href="others">
+              <NavLink href="/">
                 Others
                 <div class="dropdown-content drop-r">
-                  <a href="#">All</a>
+                  <a href="others">All</a>
                   <a href="#">Arts & Handicrafts</a>
                   <a href="#">Antique Items</a>
                   <a href="#">Charity</a>
