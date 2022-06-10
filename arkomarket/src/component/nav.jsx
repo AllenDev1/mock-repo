@@ -18,7 +18,7 @@ const NavBar = () => {
     if (window.scrollY > 30) {
       document.querySelector(".nav-footer-container").style.display = "none";
       document.querySelector(".upper-nav-sec").style.borderBottom = "none";
-      document.querySelector(".nBS").style.paddingBottom = "0px";
+      document.querySelector(".nBS").style.marginBottom = "7px";
     } else {
       document.querySelector(".upper-nav-sec").style.borderBottom = "none";
       document.querySelector(".nfc").style.display = "flex";
@@ -77,7 +77,7 @@ const NavBar = () => {
         <Container className=" nav-footer-container nfc">
           <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
             <div className="total-hover">
-              <NavLink className="nav-Vehicles" href="/">
+              <p className="nav-Vehicles" href="/">
                 Vehicles
                 <div class="dropdown-content">
                   <a href="vehicles">All</a>
@@ -88,10 +88,10 @@ const NavBar = () => {
                   <a href="other-vehicles">Other vehicles</a>
                   <a href="spare-parts">Spare parts</a>
                 </div>
-              </NavLink>
+              </p>
             </div>
             <div className="total-hover">
-              <NavLink href="/">
+              <p href="/">
                 Properties
                 <div class="dropdown-content">
                   <a href="properties">All</a>
@@ -100,10 +100,10 @@ const NavBar = () => {
                   <a href="housesapartments">Houses & Apartments</a>
                   <a href="roomsflats">Rooms & Flats</a>
                 </div>
-              </NavLink>
+              </p>
             </div>
             <div className="total-hover">
-              <NavLink href="/">
+              <p href="/">
                 Mobiles
                 <div class="dropdown-content">
                   <a href="mobile">All</a>
@@ -112,10 +112,10 @@ const NavBar = () => {
                   <a href="wearables">Wearables</a>
                   <a href="accessories">Accessories</a>
                 </div>
-              </NavLink>
+              </p>
             </div>
             <div className="total-hover">
-              <NavLink href="/">
+              <p href="/">
                 Family Needs
                 <div class="dropdown-content">
                   <a href="family-needs">All</a>
@@ -126,10 +126,10 @@ const NavBar = () => {
                   <a href="foods">Foods</a>
                   <a href="gifts">Gifts</a>
                 </div>
-              </NavLink>
+              </p>
             </div>
             <div className="total-hover">
-              <NavLink href="/">
+              <p href="/">
                 Services
                 <div class="dropdown-content">
                   <a href="#">All</a>
@@ -143,10 +143,10 @@ const NavBar = () => {
                   <a href="#">Health & Beauty</a>
                   <a href="#">Other services</a>
                 </div>
-              </NavLink>
+              </p>
             </div>
             <div className="total-hover">
-              <NavLink href="/">
+              <p href="/">
                 Electronics & Appliances
                 <div class="dropdown-content">
                   <a href="electronics-appliances">All</a>
@@ -161,10 +161,10 @@ const NavBar = () => {
                   <a href="#">Washing machines</a>
                   <a href="#">Kitchen & other Appliances</a>
                 </div>
-              </NavLink>
+              </p>
             </div>
             <div className="total-hover">
-              <NavLink href="furnitures">
+              <p href="furnitures">
                 Furnitures
                 <div class="dropdown-content">
                   <a href="furnitures">All</a>
@@ -176,10 +176,10 @@ const NavBar = () => {
                   <a href="#">Home, Decor and Garden</a>
                   <a href="#">Other Household Items</a>
                 </div>
-              </NavLink>
+              </p>
             </div>
             <div className="total-hover">
-              <NavLink href="/">
+              <p href="/">
                 Books, Sports & Hobbies
                 <div class="dropdown-content">
                   <a href="books-sports-hobbies">All</a>
@@ -189,10 +189,10 @@ const NavBar = () => {
                   <a href="#">Sports Equipments</a>
                   <a href="#">Other Hobbies</a>
                 </div>
-              </NavLink>
+              </p>
             </div>
             <div className="total-hover">
-              <NavLink href="/">
+              <p href="/">
                 Travels & Trips
                 <div class="dropdown-content">
                   <a href="travels-trips">All</a>
@@ -202,11 +202,11 @@ const NavBar = () => {
                   <a href="#">Hotels & Homestays</a>
                   <a href="#">Other</a>
                 </div>
-              </NavLink>
+              </p>
             </div>
 
             <div className="total-hover">
-              <NavLink href="/">
+              <p href="/">
                 Pets
                 <div class="dropdown-content drop-r">
                   <a href="pets">All</a>
@@ -216,10 +216,10 @@ const NavBar = () => {
                   <a href="#">Birds</a>
                   <a href="#">Goat,Buffalo and other pets</a>
                 </div>
-              </NavLink>
+              </p>
             </div>
             <div className="total-hover">
-              <NavLink href="/">
+              <p href="/">
                 Others
                 <div class="dropdown-content drop-r">
                   <a href="others">All</a>
@@ -228,7 +228,7 @@ const NavBar = () => {
                   <a href="#">Charity</a>
                   <a href="#">Others</a>
                 </div>
-              </NavLink>
+              </p>
             </div>
           </Navbar.Collapse>
         </Container>
