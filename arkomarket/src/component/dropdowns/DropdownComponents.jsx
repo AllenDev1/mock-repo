@@ -22,8 +22,8 @@ export const LocationComponent = () => {
 export const PriceRange = () => {
   return (
     <>
-      <input className="price-range" type="text" placeholder="Price From" />
-      <input type="text" placeholder="Price to" />
+      <input className="price-range" type="number" placeholder="Price From" />
+      <input type="number" placeholder="Price to" />
       <div className="show-cancle-btn">
         <button className="cancel-btn">Cancel</button>
         <button className="show-btn">Show results </button>
@@ -131,8 +131,8 @@ export const GearType = () => {
 export const ManufactureYear = () => {
   return (
     <>
-      <input className="price-range" type="text" placeholder="From 2004" />
-      <input type="text" placeholder="to 2010" />
+      <input className="price-range" type="number" placeholder="From 2004" />
+      <input type="number" placeholder="to 2010" />
       <div className="show-cancle-btn">
         <button className="cancel-btn">Cancel</button>
         <button className="show-btn">Show results </button>
@@ -144,8 +144,8 @@ export const ManufactureYear = () => {
 export const KMDriven = () => {
   return (
     <>
-      <input className="price-range" type="text" placeholder="From 500KM" />
-      <input type="text" placeholder="to 700KM" />
+      <input className="price-range" type="number" placeholder="From 500KM" />
+      <input type="number" placeholder="to 700KM" />
       <div className="show-cancle-btn">
         <button className="cancel-btn">Cancel</button>
         <button className="show-btn">Show results </button>
@@ -884,6 +884,172 @@ export const FoodsSelecStuff = () => {
           <div className="check-btn-component">
             <Form.Check aria-label="option 1" />
             <p> Other Foods</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const GiftSelectOptions = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Men Gifts</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Women Gifts</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Home Gifts</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Kids Gifts</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Flowers</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other Gifts</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const JobCategory = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Film & Production</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Teacher</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Cook</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Delivery & Collection</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Driver</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> BPO & Telecaller </p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Data entry</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Designer</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Accountant</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Hotel & Travel</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> IT Engineer & Developers</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Operator & Technician</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Receiptionist & Front office</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Office Assistant</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Sales & Marketing</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other jobs</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const JobType = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Full-Time</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Part-Time</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Freelancer</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Remote</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Internship</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Others</p>
           </div>
         </div>
       </Form>

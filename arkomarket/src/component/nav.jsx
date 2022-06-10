@@ -150,12 +150,14 @@ const NavBar = () => {
                 Electronics & Appliances
                 <div class="dropdown-content">
                   <a href="electronics-appliances">All</a>
-                  <a href="printers-monitors">Printers & monitors</a>
-                  <a href="computers-laptops">Computers & Laptops</a>
+                  <a href="printers">Printers</a>
+                  <a href="computers-laptops">Computers & monitors</a>
+                  <a href="laptops">Laptops</a>
                   <a href="accessories-parts">Accessories & parts</a>
                   <a href="cameras-lenses">Cameras & Lenses</a>
                   <a href="game-entertainment">Game and Entertainment</a>
-                  <a href="tv-audio-video">TV, Audio & Video</a>
+                  <a href="audio-video"> Audio & Video</a>
+                  <a href="tvs"> TVs</a>
                   <a href="Fridge">Fridge</a>
                   <a href="ac-heater">ACs & Heater</a>
                   <a href="washing-machines">Washing machines</a>
