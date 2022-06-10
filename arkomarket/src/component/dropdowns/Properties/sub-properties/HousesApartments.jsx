@@ -7,6 +7,13 @@ import "../../../../scss/dropdown.scss";
 import "../../../../scss/filter.scss";
 import Push from "../../../../Asset/push.svg";
 import { Container } from "react-bootstrap";
+import {
+  LocationComponent,
+  PriceRange,
+
+  ManufactureYear,
+} from "../../DropdownComponents";
+
 const HouseApartments = () => {
   return (
     <>
@@ -20,9 +27,7 @@ const HouseApartments = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <LocationComponent />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -33,9 +38,7 @@ const HouseApartments = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <PriceRange />
               </Dropdown.Menu>
             </Dropdown>
           </div>
