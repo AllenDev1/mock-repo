@@ -15,7 +15,7 @@ function SellerProfile() {
           <div className="profile-container">
             <div className="profile-head">
               <h5>Seller Profile</h5>
-              <img src={share} />
+              
             </div>
 
             <div className="profile-img">
@@ -34,6 +34,9 @@ function SellerProfile() {
                       Active 34m ago
                     </text>
                     
+                </div>
+                <div className="op">
+                <img src={share} />
                 </div>
               </div>
             </div>

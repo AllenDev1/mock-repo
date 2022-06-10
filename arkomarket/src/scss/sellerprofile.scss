@@ -137,11 +137,15 @@
       display: flex;
       margin-bottom: 24px;
       .profile-box {
+        gap:24px;
         a {
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
           color: rgba(0, 0, 0, 0.8);
+        }
+        img{
+          margin-top: -10px;
         }
       }
     }
