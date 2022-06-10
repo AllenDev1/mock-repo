@@ -6,6 +6,12 @@ import Push from "../../../../Asset/push.svg";
 import NavBar from "../../../nav";
 import Simple from "../../Simple";
 import { Container } from "react-bootstrap";
+import {
+  LocationComponent,
+  PriceRange,
+  Condition,
+  ManufactureYear,
+} from "../../DropdownComponents";
 const Wearables = () => {
   return (
     <>
@@ -19,9 +25,7 @@ const Wearables = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <LocationComponent />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -32,9 +36,7 @@ const Wearables = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <PriceRange />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -58,9 +60,7 @@ const Wearables = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <Condition />
               </Dropdown.Menu>
             </Dropdown>
           </div>
