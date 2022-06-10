@@ -13,6 +13,7 @@ import {
   Condition,
   ManufactureYear,
   KMDriven,
+  ScooterBrand
 } from "../../DropdownComponents";
 const Scooter = () => {
   return (
@@ -50,9 +51,7 @@ const Scooter = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <ScooterBrand />
               </Dropdown.Menu>
             </Dropdown>
           </div>

@@ -11,6 +11,7 @@ import {
   PriceRange,
   Condition,
   ManufactureYear,
+  MobileBrand
 } from "../../DropdownComponents";
 const MobilesPhones = () => {
   return (
@@ -47,9 +48,7 @@ const MobilesPhones = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <MobileBrand />
               </Dropdown.Menu>
             </Dropdown>
           </div>

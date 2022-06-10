@@ -300,3 +300,328 @@ export const CarBrand = () => {
     </>
   );
 };
+export const MotercycleBrand = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Super Bikes</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Mountain Bikes</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Bajaj</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Yamaha</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Hero Honda</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> CF MOTO</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> KTM</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Honda</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> BMW</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> TVS</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Hero</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Suzuki</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Royal Enfield</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Benelli</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Yatri</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Ducati</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Motor head</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Kawasaki</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Aprilia</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other Brands</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const ScooterBrand = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Suzuki</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Vespa</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Bajaj</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> TVS</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Mahinda</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Honda</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Hero</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Aprilia</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other Brands</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const MobileBrand = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Nokia</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Samsung</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Apple / iPhone</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Mi / Xiaomi</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Oneplus</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Google Pixel</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Sony</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> LG</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Huawei</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Vivo</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Oppo</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Realme</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Blackberry</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Motorola</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> BHonorMW</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Asus</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> HTC</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Lenovo</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Gionee</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Micromax</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Lava</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Intex</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Karbonn</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Infinix</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Techno</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other Brands</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const MobileBrands = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Samsung</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Apple / iPhone</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Mi / Xiaomi</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Huawei</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Lenovo</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other Brands</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
