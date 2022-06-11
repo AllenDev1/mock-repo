@@ -10,10 +10,8 @@ import { Container } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
-  Condition,
-  ManufactureYear,
 } from "../DropdownComponents";
-const Others = () => {
+const Other = () => {
   return (
     <>
       <NavBar />
@@ -37,36 +35,11 @@ const Others = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <PriceRange/>
+                <PriceRange />
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Device Type<img src={Push} />
-              </Dropdown.Toggle>
 
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                 Condition <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Condition />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-         
-         
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -92,4 +65,4 @@ const Others = () => {
   );
 };
 
-export default Others;
+export default Other;

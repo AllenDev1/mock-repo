@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../../../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../../../../scss/filter.scss";
@@ -10,7 +10,7 @@ import {
   LocationComponent,
   PriceRange,
 } from "../../DropdownComponents";
-const Charity = () => {
+const FishsAquarium = () => {
   return (
     <>
       <NavBar />
@@ -38,7 +38,6 @@ const Charity = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -46,9 +45,7 @@ const Charity = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -64,4 +61,4 @@ const Charity = () => {
   );
 };
 
-export default Charity;
+export default FishsAquarium;

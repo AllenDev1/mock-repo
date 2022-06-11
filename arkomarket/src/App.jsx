@@ -74,6 +74,24 @@ import GymFitness from "./component/dropdowns/BooksSportsHobbies/sub-BooksSports
 import MusicalInstruments from "./component/dropdowns/BooksSportsHobbies/sub-BooksSportsHobbies/MusicalInstruments";
 import SportsEquiments from "./component/dropdowns/BooksSportsHobbies/sub-BooksSportsHobbies/SportEquipments";
 import OtherHobbies from "./component/dropdowns/BooksSportsHobbies/sub-BooksSportsHobbies/OtherHobbies";
+import TravelsTrips from "./component/dropdowns/TravelsTrips/TravelsTrips";
+import Tourism from "./component/dropdowns/TravelsTrips/sub-TravelsTrips/Tourism";
+import HotelsHomeStays from "./component/dropdowns/TravelsTrips/sub-TravelsTrips/HotelsHomestays";
+import Others from "./component/dropdowns/TravelsTrips/sub-TravelsTrips/others";
+import CarBikeRentals from "./component/dropdowns/TravelsTrips/sub-TravelsTrips/CarBikeRentals";
+import TripCampaing from "./component/dropdowns/TravelsTrips/sub-TravelsTrips/TripsCamping";
+import Pets from "./component/dropdowns/Pets/Pets";
+import FishsAquarium from "./component/dropdowns/Pets/sub-pets/FishesAquarium";
+import PetfoodAccessories from "./component/dropdowns/Pets/sub-pets/PetfoodAccessories";
+import DogsCats from "./component/dropdowns/Pets/sub-pets/DogsCats";
+import Birds from "./component/dropdowns/Pets/sub-pets/Birds";
+import GoatBuffalootherpets from "./component/dropdowns/Pets/sub-pets/GoatBuffalootherpets";
+import Otherss from "./component/dropdowns/Others/sub-others/others";
+import Other from "./component/dropdowns/Others/Others";
+import Arts from "./component/dropdowns/Others/sub-others/Arts & Handicrafts";
+import Antique from "./component/dropdowns/Others/sub-others/Antique-Items";
+import Charity from "./component/dropdowns/Others/sub-others/Charity";
+
 function App() {
   return (
     <>
@@ -162,8 +180,32 @@ function App() {
           <Route path="musical-instruments" element={<MusicalInstruments />} />
           <Route path="sports-equipments" element={<SportsEquiments />} />
           <Route path="other-hobbies" element={<OtherHobbies />} />
+          {/**************************************************************** */}
+          <Route path="travels-trips" element={<TravelsTrips />} />
+          <Route path="tourism" element={<Tourism />} />
+          <Route path="hotels-homestays" element={<HotelsHomeStays />} />
+          <Route path="other" element={<Others />} />
+          <Route path="cars-bike-rentals" element={<CarBikeRentals />} />
+          <Route path="trips-camping" element={<TripCampaing />} />
 
           {/**************************************************************** */}
+          <Route path="pets" element={<Pets />} />
+          <Route path="fishes-aquarium" element={<FishsAquarium />} />
+          <Route path="pet-foods-accessories" element={<PetfoodAccessories />} />
+          <Route path="dogs-cats" element={<DogsCats />} />
+          <Route path="birds" element={<Birds />} />
+          <Route path="goat-buffalo-other-pets" element={<GoatBuffalootherpets />} />
+
+          {/**************************************************************** */}
+          <Route path="others" element={<Other />} />
+          <Route path="charity" element={<Charity />} />
+          <Route path="antique-items" element={<Antique />} />
+          <Route path="arts-handicrafts" element={<Arts />} />
+          <Route path="others-other" element={<Otherss />} />
+
+          {/**************************************************************** */}
+
+
 
           {/* is user logged in function need to be added here */}
           <Route path="user-profile" element={<Profile />} />

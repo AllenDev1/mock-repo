@@ -9,9 +9,6 @@ import { Container } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
-  Condition,
-  ManufactureYear,
-  MobileBrand
 } from "../../DropdownComponents";
 const Antique = () => {
   return (
@@ -26,7 +23,7 @@ const Antique = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <LocationComponent/>
+                <LocationComponent />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -37,37 +34,15 @@ const Antique = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-               <PriceRange />
+                <PriceRange />
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Brand <img src={Push} />
-              </Dropdown.Toggle>
 
-              <Dropdown.Menu>
-                <MobileBrand />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Condition <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-               <Condition />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Owner Type 
-                <img src={Push} />
+                Owner Type <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -79,10 +54,10 @@ const Antique = () => {
           </div>
         </div>
         <div className="clear-all-btn">
-            <button class="clear" href="#">
-              Reset all
-            </button>
-          </div>
+          <button class="clear" href="#">
+            Reset all
+          </button>
+        </div>
       </Container>
       <Simple />
     </>

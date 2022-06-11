@@ -14,6 +14,7 @@ import Generalnotification from "./Generalnotifi";
 import Dropdown from "react-bootstrap/Dropdown";
 const NavBar = () => {
   const [show, setShow] = useState(false);
+  //to fix the upper portion of nav bar 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 30) {
       document.querySelector(".nav-footer-container").style.display = "none";
@@ -57,10 +58,11 @@ const NavBar = () => {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Generalnotification />
+                    <Generalnotification /> {/** notification component */}
                   </Dropdown.Menu>
                 </Dropdown>
               </NavLink>
+              {/** login form button */}
               <NavLink
                 href="#"
                 className="loginbtnNav "
@@ -146,7 +148,7 @@ const NavBar = () => {
               </p>
             </div>
             <div className="total-hover">
-              <p >
+              <p>
                 Electronics & Appliances
                 <div class="dropdown-content">
                   <a href="electronics-appliances">All</a>
@@ -161,7 +163,9 @@ const NavBar = () => {
                   <a href="Fridge">Fridge</a>
                   <a href="ac-heater">ACs & Heater</a>
                   <a href="washing-machines">Washing machines</a>
-                  <a href="kitchen-other-appliances">Kitchen & other Appliances</a>
+                  <a href="kitchen-other-appliances">
+                    Kitchen & other Appliances
+                  </a>
                 </div>
               </p>
             </div>
@@ -194,29 +198,29 @@ const NavBar = () => {
               </p>
             </div>
             <div className="total-hover">
-              <p href="/">
+              <p>
                 Travels & Trips
                 <div class="dropdown-content">
                   <a href="travels-trips">All</a>
-                  <a href="#">Tourism</a>
-                  <a href="#">Trips & Camping</a>
-                  <a href="#">Cars & Bike Rentals</a>
-                  <a href="#">Hotels & Homestays</a>
-                  <a href="#">Other</a>
+                  <a href="tourism">Tourism</a>
+                  <a href="trips-camping">Trips & Camping</a>
+                  <a href="cars-bike-rentals">Cars & Bike Rentals</a>
+                  <a href="hotels-homestays">Hotels & Homestays</a>
+                  <a href="other">Other</a>
                 </div>
               </p>
             </div>
 
             <div className="total-hover">
-              <p href="/">
+              <p>
                 Pets
                 <div class="dropdown-content drop-r">
                   <a href="pets">All</a>
-                  <a href="#">Fishes & Aquarium</a>
-                  <a href="#">Pet foods & Accessories</a>
-                  <a href="#">Dogs & Cats</a>
-                  <a href="#">Birds</a>
-                  <a href="#">Goat,Buffalo and other pets</a>
+                  <a href="fishes-aquarium">Fishes & Aquarium</a>
+                  <a href="pet-foods-accessories">Pet foods & Accessories</a>
+                  <a href="dogs-cats">Dogs & Cats</a>
+                  <a href="birds">Birds</a>
+                  <a href="goat-buffalo-other-pets">Goat,Buffalo and other pets</a>
                 </div>
               </p>
             </div>
@@ -225,10 +229,10 @@ const NavBar = () => {
                 Others
                 <div class="dropdown-content drop-r">
                   <a href="others">All</a>
-                  <a href="#">Arts & Handicrafts</a>
-                  <a href="#">Antique Items</a>
-                  <a href="#">Charity</a>
-                  <a href="#">Others</a>
+                  <a href="arts-handicrafts">Arts & Handicrafts</a>
+                  <a href="antique-items">Antique Items</a>
+                  <a href="charity">Charity</a>
+                  <a href="others-other">Others</a>
                 </div>
               </p>
             </div>
@@ -240,7 +244,7 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
+//model for login form 
 function LoginForm({ show, setShow }) {
   return (
     <>
