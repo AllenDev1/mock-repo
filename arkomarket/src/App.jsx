@@ -55,9 +55,19 @@ import Sofa from "./component/dropdowns/Furniture/sub-furniture/sofa";
 import Householdf from "./component/dropdowns/Furniture/sub-furniture/Householdf";
 import Kidsfurniture from "./component/dropdowns/Furniture/sub-furniture/Kidsfurniture";
 import Officefurniture from "./component/dropdowns/Furniture/sub-furniture/Officefurniture";
-
-
-
+import Printers from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/Printers";
+import ComputerMonitors from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/ComputersMonitors";
+import Laptops from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/Laptops";
+import CameraLenses from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/CamerasLenses";
+import AccessoriesParts from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/AccessoriesParts";
+import GamesEntertainment from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/GamesEntertainment";
+import AudioVideoDevies from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/AudioVideodevices";
+import TVs from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/TVs";
+import Fridges from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/Fridges";
+import ACHeaters from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/ACsHeater";
+import WashingMachines from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/WashingMachines";
+import KitchenOtherAppliances from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/KitchenotherAppliances";
+import ElectronicsAppliance from "./component/dropdowns/Electronics & Appliance/ElectronicsAppliance";
 function App() {
   return (
     <>
@@ -119,23 +129,25 @@ function App() {
           <Route path="household-furnitures" element={<Householdf/>} />
           <Route path="decor" element={<Decor/>} />
           <Route path="home-furnitures" element={<Homefurniture />} />
-
-
-
-
-
-
-
-
-
-
-
-
-
+          {/**************************************************************** */}
+          <Route path="electronics-appliances" element={<ElectronicsAppliance/>} />
+          <Route path="computers-monitors" element={<ComputerMonitors/>} />
+          <Route path="laptops" element={<Laptops/>} />
+          <Route path="printers" element={<Printers/>} />
+          <Route path="cameras-lenses" element={<CameraLenses/>} />
+          <Route path="accessories-parts" element={<AccessoriesParts/>} />
+          <Route path="game-entertainment" element={<GamesEntertainment/>} />
+          <Route path="audio-video" element={<AudioVideoDevies/>} />
+          <Route path="tvs" element={<TVs/>} />
+          <Route path="Fridge" element={<Fridges/>} />
+          <Route path="ac-heater" element={<ACHeaters/>} />
+          <Route path="washing-machines" element={<WashingMachines/>} />
+          <Route path="kitchen-other-appliances" element={<KitchenOtherAppliances/>} />
 
 
 
           {/**************************************************************** */}
+
 
           {/* is user logged in function need to be added here */}
           <Route path="user-profile" element={<Profile />} />

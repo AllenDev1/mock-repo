@@ -10,9 +10,9 @@ import {
   LocationComponent,
   PriceRange,
   Condition,
-  PrinterBrand
+  ComputerMonitorsBrand
 } from "../../DropdownComponents";
-const AudioVideoDevies = () => {
+const ComputerMonitors = () => {
   return (
     <>
       <NavBar />
@@ -47,7 +47,7 @@ const AudioVideoDevies = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <PrinterBrand />
+                <ComputerMonitorsBrand />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -75,4 +75,4 @@ const AudioVideoDevies = () => {
   );
 };
 
-export default AudioVideoDevies;
+export default ComputerMonitors;

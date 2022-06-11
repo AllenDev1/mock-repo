@@ -151,7 +151,7 @@ const NavBar = () => {
                 <div class="dropdown-content">
                   <a href="electronics-appliances">All</a>
                   <a href="printers">Printers</a>
-                  <a href="computers-laptops">Computers & monitors</a>
+                  <a href="computers-monitors">Computers & monitors</a>
                   <a href="laptops">Laptops</a>
                   <a href="accessories-parts">Accessories & parts</a>
                   <a href="cameras-lenses">Cameras & Lenses</a>

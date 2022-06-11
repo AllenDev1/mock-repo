@@ -12,7 +12,7 @@ import {
   Condition,
   PrinterBrand
 } from "../../DropdownComponents";
-const AudioVideoDevies = () => {
+const Printers = () => {
   return (
     <>
       <NavBar />
@@ -75,4 +75,4 @@ const AudioVideoDevies = () => {
   );
 };
 
-export default AudioVideoDevies;
+export default Printers;

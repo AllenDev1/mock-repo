@@ -1061,3 +1061,185 @@ export const JobType = () => {
     </>
   );
 };
+
+export const PrinterBrand = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> HP</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Canon</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Brothers</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Samsung</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Epson</p>
+          </div>
+
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other Brands</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const ComputerMonitorsBrand = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> HP</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Dell</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Acer</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Lenovo</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Asus</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Samsung</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Mi / Xiaomi</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Huawei</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> LG</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> MSI</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> BenQ</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> AOC</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other Brands</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const LaptopsBrand = () => {
+  return (
+    <>
+      <Form>
+        <div className="check-btn brand-components">
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> HP</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Dell</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Acer</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Lenovo</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Asus</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Samsung</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Mi / Xiaomi</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Huawei</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Apple</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> MSI</p>
+          </div>{" "}
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Ripple</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Toshiba</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Microsoft</p>
+          </div>
+          <div className="check-btn-component">
+            <Form.Check aria-label="option 1" />
+            <p> Other Brands</p>
+          </div>
+        </div>
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
