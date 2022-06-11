@@ -185,11 +185,11 @@ const NavBar = () => {
                 Books, Sports & Hobbies
                 <div class="dropdown-content">
                   <a href="books-sports-hobbies">All</a>
-                  <a href="#">Books</a>
-                  <a href="#">Gym & fitness</a>
-                  <a href="#">Musical Instruments</a>
-                  <a href="#">Sports Equipments</a>
-                  <a href="#">Other Hobbies</a>
+                  <a href="books">Books</a>
+                  <a href="gym-fitness">Gym & fitness</a>
+                  <a href="musical-instruments">Musical Instruments</a>
+                  <a href="sports-equipments">Sports Equipments</a>
+                  <a href="other-hobbies">Other Hobbies</a>
                 </div>
               </p>
             </div>

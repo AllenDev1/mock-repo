@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import "../../../css/simple.css";
+import "../../../../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
-import "../../../scss/filter.scss";
-import Push from "../../../Asset/push.svg";
-import NavBar from "../../nav";
-import Simple from "../Simple";
+import "../../../../scss/filter.scss";
+import Push from "../../../../Asset/push.svg";
+import NavBar from "../../../nav";
+import Simple from "../../Simple";
 import { Container } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
   Condition,
-} from "../DropdownComponents";
-const BooksSportsHobbies = () => {
+} from "../../DropdownComponents";
+const MusicalInstruments = () => {
   return (
     <>
       <NavBar />
@@ -63,4 +63,4 @@ const BooksSportsHobbies = () => {
   );
 };
 
-export default BooksSportsHobbies;
+export default MusicalInstruments;
