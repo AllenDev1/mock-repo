@@ -10,7 +10,6 @@ import { Container } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
-  OwnerType,
   HouseApartmentType,
   Bedrooms,
   Bathrooms,

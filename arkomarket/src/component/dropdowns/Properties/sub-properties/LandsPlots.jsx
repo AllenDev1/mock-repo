@@ -12,7 +12,7 @@ import {
   PriceRange,
   Condition,
   ManufactureYear,
-  OwnerType
+  PropertiesOwnerType
 } from "../../DropdownComponents";
 
 const LandsPlots = () => {
@@ -50,9 +50,7 @@ const LandsPlots = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+               
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -64,9 +62,7 @@ const LandsPlots = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -77,7 +73,7 @@ const LandsPlots = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-               <OwnerType/>
+               <PropertiesOwnerType/>
               </Dropdown.Menu>
             </Dropdown>
           </div>

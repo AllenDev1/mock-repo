@@ -10,9 +10,9 @@ import { Container } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
-  Condition,
-  ManufactureYear,
-  OwnerType
+  PropertiesOwnerType,
+  FurnishingComponent,
+  StatusProperties,
 } from "../../DropdownComponents";
 const ShopsOffices = () => {
   return (
@@ -49,9 +49,18 @@ const ShopsOffices = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <FurnishingComponent />
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Status <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <StatusProperties />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -63,7 +72,7 @@ const ShopsOffices = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-               <OwnerType/>
+                <PropertiesOwnerType />
               </Dropdown.Menu>
             </Dropdown>
           </div>
