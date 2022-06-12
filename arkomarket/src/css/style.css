@@ -43,3 +43,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .form-check-input:focus{
   box-shadow: none !important;
 }
+input:hover{
+  cursor: pointer;
+}
