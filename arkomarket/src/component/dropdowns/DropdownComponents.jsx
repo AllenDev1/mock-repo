@@ -127,6 +127,118 @@ export const GearType = () => {
     </>
   );
 };
+export const OwnerType = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Individual</p>
+            </div>
+
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Business</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const PropertiesOwnerType = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Owner</p>
+            </div>
+
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Agent</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const FurnishingComponent = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Furnished</p>
+            </div>
+
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Unfurnished</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Semi Furnished</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const StatusProperties = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Under construction</p>
+            </div>
+
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Ready to move</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> New Space</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
 
 export const ManufactureYear = () => {
   return (

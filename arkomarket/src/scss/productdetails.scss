@@ -3,7 +3,6 @@
   background-color: rgba(0, 0, 0, 0.9);
   height: 100%;
   border-radius: 4px;
-  margin-top: 110px;
   .image-gallery-content {
     height: 100%;
     .image-gallery-slide-wrapper {
@@ -592,4 +591,20 @@
 }
 .modal.fade .modal-dialog {
   transition: none !important;
+}
+.breadCrumb-PD {
+  margin-top: 4.5rem;
+  .breadcrumb {
+    .breadcrumb-item {
+      line-height: 17px;
+      a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        /* identical to box height */
+
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
 }

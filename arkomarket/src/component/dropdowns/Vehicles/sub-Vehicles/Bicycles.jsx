@@ -10,7 +10,7 @@ import {
   LocationComponent,
   PriceRange,
   Condition,
-  ManufactureYear,
+  OwnerType,
 } from "../../DropdownComponents";
 const Bicycle = () => {
   return (
@@ -62,6 +62,7 @@ const Bicycle = () => {
               <Dropdown.Menu>{/* <ManufactureYear />  */}</Dropdown.Menu>
             </Dropdown>
           </div>
+         
         </div>
         <div className="clear-all-btn">
           <button class="clear" href="#">

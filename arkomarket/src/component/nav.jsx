@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/filter.css";
 import "../css/nav.css";
 import NotificaionIcon from "../Asset/notification.svg";
@@ -12,19 +12,33 @@ import { NavLink } from "react-bootstrap";
 import Login from "./login.jsx";
 import Generalnotification from "./Generalnotifi";
 import Dropdown from "react-bootstrap/Dropdown";
+
+import { useSearchParams } from "react-router-dom";
 const NavBar = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+
   const [show, setShow] = useState(false);
-  //to fix the upper portion of nav bar 
-  window.addEventListener("scroll", () => {
+
+  useEffect(() => {
+    window.addEventListener("scroll", navBarAnim);
+    return () => {
+      window.removeEventListener("scroll", navBarAnim);
+    };
+  });
+
+  const navBarAnim = () => {
     if (window.scrollY > 30) {
       document.querySelector(".nav-footer-container").style.display = "none";
       document.querySelector(".upper-nav-sec").style.borderBottom = "none";
       document.querySelector(".nBS").style.marginBottom = "7px";
+      document.querySelector(".nBS").style.paddingBottom = "0px";
     } else {
       document.querySelector(".upper-nav-sec").style.borderBottom = "none";
       document.querySelector(".nfc").style.display = "flex";
+      document.querySelector(".nBS").style.paddingBottom = "0px";
     }
-  });
+  };
+  //to fix the upper portion of nav bar
 
   return (
     <>
@@ -76,163 +90,287 @@ const NavBar = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
-        <Container className=" nav-footer-container nfc">
+        <Container className="nav-footer-container nfc">
           <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
             <div className="total-hover">
-              <p className="nav-Vehicles" href="/">
+              <p
+                className={
+                  "nav-Vehicles" +
+                  (searchParams.get("active-nav") === "vehicle"
+                    ? " active-nav"
+                    : "")
+                }
+              >
                 Vehicles
                 <div class="dropdown-content">
-                  <a href="vehicles">All</a>
-                  <a href="cars">Cars</a>
-                  <a href="motorcycles">Motorcycles</a>
-                  <a href="scooters">Scooters</a>
-                  <a href="bicycle">Bicycle</a>
-                  <a href="other-vehicles">Other vehicles</a>
-                  <a href="spare-parts">Spare parts</a>
+                  <a href="/vehicles/?active-nav=vehicle">All</a>
+                  <a href="/cars/?active-nav=vehicle">Cars</a>
+                  <a href="/motorcycles/?active-nav=vehicle">Motorcycles</a>
+                  <a href="/scooters/?active-nav=vehicle">Scooters</a>
+                  <a href="/bicycle/?active-nav=vehicle">Bicycle</a>
+                  <a href="/other-vehicles/?active-nav=vehicle">
+                    Other vehicles
+                  </a>
+                  <a href="/spare-parts/?active-nav=vehicle">Spare parts</a>
                 </div>
               </p>
             </div>
             <div className="total-hover">
-              <p href="/">
+              <p
+                className={
+                  "nav-Vehicles" +
+                  (searchParams.get("active-nav") === "properties"
+                    ? " active-nav"
+                    : "")
+                }
+              >
                 Properties
                 <div class="dropdown-content">
-                  <a href="properties">All</a>
-                  <a href="lands-plots">Lands & plots</a>
-                  <a href="shops-offices">Shops & Offices</a>
-                  <a href="housesapartments">Houses & Apartments</a>
-                  <a href="roomsflats">Rooms & Flats</a>
+                  <a href="/properties/?active-nav=properties">All</a>
+                  <a href="/lands-plots/?active-nav=properties">
+                    Lands & plots
+                  </a>
+                  <a href="/shops-offices/?active-nav=properties">
+                    Shops & Offices
+                  </a>
+                  <a href="/housesapartments/?active-nav=properties">
+                    Houses & Apartments
+                  </a>
+                  <a href="/roomsflats/?active-nav=properties">Rooms & Flats</a>
                 </div>
               </p>
             </div>
             <div className="total-hover">
-              <p href="/">
+              <p
+                className={
+                  "nav-Vehicles" +
+                  (searchParams.get("active-nav") === "mobile"
+                    ? " active-nav"
+                    : "")
+                }
+              >
                 Mobiles
                 <div class="dropdown-content">
-                  <a href="mobile">All</a>
-                  <a href="mobile-phones">Mobile Phones</a>
-                  <a href="tablets">Tablets</a>
-                  <a href="wearables">Wearables</a>
-                  <a href="accessories">Accessories</a>
+                  <a href="/mobile/?active-nav=mobile">All</a>
+                  <a href="/mobile-phones/?active-nav=mobile">Mobile Phones</a>
+                  <a href="/tablets/?active-nav=mobile">Tablets</a>
+                  <a href="/wearables/?active-nav=mobile">Wearables</a>
+                  <a href="/accessories/?active-nav=mobile">Accessories</a>
                 </div>
               </p>
             </div>
             <div className="total-hover">
-              <p href="/">
+              <p
+                className={
+                  "nav-Vehicles" +
+                  (searchParams.get("active-nav") === "family-needs"
+                    ? " active-nav"
+                    : "")
+                }
+              >
                 Family Needs
                 <div class="dropdown-content">
-                  <a href="family-needs">All</a>
-                  <a href="men-stuffs">Men stuffs</a>
-                  <a href="women-stuffs">Women stuffs</a>
-                  <a href="kids-stuffs">Kids stuffs</a>
-                  <a href="jobs">Jobs</a>
-                  <a href="foods">Foods</a>
-                  <a href="gifts">Gifts</a>
+                  <a href="/family-needs/?active-nav=family-needs">All</a>
+                  <a href="/men-stuffs/?active-nav=family-needs">Men stuffs</a>
+                  <a href="/women-stuffs/?active-nav=family-needs">
+                    Women stuffs
+                  </a>
+                  <a href="/kids-stuffs/?active-nav=family-needs">
+                    Kids stuffs
+                  </a>
+                  <a href="/jobs/?active-nav=family-needs">Jobs</a>
+                  <a href="/foods/?active-nav=family-needs">Foods</a>
+                  <a href="/gifts/?active-nav=family-needs">Gifts</a>
                 </div>
               </p>
             </div>
             <div className="total-hover">
-              <p>
+              <p
+                className={
+                  "nav-Vehicles" +
+                  (searchParams.get("active-nav") === "services"
+                    ? " active-nav"
+                    : "")
+                }
+              >
                 Services
                 <div class="dropdown-content">
-                  <a href="services">All</a>
-                  <a href="cleaning">Cleaning</a>
-                  <a href="education-classes">Education & Classes</a>
-                  <a href="move-furnitures">Move Furnitures</a>
-                  <a href="agriculture">Agriculture</a>
-                  <a href="construction">Construction</a>
-                  <a href="maintainance">Maintainance</a>
-                  <a href="occassion">Occassion</a>
-                  <a href="health-beauty">Health & Beauty</a>
-                  <a href="other-services">Other services</a>
-                </div>
-              </p>
-            </div>
-            <div className="total-hover">
-              <p>
-                Electronics & Appliances
-                <div class="dropdown-content">
-                  <a href="electronics-appliances">All</a>
-                  <a href="printers">Printers</a>
-                  <a href="computers-monitors">Computers & monitors</a>
-                  <a href="laptops">Laptops</a>
-                  <a href="accessories-parts">Accessories & parts</a>
-                  <a href="cameras-lenses">Cameras & Lenses</a>
-                  <a href="game-entertainment">Game and Entertainment</a>
-                  <a href="audio-video"> Audio & Video</a>
-                  <a href="tvs"> TVs</a>
-                  <a href="Fridge">Fridge</a>
-                  <a href="ac-heater">ACs & Heater</a>
-                  <a href="washing-machines">Washing machines</a>
-                  <a href="kitchen-other-appliances">
-                    Kitchen & other Appliances
+                  <a href="/services/?active-nav=services">All</a>
+                  <a href="/cleaning/?active-nav=services">Cleaning</a>
+                  <a href="/education-classes/?active-nav=services">
+                    Education & Classes
+                  </a>
+                  <a href="/move-furnitures/?active-nav=services">
+                    Move Furnitures
+                  </a>
+                  <a href="/agriculture/?active-nav=services">Agriculture</a>
+                  <a href="/construction/?active-nav=services">Construction</a>
+                  <a href="/maintainance/?active-nav=services">Maintainance</a>
+                  <a href="/occassion/?active-nav=services">Occassion</a>
+                  <a href="/health-beauty/?active-nav=services">
+                    Health & Beauty
+                  </a>
+                  <a href="/other-services/?active-nav=services">
+                    Other services
                   </a>
                 </div>
               </p>
             </div>
             <div className="total-hover">
-              <p href="furnitures">
+              <p
+                className={
+                  "nav-Vehicles" +
+                  (searchParams.get("active-nav") === "electronics-appliances"
+                    ? " active-nav"
+                    : "")
+                }
+              >
+                Electronics & Appliances
+                <div class="dropdown-content">
+                  <a href="/electronics-appliances/?active-nav=electronics-appliances">
+                    All
+                  </a>
+                  <a href="/printers/?active-nav=electronics-appliances">
+                    Printers
+                  </a>
+                  <a href="/computers-monitors/?active-nav=electronics-appliances">
+                    Computers & monitors
+                  </a>
+                  <a href="/laptops/?active-nav=electronics-appliances">
+                    Laptops
+                  </a>
+                  <a href="/accessories-parts/?active-nav=electronics-appliances">
+                    Accessories & parts
+                  </a>
+                  <a href="/cameras-lenses/?active-nav=electronics-appliances">
+                    Cameras & Lenses
+                  </a>
+                  <a href="/game-entertainment/?active-nav=electronics-appliances">
+                    Game and Entertainment
+                  </a>
+                  <a href="/audio-video/?active-nav=electronics-appliances">
+                    {" "}
+                    Audio & Video
+                  </a>
+                  <a href="/tvs/?active-nav=electronics-appliances"> TVs</a>
+                  <a href="/Fridge/?active-nav=electronics-appliances">
+                    Fridge
+                  </a>
+                  <a href="/ac-heater/?active-nav=electronics-appliances">
+                    ACs & Heater
+                  </a>
+                  <a href="/washing-machines/?active-nav=electronics-appliances">
+                    Washing machines
+                  </a>
+                  <a href="/kitchen-other-appliances/?active-nav=electronics-appliances">
+                    Kitchen & other Appliances
+                  </a>
+                </div>
+              </p>
+            </div>
+            <div className="total-hover ">
+              <p
+                className={
+                  "nav-Vehicles" +
+                  (searchParams.get("active-nav") === "furnitures"
+                    ? " active-nav"
+                    : "")
+                }
+              >
                 Furnitures
                 <div class="dropdown-content">
-                  <a href="furnitures">All</a>
-                  <a href="office-furnitures">Office Furnitures</a>
-                  <a href="bed-mat">Bed & mattresses</a>
-                  <a href="sofa">Sofa sets</a>
-                  <a href="home-furnitures">Other Home Furnitures</a>
-                  <a href="kids-furnitures">Kid's Furnitures</a>
-                  <a href="decor">Home, Decor and Garden</a>
-                  <a href="household-furnitures">Other Household Items</a>
+                  <a href="/furnitures/?active-nav=furnitures">All</a>
+                  <a href="/office-furnitures/?active-nav=furnitures">
+                    Office Furnitures
+                  </a>
+                  <a href="/bed-mat/?active-nav=furnitures">Bed & mattresses</a>
+                  <a href="/sofa/?active-nav=furnitures">Sofa sets</a>
+                  <a href="/home-furnitures/?active-nav=furnitures">
+                    Other Home Furnitures
+                  </a>
+                  <a href="/kids-furnitures/?active-nav=furnitures">
+                    Kid's Furnitures
+                  </a>
+                  <a href="/decor/?active-nav=furnitures">
+                    Home, Decor and Garden
+                  </a>
+                  <a href="/household-furnitures/?active-nav=furnitures">
+                    Other Household Items
+                  </a>
                 </div>
               </p>
             </div>
             <div className="total-hover">
-              <p href="/">
+              <p className={
+                  "nav-Vehicles" +
+                  (searchParams.get("active-nav") === "books-sports-hobbies"
+                    ? " active-nav"
+                    : "")
+                }>
                 Books, Sports & Hobbies
                 <div class="dropdown-content">
-                  <a href="books-sports-hobbies">All</a>
-                  <a href="books">Books</a>
-                  <a href="gym-fitness">Gym & fitness</a>
-                  <a href="musical-instruments">Musical Instruments</a>
-                  <a href="sports-equipments">Sports Equipments</a>
-                  <a href="other-hobbies">Other Hobbies</a>
+                  <a href="/books-sports-hobbies/?active-nav=books-sports-hobbies">All</a>
+                  <a href="/books/?active-nav=books-sports-hobbies">Books</a>
+                  <a href="/gym-fitness/?active-nav=books-sports-hobbies">Gym & fitness</a>
+                  <a href="/musical-instruments/?active-nav=books-sports-hobbies">Musical Instruments</a>
+                  <a href="/sports-equipments/?active-nav=books-sports-hobbies">Sports Equipments</a>
+                  <a href="/other-hobbies/?active-nav=books-sports-hobbies">Other Hobbies</a>
                 </div>
               </p>
             </div>
             <div className="total-hover">
-              <p>
+              <p className={
+                  "nav-Vehicles" +
+                  (searchParams.get("active-nav") === "travels-trips"
+                    ? " active-nav"
+                    : "")
+                }>
                 Travels & Trips
                 <div class="dropdown-content">
-                  <a href="travels-trips">All</a>
-                  <a href="tourism">Tourism</a>
-                  <a href="trips-camping">Trips & Camping</a>
-                  <a href="cars-bike-rentals">Cars & Bike Rentals</a>
-                  <a href="hotels-homestays">Hotels & Homestays</a>
-                  <a href="other">Other</a>
+                  <a href="/travels-trips/?active-nav=travels-trips">All</a>
+                  <a href="/tourism/?active-nav=travels-trips">Tourism</a>
+                  <a href="/trips-camping/?active-nav=travels-trips">Trips & Camping</a>
+                  <a href="/cars-bike-rentals/?active-nav=travels-trips">Cars & Bike Rentals</a>
+                  <a href="/hotels-homestays/?active-nav=travels-trips">Hotels & Homestays</a>
+                  <a href="/other/?active-nav=travels-trips">Other</a>
                 </div>
               </p>
             </div>
 
             <div className="total-hover">
-              <p>
+              <p className={
+                  "nav-Vehicles" +
+                  (searchParams.get("active-nav") === "pets"
+                    ? " active-nav"
+                    : "")
+                }>
                 Pets
                 <div class="dropdown-content drop-r">
-                  <a href="pets">All</a>
-                  <a href="fishes-aquarium">Fishes & Aquarium</a>
-                  <a href="pet-foods-accessories">Pet foods & Accessories</a>
-                  <a href="dogs-cats">Dogs & Cats</a>
-                  <a href="birds">Birds</a>
-                  <a href="goat-buffalo-other-pets">Goat,Buffalo and other pets</a>
+                  <a href="/pets/?active-nav=pets">All</a>
+                  <a href="/fishes-aquarium/?active-nav=pets">Fishes & Aquarium</a>
+                  <a href="/pet-foods-accessories/?active-nav=pets">Pet foods & Accessories</a>
+                  <a href="/dogs-cats/?active-nav=pets">Dogs & Cats</a>
+                  <a href="/birds/?active-nav=pets">Birds</a>
+                  <a href="/goat-buffalo-other-pets/?active-nav=pets">
+                    Goat,Buffalo and other pets
+                  </a>
                 </div>
               </p>
             </div>
             <div className="total-hover">
-              <p href="/">
+              <p className={
+                  "nav-Vehicles" +
+                  (searchParams.get("active-nav") === "pothersets"
+                    ? " active-nav"
+                    : "")
+                }>
                 Others
                 <div class="dropdown-content drop-r">
-                  <a href="others">All</a>
-                  <a href="arts-handicrafts">Arts & Handicrafts</a>
-                  <a href="antique-items">Antique Items</a>
-                  <a href="charity">Charity</a>
-                  <a href="others-other">Others</a>
+                  <a href="/others/?active-nav=others">All</a>
+                  <a href="/arts-handicrafts/?active-nav=others">Arts & Handicrafts</a>
+                  <a href="/antique-items/?active-nav=others">Antique Items</a>
+                  <a href="/charity/?active-nav=others">Charity</a>
+                  <a href="/others-other/?active-nav=others">Others</a>
                 </div>
               </p>
             </div>
@@ -244,7 +382,7 @@ const NavBar = () => {
 };
 
 export default NavBar;
-//model for login form 
+//model for login form
 function LoginForm({ show, setShow }) {
   return (
     <>

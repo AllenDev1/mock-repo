@@ -17,6 +17,7 @@ import {
   ManufactureYear,
   KMDriven,
   CarBrand,
+  OwnerType
 } from "../../DropdownComponents.jsx";
 import $ from "jquery";
 const Cars = () => {
@@ -114,6 +115,17 @@ const Cars = () => {
 
               <Dropdown.Menu>
                 <KMDriven /> {/** KM driven dropdown */}
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+              Owner Type <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <OwnerType /> {/** OwnerType dropdown */}
               </Dropdown.Menu>
             </Dropdown>
           </div>

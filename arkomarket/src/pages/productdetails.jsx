@@ -9,8 +9,9 @@ import viber from "../Asset/viber.svg";
 import location from "../Asset/location.svg";
 import eye from "../Asset/eye.svg";
 import { NavLink } from "react-router-dom";
-import NavBar from "../component/nav";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 import "../js/new.js";
+import UserNav from "../component/user-nav";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -53,7 +54,14 @@ const Productdetails = () => {
   ];
   return (
     <>
-      <NavBar />
+      <UserNav />
+      <Container>
+        <Breadcrumb className="breadCrumb-PD">
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="Vehicles">Vehicles</Breadcrumb.Item>
+          <Breadcrumb.Item active>Cars</Breadcrumb.Item>
+        </Breadcrumb>
+      </Container>
       <Container className="">
         <ImageGallery
           items={images}

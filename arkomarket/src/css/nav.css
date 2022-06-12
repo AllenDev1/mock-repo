@@ -84,10 +84,10 @@ body {
 }
 .nav-footer-Btn p {
   padding: 0px;
-  color: #000000cc;
+  color: rgba(0, 0, 0, 0.5);
   margin-bottom: 0px;
 }
-.nav-footer-Btn p:hover{
+.nav-footer-Btn p:hover {
   text-decoration: none;
   cursor: pointer;
 }
@@ -160,3 +160,4 @@ body {
 .new-ads-btn:hover {
   text-decoration: none !important;
 }
+

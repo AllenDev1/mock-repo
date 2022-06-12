@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../../../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../../../scss/dropdown.scss";
@@ -15,13 +15,18 @@ import {
   GearType,
   ManufactureYear,
   KMDriven,
-  CarBrand,
+  OwnerType,
 } from "../DropdownComponents.jsx";
 import $ from "jquery";
+
+
+
 const Vehicles = () => {
   $(".mdb-select").on("click", (e) => {
     e.stopPropagation();
   });
+  
+  
   return (
     <>
       <NavBar />
@@ -103,6 +108,17 @@ const Vehicles = () => {
 
               <Dropdown.Menu>
                 <KMDriven /> {/** KM driven dropdown */}
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+              Owner Type <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <OwnerType /> {/** OwnerType dropdown */}
               </Dropdown.Menu>
             </Dropdown>
           </div>
