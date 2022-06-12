@@ -10,7 +10,6 @@ import {
   LocationComponent,
   PriceRange,
   Condition,
-  OwnerType,
 } from "../../DropdownComponents";
 const Bicycle = () => {
   return (

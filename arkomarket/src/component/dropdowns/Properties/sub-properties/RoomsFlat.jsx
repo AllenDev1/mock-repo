@@ -10,11 +10,13 @@ import { Container } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
-  Condition,
-  ManufactureYear,
+  RoomsFlatTypes,
+  Kitchen,
+  Bathrooms,
+  FurnishingComponent,
+  StatusProperties,
 } from "../../DropdownComponents";
 const RoomsFlat = () => {
-  
   return (
     <>
       <NavBar />
@@ -45,13 +47,11 @@ const RoomsFlat = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-              No. of Rooms <img src={Push} />
+                No. of Rooms <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <Bathrooms />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -63,48 +63,40 @@ const RoomsFlat = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <Kitchen />
               </Dropdown.Menu>
             </Dropdown>
           </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Furnishing <img src={Push} />
+                Furnishing <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <FurnishingComponent />
               </Dropdown.Menu>
             </Dropdown>
           </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Condition <img src={Push} />
+                Staus <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <StatusProperties />
               </Dropdown.Menu>
             </Dropdown>
           </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                 Type <img src={Push} />
+                Type <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <RoomsFlatTypes />
               </Dropdown.Menu>
             </Dropdown>
           </div>
