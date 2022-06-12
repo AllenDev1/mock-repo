@@ -38,10 +38,18 @@
 .btn-success.active,
 .btn-success:active,
 .show > .btn-success.dropdown-toggle {
-  color: rgba(0, 0, 0, 0.6);
-  background-color: #ffffff;
+  color: #ffffff;
+  background: #0071e2;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
+.show {
+  .btn-success {
+    img {
+      content: url(../Asset/library2/Vector.svg);
+    }
+  }
+}
+
 .btn-success:hover {
   background: rgba(0, 0, 0, 0.03);
   background-repeat: no-repeat;
@@ -117,7 +125,7 @@
     align-items: center;
     padding: 10px 16px;
     gap: 64px;
-
+    font-size: 14px;
     width: 183px;
     height: 37px;
 
@@ -131,6 +139,9 @@
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+  }
+  input:hover {
+    border: 1px solid rgba(0, 0, 0, 0.4);
   }
   input:focus-visible {
     outline: 1px solid rgba(0, 0, 0, 0.8);
@@ -190,6 +201,9 @@
     //   max-height: 500px;
     //   overflow-y: scroll;
     // }
+    .check-btn-component:hover {
+      cursor: pointer;
+    }
     .check-btn-component {
       display: flex;
       gap: 0px 8px;
@@ -201,6 +215,10 @@
         border-color: transparent;
       }
     }
+    .form-check-input:hover {
+      cursor: pointer;
+    }
+
     .form-check-input {
       height: 24px;
       width: 24px;
@@ -221,7 +239,11 @@
       padding-bottom: 0%;
       /* identical to box height */
       margin: 0%;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    p:hover {
       color: rgba(0, 0, 0, 0.8);
+      cursor: pointer;
     }
   }
 }
