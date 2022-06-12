@@ -145,6 +145,8 @@ body {
   line-height: 16px;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: underline !important;
+  text-underline-offset: 0px;
+
 }
 
 .total-hover:hover .dropdown-content {
