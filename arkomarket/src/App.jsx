@@ -55,6 +55,13 @@ import Sofa from "./component/dropdowns/Furniture/sub-furniture/sofa";
 import Householdf from "./component/dropdowns/Furniture/sub-furniture/Householdf";
 import Kidsfurniture from "./component/dropdowns/Furniture/sub-furniture/Kidsfurniture";
 import Officefurniture from "./component/dropdowns/Furniture/sub-furniture/Officefurniture";
+import Others from "./component/dropdowns/Others/Others";
+import Antique from "./component/dropdowns/Others/sub-others/Antique-Items";
+import Arts from "./component/dropdowns/Others/sub-others/Arts & Handicrafts";
+import Charity from "./component/dropdowns/Others/sub-others/Charity";
+import Otherss from "./component/dropdowns/Others/sub-others/others";
+
+
 
 
 
@@ -119,6 +126,36 @@ function App() {
           <Route path="household-furnitures" element={<Householdf/>} />
           <Route path="decor" element={<Decor/>} />
           <Route path="home-furnitures" element={<Homefurniture />} />
+          {/**************************************************************** */}
+          <Route path="home-furnitures" element={<Homefurniture />} />
+
+
+
+
+
+
+
+
+
+
+
+          {/**************************************************************** */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
