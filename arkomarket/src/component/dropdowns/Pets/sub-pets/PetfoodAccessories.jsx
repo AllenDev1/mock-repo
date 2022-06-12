@@ -44,9 +44,10 @@ const PetfoodAccessories = () => {
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 Owner Type <img src={Push} />
               </Dropdown.Toggle>
-              <OwnerType/>
+              
 
               <Dropdown.Menu>
+              <OwnerType/>
                 
               </Dropdown.Menu>
             </Dropdown>
