@@ -9,7 +9,7 @@ import { Container } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
-  Condition,
+  OwnerType,
   PrinterBrand
 } from "../../DropdownComponents";
 const Tourism = () => {
@@ -45,9 +45,10 @@ const Tourism = () => {
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 Owner Type <img src={Push} />
               </Dropdown.Toggle>
+              
 
               <Dropdown.Menu>
-                
+              <OwnerType/>
               </Dropdown.Menu>
             </Dropdown>
           </div>

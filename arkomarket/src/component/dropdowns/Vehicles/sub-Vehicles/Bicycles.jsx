@@ -53,15 +53,7 @@ const Bicycle = () => {
             </Dropdown>
           </div>
 
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Type <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>{/* <ManufactureYear />  */}</Dropdown.Menu>
-            </Dropdown>
-          </div>
+         
          
         </div>
         <div className="clear-all-btn">

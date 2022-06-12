@@ -7,7 +7,7 @@ import "../../../scss/dropdown.scss";
 import "../../../scss/filter.scss";
 import Push from "../../../Asset/push.svg";
 import { Container } from "react-bootstrap";
-import { LocationComponent, PriceRange } from "../DropdownComponents";
+import { LocationComponent, PriceRange, OwnerType } from "../DropdownComponents";
 const Properties = () => {
   return (
     <>
@@ -70,9 +70,7 @@ const Properties = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <OwnerType/>
               </Dropdown.Menu>
             </Dropdown>
           </div>

@@ -6,7 +6,7 @@ import Push from "../../../Asset/push.svg";
 import NavBar from "../../nav";
 import Simple from "../Simple";
 import { Container } from "react-bootstrap";
-import { LocationComponent, PriceRange } from "../DropdownComponents";
+import { LocationComponent, PriceRange, OwnerType } from "../DropdownComponents";
 const TravelsTrips = () => {
   return (
     <>
@@ -40,8 +40,10 @@ const TravelsTrips = () => {
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 Owner Type <img src={Push} />
               </Dropdown.Toggle>
+              
 
               <Dropdown.Menu>
+                <OwnerType/>
                 
               </Dropdown.Menu>
             </Dropdown>

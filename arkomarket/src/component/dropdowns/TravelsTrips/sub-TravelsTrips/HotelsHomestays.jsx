@@ -10,7 +10,8 @@ import {
   LocationComponent,
   PriceRange,
   Condition,
-  PrinterBrand
+  PrinterBrand,
+  OwnerType
 } from "../../DropdownComponents";
 const HotelsHomeStays = () => {
   return (
@@ -45,9 +46,10 @@ const HotelsHomeStays = () => {
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 Owner Type <img src={Push} />
               </Dropdown.Toggle>
+              
 
               <Dropdown.Menu>
-                
+              <OwnerType/>
               </Dropdown.Menu>
             </Dropdown>
           </div>
