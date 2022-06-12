@@ -7,7 +7,17 @@ import Push from "../../../../Asset/push.svg";
 import { Container } from "react-bootstrap";
 import Simple from "../../Simple";
 import NavBar from "../../../nav";
-import {LocationComponent, Condition, PriceRange, FuelType, GearType, ManufactureYear, KMDriven, CarBrand} from "../../DropdownComponents.jsx"
+import img1 from "../../../../Asset/library2/Vector.svg"
+import {
+  LocationComponent,
+  Condition,
+  PriceRange,
+  FuelType,
+  GearType,
+  ManufactureYear,
+  KMDriven,
+  CarBrand,
+} from "../../DropdownComponents.jsx";
 import $ from "jquery";
 const Cars = () => {
   $(".mdb-select").on("click", (e) => {
@@ -81,7 +91,7 @@ const Cars = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <GearType/> {/* Gear Type dropdown  */}
+                <GearType /> {/* Gear Type dropdown  */}
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -103,11 +113,10 @@ const Cars = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <KMDriven/> {/** KM driven dropdown */}
+                <KMDriven /> {/** KM driven dropdown */}
               </Dropdown.Menu>
             </Dropdown>
           </div>
-         
         </div>
         <div className="clear-all-btn">
           <button class="clear" href="#">
@@ -121,5 +130,3 @@ const Cars = () => {
 };
 
 export default Cars;
-
-

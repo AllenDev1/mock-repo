@@ -137,15 +137,17 @@
       display: flex;
       margin-bottom: 24px;
       .profile-box {
-        gap:24px;
+        gap: 24px;
         a {
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
           color: rgba(0, 0, 0, 0.8);
         }
-        img{
-          margin-top: -10px;
+        img {
+          width: 18.57px;
+          height: 20px;
+          margin-top: -5px;
         }
       }
     }
@@ -206,6 +208,6 @@
     color: rgba(0, 0, 0, 0.6);
   }
 }
-.seller-profile-margin-bottom{
+.seller-profile-margin-bottom {
   margin-bottom: 400px;
 }

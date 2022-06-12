@@ -38,10 +38,18 @@
 .btn-success.active,
 .btn-success:active,
 .show > .btn-success.dropdown-toggle {
-  color: rgba(0, 0, 0, 0.6);
-  background-color: #ffffff;
+  color: #ffffff;
+  background: #0071e2;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
+.show {
+  .btn-success {
+    img {
+      content: url(../Asset/library2/Vector.svg);
+    }
+  }
+}
+
 .btn-success:hover {
   background: rgba(0, 0, 0, 0.03);
   background-repeat: no-repeat;
