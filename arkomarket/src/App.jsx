@@ -55,15 +55,42 @@ import Sofa from "./component/dropdowns/Furniture/sub-furniture/sofa";
 import Householdf from "./component/dropdowns/Furniture/sub-furniture/Householdf";
 import Kidsfurniture from "./component/dropdowns/Furniture/sub-furniture/Kidsfurniture";
 import Officefurniture from "./component/dropdowns/Furniture/sub-furniture/Officefurniture";
-import Others from "./component/dropdowns/Others/Others";
-import Antique from "./component/dropdowns/Others/sub-others/Antique-Items";
-import Arts from "./component/dropdowns/Others/sub-others/Arts & Handicrafts";
-import Charity from "./component/dropdowns/Others/sub-others/Charity";
+import Printers from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/Printers";
+import ComputerMonitors from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/ComputersMonitors";
+import Laptops from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/Laptops";
+import CameraLenses from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/CamerasLenses";
+import AccessoriesParts from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/AccessoriesParts";
+import GamesEntertainment from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/GamesEntertainment";
+import AudioVideoDevies from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/AudioVideodevices";
+import TVs from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/TVs";
+import Fridges from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/Fridges";
+import ACHeaters from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/ACsHeater";
+import WashingMachines from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/WashingMachines";
+import KitchenOtherAppliances from "./component/dropdowns/Electronics & Appliance/sub-Electronics & Appliance/KitchenotherAppliances";
+import ElectronicsAppliance from "./component/dropdowns/Electronics & Appliance/ElectronicsAppliance";
+import BooksSportsHobbies from "./component/dropdowns/BooksSportsHobbies/BooksSportsHobbies";
+import Books from "./component/dropdowns/BooksSportsHobbies/sub-BooksSportsHobbies/Books";
+import GymFitness from "./component/dropdowns/BooksSportsHobbies/sub-BooksSportsHobbies/GymFitness";
+import MusicalInstruments from "./component/dropdowns/BooksSportsHobbies/sub-BooksSportsHobbies/MusicalInstruments";
+import SportsEquiments from "./component/dropdowns/BooksSportsHobbies/sub-BooksSportsHobbies/SportEquipments";
+import OtherHobbies from "./component/dropdowns/BooksSportsHobbies/sub-BooksSportsHobbies/OtherHobbies";
+import TravelsTrips from "./component/dropdowns/TravelsTrips/TravelsTrips";
+import Tourism from "./component/dropdowns/TravelsTrips/sub-TravelsTrips/Tourism";
+import HotelsHomeStays from "./component/dropdowns/TravelsTrips/sub-TravelsTrips/HotelsHomestays";
+import Others from "./component/dropdowns/TravelsTrips/sub-TravelsTrips/others";
+import CarBikeRentals from "./component/dropdowns/TravelsTrips/sub-TravelsTrips/CarBikeRentals";
+import TripCampaing from "./component/dropdowns/TravelsTrips/sub-TravelsTrips/TripsCamping";
+import Pets from "./component/dropdowns/Pets/Pets";
+import FishsAquarium from "./component/dropdowns/Pets/sub-pets/FishesAquarium";
+import PetfoodAccessories from "./component/dropdowns/Pets/sub-pets/PetfoodAccessories";
+import DogsCats from "./component/dropdowns/Pets/sub-pets/DogsCats";
+import Birds from "./component/dropdowns/Pets/sub-pets/Birds";
+import GoatBuffalootherpets from "./component/dropdowns/Pets/sub-pets/GoatBuffalootherpets";
 import Otherss from "./component/dropdowns/Others/sub-others/others";
-
-
-
-
+import Other from "./component/dropdowns/Others/Others";
+import Arts from "./component/dropdowns/Others/sub-others/Arts & Handicrafts";
+import Antique from "./component/dropdowns/Others/sub-others/Antique-Items";
+import Charity from "./component/dropdowns/Others/sub-others/Charity";
 
 function App() {
   return (
@@ -118,61 +145,67 @@ function App() {
           <Route path="cleaning" element={<Cleaning />} />
           <Route path="other-services" element={<OtherServices />} />
           {/**************************************************************** */}
-          <Route path="furnitures" element={<Furniture/>} />
-          <Route path="office-furnitures" element={<Officefurniture/>} />
-          <Route path="bed-mat" element={<Bedmat/>} />
-          <Route path="kids-furnitures" element={<Kidsfurniture/>} />
+          <Route path="furnitures" element={<Furniture />} />
+          <Route path="office-furnitures" element={<Officefurniture />} />
+          <Route path="bed-mat" element={<Bedmat />} />
+          <Route path="kids-furnitures" element={<Kidsfurniture />} />
           <Route path="sofa" element={<Sofa />} />
-          <Route path="household-furnitures" element={<Householdf/>} />
-          <Route path="decor" element={<Decor/>} />
+          <Route path="household-furnitures" element={<Householdf />} />
+          <Route path="decor" element={<Decor />} />
           <Route path="home-furnitures" element={<Homefurniture />} />
           {/**************************************************************** */}
-          <Route path="home-furnitures" element={<Homefurniture />} />
+          <Route
+            path="electronics-appliances"
+            element={<ElectronicsAppliance />}
+          />
+          <Route path="computers-monitors" element={<ComputerMonitors />} />
+          <Route path="laptops" element={<Laptops />} />
+          <Route path="printers" element={<Printers />} />
+          <Route path="cameras-lenses" element={<CameraLenses />} />
+          <Route path="accessories-parts" element={<AccessoriesParts />} />
+          <Route path="game-entertainment" element={<GamesEntertainment />} />
+          <Route path="audio-video" element={<AudioVideoDevies />} />
+          <Route path="tvs" element={<TVs />} />
+          <Route path="Fridge" element={<Fridges />} />
+          <Route path="ac-heater" element={<ACHeaters />} />
+          <Route path="washing-machines" element={<WashingMachines />} />
+          <Route
+            path="kitchen-other-appliances"
+            element={<KitchenOtherAppliances />}
+          />
+          {/**************************************************************** */}
+          <Route path="books-sports-hobbies" element={<BooksSportsHobbies />} />
+          <Route path="books" element={<Books />} />
+          <Route path="gym-fitness" element={<GymFitness />} />
+          <Route path="musical-instruments" element={<MusicalInstruments />} />
+          <Route path="sports-equipments" element={<SportsEquiments />} />
+          <Route path="other-hobbies" element={<OtherHobbies />} />
+          {/**************************************************************** */}
+          <Route path="travels-trips" element={<TravelsTrips />} />
+          <Route path="tourism" element={<Tourism />} />
+          <Route path="hotels-homestays" element={<HotelsHomeStays />} />
+          <Route path="other" element={<Others />} />
+          <Route path="cars-bike-rentals" element={<CarBikeRentals />} />
+          <Route path="trips-camping" element={<TripCampaing />} />
 
+          {/**************************************************************** */}
+          <Route path="pets" element={<Pets />} />
+          <Route path="fishes-aquarium" element={<FishsAquarium />} />
+          <Route path="pet-foods-accessories" element={<PetfoodAccessories />} />
+          <Route path="dogs-cats" element={<DogsCats />} />
+          <Route path="birds" element={<Birds />} />
+          <Route path="goat-buffalo-other-pets" element={<GoatBuffalootherpets />} />
 
-
-
-
-
-
-
-
-
+          {/**************************************************************** */}
+          <Route path="others" element={<Other />} />
+          <Route path="charity" element={<Charity />} />
+          <Route path="antique-items" element={<Antique />} />
+          <Route path="arts-handicrafts" element={<Arts />} />
+          <Route path="others-other" element={<Otherss />} />
 
           {/**************************************************************** */}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          {/**************************************************************** */}
 
           {/* is user logged in function need to be added here */}
           <Route path="user-profile" element={<Profile />} />

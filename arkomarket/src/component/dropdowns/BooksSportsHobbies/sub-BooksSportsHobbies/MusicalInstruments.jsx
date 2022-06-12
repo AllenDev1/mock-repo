@@ -10,9 +10,8 @@ import {
   LocationComponent,
   PriceRange,
   Condition,
-  PrinterBrand
 } from "../../DropdownComponents";
-const AudioVideoDevies = () => {
+const MusicalInstruments = () => {
   return (
     <>
       <NavBar />
@@ -25,7 +24,7 @@ const AudioVideoDevies = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <LocationComponent/>
+                <LocationComponent />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -36,43 +35,32 @@ const AudioVideoDevies = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-               <PriceRange />
+                <PriceRange />
               </Dropdown.Menu>
             </Dropdown>
           </div>
+
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Brand <img src={Push} />
+                Condition <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <PrinterBrand />
+                <Condition />
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Condition <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-               <Condition />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-         
         </div>
         <div className="clear-all-btn">
-            <button class="clear" href="#">
-              Reset all
-            </button>
-          </div>
+          <button class="clear" href="#">
+            Reset all
+          </button>
+        </div>
       </Container>
       <Simple />
     </>
   );
 };
 
-export default AudioVideoDevies;
+export default MusicalInstruments;
