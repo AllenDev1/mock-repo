@@ -39,18 +39,6 @@ const BooksSportsHobbies = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Condition <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Condition />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
         </div>
         <div className="clear-all-btn">
           <button class="clear" href="#">

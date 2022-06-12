@@ -35,19 +35,7 @@ const TravelsTrips = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Owner Type <img src={Push} />
-              </Dropdown.Toggle>
-              
-
-              <Dropdown.Menu>
-                <OwnerType/>
-                
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+          
         </div>
         <div className="clear-all-btn">
           <button class="clear" href="#">
