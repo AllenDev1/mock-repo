@@ -32,10 +32,14 @@ const NavBar = () => {
       document.querySelector(".upper-nav-sec").style.borderBottom = "none";
       document.querySelector(".nBS").style.marginBottom = "7px";
       document.querySelector(".nBS").style.paddingBottom = "0px";
+      document.querySelector(".navBar").style.height = "auto";
+
     } else {
       document.querySelector(".upper-nav-sec").style.borderBottom = "none";
       document.querySelector(".nfc").style.display = "flex";
       document.querySelector(".nBS").style.paddingBottom = "0px";
+      document.querySelector(".navBar").style.height = "85px";
+
     }
   };
   //to fix the upper portion of nav bar
@@ -360,7 +364,7 @@ const NavBar = () => {
             <div className="total-hover">
               <p className={
                   "nav-Vehicles" +
-                  (searchParams.get("active-nav") === "pothersets"
+                  (searchParams.get("active-nav") === "others"
                     ? " active-nav"
                     : "")
                 }>

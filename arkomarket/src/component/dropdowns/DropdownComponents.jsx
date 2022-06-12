@@ -153,6 +153,274 @@ export const OwnerType = () => {
     </>
   );
 };
+export const HouseApartmentType = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Houses</p>
+            </div>
+
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Apartments</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const AudioVideodevicesTypes = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Audio devices</p>
+            </div>
+
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Video devices</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const CharityBy = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Individual </p>
+            </div>
+
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Organisation</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Business</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const CamerasLensesTypes = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Digital Camera</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Lenses</p>
+            </div>{" "}
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p>Camera Accessories</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> CCTV Camera</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Drone Camera</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const Bedrooms = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 1 Bedroom</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 2 Bedrooms</p>
+            </div>{" "}
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 3 Bedrooms</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 4+ Bedrooms</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const Bathrooms = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 1 Bathroom</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 2 Bathroom</p>
+            </div>{" "}
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 3 Bathroom</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 4+ Bathroom</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const Kitchen = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 1 Kitchen</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 2 Kitchen</p>
+            </div>{" "}
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 3 Kitchen</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> 4+ Kitchen</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const DeliveryType = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Yes</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> No</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+export const RoomsFlatTypes = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p>Rooms</p>
+            </div>
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Flats</p>
+            </div>{" "}
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
 export const PropertiesOwnerType = () => {
   return (
     <>

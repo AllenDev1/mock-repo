@@ -10,8 +10,12 @@ import { Container } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
-  OwnerType,
-  ManufactureYear,
+  HouseApartmentType,
+  Bedrooms,
+  Bathrooms,
+  StatusProperties,
+  FurnishingComponent,
+  PropertiesOwnerType,
 } from "../../DropdownComponents";
 
 const HouseApartments = () => {
@@ -49,9 +53,7 @@ const HouseApartments = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -59,13 +61,11 @@ const HouseApartments = () => {
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 {" "}
-                Plot Area <img src={Push} />
+                Status <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <StatusProperties />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -76,7 +76,7 @@ const HouseApartments = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <OwnerType/>
+                <PropertiesOwnerType />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -87,9 +87,7 @@ const HouseApartments = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <FurnishingComponent />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -100,9 +98,7 @@ const HouseApartments = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <Bathrooms />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -113,9 +109,7 @@ const HouseApartments = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+               <Bedrooms />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -126,9 +120,7 @@ const HouseApartments = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <HouseApartmentType />
               </Dropdown.Menu>
             </Dropdown>
           </div>
