@@ -42,7 +42,7 @@
   padding: 0px 16px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url("../Asset/push.svg");
+  background-image: url("../Asset/push.svg");
   background-repeat: no-repeat;
   background-size: 12.98px;
   background-position-x: 90%;

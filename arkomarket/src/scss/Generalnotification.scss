@@ -10,14 +10,13 @@
   display: inline-flex;
   width: 100%;
   height: auto;
-  gap:16px;
+  gap: 16px;
   padding: 16px;
 
   .profile-pp {
     width: 40px;
     height: 40px;
     border-radius: 100px;
-    
   }
   .notification-details {
     width: 262px;
@@ -29,7 +28,7 @@
       font-size: 14px;
       line-height: 17px;
       color: rgba(0, 0, 0, 0.8);
-      margin-bottom:4px;
+      margin-bottom: 4px;
     }
     p {
       width: 262px;
@@ -42,8 +41,6 @@
     }
   }
 }
-.notification-cotainer:hover{
+.notification-cotainer:hover {
   background: rgba(0, 0, 0, 0.05);
-  border-radius:4px;
-  
 }
