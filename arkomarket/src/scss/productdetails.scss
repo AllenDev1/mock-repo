@@ -601,10 +601,15 @@
         font-style: normal;
         font-weight: 400;
         font-size: 13px;
-        /* identical to box height */
-
         color: rgba(0, 0, 0, 0.6);
       }
+   
+
+      
     }
   }
+}
+.breadCrumb-PD .breadcrumb .breadcrumb-item a:hover {
+        
+  color: rgba(0, 0, 0, 0.8)!important;
 }

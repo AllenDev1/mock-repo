@@ -59,7 +59,7 @@ const Productdetails = () => {
         <Breadcrumb className="breadCrumb-PD">
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
           <Breadcrumb.Item href="Vehicles">Vehicles</Breadcrumb.Item>
-          <Breadcrumb.Item active>Cars</Breadcrumb.Item>
+          <Breadcrumb.Item >Cars</Breadcrumb.Item>
         </Breadcrumb>
       </Container>
       <Container className="">
