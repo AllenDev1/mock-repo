@@ -6,7 +6,7 @@ import Push from "../../../Asset/push.svg";
 import NavBar from "../../nav";
 import Simple from "../Simple";
 import { Container } from "react-bootstrap";
-import { LocationComponent, PriceRange } from "../DropdownComponents";
+import { LocationComponent, PriceRange, OwnerType} from "../DropdownComponents";
 const Pets = () => {
   return (
     <>
@@ -42,6 +42,7 @@ const Pets = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
+                <OwnerType/>
                 
               </Dropdown.Menu>
             </Dropdown>

@@ -10,7 +10,7 @@ import {
   LocationComponent,
   PriceRange,
   Condition,
-  PrinterBrand
+  OwnerType
 } from "../../DropdownComponents";
 const CarBikeRentals = () => {
   return (
@@ -47,6 +47,7 @@ const CarBikeRentals = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
+                <OwnerType/>
                 
               </Dropdown.Menu>
             </Dropdown>

@@ -9,6 +9,7 @@ import { Container } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
+  OwnerType
 } from "../../DropdownComponents";
 const GoatBuffalootherpets = () => {
   return (
@@ -43,6 +44,7 @@ const GoatBuffalootherpets = () => {
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 Owner Type <img src={Push} />
               </Dropdown.Toggle>
+              <OwnerType/>
 
               <Dropdown.Menu>
                 
