@@ -160,3 +160,6 @@ body {
 .new-ads-btn:hover {
   text-decoration: none !important;
 }
+.activ{
+  color: red !important;
+}
