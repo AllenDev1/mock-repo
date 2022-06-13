@@ -27,6 +27,17 @@ const MenStuffs = () => {
       </Container>
       <Container className="Conrainer-for-filter-sec">
         <div className="testing">
+        <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Select Stuff <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+               <MenSelecStuff />
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -38,17 +49,7 @@ const MenStuffs = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Select Stuff <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-               <MenSelecStuff />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+        
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">

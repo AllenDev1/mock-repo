@@ -30,6 +30,17 @@ const RoomsFlat = () => {
       </Container>
       <Container className="Conrainer-for-filter-sec">
         <div className="testing">
+        <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Type <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <RoomsFlatTypes />
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -89,7 +100,7 @@ const RoomsFlat = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Staus <img src={Push} />
+                Status <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -97,17 +108,7 @@ const RoomsFlat = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Type <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <RoomsFlatTypes />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+         
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">

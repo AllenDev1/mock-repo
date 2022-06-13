@@ -10,7 +10,7 @@ import {
   LocationComponent,
   PriceRange,
   Condition,
-  PrinterBrand
+  AudioVideodevicesTypes
 } from "../../DropdownComponents";
 const AudioVideoDevies = () => {
   return (
@@ -20,11 +20,22 @@ const AudioVideoDevies = () => {
         <Breadcrumb className="breadCrumb-for-pages">
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
           <Breadcrumb.Item href="/electronics-appliances/?active-nav=electronics-appliances">Electronics & Appliance</Breadcrumb.Item>
-          <Breadcrumb.Item active>Audio & Video</Breadcrumb.Item>
+          <Breadcrumb.Item active>Audio & Video devices</Breadcrumb.Item>
         </Breadcrumb>
       </Container>
       <Container className="Conrainer-for-filter-sec">
         <div className="testing">
+        <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+              Type <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <AudioVideodevicesTypes />
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -47,17 +58,7 @@ const AudioVideoDevies = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Brand <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <PrinterBrand />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+         
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
