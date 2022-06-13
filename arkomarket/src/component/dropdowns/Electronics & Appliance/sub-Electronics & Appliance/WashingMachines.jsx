@@ -19,7 +19,7 @@ const WashingMachines = () => {
       <Container>
         <Breadcrumb className="breadCrumb-for-pages">
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/electronics-appliances">Electronics & Appliance</Breadcrumb.Item>
+          <Breadcrumb.Item href="/electronics-appliances/?active-nav=electronics-appliances">Electronics & Appliance</Breadcrumb.Item>
           <Breadcrumb.Item active>Washing Machines</Breadcrumb.Item>
         </Breadcrumb>
       </Container>

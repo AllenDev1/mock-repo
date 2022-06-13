@@ -17,7 +17,7 @@ const Occasions = () => {
       <Container>
         <Breadcrumb className="breadCrumb-for-pages">
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/services">Services</Breadcrumb.Item>
+          <Breadcrumb.Item href="/services/?active-nav=services">Services</Breadcrumb.Item>
           <Breadcrumb.Item active>Occasions</Breadcrumb.Item>
         </Breadcrumb>
       </Container>
