@@ -5,12 +5,12 @@ import "../../../scss/filter.scss";
 import Push from "../../../Asset/push.svg";
 import NavBar from "../../nav";
 import Simple from "../Simple";
-import { Container,Breadcrumb } from "react-bootstrap";
+import { Container, Breadcrumb } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
   Condition,
-  PrinterBrand
+  PrinterBrand,
 } from "../DropdownComponents";
 const ElectronicsAppliance = () => {
   return (
@@ -31,7 +31,7 @@ const ElectronicsAppliance = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <LocationComponent/>
+                <LocationComponent />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -42,18 +42,17 @@ const ElectronicsAppliance = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-               <PriceRange />
+                <PriceRange />
               </Dropdown.Menu>
             </Dropdown>
           </div>
-         
-         
         </div>
         <div className="clear-all-btn">
-            <button class="clear" href="#">
-              Reset all
-            </button>
-          </div>
+          <button class="clear" href="#">
+            Reset all
+          </button>
+          <input type="text" placeholder="Search model or keywords" />
+        </div>
       </Container>
       <Simple />
     </>

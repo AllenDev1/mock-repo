@@ -421,6 +421,32 @@ export const RoomsFlatTypes = () => {
     </>
   );
 };
+export const ComputersMonitorsType = () => {
+  return (
+    <>
+      <Form>
+        {["radio"].map((type) => (
+          <div key={`default-${type}`} className="check-btn">
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Computers</p>
+            </div>
+
+            <div className="check-btn-component">
+              <Form.Check aria-label="option 1" />
+              <p> Monitors</p>
+            </div>
+          </div>
+        ))}
+      </Form>
+
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
 export const PropertiesOwnerType = () => {
   return (
     <>
