@@ -31,6 +31,7 @@ const Cars = () => {
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
           <Breadcrumb.Item href="/vehicles/?active-nav=vehicle">Vehicles</Breadcrumb.Item>
           <Breadcrumb.Item active>Cars</Breadcrumb.Item>
+
         </Breadcrumb>
       </Container>
       <Container className="Conrainer-for-filter-sec">
@@ -140,6 +141,7 @@ const Cars = () => {
           <button class="clear" href="#">
             Reset all
           </button>
+          <input type="text" placeholder="Search model or keywords" />
         </div>
       </Container>
       <Simple />

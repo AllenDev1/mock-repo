@@ -5,12 +5,13 @@ import "../../../../scss/filter.scss";
 import Push from "../../../../Asset/push.svg";
 import NavBar from "../../../nav";
 import Simple from "../../Simple";
-import { Container,Breadcrumb } from "react-bootstrap";
+import { Container, Breadcrumb } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
   Condition,
-  ComputerMonitorsBrand
+  ComputerMonitorsBrand,
+  ComputersMonitorsType
 } from "../../DropdownComponents";
 const ComputerMonitors = () => {
   return (
@@ -19,7 +20,9 @@ const ComputerMonitors = () => {
       <Container>
         <Breadcrumb className="breadCrumb-for-pages">
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/electronics-appliances/?active-nav=electronics-appliances">Electronics & Appliance</Breadcrumb.Item>
+          <Breadcrumb.Item href="/electronics-appliances/?active-nav=electronics-appliances">
+            Electronics & Appliance
+          </Breadcrumb.Item>
           <Breadcrumb.Item active>Computer & Monitors</Breadcrumb.Item>
         </Breadcrumb>
       </Container>
@@ -28,11 +31,22 @@ const ComputerMonitors = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Type <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <ComputersMonitorsType />
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
                 Location <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <LocationComponent/>
+                <LocationComponent />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -43,14 +57,14 @@ const ComputerMonitors = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-               <PriceRange />
+                <PriceRange />
               </Dropdown.Menu>
             </Dropdown>
           </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Brand <img src={Push} />
+                Brand <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -61,21 +75,22 @@ const ComputerMonitors = () => {
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Condition <img src={Push} />
+                Condition <img src={Push} />
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-               <Condition />
+                <Condition />
               </Dropdown.Menu>
             </Dropdown>
           </div>
-         
         </div>
         <div className="clear-all-btn">
-            <button class="clear" href="#">
-              Reset all
-            </button>
-          </div>
+          <button class="clear" href="#">
+            Reset all
+          </button>
+          <input type="text" placeholder="Search model or keywords"/>
+        </div>
+
       </Container>
       <Simple />
     </>
