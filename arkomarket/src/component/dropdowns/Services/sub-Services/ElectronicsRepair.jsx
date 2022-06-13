@@ -5,7 +5,7 @@ import "../../../../scss/filter.scss";
 import Push from "../../../../Asset/push.svg";
 import NavBar from "../../../nav";
 import Simple from "../../Simple";
-import { Container } from "react-bootstrap";
+import { Container,Breadcrumb } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
@@ -14,6 +14,13 @@ const ElectronicsRepair = () => {
   return (
     <>
       <NavBar />
+      <Container>
+        <Breadcrumb className="breadCrumb-for-pages">
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="/services">Services</Breadcrumb.Item>
+          <Breadcrumb.Item active>Electronics & Repair</Breadcrumb.Item>
+        </Breadcrumb>
+      </Container>
       <Container className="Conrainer-for-filter-sec">
         <div className="testing">
           <div>
