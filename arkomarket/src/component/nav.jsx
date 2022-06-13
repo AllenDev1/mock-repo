@@ -207,6 +207,9 @@ const NavBar = () => {
                   <a href="/move-furnitures/?active-nav=services">
                     Move Furnitures
                   </a>
+                  <a href="/electronics-repair/?active-nav=services">
+                    Electronics Repair
+                  </a>
                   <a href="/agriculture/?active-nav=services">Agriculture</a>
                   <a href="/construction/?active-nav=services">Construction</a>
                   <a href="/maintainance/?active-nav=services">Maintainance</a>
