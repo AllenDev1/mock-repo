@@ -38,7 +38,7 @@ const Footer = () => {
             <Nav.Link href="#">Newsroom</Nav.Link>
           </div>
           <div className="footer-links3">
-          <NavLink href="helpdesk">Feedback & Help</NavLink>
+          <NavLink href="/helpdesk">Feedback & Help</NavLink>
           <Nav.Link href="#">Trust & Saftey</Nav.Link>
             <Nav.Link href="#">Community Terms</Nav.Link>
             <Nav.Link href="#">Privacy</Nav.Link>

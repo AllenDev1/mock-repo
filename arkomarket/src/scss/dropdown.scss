@@ -160,6 +160,10 @@
     margin-top: 32px;
     gap: 12px;
     justify-content: flex-end;
+    .cancel-btn:hover{
+      color: rgba(0, 0, 0, 0.8);
+
+    }
     .cancel-btn {
       font-style: normal;
       font-weight: 500;
@@ -167,7 +171,7 @@
       line-height: 17px;
       /* identical to box height */
 
-      color: rgba(0, 0, 0, 0.6);
+      color: rgba(0, 0, 0, 0.5);
       border: none;
       background: transparent;
     }
@@ -191,6 +195,9 @@
 
       color: #ffffff;
       border: none;
+    }
+    .show-btn:hover{
+      background: #0064C9;
     }
   }
   .brand-components {

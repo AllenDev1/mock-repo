@@ -75,7 +75,6 @@ const TVs = () => {
             <button class="clear" href="#">
               Reset all
             </button>
-            <input type="text" placeholder="Search model or keywords" />
 
           </div>
       </Container>

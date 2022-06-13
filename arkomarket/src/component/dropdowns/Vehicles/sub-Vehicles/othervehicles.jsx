@@ -63,6 +63,7 @@ const OtherVehicles = () => {
           <button class="clear" href="#">
             Reset all
           </button>
+
         </div>
       </Container>
       <Simple />

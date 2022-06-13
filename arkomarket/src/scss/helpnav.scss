@@ -9,8 +9,25 @@
   }
   .help-button {
     padding-top: 10px;
-  }
+    display: flex;
+    gap: 16px;
+    .go-to-arkomarket {
+      a:hover{
+        color: rgba(0, 0, 0, 0.8);
 
+      }
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 38px;
+        /* identical to box height */
+  
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+ 
   button {
     padding: 10px 16px;
     gap: 10px;
@@ -36,6 +53,6 @@
   // z-index: 9;
   // background: #FFFFFF;
 }
-.testing-nav{
+.testing-nav {
   position: fixed;
 }

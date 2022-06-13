@@ -11,7 +11,11 @@ const Helpnav = () => {
           <div className="help-logo ">
             <img src={Help} />
           </div>
+
           <div className="help-button">
+            <div className="go-to-arkomarket">
+              <a href="/">Go to ArkoMarket</a>
+            </div>
             <button>Post Free Ads</button>
           </div>
         </div>

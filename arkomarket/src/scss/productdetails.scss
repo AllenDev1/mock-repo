@@ -192,13 +192,17 @@
               top: 1px;
               border-radius: 0px;
             }
+            .heart-btn:hover{
+              content: url("../Asset/library 2/heart.svg");
+            }
             .share-btn {
-              height: 21.023591995239258px;
-              width: 19.518817901611328px;
+              height: 22.023591995239258px;
+              width: 20px;
               left: 1.48095703125px;
               top: 1.4764094352722168px;
               border-radius: 0px;
             }
+            
           }
         }
       }
