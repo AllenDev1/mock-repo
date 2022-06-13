@@ -6,12 +6,18 @@ import Dropdown from "react-bootstrap/Dropdown";
 import "../../../scss/dropdown.scss";
 import "../../../scss/filter.scss";
 import Push from "../../../Asset/push.svg";
-import { Container } from "react-bootstrap";
+import { Container,Breadcrumb } from "react-bootstrap";
 import { LocationComponent, PriceRange, OwnerType } from "../DropdownComponents";
 const Properties = () => {
   return (
     <>
       <NavBar />
+      <Container>
+        <Breadcrumb className="breadCrumb-for-pages">
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item active>Properties</Breadcrumb.Item>
+        </Breadcrumb>
+      </Container>
       <Container className="Conrainer-for-filter-sec">
         <div className="testing">
           <div>
