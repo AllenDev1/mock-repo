@@ -20,7 +20,7 @@ const Wearables = () => {
       <Container>
         <Breadcrumb className="breadCrumb-for-pages">
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/mobile/?active-nav=mobile">Accessories</Breadcrumb.Item>
+          <Breadcrumb.Item href="/mobile/?active-nav=mobile">Mobiles</Breadcrumb.Item>
           <Breadcrumb.Item active>Wearables</Breadcrumb.Item>
         </Breadcrumb>
       </Container>
@@ -67,18 +67,6 @@ const Wearables = () => {
 
               <Dropdown.Menu>
                 <Condition />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Owner Type 
-                <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <OwnerType/>
               </Dropdown.Menu>
             </Dropdown>
           </div>

@@ -1623,3 +1623,28 @@ export const LaptopsBrand = () => {
     </>
   );
 };
+export const PricePerSquare = () => {
+  return (
+    <>
+      <input className="price-range" type="number" placeholder="Price per Square From" />
+      <input type="number" placeholder="Price per Square to" />
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};
+
+export const PlotArea = () => {
+  return (
+    <>
+      <input className="price-range" type="number" placeholder="Area From" />
+      <input type="number" placeholder="Area to" />
+      <div className="show-cancle-btn">
+        <button className="cancel-btn">Cancel</button>
+        <button className="show-btn">Show results </button>
+      </div>
+    </>
+  );
+};

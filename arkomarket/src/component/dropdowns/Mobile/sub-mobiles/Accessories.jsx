@@ -19,7 +19,7 @@ const Accessories = () => {
       <Container>
         <Breadcrumb className="breadCrumb-for-pages">
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/mobile/?active-nav=mobile">Accessories</Breadcrumb.Item>
+          <Breadcrumb.Item href="/mobile/?active-nav=mobile">Mobiles</Breadcrumb.Item>
           <Breadcrumb.Item active>Accessories</Breadcrumb.Item>
         </Breadcrumb>
       </Container>
@@ -47,19 +47,7 @@ const Accessories = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Device Type <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+         
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -71,18 +59,7 @@ const Accessories = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Owner Type 
-                <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-               <OwnerType/>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+        
         </div>
         <div className="clear-all-btn">
             <button class="clear" href="#">
