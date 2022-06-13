@@ -12,7 +12,9 @@ import {
   PriceRange,
   Condition,
   ManufactureYear,
-  PropertiesOwnerType
+  PropertiesOwnerType,
+  PricePerSquare,
+  PlotArea
 } from "../../DropdownComponents";
 
 const LandsPlots = () => {
@@ -57,6 +59,7 @@ const LandsPlots = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
+                <PricePerSquare/>
                
               </Dropdown.Menu>
             </Dropdown>
@@ -69,6 +72,7 @@ const LandsPlots = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
+                <PlotArea/>
                 
               </Dropdown.Menu>
             </Dropdown>

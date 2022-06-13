@@ -21,7 +21,7 @@ const MobilesPhones = () => {
       <Container>
         <Breadcrumb className="breadCrumb-for-pages">
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/mobile/?active-nav=mobile">Accessories</Breadcrumb.Item>
+          <Breadcrumb.Item href="/mobile/?active-nav=mobile">Mobiles</Breadcrumb.Item>
           <Breadcrumb.Item active>Mobiles Phones</Breadcrumb.Item>
         </Breadcrumb>
       </Container>

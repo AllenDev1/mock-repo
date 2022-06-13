@@ -16,6 +16,7 @@ import {
   StatusProperties,
   FurnishingComponent,
   PropertiesOwnerType,
+  PricePerSquare
 } from "../../DropdownComponents";
 
 const HouseApartments = () => {
@@ -60,6 +61,7 @@ const HouseApartments = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
+                <PricePerSquare/>
                 
               </Dropdown.Menu>
             </Dropdown>
