@@ -257,7 +257,7 @@ const NavBar = () => {
                   </a>
                   <a href="/audio-video/?active-nav=electronics-appliances">
                     {" "}
-                    Audio & Video
+                    Audio & Video devices
                   </a>
                   <a href="/tvs/?active-nav=electronics-appliances"> TVs</a>
                   <a href="/Fridge/?active-nav=electronics-appliances">

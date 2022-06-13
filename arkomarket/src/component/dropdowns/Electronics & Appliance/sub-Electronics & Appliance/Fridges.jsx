@@ -10,7 +10,7 @@ import {
   LocationComponent,
   PriceRange,
   Condition,
-  PrinterBrand
+  
 } from "../../DropdownComponents";
 const Fridges = () => {
   return (
@@ -47,17 +47,7 @@ const Fridges = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Brand <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <PrinterBrand />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+         
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">

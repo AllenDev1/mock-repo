@@ -32,6 +32,17 @@ const HouseApartments = () => {
       </Container>
       <Container className="Conrainer-for-filter-sec">
         <div className="testing">
+        <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Type <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <HouseApartmentType />
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -51,6 +62,40 @@ const HouseApartments = () => {
 
               <Dropdown.Menu>
                 <PriceRange />
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Bedrooms <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+               <Bedrooms />
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Bathrooms <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Bathrooms />
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+          <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Furnishing <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <FurnishingComponent />
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -89,50 +134,8 @@ const HouseApartments = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Furnishing <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <FurnishingComponent />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Bathrooms <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Bathrooms />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Bedrooms <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-               <Bedrooms />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Type <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <HouseApartmentType />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+         
+         
         </div>
         <div className="clear-all-btn">
           <button class="clear" href="#">

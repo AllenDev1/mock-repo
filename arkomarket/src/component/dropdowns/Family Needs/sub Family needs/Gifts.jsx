@@ -25,6 +25,17 @@ const Gifts = () => {
       </Container>
       <Container className="Conrainer-for-filter-sec">
         <div className="testing">
+        <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Select  Gift <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <GiftSelectOptions />
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -36,17 +47,7 @@ const Gifts = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Select  Gift <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <GiftSelectOptions />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+        
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">

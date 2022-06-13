@@ -25,6 +25,17 @@ const Jobs = () => {
       </Container>
       <Container className="Conrainer-for-filter-sec">
         <div className="testing">
+        <div>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Job Type <img src={Push} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <JobType />
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -48,17 +59,7 @@ const Jobs = () => {
             </Dropdown>
           </div>
 
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Job Type <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <JobType />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+        
         </div>
         <div className="clear-all-btn">
           <button class="clear" href="#">

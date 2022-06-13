@@ -47,17 +47,7 @@ const GamesEntertainment = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Brand <img src={Push} />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <PrinterBrand />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+        
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
