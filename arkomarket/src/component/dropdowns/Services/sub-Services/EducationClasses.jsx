@@ -17,7 +17,7 @@ const EducationClasses = () => {
       <Container>
         <Breadcrumb className="breadCrumb-for-pages">
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/services">Services</Breadcrumb.Item>
+          <Breadcrumb.Item href="/services/?active-nav=services">Services</Breadcrumb.Item>
           <Breadcrumb.Item active>Education & classes</Breadcrumb.Item>
         </Breadcrumb>
       </Container>

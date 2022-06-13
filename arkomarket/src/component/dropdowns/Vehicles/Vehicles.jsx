@@ -1,35 +1,32 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "../../../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../../../scss/dropdown.scss";
 import "../../../scss/filter.scss";
 import Push from "../../../Asset/push.svg";
-import { Container } from "react-bootstrap";
+import { Container, Breadcrumb } from "react-bootstrap";
 import Simple from "../Simple";
 import NavBar from "../../nav";
 import {
   LocationComponent,
-  Condition,
   PriceRange,
-  FuelType,
-  GearType,
-  ManufactureYear,
-  KMDriven,
-  OwnerType,
 } from "../DropdownComponents.jsx";
 import $ from "jquery";
-
-
 
 const Vehicles = () => {
   $(".mdb-select").on("click", (e) => {
     e.stopPropagation();
   });
-  
-  
+
   return (
     <>
       <NavBar />
+      <Container>
+        <Breadcrumb className="breadCrumb-for-pages">
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item active>Vehicles</Breadcrumb.Item>
+        </Breadcrumb>
+      </Container>
       <Container className="Conrainer-for-filter-sec">
         <div className="testing">
           <div>
@@ -54,7 +51,6 @@ const Vehicles = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-
         </div>
         <div className="clear-all-btn">
           <button class="clear" href="#">
