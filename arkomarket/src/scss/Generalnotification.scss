@@ -1,10 +1,12 @@
 .main-container-not {
-  width: 350px;
+  width: 400px;
   height: 400px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   z-index: 90;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .notification-cotainer {
   display: inline-flex;
@@ -19,10 +21,10 @@
     border-radius: 100px;
   }
   .notification-details {
-    width: 262px;
+    width: auto;
 
     h5 {
-      width: 262px;
+      width: auto;
       height: auto;
       font-weight: 400;
       font-size: 14px;

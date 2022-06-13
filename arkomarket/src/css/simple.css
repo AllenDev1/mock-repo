@@ -3,7 +3,6 @@
   max-width: 1000px;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 100px;
 }
 .simle-margin-top {
   margin-top: 30px;
@@ -13,7 +12,7 @@
   justify-content: space-between;
 }
 .clear-all-btn {
-  margin-top: 110px;
+  
 }
 .clear {
   font-style: normal;
