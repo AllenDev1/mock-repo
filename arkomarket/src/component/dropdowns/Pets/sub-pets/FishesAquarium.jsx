@@ -5,18 +5,25 @@ import "../../../../scss/filter.scss";
 import Push from "../../../../Asset/push.svg";
 import NavBar from "../../../nav";
 import Simple from "../../Simple";
-import { Container } from "react-bootstrap";
+import { Container, Breadcrumb } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
-  OwnerType
+  OwnerType,
 } from "../../DropdownComponents";
 const FishsAquarium = () => {
   return (
     <>
       <NavBar />
+      <Container>
+        <Breadcrumb className="breadCrumb-for-pages">
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="/pets/?active-nav=pets">Pets</Breadcrumb.Item>
+          <Breadcrumb.Item active>Fishes & Aquarium</Breadcrumb.Item>
+        </Breadcrumb>
+      </Container>
       <Container className="Conrainer-for-filter-sec">
-      <div className="testing">
+        <div className="testing">
           <div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -44,19 +51,18 @@ const FishsAquarium = () => {
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 Owner Type <img src={Push} />
               </Dropdown.Toggle>
-              
 
               <Dropdown.Menu>
-              <OwnerType/>
+                <OwnerType />
               </Dropdown.Menu>
             </Dropdown>
           </div>
         </div>
         <div className="clear-all-btn">
-            <button class="clear" href="#">
-              Reset all
-            </button>
-          </div>
+          <button class="clear" href="#">
+            Reset all
+          </button>
+        </div>
       </Container>
       <Simple />
     </>

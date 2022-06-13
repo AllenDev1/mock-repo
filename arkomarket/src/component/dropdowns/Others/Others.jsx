@@ -6,16 +6,21 @@ import Dropdown from "react-bootstrap/Dropdown";
 import "../../../scss/dropdown.scss";
 import "../../../scss/filter.scss";
 import Push from "../../../Asset/push.svg";
-import { Container } from "react-bootstrap";
+import { Container, Breadcrumb } from "react-bootstrap";
 import {
   LocationComponent,
   PriceRange,
-  OwnerType
 } from "../DropdownComponents";
 const Other = () => {
   return (
     <>
       <NavBar />
+      <Container>
+        <Breadcrumb className="breadCrumb-for-pages">
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item active>Other</Breadcrumb.Item>
+        </Breadcrumb>
+      </Container>
       <Container className="Conrainer-for-filter-sec">
         <div className="testing">
           <div>
@@ -40,7 +45,6 @@ const Other = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-
         </div>
         <div className="clear-all-btn">
           <button class="clear" href="#">
