@@ -1,0 +1,58 @@
+@media (max-width: 599px) {
+  .v2-sale-dropdown {
+    .filter-buttons {
+      display: flex;
+      flex-direction: column;
+      .filter-buttons {
+        button {
+          border: none;
+        }
+      }
+    }
+    .dropdown,
+    .dropend,
+    .dropstart,
+    .dropup {
+      .btn-success {
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 16px;
+        gap: 10px;
+
+        width: 90.04px;
+        height: 35px;
+        color: #ffffff;
+
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 4px;
+      }
+    }
+    .btn-check:active + .btn-success,
+    .btn-check:checked + .btn-success,
+    .btn-success.active,
+    .btn-success:active,
+    .show > .btn-success.dropdown-toggle {
+      color: #ffffff;
+
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .filter-buttons {
+      button {
+        border: none;
+        text-align: left;
+      }
+      gap: 0px;
+    }
+    .show {
+      .dropdown-menu {
+        padding: 10px 8px;
+      }
+    }
+  }
+  .row {
+    .card {
+      width: 277px !important;
+      height: 220px !important;
+    }
+  }
+}
