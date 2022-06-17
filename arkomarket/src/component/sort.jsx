@@ -11,7 +11,7 @@ import Push from "../Asset/library2/Vector.svg";
 const Sort = () => {
   return (
     <>
-      <MediaQuery minWidth={800}>
+      <MediaQuery minWidth={994}>
         <Container className="">
           <div className="sort-container ">
             <Container>
@@ -165,8 +165,9 @@ const Sort = () => {
       </MediaQuery>
 
       {/* /// mobile view */}
-      <MediaQuery maxWidth={599}>
+      <MediaQuery maxWidth={993}>
         <Container className="">
+
           <div className="sort-container ">
             <Container>
               <div className="top-section v2-sale-dropdown">
