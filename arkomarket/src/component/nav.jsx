@@ -28,17 +28,19 @@ const NavBar = () => {
   });
 
   const navBarAnim = () => {
-    if (window.scrollY > 30) {
-      document.querySelector(".nav-footer-container").style.display = "none";
-      document.querySelector(".upper-nav-sec").style.borderBottom = "none";
-      document.querySelector(".nBS").style.marginBottom = "7px";
-      document.querySelector(".nBS").style.paddingBottom = "0px";
-      document.querySelector(".navBar").style.height = "auto";
-    } else {
-      document.querySelector(".upper-nav-sec").style.borderBottom = "none";
-      document.querySelector(".nfc").style.display = "flex";
-      document.querySelector(".nBS").style.paddingBottom = "0px";
-      document.querySelector(".navBar").style.height = "85px";
+    if (window.innerWidth > 993) {
+      if (window.scrollY > 30) {
+        document.querySelector(".nav-footer-container").style.display = "none";
+        document.querySelector(".upper-nav-sec").style.borderBottom = "none";
+        document.querySelector(".nBS").style.marginBottom = "7px";
+        document.querySelector(".nBS").style.paddingBottom = "0px";
+        document.querySelector(".navBar").style.height = "auto";
+      } else {
+        document.querySelector(".upper-nav-sec").style.borderBottom = "none";
+        document.querySelector(".nfc").style.display = "flex";
+        document.querySelector(".nBS").style.paddingBottom = "0px";
+        document.querySelector(".navBar").style.height = "85px";
+      }
     }
   };
   //to fix the upper portion of nav bar
@@ -51,7 +53,7 @@ const NavBar = () => {
             <Navbar.Brand href="/" className="logo">
               <img src={logo} alt=".logo" className="align-middle" />
             </Navbar.Brand>
-            {newFunction()}
+            {SearchNavBar()}
           </div>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -405,49 +407,19 @@ const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-{/* /// mobile view */}
-      <MediaQuery maxWidth={599}>
+      {/* /// mobile view */}
+      <MediaQuery maxWidth={993}>
         <Navbar bg="white" expand="lg" className="ml-5 navBar nBS" style={{}}>
           <Container className="upper-nav-sec">
             <div className="logo-searchBar">
               <Navbar.Brand href="/" className="logo">
                 <img src={logo} alt=".logo" className="align-middle" />
               </Navbar.Brand>
-           
+              <button className="freeadsbtn">Post Free Ads</button>
             </div>
-
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav float-end ">
-              <Nav className="me-auto float-end">
-                <NavLink href="#" className="notificationicon">
-                  <Dropdown
-                    className="dropdown-notification"
-                    align={{ md: "end" }}
-                  >
-                    <Dropdown.Toggle>
-                      <img src={NotificaionIcon} alt="notification.jpeg" />
-                    </Dropdown.Toggle>
-
-                    <Dropdown.Menu>
-                      <Generalnotification /> {/** notification component */}
-                    </Dropdown.Menu>
-                  </Dropdown>
-                </NavLink>
-                {/** login form button */}
-                <NavLink
-                  href="#"
-                  className="loginbtnNav "
-                  onClick={() => setShow(true)}
-                >
-                  <img src={userIcon} alt="user" className="px-2" />
-                  Login
-                </NavLink>
-                <LoginForm show={show} setShow={setShow} />
-                <button className="freeadsbtn">Post Free Ads</button>
-              </Nav>
-            </Navbar.Collapse>
+           
           </Container>
-          <Container className="nav-footer-container nfc">
+          {/* <Container className="nav-footer-container nfc">
             <Navbar.Collapse id="basic-navbar-nav" className="nav-footer-Btn">
               <div className="total-hover">
                 <p
@@ -779,7 +751,7 @@ const NavBar = () => {
                 </p>
               </div>
             </Navbar.Collapse>
-          </Container>
+          </Container> */}
         </Navbar>
       </MediaQuery>
     </>
@@ -787,15 +759,18 @@ const NavBar = () => {
 };
 
 export default NavBar;
-function newFunction() {
-  return <Form className="d-flex search-nav">
-    <FormControl
-      type="search"
-      placeholder="Search products, services"
-      className="me-2 searchBar"
-      aria-label="Search"
-      aria-hidden="true" />
-  </Form>;
+function SearchNavBar() {
+  return (
+    <Form className="d-flex search-nav">
+      <FormControl
+        type="search"
+        placeholder="Search products, services"
+        className="me-2 searchBar"
+        aria-label="Search"
+        aria-hidden="true"
+      />
+    </Form>
+  );
 }
 
 //model for login form

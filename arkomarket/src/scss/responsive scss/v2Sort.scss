@@ -6,8 +6,69 @@
   .sort-container {
     padding-left: 16px;
     padding-right: 16px;
+    margin-top: 80px;
+    .container {
+      .search-nav {
+        .searchBar {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 10px 16px 10px 50px;
+          gap: 8px;
+
+          width: 90vw;
+          height: 37px;
+
+          background-color: rgba(0, 0, 0, 0.05) !important;
+          border-radius: 4px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          /* identical to box height */
+
+          color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
   }
   .v2-sale-dropdown {
+    .sort-section {
+      .form-select {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 16px;
+        gap: 8px;
+
+        width: 99.53px;
+        height: 29px;
+
+        background-color: #ffffff !important;
+        background-position-y: 50% !important;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    .Category-btn {
+      button {
+        border: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height */
+        background: transparent;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
     .filter-buttons {
       display: flex;
       flex-direction: column;
@@ -27,8 +88,8 @@
         padding: 8px 16px;
         gap: 10px;
 
-        width: 90.04px;
-        height: 35px;
+        width: 82.53px;
+        height: 29px;
         color: #ffffff;
 
         background-color: rgba(0, 0, 0, 0.8);
@@ -82,6 +143,13 @@
             display: flex;
             justify-content: space-between;
             width: 277px !important;
+            .card-space {
+              .card-seen {
+                img {
+                  height: 9px;
+                }
+              }
+            }
           }
           .card-space {
             justify-content: flex-end;
@@ -109,8 +177,45 @@
   .sort-container {
     padding-left: 16px;
     padding-right: 16px;
+    margin-top: 80px;
+    .container {
+      .search-nav {
+        .searchBar {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 10px 16px 10px 50px;
+          gap: 8px;
+
+          width: 92vw;
+          height: 37px;
+
+          background-color: rgba(0, 0, 0, 0.05) !important;
+          border-radius: 4px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          /* identical to box height */
+
+          color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
   }
   .v2-sale-dropdown {
+    .Category-btn {
+      button {
+        border: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height */
+        background: transparent;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
     .filter-buttons {
       display: flex;
       flex-direction: column;
@@ -183,6 +288,13 @@
             display: flex;
             justify-content: space-between;
             width: 277px !important;
+            .card-space {
+              .card-seen {
+                img {
+                  height: 9px;
+                }
+              }
+            }
           }
           .card-space {
             justify-content: flex-end;
@@ -205,10 +317,44 @@
     padding: 0px !important;
   }
   .sort-container {
-    padding-left: 16px;
-    padding-right: 16px;
+    .container {
+      .search-nav {
+        .searchBar {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 10px 16px 10px 50px;
+          gap: 8px;
+
+          width: 600px;
+          height: 37px;
+
+          background-color: rgba(0, 0, 0, 0.05) !important;
+          border-radius: 4px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          /* identical to box height */
+
+          color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
   }
   .v2-sale-dropdown {
+    .Category-btn {
+      button {
+        border: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height */
+        background: transparent;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
     .filter-buttons {
       display: flex;
       flex-direction: column;
@@ -283,6 +429,13 @@
             display: flex;
             justify-content: space-between;
             width: 277px !important;
+            .card-space {
+              .card-seen {
+                img {
+                  height: 9px;
+                }
+              }
+            }
           }
           .card-space {
             justify-content: flex-end;

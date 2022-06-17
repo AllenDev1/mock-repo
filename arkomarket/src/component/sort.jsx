@@ -1,13 +1,13 @@
 import React from "react";
-import { Container, Form, Dropdown } from "react-bootstrap";
+import { Container, Form, Dropdown, FormControl } from "react-bootstrap";
 import "../css/sort.css";
 import "../scss/sort.scss";
 import eye from "../Asset/eye.svg";
 import { NavLink } from "react-router-dom";
-import "../scss/responsive scss/v2Sort.scss"
+import "../scss/responsive scss/v2Sort.scss";
 import MediaQuery from "react-responsive";
 import Push from "../Asset/library2/Vector.svg";
-
+import categoty from "../Asset/catogry.svg";
 const Sort = () => {
   return (
     <>
@@ -166,36 +166,55 @@ const Sort = () => {
 
       {/* /// mobile view */}
       <MediaQuery maxWidth={993}>
-        <Container className="">
-
+        <Container style={{ display: "flex", flexDirection: "column" }}>
           <div className="sort-container ">
             <Container>
+              <Form className="d-flex search-nav">
+                <FormControl
+                  type="search"
+                  placeholder="Search products, services"
+                  className="me-2 searchBar "
+                  aria-label="Search"
+                  aria-hidden="true"
+                />
+              </Form>
+            </Container>
+            <Container>
               <div className="top-section v2-sale-dropdown">
-                <Dropdown>
-                  <Dropdown.Toggle variant="success" id="dropdown-basic ">
-                    Sale <img src={Push} alt="" />
-                  </Dropdown.Toggle>
+                <div style={{ display: "flex", gap: "0px 8px" }}>
+                  <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basic ">
+                      Sale <img src={Push} alt="" />
+                    </Dropdown.Toggle>
 
-                  <Dropdown.Menu>
-                    <div className="filter-buttons">
-                      <button className="Sale">Sale</button>
-                      <button className="Exchange">Exchange</button>
-                      <button className="Required">Required</button>
-                    </div>
-                  </Dropdown.Menu>
-                </Dropdown>
+                    <Dropdown.Menu>
+                      <div className="filter-buttons">
+                        <button className="Sale">Sale</button>
+                        <button className="Exchange">Exchange</button>
+                        <button className="Required">Required</button>
+                      </div>
+                    </Dropdown.Menu>
+                  </Dropdown>
 
-                <div className="sort-section">
-                  <Form.Select aria-label="Default select">
-                    <option> Sort By </option>
-                    <option value="1">Newest to oldest</option>
-                    <option value="2">Oldest to Newest</option>
-                    <option value="3">Price : low to high</option>
-                    <option value="4">Price : high to low</option>
-                  </Form.Select>
+                  <div className="sort-section">
+                    <Form.Select aria-label="Default select">
+                      <option> Sort By </option>
+                      <option value="1">Newest to oldest</option>
+                      <option value="2">Oldest to Newest</option>
+                      <option value="3">Price : low to high</option>
+                      <option value="4">Price : high to low</option>
+                    </Form.Select>
+                  </div>
+                </div>
+                <div className="Category-btn">
+                  <button>
+                    {" "}
+                    <img src={categoty} alt="..." /> Category
+                  </button>
                 </div>
               </div>
             </Container>
+
             <Container>
               <div class="row sm md lg">
                 <div class="card">

@@ -1,3 +1,29 @@
+@media (max-width: 349px) {
+  footer {
+    .logo {
+      padding-left: 16px;
+      padding-top: 28px;
+    }
+    height: auto;
+    .footer-container {
+      flex-wrap: wrap;
+      gap: 0px !important;
+      .footer-link2 {
+        .nav-link {
+          display: flex;
+          p {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+    }
+  }
+  .find-us-on p{
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 599px) {
   .container {
     max-width: 599px !important;
@@ -62,6 +88,7 @@
     .logo {
       padding-left: 16px;
       padding-top: 28px;
+      margin-left: 84px;
     }
     height: auto;
     .footer-container {
@@ -108,4 +135,9 @@
       }
     }
   }
+}
+@media (min-width: 350px) and (max-width: 425px) {
+    footer .footer-container{
+        gap: 0px 40px;
+    }
 }
