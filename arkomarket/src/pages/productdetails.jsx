@@ -15,6 +15,7 @@ import UserNav from "../component/user-nav";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import "react-image-gallery/styles/css/image-gallery.css";
+import "../scss/style.scss"
 
 const Productdetails = () => {
   const [showDec, setShowDec] = useState(true);
@@ -61,7 +62,7 @@ const Productdetails = () => {
           <Breadcrumb.Item >Cars</Breadcrumb.Item>
         </Breadcrumb>
       </Container>
-      <Container className="">
+      <Container className="product-image-crosule">
         <ImageGallery
           items={images}
           showPlayButton={false}

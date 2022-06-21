@@ -1,14 +1,13 @@
-@media (min-width: 994px) and (max-width: 1090px) {
+@media (min-width: 994px) and (max-width: 1150px) {
   .container {
-    padding: 0px 16px !important;
   }
   .navBar {
+    padding: 0px 32px;
     .upper-nav-sec {
-      padding: 0px 16px;
     }
-    .navbar-collapse {
+    #basic-navbar-nav {
       gap: 0;
-      justify-content: space-evenly;
+      justify-content: space-between;
     }
   }
   .Conrainer-for-filter-sec {
@@ -17,8 +16,27 @@
   .breadCrumb-for-pages {
     margin-left: 16px;
   }
+  .breadCrumb-for-pages,
+  .breadCrumb-PD {
+    margin-left: 32px;
+  }
+  .profile-container,
+  .product-image-crosule,
+  .user-sec-main,
+  .help-nav,
+  .help-landing-page {
+    padding: 0px 32px !important;
+  }
+  .tab-content {
+    width: 75%;
+  }
+  .var-queries {
+    width: 100% !important;
+  }
+
   .sort-container,
   .simle-margin-top {
+    padding: 0px 32px;
     .container {
       .row {
         gap: 25px 2.5%;
@@ -39,6 +57,8 @@
     }
   }
   .similar-Ads {
+    padding: 0px 32px !important;
+
     .container {
       padding: 0% !important;
       .row {
@@ -61,6 +81,7 @@
   }
   .Main-profile {
     .row {
+      padding: 0% 32px;
       gap: 25px 2.5%;
       .card {
         width: 31.6% !important;
@@ -78,6 +99,7 @@
     }
   }
   .des-product-section {
+    padding: 0px 32px !important;
     .details-comments {
       .details-product {
         width: 100% !important;
@@ -113,9 +135,10 @@
   }
 
   footer {
+    padding: 0px 32px !important;
+
     .footer-container {
       .logo {
-        padding-left: 16px;
       }
     }
   }

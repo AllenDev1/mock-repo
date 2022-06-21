@@ -13,6 +13,7 @@ import Login from "./login.jsx";
 import Generalnotification from "./Generalnotifi";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../scss/responsive scss/v2nav.scss";
+import "../scss/style.scss"
 import { useSearchParams } from "react-router-dom";
 import MediaQuery from "react-responsive";
 const NavBar = () => {

@@ -13,7 +13,7 @@ import { NavLink } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Profiledetails from "./profiledetails";
 import Generalnotification from "./Generalnotifi";
-
+import "../scss/style.scss"
 const UserNav = () => {
   let navigate = useNavigate();
   const routeChange = () => {
