@@ -8,7 +8,7 @@ import myads from "../Asset/ads.svg";
 import heart from "../Asset/heart.svg";
 import { Container, Nav } from "react-bootstrap";
 import UserNav from "./user-nav";
-
+import "../scss/style.scss"
 function Profile() {
   return (
     <>

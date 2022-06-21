@@ -5,7 +5,7 @@ import "../scss/help.scss";
 const Helpbody = () => {
  
   return (<>
-    <div className="main-hel">
+    <Container className="main-hel">
         <p>Hi, How can we help?</p>
         <div>
         <Form className="d-flex">
@@ -18,7 +18,7 @@ const Helpbody = () => {
               />
             </Form>
         </div>
-    </div>
+    </Container>
     
     </>
   );

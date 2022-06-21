@@ -1,6 +1,8 @@
 * .Main-profile {
   max-width: 1090px;
+  flex-direction: column;
 }
+
 
 .profile-box {
   display: inline-flex;

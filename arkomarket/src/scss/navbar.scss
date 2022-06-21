@@ -55,7 +55,13 @@
 .container-xxl {
   max-width: 1090px !important;
   display: flex;
+  padding: 0%;
 }
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    gap: 24px;
+}}
 .dropdown-notification {
   .btn {
     background-color: transparent;
@@ -148,7 +154,7 @@
     height: 60px;
     .logo-searchBar {
       display: flex;
-      
+       
     }
   }
   // .nav-footer-container{
