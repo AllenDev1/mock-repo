@@ -5,7 +5,8 @@ import { useState, useRef } from "react";
 import photo from "../Asset/Addphoto.svg";
 import UserNav from "../component/user-nav";
 
-import PhoneInput, { isPossiblePhoneNumber } from "react-phone-number-input";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 import Whatsapp from "../Asset/whatsapp.svg";
 import viber from "../Asset/viber.svg";
 const PostNewAds = () => {
@@ -58,14 +59,14 @@ const PostNewAds = () => {
             <h3>Upload upto 12 images</h3>
             <div className="hold-photos ">
               <input
-              className="focus-propotities-for-input-tag"
+                className="focus-propotities-for-input-tag"
                 ref={inputFile}
                 id="file"
                 type="file"
                 style={{ display: "none" }}
                 multiple="{false}"
               />
-              <button onClick={handleFileUpload} >
+              <button onClick={handleFileUpload}>
                 <img src={photo} />
                 <p>Add Photo</p>
               </button>
@@ -129,20 +130,27 @@ const PostNewAds = () => {
             <h4>Check Contact Info</h4>
             <div className="check-contact-info-form">
               <div className="firstName-lastName">
-                <input type="text" placeholder="First Name" className="focus-propotities-for-input-tag" />
-                <input type="text" placeholder="Last Name" className="focus-propotities-for-input-tag"/>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  className="focus-propotities-for-input-tag"
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  className="focus-propotities-for-input-tag"
+                />
               </div>
-              <input type="email address" placeholder="email address" className="focus-propotities-for-input-tag" />
+              <input
+                type="email address"
+                placeholder="email address"
+                className="focus-propotities-for-input-tag"
+              />
               <PhoneInput
-                layout="first"
-                withShadow
-                placeholder="Enter phone number"
+                country={"np"}
                 value={value}
+                placeholder="Enter phone number"
                 onChange={setValue}
-                defaultCountry="NP"
-                international
-                // withCountryCallingCode
-                error={value && isPossiblePhoneNumber(value) ? "true" : "false"}
               />
             </div>
             <div className="link-message mt-4">

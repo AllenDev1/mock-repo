@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import "../scss/editprofile.scss";
-import PhoneInput, { isPossiblePhoneNumber } from "react-phone-number-input";
 import { NavLink } from "react-bootstrap";
 import { useState } from "react";
-
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 const Editprofile = () => {
   const [value, setValue] = useState();
   const inputFile = useRef(null);
@@ -47,15 +47,15 @@ const Editprofile = () => {
                   placeholder="example@example.com"
                 />
               </div>
-              <label htmlFor="Phone Number" className="phone-number-lebel">Contact Number</label>
+              <label htmlFor="Phone Number" className="phone-number-lebel">
+                Contact Number
+              </label>
+
               <PhoneInput
-                placeholder="Enter phone number"
+                country={"np"}
                 value={value}
+                placeholder="Enter phone number"
                 onChange={setValue}
-                defaultCountry="NP"
-                international
-                // withCountryCallingCode
-                error={value && isPossiblePhoneNumber(value) ? "true" : "false"}
               />
               <div className="form-group">
                 <label htmlFor="exampleFormControlTextarea1">About</label>
@@ -89,9 +89,7 @@ const Editprofile = () => {
                 className="focus-propotities-for-input-tag"
               />
 
-              <button onClick={handleFileUpload}>
-                Upload
-              </button>
+              <button onClick={handleFileUpload}>Upload</button>
 
               <NavLink href="#">Remove</NavLink>
             </div>
