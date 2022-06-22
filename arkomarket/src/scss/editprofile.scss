@@ -40,25 +40,17 @@
           padding-left: 70px;
           border: 1px solid rgba(0, 0, 0, 0.1);
         }
-        .form-control:focus{
-          background-color: #ffffff !important;
-          outline: 1px solid rgba(0, 0, 0, 0.8) !important;
-          border: 1px solid rgba(0, 0, 0, 0.8) !important;
-        }
-        .form-control:hover{
+        .flag-dropdown:hover,
+        .form-control:hover {
           background-color: rgba(0, 0, 0, 0.03) !important;
           outline: rgba(0, 0, 0, 0.3) !important;
           border: 1px solid rgba(0, 0, 0, 0.3) !important;
         }
-        .flag-dropdown:focus{
+        .flag-dropdown:focus,
+        .form-control:focus {
           background-color: #ffffff !important;
           outline: 1px solid rgba(0, 0, 0, 0.8) !important;
           border: 1px solid rgba(0, 0, 0, 0.8) !important;
-        }
-        .flag-dropdown:hover{
-          background-color: rgba(0, 0, 0, 0.03) !important;
-          outline: rgba(0, 0, 0, 0.3) !important;
-          border: 1px solid rgba(0, 0, 0, 0.3) !important;
         }
         .flag-dropdown {
           display: flex;
