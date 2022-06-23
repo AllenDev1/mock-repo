@@ -1,0 +1,40 @@
+.testing {
+  display: flex;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.simle-margin-top {
+  margin-top: 30px;
+  margin-bottom: 86.6px;
+}
+.Conrainer-for-filter-sec {
+  justify-content: space-between;
+}
+.clear-all-btn {
+  display: flex;
+  flex-direction: column;
+}
+.clear:hover{
+  color: rgba(0, 0, 0, 0.8);
+  
+}
+.clear {
+  display: flex;
+  justify-content: flex-end;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 35px;
+  /* identical to box height */
+
+  color: rgba(0, 0, 0, 0.5);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: transparent;
+  border: none;
+}

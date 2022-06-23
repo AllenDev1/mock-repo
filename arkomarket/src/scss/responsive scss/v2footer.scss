@@ -1,0 +1,143 @@
+@media (max-width: 349px) {
+  footer {
+    .logo {
+      padding-left: 16px;
+      padding-top: 28px;
+    }
+    height: auto;
+    .footer-container {
+      flex-wrap: wrap;
+      gap: 0px !important;
+      .footer-link2 {
+        .nav-link {
+          display: flex;
+          p {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+    }
+  }
+  .find-us-on p{
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 599px) {
+  .container {
+    max-width: 599px !important;
+  }
+  footer {
+    .logo {
+      padding-left: 16px;
+      padding-top: 28px;
+    }
+    height: auto;
+    .footer-container {
+      flex-wrap: wrap;
+      gap: 0px 91px;
+      .footer-link2 {
+        .nav-link {
+          display: flex;
+          p {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+    }
+    .below-footer {
+      flex-direction: column-reverse;
+      gap: 32px;
+      .Below-footer-items-right {
+        justify-content: center;
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          /* identical to box height */
+
+          color: rgba(255, 255, 255, 0.8);
+          padding: 0%;
+          margin: 0px;
+          margin-bottom: 28px;
+        }
+      }
+      .Available-on {
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+        .links-for-app {
+          gap: 0px 15px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 993px) {
+  .container {
+    max-width: 599px !important;
+  }
+  footer {
+    .logo {
+      padding-left: 16px;
+      padding-top: 28px;
+      margin-left: 84px;
+    }
+    height: auto;
+    .footer-container {
+      flex-wrap: wrap;
+      gap: 0px 91px;
+      .footer-link2 {
+        .nav-link {
+          display: flex;
+          p {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+    }
+    .below-footer {
+      flex-direction: column-reverse;
+      gap: 32px;
+      .Below-footer-items-right {
+        justify-content: center;
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          /* identical to box height */
+
+          color: rgba(255, 255, 255, 0.8);
+          padding: 0%;
+          margin: 0px;
+          margin-bottom: 28px;
+        }
+      }
+      .Available-on {
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+        .links-for-app {
+          gap: 0px 15px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 350px) and (max-width: 425px) {
+    footer .footer-container{
+        gap: 0px 40px;
+    }
+}
