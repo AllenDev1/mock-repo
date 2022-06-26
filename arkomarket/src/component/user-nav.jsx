@@ -2,6 +2,7 @@ import React from "react";
 import "../css/filter.css";
 import "../css/nav.css";
 import "../scss/navbar.scss";
+import "../scss/style.scss"
 import NotificaionIcon from "../Asset/notification.svg";
 import logo from "../Asset/ArkoMarket.svg";
 import userIcon from "../Asset/user.svg";
@@ -13,7 +14,7 @@ import { NavLink } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Profiledetails from "./profiledetails";
 import Generalnotification from "./Generalnotifi";
-import "../scss/style.scss"
+
 const UserNav = () => {
   let navigate = useNavigate();
   const routeChange = () => {
