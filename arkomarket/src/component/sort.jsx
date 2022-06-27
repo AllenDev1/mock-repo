@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Form, Dropdown, FormControl } from "react-bootstrap";
 import "../css/sort.css";
 import "../scss/sort.scss";
+import "../scss/style.scss"
 import eye from "../Asset/eye.svg";
 import { NavLink } from "react-router-dom";
 import "../scss/responsive scss/v2Sort.scss";

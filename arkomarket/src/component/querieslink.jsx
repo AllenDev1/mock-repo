@@ -25,7 +25,6 @@ const Querieslink = () => {
       document.documentElement.scrollHeight,
       document.documentElement.offsetHeight
     );
-    console.log(maxValueScrollY, window.scrollY, maxValueScrollY - 1847);
     if (window.scrollY > 183) {
       document.querySelector(".apple").style.position = "fixed";
       document.querySelector(".apple").style.top = "100px";

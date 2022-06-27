@@ -1,10 +1,17 @@
-@media (min-width: 994px) and (max-width: 1150px) {
+@media (min-width: 994px) and (max-width: 1399px) {
   .container {
     padding: 0px !important;
   }
   .navBar {
-    padding: 0px 32px;
+    .user-nav-sec {
+      padding: 0px 32px !important;
+    }
+    .nav-footer-container {
+      padding: 0px 32px !important;
+    }
     .upper-nav-sec {
+      padding: 0px 32px !important;
+
       .navbar-collapse {
         width: 100%;
         .navbar-nav {
@@ -144,8 +151,6 @@
     }
   }
   .help-nav-center {
-  
-
     .fix-help-nav {
       .container {
         padding: 0% !important;
@@ -178,4 +183,6 @@
       }
     }
   }
+}
+@media (min-width: 994px) and (max-width: 1089px) {
 }
