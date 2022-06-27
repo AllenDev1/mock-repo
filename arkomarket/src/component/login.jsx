@@ -4,6 +4,33 @@ import Google from "../Asset/Google.svg";
 import Facebook from "../Asset/Facebook-1.svg";
 
 const Login = () => {
+  // const login = () => {
+  //   const csrfCookie = "";
+
+  //   const options = {
+  //     method: "POST",
+  //     url: "/auth/login/",
+  //     headers: {
+  //       "Content-Type": "application/x-www-form-urlencoded",
+  //       csrftoken: csrfCookie,
+  //     },
+  //     data: {
+  //       csrfmiddlewaretoken: csrfCookie,
+  //       login: "admin@gmail.com",
+  //       password: "admin123",
+  //     },
+  //   };
+
+  //   axios
+  //     .request(options)
+  //     .then(function (response) {
+  //       console.log(response.data);
+  //     })
+  //     .catch(function (error) {
+  //       console.error(error);
+  //     });
+  // };
+
   return (
     <div className="Login-container">
       <div className="Login-contents">
