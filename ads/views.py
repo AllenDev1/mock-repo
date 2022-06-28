@@ -5,7 +5,9 @@ from rest_framework.filters import SearchFilter
 from rest_framework import viewsets, permissions
 from .serializer import *
 from django.contrib.auth import get_user_model
+
 User = get_user_model()
+
 
 class CategoryViewSet(viewsets.ModelViewSet):
     """
@@ -91,5 +93,3 @@ class FavAdsViewSet(viewsets.ModelViewSet):
     queryset = FavAds.objects.all()
     serializer_class = FavAdsSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-
-
