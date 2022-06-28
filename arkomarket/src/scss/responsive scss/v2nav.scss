@@ -1,0 +1,89 @@
+@media (min-width: 350px) and (max-width: 425px) {
+  .navBar {
+    height: 63px;
+  }
+  .logo-searchBar {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 16px;
+  }
+  .freeadsbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 10px;
+
+    width: 139px;
+    height: 39px;
+
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+@media (max-width: 349px) {
+  .navBar {
+    height: 63px;
+  }
+  .logo-searchBar {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 16px;
+  }
+  .freeadsbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 10px;
+
+    width: 139px;
+    height: 39px;
+
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+@media (min-width: 426px) and (max-width: 993px) {
+  .navBar {
+    height: 63px;
+  }
+  .logo-searchBar {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .freeadsbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 10px;
+
+    width: 139px;
+    height: 39px;
+
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.8);
+  }
+}

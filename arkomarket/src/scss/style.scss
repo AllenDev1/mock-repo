@@ -1,0 +1,152 @@
+@media (min-width: 994px) and (max-width: 1150px) {
+  .container {
+  }
+  .navBar {
+    padding: 0px 32px;
+    .upper-nav-sec {
+    }
+    #basic-navbar-nav {
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+  .Conrainer-for-filter-sec {
+    padding: 0px 32px !important;
+  }
+  .breadCrumb-for-pages {
+    margin-left: 16px;
+  }
+  .breadCrumb-for-pages,
+  .breadCrumb-PD {
+    margin-left: 32px;
+  }
+  .profile-container,
+  .product-image-crosule,
+  .user-sec-main,
+  .help-nav,
+  .help-landing-page {
+    padding: 0px 32px !important;
+  }
+  .tab-content {
+    width: 75%;
+  }
+  .var-queries {
+    width: 100% !important;
+  }
+
+  .sort-container,
+  .simle-margin-top {
+    padding: 0px 32px;
+    .container {
+      .row {
+        gap: 25px 2.5%;
+        .card {
+          width: 31.6% !important;
+          overflow: hidden;
+          a {
+            .card-body {
+              .lower-text {
+                .card-space {
+                  width: 226px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .similar-Ads {
+    padding: 0px 32px !important;
+
+    .container {
+      padding: 0% !important;
+      .row {
+        gap: 25px 2.5%;
+        .card {
+          width: 31.6% !important;
+          overflow: hidden;
+          a {
+            .card-body {
+              .lower-text {
+                .card-space {
+                  width: 226px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .Main-profile {
+    .row {
+      padding: 0% 32px;
+      gap: 25px 2.5%;
+      .card {
+        width: 31.6% !important;
+        overflow: hidden;
+        a {
+          .card-body {
+            .lower-text {
+              .card-space {
+                width: 226px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .des-product-section {
+    padding: 0px 32px !important;
+    .details-comments {
+      .details-product {
+        width: 100% !important;
+        .m-4 {
+        }
+      }
+      .des-comment-sec {
+        width: 100% !important;
+        .header-comment-des {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .user-sec-main {
+    .basic-info {
+      width: 78% !important;
+    }
+  }
+  .help-nav-center {
+    .fix-help-nav {
+      .container {
+        padding: 0% !important;
+        .help-nav-fix {
+          width: 100%;
+          .help-nav {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+.comment-description{
+  width: 90% !important;
+}
+.comment-input{
+  input{
+    width: 100% !important;
+  }
+}
+  footer {
+    padding: 0px 32px !important;
+
+    .footer-container {
+      .logo {
+      }
+    }
+  }
+}
