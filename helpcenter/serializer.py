@@ -5,4 +5,4 @@ from .models import HelpCenter
 class HelpCenterSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = HelpCenter
-        fields = '__all__'
+        fields = ['full_name', 'email_phone', 'category', 'message']
