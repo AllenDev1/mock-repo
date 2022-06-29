@@ -5,4 +5,4 @@ from .models import Terms
 class TermsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Terms
-        fields = ['title', 'description']
+        fields = ['title', 'description', 'type']
