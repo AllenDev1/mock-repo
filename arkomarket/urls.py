@@ -25,6 +25,8 @@ router.register(r'commentsbypost', CommentsbyPostViewSet, 'get comments by post'
 router.register(r'comments', CommentViewSet, 'get Comments')
 router.register(r'rootcomment', RootCommentViewSet, 'rootcomment')
 router.register(r'faqs', FaqViewSet, 'get faqs')
+router.register(r'terms', TermsViewSet, 'get terms')
+router.register(r'helpcenter', HelpCenterViewSet, 'get helpmessages')
 
 urlpatterns = [
                   path('', include(router.urls)),
