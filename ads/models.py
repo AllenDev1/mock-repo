@@ -60,7 +60,6 @@ class Ads(models.Model):
         verbose_name_plural = "ads"
 
 
-
 class AdsImage(models.Model):
     ads = models.ForeignKey(Ads, related_name="ads_images", on_delete=models.CASCADE)
     image = models.ForeignKey(ImageUpload, related_name="image_product", on_delete=models.CASCADE)

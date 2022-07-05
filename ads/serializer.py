@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import *
 from django.conf import settings
 from django.contrib.auth import get_user_model
+
 User = get_user_model()
 
 
@@ -21,9 +22,12 @@ class CategorySerializer(serializers.ModelSerializer):
 
 
 class AdsSerializer(serializers.ModelSerializer):
+    category = serializers.StringRelatedField(source='category.name')
+    created_by = serializers.StringRelatedField(source='created_by.email')
+
     class Meta:
         model = Ads
-        fields = '__all__'
+        fields = ['name', 'category', 'price', 'created_by', 'description']
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -43,7 +47,7 @@ class AdsByCategorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Category
-        fields = '__all__'
+        fields = ['name', 'type', 'data_type', 'parent', 'products']
 
 
 class AdsByUserSerializer(serializers.ModelSerializer):
@@ -57,13 +61,13 @@ class AdsByUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        exclude = ['password']
+        fields = ['email', 'ads']
 
 
 class FavAdsSerializer(serializers.ModelSerializer):
     class Meta:
         model = FavAds
-        fields = '__all__'
+        fields = ['user.name', 'ads']
 
 
 class TreeCategorySerializer(serializers.ModelSerializer):

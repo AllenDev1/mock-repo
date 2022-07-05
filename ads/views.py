@@ -1,6 +1,4 @@
 from rest_framework.response import Response
-from .models import *
-from rest_framework import permissions
 from rest_framework.filters import SearchFilter
 from rest_framework import viewsets, permissions
 from .serializer import *
@@ -16,6 +14,7 @@ class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    http_method_names = ['get']
 
 
 class TreeCategoryViewSet(viewsets.ModelViewSet):
@@ -25,6 +24,7 @@ class TreeCategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.filter(parent=None)
     serializer_class = TreeCategorySerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    http_method_names = ['get']
 
 
 class RootCategoryViewSet(viewsets.ModelViewSet):
@@ -34,6 +34,7 @@ class RootCategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.filter(parent=None)
     serializer_class = RootCategorySerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    http_method_names = ['get']
 
 
 class AdsViewSet(viewsets.ModelViewSet):
@@ -57,6 +58,7 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    http_method_names = ['get']
 
 
 class AdsByCategoryViewSet(viewsets.ModelViewSet):

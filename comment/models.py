@@ -14,7 +14,7 @@ class Comments(models.Model):
     type = models.CharField(max_length=6, null=False, blank=False, choices=COMMENT_TYPE, default="ROOT")
     user_comment = models.TextField(null=False, max_length=200)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    ads = models.ForeignKey(Ads, null=True, blank=True, on_delete=models.CASCADE)
+    ads = models.ForeignKey(Ads, null=False, blank=False, on_delete=models.CASCADE, default='1')
     created_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
 
