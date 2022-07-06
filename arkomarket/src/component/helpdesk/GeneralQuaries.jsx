@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../../scss/queriesnav.scss";
 import Accordion from "react-bootstrap/Accordion";
 import insta from "../../Asset/029-instagram 1.svg";
 import twitter from "../../Asset/twitter-color-less.svg";
 import facebookicon from "../../Asset/036-facebook 1.svg";
 import axios from "axios";
-import { useState } from "react";
 
 const AccordionItem = ({ question, answer, index }) => {
   return (
@@ -56,7 +55,6 @@ const GeneralQueries = () => {
     axios
       .request(options)
       .then(function (response) {
-        console.log("hello", response.data);
         setQusans(response.data);
       })
       .catch(function (error) {
@@ -69,6 +67,7 @@ const GeneralQueries = () => {
       <div className="var-queries">
         <Accordion defaultActiveKey="0" alwaysOpen={false}>
           {qusans?.map((item, index) => {
+            if(item.type === "GENERAL")
             return (
               <AccordionItem
                 question={item.question}
