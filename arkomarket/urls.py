@@ -8,6 +8,8 @@ from ads.views import *
 from comment.views import *
 from helpcenter.views import *
 from terms.views import *
+from faq import views
+from linkapp.views import AppLinkViewSets
 
 router = routers.DefaultRouter()
 
@@ -25,6 +27,7 @@ router.register(r'commentsbypost', CommentsbyPostViewSet, 'get comments by post'
 router.register(r'comments', CommentViewSet, 'get Comments')
 router.register(r'rootcomment', RootCommentViewSet, 'rootcomment')
 router.register(r'faqs', FaqViewSet, 'get faqs')
+router.register(r'linkapps', AppLinkViewSets, 'link apps')
 router.register(r'terms', TermsViewSet, 'get terms')
 router.register(r'helpcenter', HelpCenterViewSet, 'get helpmessages')
 
@@ -33,6 +36,7 @@ urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('gettoken/', TokenObtainPairView.as_view(), name='tokem_obtain_pair'),
                   path('refreshtoken/', TokenRefreshView.as_view(), name='token_refresh'),
+                  path('faqsearch/', views.FaqSearch.as_view()),
                   path('auth/', include('allauth.urls'))
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
