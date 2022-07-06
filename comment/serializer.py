@@ -5,9 +5,13 @@ from ads.models import Ads
 
 
 class CommentSerializer(serializers.HyperlinkedModelSerializer):
+    ads = serializers.StringRelatedField(source='ads.name')
+    ads_id = serializers.StringRelatedField(source='ads.id')
+    user = serializers.StringRelatedField(source='user.email')
+
     class Meta:
         model = Comments
-        fields = ['user_comment', 'type', 'parent']
+        fields = ['ads_id', 'ads', 'user', 'user_comment', 'type', 'parent']
 
 
 class CommentsbyPostSerializer(serializers.ModelSerializer):
@@ -26,6 +30,10 @@ class CommentsbyPostSerializer(serializers.ModelSerializer):
 
 class TreeCommentSerializer(serializers.ModelSerializer):
     children = serializers.SerializerMethodField('get_children')
+    ads = serializers.StringRelatedField(source='ads.name')
+    ads_id = serializers.StringRelatedField(source='ads.id')
+    parent = serializers.StringRelatedField(source='parent.user_comment')
+    user = serializers.StringRelatedField(source='user.email')
 
     def get_children(self, obj):
         comment = Comments.objects.filter(parent=obj.id)
@@ -34,5 +42,4 @@ class TreeCommentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Comments
-        fields = '__all__'
-        depth = 2
+        fields = ['ads', 'ads_id', 'parent', 'user_comment', 'type', 'user', 'children']

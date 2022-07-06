@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
-from django.conf import settings
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework import routers
 from faq.views import *
 from ads.views import *
@@ -31,5 +31,8 @@ router.register(r'helpcenter', HelpCenterViewSet, 'get helpmessages')
 urlpatterns = [
                   path('', include(router.urls)),
                   path('admin/', admin.site.urls),
+                  path('gettoken/', TokenObtainPairView.as_view(), name='tokem_obtain_pair'),
+                  path('refreshtoken/', TokenRefreshView.as_view(), name='token_refresh'),
                   path('auth/', include('allauth.urls'))
+
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
