@@ -51,6 +51,13 @@ class AdsViewSet(viewsets.ModelViewSet):
         ordering = ['-id']
 
 
+class ReportViewSet(viewsets.ModelViewSet):
+    queryset = Report.objects.all()
+    serializer_class = ReportSerializer
+    permission_classes = [permissions.AllowAny]
+    http_method_names = ['post']
+
+
 class UserViewSet(viewsets.ModelViewSet):
     """
     API endpoint for users

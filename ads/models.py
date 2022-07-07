@@ -60,6 +60,22 @@ class Ads(models.Model):
         verbose_name_plural = "ads"
 
 
+class Report(models.Model):
+    REPORT_TYPE = (
+        ('OFFENCE', 'offensive content'),
+        ('DUPLICATE', 'duplicate ad'),
+        ('FRAUD', 'fraud'),
+        ('SOLD', 'product already sold'),
+        ('OTHERS', 'others')
+    )
+    ads = models.ForeignKey(Ads, blank=False, null=False, on_delete=models.CASCADE)
+    type = models.CharField(max_length=9, choices=REPORT_TYPE)
+    msg = models.TextField(max_length=500, blank=True, null=True)
+
+    def __str__(self):
+        return self.type
+
+
 class AdsImage(models.Model):
     ads = models.ForeignKey(Ads, related_name="ads_images", on_delete=models.CASCADE)
     image = models.ForeignKey(ImageUpload, related_name="image_product", on_delete=models.CASCADE)

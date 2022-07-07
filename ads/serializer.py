@@ -30,6 +30,12 @@ class AdsSerializer(serializers.ModelSerializer):
         fields = ['name', 'category', 'price', 'created_by', 'description']
 
 
+class ReportSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Report
+        fields = '__all__'
+
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
