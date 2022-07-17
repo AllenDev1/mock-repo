@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from datetime import datetime
 
 
 class ImageUpload(models.Model):
@@ -54,10 +55,34 @@ class Ads(models.Model):
     def __str__(self):
         return f"{self.name}"
 
+    def created(self):
+        date = self.created_at.strftime("%B %d,%Y")
+        return date
+
+    def ad_id(self):
+        id = f"AM {self.id}"
+        return id
+
     class Meta:
         ordering = ("-created_at",)
         verbose_name = "ad"
         verbose_name_plural = "ads"
+
+
+class Report(models.Model):
+    REPORT_TYPE = (
+        ('OFFENCE', 'offensive content'),
+        ('DUPLICATE', 'duplicate ad'),
+        ('FRAUD', 'fraud'),
+        ('SOLD', 'product already sold'),
+        ('OTHERS', 'others')
+    )
+    ads = models.ForeignKey(Ads, blank=False, null=False, on_delete=models.CASCADE)
+    type = models.CharField(max_length=9, choices=REPORT_TYPE)
+    msg = models.TextField(max_length=500, blank=True, null=True)
+
+    def __str__(self):
+        return self.type
 
 
 class AdsImage(models.Model):
@@ -69,7 +94,7 @@ class AdsImage(models.Model):
     updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f" {self.product.name} - {self.image}"
+        return f" {self.ads.name} - {self.image}"
 
 
 class FavAds(models.Model):

@@ -27,13 +27,19 @@ class AdsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Ads
-        fields = ['name', 'category', 'price', 'created_by', 'description']
+        fields = ['ad_id', 'name', 'category', 'price', 'created_by', 'created', 'description']
+
+
+class ReportSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Report
+        fields = '__all__'
 
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ['email', 'first_name', 'last_name', 'image', 'number', 'created', 'about']
 
 
 class AdsByCategorySerializer(serializers.ModelSerializer):
