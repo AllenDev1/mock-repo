@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from datetime import datetime
 
 
 class ImageUpload(models.Model):
@@ -53,6 +54,14 @@ class Ads(models.Model):
 
     def __str__(self):
         return f"{self.name}"
+
+    def created(self):
+        date = self.created_at.strftime("%B %d,%Y")
+        return date
+
+    def ad_id(self):
+        id = f"AM {self.id}"
+        return id
 
     class Meta:
         ordering = ("-created_at",)
