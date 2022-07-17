@@ -8,8 +8,10 @@ from ads.views import *
 from comment.views import *
 from helpcenter.views import *
 from terms.views import *
+from authentication.views import *
 from faq import views
 from linkapp.views import AppLinkViewSets
+from allauth.socialaccount.providers.google import views as google_views
 
 router = routers.DefaultRouter()
 
@@ -38,6 +40,11 @@ urlpatterns = [
                   path('gettoken/', TokenObtainPairView.as_view(), name='tokem_obtain_pair'),
                   path('refreshtoken/', TokenRefreshView.as_view(), name='token_refresh'),
                   path('faqsearch/', views.FaqSearch.as_view()),
-                  path('auth/', include('allauth.urls'))
+                  path('auth/', include('allauth.urls')),
+                  path('auth/google/', google_views.oauth2_login, name='google_login'),
+                  path('auth/google/callback/',google_callback, name='google_callback'),
+                  path('google/connect', GoogleConnect.as_view(), name='google_connect'),
+                  path('google/token/',google_token, name='google_token'),
+
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
