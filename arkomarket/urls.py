@@ -41,10 +41,13 @@ urlpatterns = [
                   path('refreshtoken/', TokenRefreshView.as_view(), name='token_refresh'),
                   path('faqsearch/', views.FaqSearch.as_view()),
                   path('auth/', include('allauth.urls')),
+
+
+
                   path('auth/google/', google_views.oauth2_login, name='google_login'),
-                  path('auth/google/callback/',google_callback, name='google_callback'),
+                  path('auth/google/callback/', google_token, name='google_callback'),
                   path('google/connect', GoogleConnect.as_view(), name='google_connect'),
-                  path('google/token/',google_token, name='google_token'),
+                  path('google/token/', google_token, name='google_token'),
 
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -50,4 +50,4 @@ def google_token(request):
         return RefreshNuxtAuth.as_view()(request)
 
     else:
-        return GoogleLogin.as_view()(request)
+        return GoogleConnect.as_view()(request)
