@@ -11,6 +11,16 @@ from allauth.socialaccount.providers.oauth2.views import (
     OAuth2CallbackView,
     OAuth2LoginView
 )
+from django.contrib.auth.base_user import BaseUserManager
+from django.contrib.auth.hashers import make_password
+from rest_framework.utils import json
+from rest_framework.views import APIView
+from rest_framework.response import Response
+import requests as requestg
+from rest_framework_simplejwt.tokens import RefreshToken
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 
 class GoogleConnect(SocialLoginView):
@@ -29,25 +39,52 @@ def google_callback(request):
     return redirect(f'http://localhost:3000/google/{params}')
 
 
-@csrf_exempt
-def google_token(request):
-    if "code" not in request.body.decode():
-        from rest_framework_simplejwt.settings import api_settings as jwt_settings
-        from rest_framework_simplejwt.views import TokenRefreshView
+# @csrf_exempt
+# def google_token(request):
+#     if "code" not in request.body.decode():
+#         from rest_framework_simplejwt.settings import api_settings as jwt_settings
+#         from rest_framework_simplejwt.views import TokenRefreshView
+#
+#         class RefreshNuxtAuth(TokenRefreshView):
+#             # By default, Nuxt auth accept and expect postfix "_token"
+#             # while simple_jwt library doesnt accept nor expect that postfix
+#             def post(self, request, *args, **kwargs):
+#                 request.data._mutable = True
+#                 request.data["refresh"] = request.data.get("refresh_token")
+#                 request.data._mutable = False
+#                 response = super().post(request, *args, **kwargs)
+#                 response.data['refresh_token'] = response.data['refresh']
+#                 response.data['access_token'] = response.data['access']
+#                 return response
+#
+#         return RefreshNuxtAuth.as_view()(request)
+#
+#     else:
+#         return GoogleConnect.as_view()(request)
 
-        class RefreshNuxtAuth(TokenRefreshView):
-            # By default, Nuxt auth accept and expect postfix "_token"
-            # while simple_jwt library doesnt accept nor expect that postfix
-            def post(self, request, *args, **kwargs):
-                request.data._mutable = True
-                request.data["refresh"] = request.data.get("refresh_token")
-                request.data._mutable = False
-                response = super().post(request, *args, **kwargs)
-                response.data['refresh_token'] = response.data['refresh']
-                response.data['access_token'] = response.data['access']
-                return response
 
-        return RefreshNuxtAuth.as_view()(request)
+class GoogleView(APIView):
+    def post(self, request, *args, **kwargs):
+        payload = {'access_token': request.data.get("token")}
+        r = requestg.get("https://www/googleapis.com/oauth2/v2/userinfo", params=payload)
+        data = json.loads(r.text)
 
-    else:
-        return GoogleConnect.as_view()(request)
+        if 'error' in data:
+            content = {'message': 'wrong google token / this google token is already expired.'}
+            return Response(content)
+
+        try:
+            user = User.objects.get(email=data['email'])
+        except User.DoesNotExist:
+            user = User()
+            user.email = data['email']
+            # provider ramdom default password
+            user.password = make_password(BaseUserManager().make_random_password())
+            user.save()
+
+        token = RefreshToken.for_user(user)
+        response = {}
+        response['username'] = user.username
+        response['access_token'] = str(token.access_token)
+        response['refresh_token'] = str(token)
+        return Response(response)

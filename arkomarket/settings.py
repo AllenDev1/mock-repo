@@ -18,13 +18,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'rest_framework',
+    "rest_framework.authtoken",
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
+    
 
-    # 'ckeditor',
     'tinymce',
 
     'ads',
@@ -109,7 +112,7 @@ SOCIALACCOUNT_PROVIDERS = {
             'email',
         ],
         'AUTH_PARAMS': {
-            'access_type': 'online'
+            'access_type': 'offline'
         }
     },
     'facebook': {
@@ -132,9 +135,14 @@ REST_FRAMEWORK = {
 from datetime import timedelta
 
 SIMPLE_JWT = {
+    'AUTH_HEADER_TYPES': ('JWT',),
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
     'ROTATE_REFRESH_TOKENS': False,
+    'AUTH_TOKEN_CLASSES': (
+        'rest_framework_simplejwt.tokens.AccessToken'
+    )
+
 
 }
 AUTH_USER_MODEL = 'authentication.CustomUser'
