@@ -49,6 +49,6 @@ urlpatterns = [
                   path('google/connect', GoogleConnect.as_view(), name='google_connect'),
                   # path('google/token/', google_token, name='google_token'),
                   path('google/', GoogleView.as_view(), name='google'),
-
+                  path('google/login/', google_login, name='google_callback'),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

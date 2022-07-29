@@ -5,18 +5,13 @@ from django.urls import reverse
 import urllib
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import redirect
-from allauth.socialaccount.providers.oauth2.client import OAuth2Error
-from allauth.socialaccount.providers.oauth2.views import (
-    OAuth2Adapter,
-    OAuth2CallbackView,
-    OAuth2LoginView
-)
+
 from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.hashers import make_password
 from rest_framework.utils import json
 from rest_framework.views import APIView
 from rest_framework.response import Response
-import requests as requestg
+import requests
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import get_user_model
 
@@ -65,8 +60,15 @@ def google_callback(request):
 
 class GoogleView(APIView):
     def post(self, request, *args, **kwargs):
-        payload = {'access_token': request.data.get("token")}
-        r = requestg.get("https://www/googleapis.com/oauth2/v2/userinfo", params=payload)
+        url = "https://www.googleapis.com/oauth2/v1/userinfo"
+        payload = ""
+        actok = request.data.get("token")
+        tok = f"bearer {actok}"
+        headers = {"Authorization": tok, 'Content-Type': 'application/json'}
+        querystring = {'access_token': request.data.get("token")}
+        print(querystring["access_token"])
+        r = requests.request("GET", url, headers=headers, params=querystring)
+        print(r.text)
         data = json.loads(r.text)
 
         if 'error' in data:
@@ -75,6 +77,9 @@ class GoogleView(APIView):
 
         try:
             user = User.objects.get(email=data['email'])
+
+
+
         except User.DoesNotExist:
             user = User()
             user.email = data['email']
@@ -88,3 +93,46 @@ class GoogleView(APIView):
         response['access_token'] = str(token.access_token)
         response['refresh_token'] = str(token)
         return Response(response)
+
+
+class LogView(APIView):
+    def post(self, request, *args, **kwargs):
+        #     payload = {'access_token': request.data.get("token")}
+        #     r = requestg.get("https://www/googleapis.com/oauth2/v2/userinfo", params=payload)
+        #     data = json.loads(r.text)
+        #
+        #     if 'error' in data:
+        #         content = {'message': 'wrong google token / this google token is already expired.'}
+        #         return Response(content)
+
+        try:
+
+            user = User.objects.get(email=request.data.get("email"))
+            token = RefreshToken.for_user(user)
+            response = {}
+            response['email'] = user.email
+            response['access_token'] = str(token.access_token)
+            response['refresh_token'] = str(token)
+            response['msg'] = str('this is from try block.')
+            return Response(response)
+            # except User.DoesNotExist:
+            #     user = User()
+            #     user.email = data['email']
+            #     # provider ramdom default password
+            #     user.password = make_password(BaseUserManager().make_random_password())
+            #     user.save()
+        except User.DoesNotExist:
+            res = {}
+            user = User()
+            user.email = request.data.get("email")
+            # provider ramdom default password
+            user.password = make_password(BaseUserManager().make_random_password())
+            user.save()
+            res['email'] = user.email
+            res['msg'] = str('this user was created in except block.')
+            return Response(res)
+
+
+def google_login(request):
+    return redirect(
+        f'https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.profile&include_granted_scopes=true&response_type=token&state=zcb0vznXDbUN&redirect_uri=http://127.0.0.1:8000/auth/google/callback/&client_id=287459121347-kbpsu3dm75tk1dgof2m9qrtfg6e7cg1n.apps.googleusercontent.com')

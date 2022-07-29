@@ -1,14 +1,4 @@
-# from django.contrib import admin
-# from .models import CustomUser
-#
-#
-# @admin.register(CustomUser)
-# class User_Admin(admin.ModelAdmin):
-#     list_display = ['email', 'first_name', 'last_name', 'number', 'image']
 
-
-
-from cProfile import label
 from django.contrib import admin
 from django import forms
 from django.contrib.auth.models import Group
