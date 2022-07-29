@@ -13,6 +13,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 import requests
 from rest_framework_simplejwt.tokens import RefreshToken
+from urllib.parse import urlencode
 from django.contrib.auth import get_user_model
 
 User = get_user_model()
@@ -29,9 +30,12 @@ class GoogleConnect(SocialLoginView):
 
 
 def google_callback(request):
-    params = urllib.parse.urlencode(request.GET)
+    # params = urllib.parse.urlencode(request.GET)
+    # print(params)
 
-    return redirect(f'http://localhost:3000/google/{params}')
+    url = "http://localhost:3000/google/?" + urlencode(request.GET)
+    return redirect(url)
+
 
 
 # @csrf_exempt
