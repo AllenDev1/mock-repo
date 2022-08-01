@@ -3,12 +3,14 @@ import "../../../css/simple.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../../../scss/dropdown.scss";
 import "../../../scss/filter.scss";
-import "../../../scss/responsive scss/v2simple.scss";
 import Push from "../../../Asset/push.svg";
-import { Container, Breadcrumb, Form, FormControl } from "react-bootstrap";
+import { Container, Breadcrumb } from "react-bootstrap";
 import Simple from "../Simple";
 import NavBar from "../../nav";
-import { LocationComponent, PriceRange } from "../DropdownComponents.jsx";
+import {
+  LocationComponent,
+  PriceRange,
+} from "../DropdownComponents.jsx";
 import $ from "jquery";
 
 const Vehicles = () => {
@@ -54,6 +56,7 @@ const Vehicles = () => {
           <button class="clear" href="#">
             Reset all
           </button>
+
         </div>
       </Container>
       <Simple />

@@ -10,10 +10,9 @@
 
 .main-hel {
   width: 100%;
-  max-width: 100% !important;
   height: 258px;
   background: #f4f4f4;
-  flex-direction: column;
+
   .searchBar {
     background-color: #ffffff;
     width: 531px;
@@ -28,8 +27,9 @@
     background-position: 16px;
   }
   p {
-    margin-top: calc(56px + 58px);
-    text-align: center;
+    margin: auto;
+    margin-left: 40%;
+    padding-top: 114px;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;

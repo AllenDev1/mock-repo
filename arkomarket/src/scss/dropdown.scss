@@ -160,8 +160,9 @@
     margin-top: 32px;
     gap: 12px;
     justify-content: flex-end;
-    .cancel-btn:hover {
+    .cancel-btn:hover{
       color: rgba(0, 0, 0, 0.8);
+
     }
     .cancel-btn {
       font-style: normal;
@@ -195,8 +196,8 @@
       color: #ffffff;
       border: none;
     }
-    .show-btn:hover {
-      background: #0064c9;
+    .show-btn:hover{
+      background: #0064C9;
     }
   }
   .brand-components {
@@ -280,7 +281,7 @@
     }
   }
 }
-.breadcrumb-item.active {
+.breadcrumb-item.active{
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   line-height: 20px !important;
@@ -288,7 +289,7 @@
 .breadCrumb-for-pages .breadcrumb .breadcrumb-item a:hover {
   color: rgba(0, 0, 0, 0.8) !important;
 }
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before{
   content: "/";
   font-size: 14px;
 }
