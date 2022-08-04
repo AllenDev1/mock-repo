@@ -281,11 +281,11 @@ function App() {
 						<Route path="*" element={<NotFound />} />
 					</Route>
 					{/* auth */}
-					<Route path="/google" element={<GoogleCallback />} />
+					<Route path="/google/login/success" element={<GoogleCallback />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</Router>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 }
