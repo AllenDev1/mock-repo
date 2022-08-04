@@ -46,9 +46,8 @@ urlpatterns = [
 
                   path('auth/google/', google_views.oauth2_login, name='google_login'),
                   path('auth/google/callback/', google_callback, name='google_callback'),
-                  path('google/connect', GoogleConnect.as_view(), name='google_connect'),
-                  # path('google/token/', google_token, name='google_token'),
-                  path('google/', GoogleView.as_view(), name='google'),
+                  path('google/connect', GoogleConnect.as_view(), name='google_connect'),   
                   path('google/login/', google_login, name='google_callback'),
+                
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

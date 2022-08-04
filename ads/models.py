@@ -1,6 +1,8 @@
 from django.db import models
 from django.conf import settings
 from datetime import datetime
+import random
+from django.db.models.signals import pre_save
 
 
 class ImageUpload(models.Model):
@@ -43,7 +45,13 @@ class Category(models.Model):
         verbose_name_plural = "categories"
 
 
+# class AdsManager(models.Manager):
+#     def create_ads(self, ad_id):
+#         id = self.create(ad_id = f"AM{random.randint(0000000000, 9999999999)}")
+#         return id
+
 class Ads(models.Model):
+    ad_id = models.CharField(max_length=13, null=False, default=f"AM{random.randint(0000000000, 9999999999)}")
     category = models.ForeignKey(Category, related_name="ads_categories", on_delete=models.CASCADE)
     name = models.CharField(max_length=100, null=False, blank=False)
     price = models.FloatField(null=False, blank=False)
@@ -52,6 +60,8 @@ class Ads(models.Model):
     update_at = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
+    # objects = AdsManager()
+
     def __str__(self):
         return f"{self.name}"
 
@@ -59,8 +69,13 @@ class Ads(models.Model):
         date = self.created_at.strftime("%B %d,%Y")
         return date
 
-    def ad_id(self):
-        id = f"AM {self.id}"
+    # def created(self, ad_id):
+    #     id = self.ad_id(f"AM{random.randint(0000000000, 9999999999)}")
+    #     return id
+
+    @classmethod
+    def create(cls, ad_id):
+        id = cls(ad_id = f"AM{random.randint(0000000000, 9999999999)}")
         return id
 
     class Meta:
