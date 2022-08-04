@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Nav } from "react-bootstrap";
 import "../css/productdetails.css";
 import "../scss/productdetails.scss";
+import "../scss/style.scss"
 import share from "../Asset/share.svg";
 import heart from "../Asset/heart.svg";
 import whatsapp from "../Asset/whatsapp.svg";
@@ -15,7 +16,6 @@ import UserNav from "../component/user-nav";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import "react-image-gallery/styles/css/image-gallery.css";
-import "../scss/style.scss"
 
 const Productdetails = () => {
   const [showDec, setShowDec] = useState(true);
@@ -62,7 +62,7 @@ const Productdetails = () => {
           <Breadcrumb.Item >Cars</Breadcrumb.Item>
         </Breadcrumb>
       </Container>
-      <Container className="product-image-crosule">
+      <Container className="product-image-carousel">
         <ImageGallery
           items={images}
           showPlayButton={false}

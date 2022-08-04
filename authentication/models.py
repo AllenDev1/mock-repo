@@ -5,10 +5,10 @@ from .models_managers import CustomUserManager
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
-    username = models.CharField(max_length=20, blank=True)
-    email = models.EmailField(_('email address'), max_length=100, unique=True)
-    first_name = models.CharField(max_length=100, blank=True)
-    last_name = models.CharField(max_length=100, blank=True)
+    username = models.CharField(max_length=20, blank=True, null=True)
+    email = models.EmailField(_('email address'), max_length=100, unique=True, null=True, blank=True)
+    first_name = models.CharField(max_length=100, blank=True, null= True )
+    last_name = models.CharField(max_length=100, blank=True, null= True)
     image = models.ImageField(upload_to='images', null=True, blank=True)
     number = models.IntegerField(null=True, blank=True)
     about = models.TextField(max_length=500, null=True, blank=True)

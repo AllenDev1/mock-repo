@@ -3,26 +3,6 @@
     max-width: 349px !important;
     padding: 0px !important;
   }
-  .btn-success {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-
-    color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 14px;
-    gap: 8px;
-
-    height: 33px;
-
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 100px;
-  }
   .sort-container {
     padding-left: 16px;
     padding-right: 16px;
@@ -78,23 +58,16 @@
       }
     }
     .Category-btn {
-      border: none;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 19px;
-      /* identical to box height */
-      background: transparent;
-      color: rgba(0, 0, 0, 0.8);
-      padding: 0px 0px 6px 0px;
-    }
-    .Category-btn:focus {
-      background: transparent;
-      color: rgba(0, 0, 0, 0.8);
-    }
-    .Category-btn:hover {
-      background: transparent;
-      color: rgba(0, 0, 0, 0.8);
+      button {
+        border: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height */
+        background: transparent;
+        color: rgba(0, 0, 0, 0.8);
+      }
     }
     .filter-buttons {
       display: flex;
@@ -232,23 +205,16 @@
   }
   .v2-sale-dropdown {
     .Category-btn {
-      border: none;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 22px;
-      /* identical to box height */
-      background: transparent;
-      color: rgba(0, 0, 0, 0.8);
-      padding: 0%;
-    }
-    .Category-btn:focus {
-      background: transparent;
-      color: rgba(0, 0, 0, 0.8);
-    }
-    .Category-btn:hover {
-      background: transparent;
-      color: rgba(0, 0, 0, 0.8);
+      button {
+        border: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height */
+        background: transparent;
+        color: rgba(0, 0, 0, 0.8);
+      }
     }
     .filter-buttons {
       display: flex;
@@ -343,9 +309,6 @@
   }
 }
 @media (min-width: 426px) and (max-width: 993px) {
-  .v2nav-Cato {
-    width: 390px !important;
-  }
   .navbar-light .navbar-toggler {
     display: none;
   }
@@ -381,25 +344,17 @@
   }
   .v2-sale-dropdown {
     .Category-btn {
-      border: none;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 22px;
-      /* identical to box height */
-      background: transparent;
-      color: rgba(0, 0, 0, 0.8);
-      padding: 0%;
+      button {
+        border: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height */
+        background: transparent;
+        color: rgba(0, 0, 0, 0.8);
+      }
     }
-    .Category-btn:focus {
-      background: transparent;
-      color: rgba(0, 0, 0, 0.8);
-    }
-    .Category-btn:hover {
-      background: transparent;
-      color: rgba(0, 0, 0, 0.8);
-    }
-
     .filter-buttons {
       display: flex;
       flex-direction: column;
@@ -458,7 +413,7 @@
       align-items: flex-start;
       padding: 0px;
       gap: 10px;
-      width: 32% !important;
+      width: 49% !important;
       img {
         width: 100%;
         height: 142px;
@@ -488,104 +443,6 @@
               display: none !important;
             }
             width: 100% !important;
-          }
-        }
-      }
-    }
-  }
-}
-
-.v2nav-Cato {
-  background-color: #fafafa !important;
-  width: 100% !important;
-  border: none !important;
-  max-width: 450px !important ;
-  right: 0;
-  left: auto;
-  .collapsing {
-    display: block;
-  }
-  .offcanvas-header {
-    flex-direction: row-reverse;
-    .offcanvas-title {
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 19px;
-
-      color: #000000;
-      margin: auto;
-    }
-  }
-  .offcanvas-body {
-    .accordion {
-      gap: 10px 0px;
-      display: flex;
-      flex-direction: column;
-      .accordion-item {
-        line-height: 19px;
-        align-items: center;
-        gap: 10px;
-        background: #ffffff;
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        .accordion-header {
-          .accordion-button {
-            padding: 12px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px !important;
-            line-height: 19px;
-
-            color: rgba(0, 0, 0, 0.6);
-          }
-          .accordion-button:focus {
-            border-color: transparent;
-            box-shadow: none;
-          }
-          .accordion-button:not(.collapsed) {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px !important;
-            line-height: 19px;
-            box-shadow: none;
-            color: rgba(0, 0, 0, 0.8);
-            background-color: #ffffff;
-          }
-          .accordion-button::after {
-            transition: transform 0.4s ease-in-out;
-            // background-image: url("")
-          }
-          .accordion-button:not(.collapsed)::after {
-            transition: transform 0.4s ease-in-out;
-
-            //    background-image: url(https://dragonball.guru/wp-content/uploads/2021/01/goku-dragon-ball-guru.jpg);
-          }
-        }
-        .collapsing {
-          display: none;
-        }
-        .show {
-          .accordion-body {
-            transition: transform 0s;
-            padding: 16px 12px;
-            display: grid;
-            gap: 18px;
-            a {
-              line-height: 19px;
-
-              font-style: normal;
-              font-weight: 500;
-              font-size: 14px;
-
-              color: rgba(0, 0, 0, 0.8);
-
-              /* Inside auto layout */
-
-              flex: none;
-              order: 0;
-              flex-grow: 0;
-            }
           }
         }
       }

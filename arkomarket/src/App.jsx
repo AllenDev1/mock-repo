@@ -91,139 +91,203 @@ import Other from "./component/dropdowns/Others/Others";
 import Arts from "./component/dropdowns/Others/sub-others/Arts & Handicrafts";
 import Antique from "./component/dropdowns/Others/sub-others/Antique-Items";
 import Charity from "./component/dropdowns/Others/sub-others/Charity";
+import GoogleCallback from "./auth/GoogleCallback";
 
 function App() {
-  return (
-    <>
-      <Router>
-        <Routes>
-          <Route exact index element={<Home />} />
-          <Route path="product-details" element={<Productdetails />} />
-          <Route path="post-new-ads" element={<PostNewAds />} />
-          <Route path="helpdesk" element={<Querieslink />} />
-          {/**************************************************************** */}
-          <Route path="vehicles" element={<Vehicles />} />
-          <Route path="cars" element={<Cars />} />
-          <Route path="motorcycles" element={<Motorcycles />} />
-          <Route path="scooters" element={<Scooter />} />
-          <Route path="bicycle" element={<Bicycle />} />
-          <Route path="other-vehicles" element={<OtherVehicles />} />
-          <Route path="spare-parts" element={<SpareParts />} />
+	return (
+		<>
+			<Router>
+				<Routes>
+					<Route exact index element={<Home />} />
+					<Route
+						path="product-details"
+						element={<Productdetails />}
+					/>
+					<Route path="post-new-ads" element={<PostNewAds />} />
+					<Route path="helpdesk" element={<Querieslink />} />
+					{/**************************************************************** */}
+					<Route path="vehicles" element={<Vehicles />} />
+					<Route path="cars" element={<Cars />} />
+					<Route path="motorcycles" element={<Motorcycles />} />
+					<Route path="scooters" element={<Scooter />} />
+					<Route path="bicycle" element={<Bicycle />} />
+					<Route path="other-vehicles" element={<OtherVehicles />} />
+					<Route path="spare-parts" element={<SpareParts />} />
 
-          {/**************************************************************** */}
-          <Route path="properties" element={<Properties />} />
-          <Route path="lands-plots" element={<LandsPlots />} />
-          <Route path="shops-offices" element={<ShopsOffices />} />
-          <Route path="housesapartments" element={<HouseApartments />} />
-          <Route path="roomsflats" element={<RoomsFlat />} />
+					{/**************************************************************** */}
+					<Route path="properties" element={<Properties />} />
+					<Route path="lands-plots" element={<LandsPlots />} />
+					<Route path="shops-offices" element={<ShopsOffices />} />
+					<Route
+						path="housesapartments"
+						element={<HouseApartments />}
+					/>
+					<Route path="roomsflats" element={<RoomsFlat />} />
 
-          {/**************************************************************** */}
-          <Route path="mobile" element={<Mobile />} />
-          <Route path="mobile-phones" element={<MobilesPhones />} />
-          <Route path="tablets" element={<Tablets />} />
-          <Route path="wearables" element={<Wearables />} />
-          <Route path="accessories" element={<Accessories />} />
+					{/**************************************************************** */}
+					<Route path="mobile" element={<Mobile />} />
+					<Route path="mobile-phones" element={<MobilesPhones />} />
+					<Route path="tablets" element={<Tablets />} />
+					<Route path="wearables" element={<Wearables />} />
+					<Route path="accessories" element={<Accessories />} />
 
-          {/**************************************************************** */}
-          <Route path="gifts" element={<Gifts />} />
-          <Route path="men-stuffs" element={<MenStuffs />} />
-          <Route path="women-stuffs" element={<WomenStuffs />} />
-          <Route path="kids-stuffs" element={<KidsStuffs />} />
-          <Route path="jobs" element={<Jobs />} />
-          <Route path="foods" element={<Foods />} />
-          <Route path="family-needs" element={<FamilyNeeds />} />
-          {/**************************************************************** */}
-          <Route path="services" element={<Services />} />
-          <Route path="education-classes" element={<EducationClasses />} />
-          <Route path="move-furnitures" element={<MoveFurniture />} />
-          <Route path="agriculture" element={<Agriculture />} />
-          <Route path="maintainance" element={<Mainrainance />} />
-          <Route path="construction" element={<Constructions />} />
-          <Route path="electronics-repair" element={<ElectronicsRepair />} />
-          <Route path="occassion" element={<Occasions />} />
-          <Route path="health-beauty" element={<HealthBeauty />} />
-          <Route path="cleaning" element={<Cleaning />} />
-          <Route path="other-services" element={<OtherServices />} />
-          {/**************************************************************** */}
-          <Route path="furnitures" element={<Furniture />} />
-          <Route path="office-furnitures" element={<Officefurniture />} />
-          <Route path="bed-mat" element={<Bedmat />} />
-          <Route path="kids-furnitures" element={<Kidsfurniture />} />
-          <Route path="sofa" element={<Sofa />} />
-          <Route path="household-furnitures" element={<Householdf />} />
-          <Route path="decor" element={<Decor />} />
-          <Route path="home-furnitures" element={<Homefurniture />} />
-          {/**************************************************************** */}
-          <Route
-            path="electronics-appliances"
-            element={<ElectronicsAppliance />}
-          />
-          <Route path="computers-monitors" element={<ComputerMonitors />} />
-          <Route path="laptops" element={<Laptops />} />
-          <Route path="printers" element={<Printers />} />
-          <Route path="cameras-lenses" element={<CameraLenses />} />
-          <Route path="accessories-parts" element={<AccessoriesParts />} />
-          <Route path="game-entertainment" element={<GamesEntertainment />} />
-          <Route path="audio-video" element={<AudioVideoDevies />} />
-          <Route path="tvs" element={<TVs />} />
-          <Route path="Fridge" element={<Fridges />} />
-          <Route path="ac-heater" element={<ACHeaters />} />
-          <Route path="washing-machines" element={<WashingMachines />} />
-          <Route
-            path="kitchen-other-appliances"
-            element={<KitchenOtherAppliances />}
-          />
-          {/**************************************************************** */}
-          <Route path="books-sports-hobbies" element={<BooksSportsHobbies />} />
-          <Route path="books" element={<Books />} />
-          <Route path="gym-fitness" element={<GymFitness />} />
-          <Route path="musical-instruments" element={<MusicalInstruments />} />
-          <Route path="sports-equipments" element={<SportsEquiments />} />
-          <Route path="other-hobbies" element={<OtherHobbies />} />
-          {/**************************************************************** */}
-          <Route path="travels-trips" element={<TravelsTrips />} />
-          <Route path="tourism" element={<Tourism />} />
-          <Route path="hotels-homestays" element={<HotelsHomeStays />} />
-          <Route path="other" element={<Others />} />
-          <Route path="cars-bike-rentals" element={<CarBikeRentals />} />
-          <Route path="trips-camping" element={<TripCampaing />} />
+					{/**************************************************************** */}
+					<Route path="gifts" element={<Gifts />} />
+					<Route path="men-stuffs" element={<MenStuffs />} />
+					<Route path="women-stuffs" element={<WomenStuffs />} />
+					<Route path="kids-stuffs" element={<KidsStuffs />} />
+					<Route path="jobs" element={<Jobs />} />
+					<Route path="foods" element={<Foods />} />
+					<Route path="family-needs" element={<FamilyNeeds />} />
+					{/**************************************************************** */}
+					<Route path="services" element={<Services />} />
+					<Route
+						path="education-classes"
+						element={<EducationClasses />}
+					/>
+					<Route path="move-furnitures" element={<MoveFurniture />} />
+					<Route path="agriculture" element={<Agriculture />} />
+					<Route path="maintainance" element={<Mainrainance />} />
+					<Route path="construction" element={<Constructions />} />
+					<Route
+						path="electronics-repair"
+						element={<ElectronicsRepair />}
+					/>
+					<Route path="occassion" element={<Occasions />} />
+					<Route path="health-beauty" element={<HealthBeauty />} />
+					<Route path="cleaning" element={<Cleaning />} />
+					<Route path="other-services" element={<OtherServices />} />
+					{/**************************************************************** */}
+					<Route path="furnitures" element={<Furniture />} />
+					<Route
+						path="office-furnitures"
+						element={<Officefurniture />}
+					/>
+					<Route path="bed-mat" element={<Bedmat />} />
+					<Route path="kids-furnitures" element={<Kidsfurniture />} />
+					<Route path="sofa" element={<Sofa />} />
+					<Route
+						path="household-furnitures"
+						element={<Householdf />}
+					/>
+					<Route path="decor" element={<Decor />} />
+					<Route path="home-furnitures" element={<Homefurniture />} />
+					{/**************************************************************** */}
+					<Route
+						path="electronics-appliances"
+						element={<ElectronicsAppliance />}
+					/>
+					<Route
+						path="computers-monitors"
+						element={<ComputerMonitors />}
+					/>
+					<Route path="laptops" element={<Laptops />} />
+					<Route path="printers" element={<Printers />} />
+					<Route path="cameras-lenses" element={<CameraLenses />} />
+					<Route
+						path="accessories-parts"
+						element={<AccessoriesParts />}
+					/>
+					<Route
+						path="game-entertainment"
+						element={<GamesEntertainment />}
+					/>
+					<Route path="audio-video" element={<AudioVideoDevies />} />
+					<Route path="tvs" element={<TVs />} />
+					<Route path="Fridge" element={<Fridges />} />
+					<Route path="ac-heater" element={<ACHeaters />} />
+					<Route
+						path="washing-machines"
+						element={<WashingMachines />}
+					/>
+					<Route
+						path="kitchen-other-appliances"
+						element={<KitchenOtherAppliances />}
+					/>
+					{/**************************************************************** */}
+					<Route
+						path="books-sports-hobbies"
+						element={<BooksSportsHobbies />}
+					/>
+					<Route path="books" element={<Books />} />
+					<Route path="gym-fitness" element={<GymFitness />} />
+					<Route
+						path="musical-instruments"
+						element={<MusicalInstruments />}
+					/>
+					<Route
+						path="sports-equipments"
+						element={<SportsEquiments />}
+					/>
+					<Route path="other-hobbies" element={<OtherHobbies />} />
+					{/**************************************************************** */}
+					<Route path="travels-trips" element={<TravelsTrips />} />
+					<Route path="tourism" element={<Tourism />} />
+					<Route
+						path="hotels-homestays"
+						element={<HotelsHomeStays />}
+					/>
+					<Route path="other" element={<Others />} />
+					<Route
+						path="cars-bike-rentals"
+						element={<CarBikeRentals />}
+					/>
+					<Route path="trips-camping" element={<TripCampaing />} />
 
-          {/**************************************************************** */}
-          <Route path="pets" element={<Pets />} />
-          <Route path="fishes-aquarium" element={<FishsAquarium />} />
-          <Route path="pet-foods-accessories" element={<PetfoodAccessories />} />
-          <Route path="dogs-cats" element={<DogsCats />} />
-          <Route path="birds" element={<Birds />} />
-          <Route path="goat-buffalo-other-pets" element={<GoatBuffalootherpets />} />
+					{/**************************************************************** */}
+					<Route path="pets" element={<Pets />} />
+					<Route path="fishes-aquarium" element={<FishsAquarium />} />
+					<Route
+						path="pet-foods-accessories"
+						element={<PetfoodAccessories />}
+					/>
+					<Route path="dogs-cats" element={<DogsCats />} />
+					<Route path="birds" element={<Birds />} />
+					<Route
+						path="goat-buffalo-other-pets"
+						element={<GoatBuffalootherpets />}
+					/>
 
-          {/**************************************************************** */}
-          <Route path="others" element={<Other />} />
-          <Route path="charity" element={<Charity />} />
-          <Route path="antique-items" element={<Antique />} />
-          <Route path="arts-handicrafts" element={<Arts />} />
-          <Route path="others-other" element={<Otherss />} />
+					{/**************************************************************** */}
+					<Route path="others" element={<Other />} />
+					<Route path="charity" element={<Charity />} />
+					<Route path="antique-items" element={<Antique />} />
+					<Route path="arts-handicrafts" element={<Arts />} />
+					<Route path="others-other" element={<Otherss />} />
 
-          {/**************************************************************** */}
+					{/**************************************************************** */}
 
-
-
-          {/* is user logged in function need to be added here */}
-          <Route path="user-profile" element={<Profile />} />
-          <Route path="seller-profile" element={<SellerProfile />} />
-          <Route path="user-profile-edit" element={<UserProfileEdit />}>
-            <Route index element={<Editprofile />} />
-            <Route index path="editprofile" element={<Editprofile />} />
-            <Route path="appformessage" element={<Appformessage />} />
-            <Route path="user-notification" element={<Usernotification />} />
-            <Route path="*" element={<NotFound />} />
-          </Route>
-
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Router>
-      <Footer />
-    </>
-  );
+					{/* is user logged in function need to be added here */}
+					<Route path="user-profile" element={<Profile />} />
+					<Route path="seller-profile" element={<SellerProfile />} />
+					<Route
+						path="user-profile-edit"
+						element={<UserProfileEdit />}
+					>
+						<Route index element={<Editprofile />} />
+						<Route
+							index
+							path="editprofile"
+							element={<Editprofile />}
+						/>
+						<Route
+							path="appformessage"
+							element={<Appformessage />}
+						/>
+						<Route
+							path="user-notification"
+							element={<Usernotification />}
+						/>
+						<Route path="*" element={<NotFound />} />
+					</Route>
+					{/* auth */}
+					<Route path="/google" element={<GoogleCallback />} />
+					<Route path="*" element={<NotFound />} />
+				</Routes>
+			</Router>
+			{/* <Footer /> */}
+		</>
+	);
 }
 
 export default App;

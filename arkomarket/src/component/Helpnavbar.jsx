@@ -2,7 +2,6 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Help from "../Asset/help.svg";
 import "../scss/helpnav.scss";
-import "../scss/style.scss"
 
 const Helpnav = () => {
   return (
