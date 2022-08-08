@@ -1,7 +1,11 @@
+from ast import Return
 from rest_framework.response import Response
 from rest_framework.filters import SearchFilter
 from rest_framework import viewsets, permissions
 from .serializer import *
+import random
+import time
+import threading
 from django.contrib.auth import get_user_model
 
 User = get_user_model()
@@ -49,6 +53,21 @@ class AdsViewSet(viewsets.ModelViewSet):
 
     class Meta:
         ordering = ['-id']
+
+    def retrieve(self, request, *args, **kwargs):
+        instance = self.get_object()
+        instance.ad_views = instance.ad_views + 1
+        instance.save()
+        # view_thread = threading.Thread(target=ad_view)
+        # view_thread.start()
+        # add_view = ad_view(instance)
+        return super().retrieve(request, *args, **kwargs)
+        
+
+# def ad_view(instance):
+#     time.sleep(2)
+#     instance.ad_views = instance.ad_views + 1
+#     instance.save()
 
 
 class ReportViewSet(viewsets.ModelViewSet):
@@ -102,3 +121,14 @@ class FavAdsViewSet(viewsets.ModelViewSet):
     queryset = FavAds.objects.all()
     serializer_class = FavAdsSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[-1].strip()
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
+
