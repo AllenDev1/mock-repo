@@ -1,3 +1,4 @@
+from turtle import update
 from django.db import models
 from django.conf import settings
 from datetime import datetime
@@ -44,6 +45,85 @@ class Category(models.Model):
         verbose_name = "category"
         verbose_name_plural = "categories"
 
+
+
+class Main_Category(models.Model):
+    name = models.CharField(max_length=30, null=False, blank=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+    updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "main_category"
+        verbose_name_plural = "main_categories"
+
+class Sub_Category(models.Model):
+    parent = models.ForeignKey(Main_Category, null=True, blank=True, on_delete=models.PROTECT)
+    name = models.CharField(max_length=30, null=False, blank=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+    updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "sub_category"
+        verbose_name_plural = "sub_categories"
+
+class Filter_Category(models.Model):
+    DATA_TYPE = (
+        ('STR', 'String'),
+        ('LOC', 'Loction'),
+        ('CHO', 'Choice'),
+        ('RAN-P', 'Range  for price'),
+        ('RAN-K', 'Range for kilometer'),
+        ('RAN-M', 'Range for manufacture'),
+        ('RAN-P', 'Range  for plot'),
+        ('RAN-S', 'Range for sq.foot'),
+    )
+    parent = models.ForeignKey(Sub_Category, null=True, blank=True, on_delete=models.PROTECT)
+    name = models.CharField(max_length=30, null=False, blank=False)
+    data_type = models.CharField(max_length=6, null=False, blank=False, choices=DATA_TYPE, default="STR")
+    created_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+    updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "filter_category"
+        verbose_name_plural = "filter_categories"
+
+
+class Sub_Filter_Category(models.Model):
+    DATA_TYPE = (
+        ('STR', 'String'),
+        ('LOC', 'Loction'),
+        ('CHO', 'Choice'),
+        ('RAN-P', 'Range  for price'),
+        ('RAN-K', 'Range for kilometer'),
+        ('RAN-M', 'Range for manufacture'),
+        ('RAN-P', 'Range  for plot'),
+        ('RAN-S', 'Range for sq.foot'),
+    )
+    parent = models.ForeignKey(Filter_Category, null=True, blank=True, on_delete=models.PROTECT)
+    name = models.CharField(max_length=30, null=False, blank=False)
+    data_type = models.CharField(max_length=6, null=False, blank=False, choices=DATA_TYPE, default="STR")
+    created_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+    updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "sub_filter_category"
+        verbose_name_plural = "sub_filter_categories"
 
 class Ads(models.Model):
     ad_id = models.CharField(max_length=13, null=False, blank=False)

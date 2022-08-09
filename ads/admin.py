@@ -3,9 +3,9 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
-from .models import (Category, Ads, AdsImage)
+from .models import (Category, Ads, AdsImage, Filter_Category, Main_Category, Sub_Category, Sub_Filter_Category)
 
-admin.site.register((Category, AdsImage))
+admin.site.register((Category, AdsImage, Main_Category, Sub_Category, Filter_Category, Sub_Filter_Category))
 
 
 @admin.register(Ads)
