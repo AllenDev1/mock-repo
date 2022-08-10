@@ -33,23 +33,23 @@ class GoogleConnect(SocialLoginView):
     def callback_url(self):
         return self.request.build_absolute_uri(reverse('google_callback'))
 
-def getGoogleAccessToken(google_auth_code):
-    # Exchange code with google access token
-    url = "https://oauth2.googleapis.com/token"
-    payload = urlencode({
-        "client_id": os.getenv("google_client_id"),
-        "client_secret":os.getenv("google_client_secret"),
-        "redirect_uri":"http://127.0.0.1:8000/auth/google/callback/",
-        "grant_type":"authorization_code",
-        "code":google_auth_code
-    })
+# def getGoogleAccessToken(google_auth_code):
+    # # Exchange code with google access token
+    # url = "https://oauth2.googleapis.com/token"
+    # payload = urlencode({
+    #     "client_id": os.getenv("google_client_id"),
+    #     "client_secret":os.getenv("google_client_secret"),
+    #     "redirect_uri":"http://127.0.0.1:8000/auth/google/callback/",
+    #     "grant_type":"authorization_code",
+    #     "code":google_auth_code
+    # })
 
-    headers = {"Content-Type": "application/x-www-form-urlencoded"}
+    # headers = {"Content-Type": "application/x-www-form-urlencoded"}
 
-    response = requests.request("POST", url, data=payload, headers=headers)
+    # response = requests.request("POST", url, data=payload, headers=headers)
 
-    google_access_token = json.loads(response.text)["access_token"]
-    return google_access_token
+    # google_access_token = json.loads(response.text)["access_token"]
+    # return google_access_token
 
 def getGoogleAccessToken(google_auth_code):
     # Exchange code with google access token
@@ -94,6 +94,10 @@ def google_callback(request):
     except User.DoesNotExist:
         user = User()
         user.email = data['email']
+        if 'family_name' in data:
+            user.last_name = data['family_name']
+        if 'given_name' in data:
+            user.first_name = data['given_name']
         # provider ramdom default password
         user.password = make_password(BaseUserManager().make_random_password())
         user.save()
