@@ -15,6 +15,10 @@ from allauth.socialaccount.providers.google import views as google_views
 
 router = routers.DefaultRouter()
 
+router.register(r'maincategory', MainCategoryViewSet, 'maincategory')
+router.register(r'subcategory', SubCategoryViewSet, 'subcategory')
+router.register(r'filtercategory', FilterCategoryViewSet, 'filtercategory')
+router.register(r'subfiltercategory', SubFilterCategoryViewSet, 'subfiltercategory')
 router.register(r'category', CategoryViewSet, 'category')
 router.register(r'tree', TreeCategoryViewSet, 'tree')
 router.register(r'root', RootCategoryViewSet, 'root')
@@ -49,6 +53,7 @@ urlpatterns = [
                   path('google/connect', GoogleConnect.as_view(), name='google_connect'),   
                   path('google/login/', google_login, name='google_callback'),
                   path('ip/', get_client_ip, name='get_ip'),
+                  
                 
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

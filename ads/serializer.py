@@ -5,7 +5,6 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
-
 class CategorySerializer(serializers.ModelSerializer):
     parent = serializers.StringRelatedField(source='parent.name')
     image_url = serializers.SerializerMethodField('get_image_url')
@@ -20,6 +19,28 @@ class CategorySerializer(serializers.ModelSerializer):
         model = Category
         fields = ['name', 'image_url', 'type', 'data_type', 'parent']
 
+class MainCategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Main_Category
+        fields = ['name']
+
+class SubCategorySerializer(serializers.ModelSerializer):
+    parent = serializers.StringRelatedField(source='parent.name')
+    class Meta:
+        model = Sub_Category
+        fields = ['name', 'parent']
+
+class FilterCategorySerializer(serializers.ModelSerializer):
+    parent = serializers.StringRelatedField(source='parent.name')
+    class Meta:
+        model = Filter_Category
+        fields = ['name', 'data_type', 'parent']
+
+class SubFilterCategorySerializer(serializers.ModelSerializer):
+    parent = serializers.StringRelatedField(source='parent.name')
+    class Meta:
+        model = Sub_Filter_Category
+        fields = ['name', 'data_type', 'parent']
 
 class AdsSerializer(serializers.ModelSerializer):
     category = serializers.StringRelatedField(source='category.name')

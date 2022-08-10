@@ -20,6 +20,42 @@ class CategoryViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
     http_method_names = ['get']
 
+class MainCategoryViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows category to be viewed
+    """
+    queryset = Main_Category.objects.all()
+    serializer_class = MainCategorySerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    http_method_names = ['get']
+
+class SubCategoryViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows category to be viewed
+    """
+    queryset = Sub_Category.objects.all()
+    serializer_class = SubCategorySerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    http_method_names = ['get']
+
+class FilterCategoryViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows category to be viewed
+    """
+    queryset = Filter_Category.objects.all()
+    serializer_class = FilterCategorySerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    http_method_names = ['get']
+
+class SubFilterCategoryViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows category to be viewed
+    """
+    queryset = Sub_Filter_Category.objects.all()
+    serializer_class = SubFilterCategorySerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    http_method_names = ['get']
+
 
 class TreeCategoryViewSet(viewsets.ModelViewSet):
     """
