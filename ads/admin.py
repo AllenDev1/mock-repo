@@ -3,16 +3,16 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
-from .models import (Category, Ads, AdsImage)
+from .models import (Category, Ads, AdsImage, Filter_Category, Main_Category, Sub_Category, Sub_Filter_Category)
 
-admin.site.register((Category, AdsImage))
+admin.site.register((Category, AdsImage, Main_Category, Sub_Category, Filter_Category, Sub_Filter_Category))
 
 
 @admin.register(Ads)
 class AdsAdmin(admin.ModelAdmin):
-    list_display = ['ad_id', 'name', 'price', 'descriptions']
-    list_filter = ['category']
-    fields = ['category', 'name', 'price', 'description', 'created_by']
+    list_display = ['ad_id', 'name', 'price', 'descriptions', 'ad_views']
+    # list_filter = ['category']
+    fields = [ 'name', 'category', 'price', 'description', 'created_by']
 
     def descriptions(self, obj):
         return obj.description[:30]

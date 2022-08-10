@@ -27,7 +27,7 @@ class AdsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Ads
-        fields = ['ad_id','name', 'category', 'price', 'created_by', 'created', 'description']
+        fields = ['ad_id', 'name', 'category','price', 'created_by',  'description', 'ad_views']
 
 
 class ReportSerializer(serializers.ModelSerializer):

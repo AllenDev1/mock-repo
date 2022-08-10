@@ -1,3 +1,4 @@
+from turtle import update
 from django.db import models
 from django.conf import settings
 from datetime import datetime
@@ -45,22 +46,96 @@ class Category(models.Model):
         verbose_name_plural = "categories"
 
 
-# class AdsManager(models.Manager):
-#     def create_ads(self, ad_id):
-#         id = self.create(ad_id = f"AM{random.randint(0000000000, 9999999999)}")
-#         return id
+
+class Main_Category(models.Model):
+    name = models.CharField(max_length=30, null=False, blank=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+    updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "main_category"
+        verbose_name_plural = "main_categories"
+
+class Sub_Category(models.Model):
+    parent = models.ForeignKey(Main_Category, null=True, blank=True, on_delete=models.PROTECT)
+    name = models.CharField(max_length=30, null=False, blank=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+    updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "sub_category"
+        verbose_name_plural = "sub_categories"
+
+class Filter_Category(models.Model):
+    DATA_TYPE = (
+        ('STR', 'String'),
+        ('LOC', 'Loction'),
+        ('CHO', 'Choice'),
+        ('RAN-P', 'Range  for price'),
+        ('RAN-K', 'Range for kilometer'),
+        ('RAN-M', 'Range for manufacture'),
+        ('RAN-P', 'Range  for plot'),
+        ('RAN-S', 'Range for sq.foot'),
+    )
+    parent = models.ForeignKey(Sub_Category, null=True, blank=True, on_delete=models.PROTECT)
+    name = models.CharField(max_length=30, null=False, blank=False)
+    data_type = models.CharField(max_length=6, null=False, blank=False, choices=DATA_TYPE, default="STR")
+    created_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+    updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "filter_category"
+        verbose_name_plural = "filter_categories"
+
+
+class Sub_Filter_Category(models.Model):
+    DATA_TYPE = (
+        ('STR', 'String'),
+        ('LOC', 'Loction'),
+        ('CHO', 'Choice'),
+        ('RAN-P', 'Range  for price'),
+        ('RAN-K', 'Range for kilometer'),
+        ('RAN-M', 'Range for manufacture'),
+        ('RAN-P', 'Range  for plot'),
+        ('RAN-S', 'Range for sq.foot'),
+    )
+    parent = models.ForeignKey(Filter_Category, null=True, blank=True, on_delete=models.PROTECT)
+    name = models.CharField(max_length=30, null=False, blank=False)
+    data_type = models.CharField(max_length=6, null=False, blank=False, choices=DATA_TYPE, default="STR")
+    created_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+    updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "sub_filter_category"
+        verbose_name_plural = "sub_filter_categories"
 
 class Ads(models.Model):
-    ad_id = models.CharField(max_length=13, null=False, default=f"AM{random.randint(0000000000, 9999999999)}")
+    ad_id = models.CharField(max_length=13, null=False, blank=False)
     category = models.ForeignKey(Category, related_name="ads_categories", on_delete=models.CASCADE)
-    name = models.CharField(max_length=100, null=False, blank=False)
+    name = models.CharField(max_length=100, null=False, blank=False, default="car")
     price = models.FloatField(null=False, blank=False)
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
-    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=1)
+    ad_views = models.IntegerField(null=False, default=0)
 
-    # objects = AdsManager()
 
     def __str__(self):
         return f"{self.name}"
@@ -69,20 +144,32 @@ class Ads(models.Model):
         date = self.created_at.strftime("%B %d,%Y")
         return date
 
-    # def created(self, ad_id):
-    #     id = self.ad_id(f"AM{random.randint(0000000000, 9999999999)}")
-    #     return id
-
-    @classmethod
-    def create(cls, ad_id):
-        id = cls(ad_id = f"AM{random.randint(0000000000, 9999999999)}")
-        return id
-
+ 
     class Meta:
         ordering = ("-created_at",)
         verbose_name = "ad"
         verbose_name_plural = "ads"
 
+
+def random_id():
+    id = f"AM{random.randint(0000000000, 9999999999)}"
+    id = unique_id(id)
+    return id
+
+def unique_id(id):
+    Ad_id = id
+    id_exists = Ads.objects.filter(ad_id = Ad_id).exists()
+    if id_exists:
+        new_id = random_id()
+        return new_id
+    else:
+        return Ad_id
+
+def pre_save_ad_id(sender, instance, *args, **kwargs):
+    if not instance.ad_id:
+        instance.ad_id = random_id()
+
+pre_save.connect(pre_save_ad_id, sender=Ads)
 
 class Report(models.Model):
     REPORT_TYPE = (
