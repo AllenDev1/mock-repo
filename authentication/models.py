@@ -2,7 +2,9 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from django.utils.translation import gettext_lazy as _
 from .models_managers import CustomUserManager
-
+from tempfile import NamedTemporaryFile
+from django.core.files import File
+from urllib.request import urlopen
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(max_length=20, blank=True, null=True)
@@ -10,6 +12,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(max_length=100, blank=True, null= True )
     last_name = models.CharField(max_length=100, blank=True, null= True)
     image = models.ImageField(upload_to='images', null=True, blank=True)
+    image_url = models.URLField(null=True, default=None)
     number = models.IntegerField(null=True, blank=True)
     about = models.TextField(max_length=500, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -37,3 +40,11 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     class Meta:
         db_table = 'system_users'
+    
+    def save(self, *args, **kwargs):
+        if self.image_url and not self.image:
+            img_temp = NamedTemporaryFile(delete=True)
+            img_temp.write(urlopen(self.image_url).read())
+            img_temp.flush()
+            self.image.save(f"image_{self.id}", File(img_temp))
+        super(CustomUser, self).save(*args, **kwargs)
