@@ -90,12 +90,13 @@ def google_callback(request):
             user.last_name = data['family_name']
         if 'given_name' in data:
             user.first_name = data['given_name']
-        if 'picture' in data:
-            user.image_url = data['picture']
+     
         # provider ramdom default password
         user.password = make_password(BaseUserManager().make_random_password())
         user.save()
-
+        if 'picture' in data:
+            user.image_url = data['picture']
+            user.save()
     token = RefreshToken.for_user(user)
     response = {'username': user.username, 'access_token': str(token.access_token), 'refresh_token': str(token)}
     return redirect(f'http://localhost:3000/google/login/success/?access_token=' + str(
