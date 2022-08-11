@@ -12,7 +12,7 @@ admin.site.register((Category, AdsImage, Main_Category, Sub_Category, Filter_Cat
 class AdsAdmin(admin.ModelAdmin):
     list_display = ['ad_id', 'name', 'price', 'descriptions', 'ad_views']
     # list_filter = ['category']
-    fields = [ 'name', 'category', 'price', 'description', 'created_by']
+    fields = [ 'name', 'main_category', 'sub_category','price', 'description', 'created_by']
 
     def descriptions(self, obj):
         return obj.description[:30]

@@ -126,8 +126,12 @@ class Sub_Filter_Category(models.Model):
         verbose_name_plural = "sub_filter_categories"
 
 class Ads(models.Model):
+    subcategory = ()
+
     ad_id = models.CharField(max_length=13, null=False, blank=False)
-    category = models.ForeignKey(Category, related_name="ads_categories", on_delete=models.CASCADE)
+    
+    main_category = models.ForeignKey(Category, related_name="ads_categories", on_delete=models.CASCADE)
+    sub_category = models.CharField(max_length=30, null=False, blank=False, choices=subcategory)
     name = models.CharField(max_length=100, null=False, blank=False, default="car")
     price = models.FloatField(null=False, blank=False)
     description = models.TextField()
@@ -150,6 +154,10 @@ class Ads(models.Model):
         verbose_name = "ad"
         verbose_name_plural = "ads"
 
+def pre_save_ad_sub_category(sender, instance, *args, **kwargs):
+    instance.subcategory = (Sub_Category.objects.filter(parent = instance.main_category.id))
+
+pre_save.connect(pre_save_ad_sub_category, sender=Ads)
 
 def random_id():
     id = f"AM{random.randint(0000000000, 9999999999)}"
