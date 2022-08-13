@@ -5,6 +5,7 @@ from allauth.socialaccount.providers.oauth2.client import OAuth2Client
 from django.urls import reverse
 import urllib
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 
 from django.contrib.auth.base_user import BaseUserManager
@@ -106,3 +107,7 @@ def google_callback(request):
 def google_login(request):
     return redirect(
         f'https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email&access_type=offline&include_granted_scopes=true&response_type=code&state=zcb0vznXDbUN&redirect_uri=http://127.0.0.1:8000/auth/google/callback/&client_id={os.getenv("google_client_id")}')
+
+@login_required
+def getUser(request):
+    return HttpResponse("Hello")
