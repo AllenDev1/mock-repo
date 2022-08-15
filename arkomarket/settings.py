@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'helpcenter',
     'comment',
     'linkapp',
-    'blog'
+    'blog',
+    'carrer'
 ]
 
 MIDDLEWARE = [

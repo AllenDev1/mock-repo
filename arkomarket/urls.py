@@ -9,6 +9,8 @@ from comment.views import *
 from helpcenter.views import *
 from terms.views import *
 from authentication.views import *
+from carrer.views import *
+from blog.views import *
 from faq import views
 from linkapp.views import AppLinkViewSets
 from allauth.socialaccount.providers.google import views as google_views
@@ -37,6 +39,9 @@ router.register(r'faqs', FaqViewSet, 'get faqs')
 router.register(r'linkapps', AppLinkViewSets, 'link apps')
 router.register(r'terms', TermsViewSet, 'get terms')
 router.register(r'helpcenter', HelpCenterViewSet, 'get helpmessages')
+router.register(r'blog', BlogViewSet, 'get blogs')
+router.register(r'vacancies', CarrerViewSet, 'get vacancies')
+router.register(r'applicants', ApplicantViewSet, 'get applicants')
 
 urlpatterns = [
                   path('', include(router.urls)),
