@@ -119,8 +119,16 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     http_method_names = ['get']
+
+    def list(self, request):
+        msg = 'You are not allowed to access this information.'
+        return Response(msg)
+
+    def retrieve(self, request, *args, **kwargs):
+        instance = self.get_object()
+        return super().retrieve(request, *args, **kwargs)
 
 
 class AdsByCategoryViewSet(viewsets.ModelViewSet):
