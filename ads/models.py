@@ -127,7 +127,8 @@ class Sub_Filter_Category(models.Model):
 
 class Ads(models.Model):
     ad_id = models.CharField(max_length=13, null=False, blank=False)
-    category = models.ForeignKey(Category, related_name="ads_categories", on_delete=models.CASCADE)
+    main_category = models.ForeignKey(Main_Category, related_name="ads_categories", on_delete=models.CASCADE, default=1)
+    sub_category = models.ForeignKey(Sub_Category, related_name="ads_categories", on_delete=models.CASCADE, default=1)
     name = models.CharField(max_length=100, null=False, blank=False, default="car")
     price = models.FloatField(null=False, blank=False)
     description = models.TextField()
@@ -149,7 +150,6 @@ class Ads(models.Model):
         ordering = ("-created_at",)
         verbose_name = "ad"
         verbose_name_plural = "ads"
-
 
 def random_id():
     id = f"AM{random.randint(0000000000, 9999999999)}"

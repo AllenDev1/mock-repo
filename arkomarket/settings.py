@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'terms',
     'helpcenter',
     'comment',
-    'linkapp'
+    'linkapp',
+    'blog'
 ]
 
 MIDDLEWARE = [
