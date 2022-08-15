@@ -53,7 +53,8 @@ urlpatterns = [
                   path('google/connect', GoogleConnect.as_view(), name='google_connect'),   
                   path('google/login/', google_login, name='google_callback'),
                   path('ip/', get_client_ip, name='get_ip'),
-                  
+                  path('auth/user/', getUser, name='getUser')
+
                 
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
