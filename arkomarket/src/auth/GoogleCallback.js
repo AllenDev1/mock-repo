@@ -12,7 +12,6 @@ const GoogleCallback = () => {
 	useEffect(() => {
 		console.log("access token", searchParams.get("access_token"));
 		console.log("refresh token", searchParams.get("refresh_token"));
-		localStorage.setItem("access_token", searchParams.get("access_token"));
 		dispatch(setToken(searchParams.get("access_token")));
 		navigate("/");
 	}, [searchParams]);

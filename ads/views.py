@@ -2,6 +2,8 @@ from ast import Return
 from rest_framework.response import Response
 from rest_framework.filters import SearchFilter
 from rest_framework import viewsets, permissions
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import api_view, permission_classes
 from .serializer import *
 import random
 import time
@@ -17,8 +19,10 @@ class CategoryViewSet(viewsets.ModelViewSet):
     """
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    permission_classes = [
+        permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
     http_method_names = ['get']
+
 
 class MainCategoryViewSet(viewsets.ModelViewSet):
     """
@@ -26,8 +30,10 @@ class MainCategoryViewSet(viewsets.ModelViewSet):
     """
     queryset = Main_Category.objects.all()
     serializer_class = MainCategorySerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    permission_classes = [
+        permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
     http_method_names = ['get']
+
 
 class SubCategoryViewSet(viewsets.ModelViewSet):
     """
@@ -35,8 +41,10 @@ class SubCategoryViewSet(viewsets.ModelViewSet):
     """
     queryset = Sub_Category.objects.all()
     serializer_class = SubCategorySerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    permission_classes = [
+        permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
     http_method_names = ['get']
+
 
 class FilterCategoryViewSet(viewsets.ModelViewSet):
     """
@@ -44,8 +52,10 @@ class FilterCategoryViewSet(viewsets.ModelViewSet):
     """
     queryset = Filter_Category.objects.all()
     serializer_class = FilterCategorySerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    permission_classes = [
+        permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
     http_method_names = ['get']
+
 
 class SubFilterCategoryViewSet(viewsets.ModelViewSet):
     """
@@ -53,7 +63,8 @@ class SubFilterCategoryViewSet(viewsets.ModelViewSet):
     """
     queryset = Sub_Filter_Category.objects.all()
     serializer_class = SubFilterCategorySerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    permission_classes = [
+        permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
     http_method_names = ['get']
 
 
@@ -63,7 +74,8 @@ class TreeCategoryViewSet(viewsets.ModelViewSet):
     """
     queryset = Category.objects.filter(parent=None)
     serializer_class = TreeCategorySerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    permission_classes = [
+        permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
     http_method_names = ['get']
 
 
@@ -73,7 +85,8 @@ class RootCategoryViewSet(viewsets.ModelViewSet):
     """
     queryset = Category.objects.filter(parent=None)
     serializer_class = RootCategorySerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
+    permission_classes = [
+        permissions.IsAuthenticatedOrReadOnly or permissions.IsAdminUser]
     http_method_names = ['get']
 
 
@@ -85,7 +98,8 @@ class AdsViewSet(viewsets.ModelViewSet):
     serializer_class = AdsSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     filter_backends = [SearchFilter]
-    search_fields = ['category__name', 'category__parent__name', 'category__parent__parent__name']
+    search_fields = ['category__name', 'category__parent__name',
+                     'category__parent__parent__name']
 
     class Meta:
         ordering = ['-id']
@@ -98,7 +112,7 @@ class AdsViewSet(viewsets.ModelViewSet):
         # view_thread.start()
         # add_view = ad_view(instance)
         return super().retrieve(request, *args, **kwargs)
-        
+
 
 # def ad_view(instance):
 #     time.sleep(2)
@@ -111,6 +125,20 @@ class ReportViewSet(viewsets.ModelViewSet):
     serializer_class = ReportSerializer
     permission_classes = [permissions.AllowAny]
     http_method_names = ['post']
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getLoggedInUser(request):
+    return Response({
+        "email": request.user.email,
+        "id": request.user.id,
+        "first_name": request.user.first_name,
+        "last_name": request.user.last_name,
+        "image": request.user.image.url,
+        "full_name": request.user.get_full_name,
+        "about": request.user.about
+    })
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -174,5 +202,3 @@ def get_client_ip(request):
     else:
         ip = request.META.get('REMOTE_ADDR')
     return ip
-
-
