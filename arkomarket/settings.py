@@ -36,8 +36,6 @@ INSTALLED_APPS = [
 
     'ads',
     'authentication',
-    'faq',
-    'terms',
     'helpcenter',
     'comment',
     'linkapp',

@@ -1,5 +1,6 @@
 from django.contrib import admin
+from .models import HelpCenter, Faq, Terms
 
-from .models import HelpCenter
-
+admin.site.register(Terms)
 admin.site.register(HelpCenter)
+admin.site.register(Faq)

@@ -3,15 +3,12 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework import routers
-from faq.views import *
 from ads.views import *
 from comment.views import *
 from helpcenter.views import *
-from terms.views import *
 from authentication.views import *
 from carrer.views import *
 from blog.views import *
-from faq import views
 from linkapp.views import AppLinkViewSets
 from allauth.socialaccount.providers.google import views as google_views
 
@@ -48,7 +45,7 @@ urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('gettoken/', TokenObtainPairView.as_view(), name='tokem_obtain_pair'),
                   path('refreshtoken/', TokenRefreshView.as_view(), name='token_refresh'),
-                  path('faqsearch/', views.FaqSearch.as_view()),
+                  path('faqsearch/', FaqSearch.as_view()),
                   path('auth/', include('allauth.urls')),
 
 

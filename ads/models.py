@@ -136,6 +136,7 @@ class Ads(models.Model):
     update_at = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=1)
     ad_views = models.IntegerField(null=False, default=0)
+    active = models.BooleanField(default=True)
 
 
     def __str__(self):
