@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Blog_Category, Blog
+from .models import Blog_Category, Blog, BlogHelpful
 
 # Register your models here.
 admin.site.register(Blog_Category)
@@ -11,3 +11,7 @@ class BlogAdmin(admin.ModelAdmin):
 
     def Body(self, obj):
         return f'{obj.body[:30]}...........'
+
+@admin.register(BlogHelpful)
+class BlogHelpfulAdmin(admin.ModelAdmin):
+    list_display = ['blog', 'helpful', 'created_at']

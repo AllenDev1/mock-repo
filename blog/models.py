@@ -30,4 +30,16 @@ class Blog(models.Model):
     def __str__(self):
         return self.title
 
+class BlogHelpful(models.Model):
+    OPTIONS = (
+        ('YES', 'yes'),
+        ('NO', "no")
+    )
+    blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
+    helpful = models.CharField(max_length=3, choices=OPTIONS)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.blog.title
+
 
