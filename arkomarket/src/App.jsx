@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 import Home from "./pages/home";
+import Blog from "./component/Blog/Blog";
 import Productdetails from "./pages/productdetails";
 import Editprofile from "./component/editprofile";
 import Footer from "./component/footer";
@@ -92,12 +93,19 @@ import Arts from "./component/dropdowns/Others/sub-others/Arts & Handicrafts";
 import Antique from "./component/dropdowns/Others/sub-others/Antique-Items";
 import Charity from "./component/dropdowns/Others/sub-others/Charity";
 import GoogleCallback from "./auth/GoogleCallback";
+import BlogArticle from "./component/Blog/BlogArticle";
 
 function App() {
 	return (
 		<>
 			<Router>
 				<Routes>
+					{/* blog */}
+
+					<Route path="blog" element={<Blog />} />
+
+					<Route path="blogpost" element={<BlogArticle />} />
+
 					<Route exact index element={<Home />} />
 					<Route
 						path="product-details"

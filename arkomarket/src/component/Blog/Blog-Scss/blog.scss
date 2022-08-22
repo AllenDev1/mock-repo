@@ -1,0 +1,42 @@
+.blog-nav-div {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	.blog-container {
+		.blog-nav {
+			height: 60px;
+			padding: 10px 0px !important;
+			width: 100%;
+			.blog-logo {
+				img {
+					width: 95px;
+					height: 40px;
+				}
+			}
+			.search-bar {
+				.search-bar-form {
+					.search-blog-post {
+						width: 350px;
+						height: 42px;
+
+						background: rgba(0, 0, 0, 0.05);
+						border-radius: 4px;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 19px;
+
+						color: rgba(0, 0, 0, 0.3);
+						padding: 10px 40px;
+						background-image: url(../../../Asset/searchicon.svg);
+						background-repeat: no-repeat;
+						background-position: 10px;
+						float: right;
+					}
+					.search-blog-post:focus {
+						color: black;
+						border-color: black;
+					}
+				}
+			}
+		}
+	}
+}

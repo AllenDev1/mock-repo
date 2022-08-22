@@ -29,13 +29,13 @@ const Footer = () => {
             <div className="footer-links1">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="#">Contact Us</Nav.Link>
-              <Nav.Link href="#">About</Nav.Link>
+              <Nav.Link href="#">Advirtise</Nav.Link>
             </div>
             <div className="footer-link2">
               <Nav.Link href="/">Buyer FAQ</Nav.Link>
               <Nav.Link href="#">Seller FAQ</Nav.Link>
               <Nav.Link href="#">Career</Nav.Link>
-              <Nav.Link href="#">Newsroom</Nav.Link>
+              <Nav.Link href="/blog">Blog</Nav.Link>
             </div>
             <div className="footer-links3">
               <NavLink href="/helpdesk">Feedback & Help</NavLink>

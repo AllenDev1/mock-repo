@@ -1,0 +1,27 @@
+.blog-filter-cont {
+	margin-top: 38px;
+	margin-bottom: 73px;
+	.blog-filter-row {
+		.blog-filter-col {
+            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+			button {
+				border-radius: 100px;
+				padding: 6px 16px;
+				height: 31px;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 19px;
+				background: #f0f0f0;
+				color: rgba(0, 0, 0, 0.8);
+				border: none;
+			}
+			button:focus {
+				background: #0071e2;
+				color: rgba(255, 255, 255, 0.8);
+			}
+		}
+	}
+}

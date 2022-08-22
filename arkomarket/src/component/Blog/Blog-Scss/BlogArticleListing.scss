@@ -1,0 +1,120 @@
+@mixin for-desktop-up {
+	@media (min-width: 994px) {
+		@content;
+	}
+}
+
+.blog-article-listing-cont {
+	.blog-article-listing-main-row {
+		width: 100%;
+		.blog-article-listing-main-col {
+			.blog-article-listing-row {
+				h2 {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 24px;
+					line-height: 29px;
+					/* identical to box height */
+
+					letter-spacing: -0.02em;
+
+					color: #000000;
+				}
+				.articles-stack {
+					margin-bottom: 55px;
+					.blog-cards {
+						width: 100% !important;
+						flex-direction: row;
+						gap: 24px;
+						.blog-card-image {
+                            @include for-desktop-up{
+                                width: 350px;
+                                height: 200px;
+                            }
+							
+						}
+						.blog-card-body {
+							padding: 16px 0px !important;
+
+							.blog-card-body-link {
+								.blog-card-link {
+									height: 23px;
+
+									background: #e0f0ff;
+									border-radius: 2px;
+									font-style: normal;
+									font-weight: 400;
+									font-size: 12px;
+									line-height: 15px;
+									/* identical to box height */
+
+									color: rgba(0, 0, 0, 0.8);
+									padding: 4px 10px;
+								}
+								margin-bottom: 16px;
+							}
+
+							.blog-card-title {
+								font-style: normal;
+								font-weight: 500;
+								font-size: 18px;
+								line-height: 22px;
+
+								color: rgba(0, 0, 0, 0.8);
+							}
+							.blog-card-dec {
+								font-style: normal;
+								font-weight: 400;
+								font-size: 12px ;
+								line-height: 15px;
+                                max-height: 45px;
+								p {
+									color: rgba(0, 0, 0, 0.8);
+									display: -webkit-box;
+									width: 344px;
+									max-width: 344px;
+                                    
+									-webkit-line-clamp: 3;
+									-webkit-box-orient: vertical;
+									overflow: hidden;
+								}
+							}
+
+							.blog-card-footer {
+								font-style: normal;
+								font-weight: 400;
+								font-size: 12px;
+								line-height: 15px;
+								/* identical to box height */
+
+								color: rgba(0, 0, 0, 0.5);
+								background-color: transparent;
+								border: none;
+								padding: 0%;
+							}
+						}
+					}
+				}
+			}
+			.loadmorearticles {
+				justify-content: center;
+				display: flex;
+				margin-bottom: 159px;
+				button {
+					font-style: normal;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 19px;
+
+					color: #0071e2;
+					width: 113px;
+					height: 39px;
+
+					border: 1px solid #0071e2;
+					border-radius: 4px;
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}
