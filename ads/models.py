@@ -1,7 +1,7 @@
 from turtle import update
 from django.db import models
 from django.conf import settings
-from datetime import datetime
+from datetime import datetime 
 import random
 from django.db.models.signals import pre_save
 

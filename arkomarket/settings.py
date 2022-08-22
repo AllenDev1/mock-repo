@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'tinymce',
 
     'ads',
-    'authentication',
+    'authentication.apps.AuthenticationConfig',
     'helpcenter',
     'comment',
     'linkapp',

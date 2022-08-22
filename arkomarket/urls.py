@@ -37,6 +37,7 @@ router.register(r'linkapps', AppLinkViewSets, 'link apps')
 router.register(r'terms', TermsViewSet, 'get terms')
 router.register(r'helpcenter', HelpCenterViewSet, 'get helpmessages')
 router.register(r'blog', BlogViewSet, 'get blogs')
+router.register(r'bloghelpful', BlogHelpfulViewSet, 'get bloghelpful')
 router.register(r'vacancies', CarrerViewSet, 'get vacancies')
 router.register(r'applicants', ApplicantViewSet, 'get applicants')
 

@@ -60,7 +60,7 @@ class ReportSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['email','get_full_name', 'first_name', 'last_name', 'image', 'number', 'created', 'about']
+        fields = ['email','get_full_name', 'first_name', 'last_name', 'image', 'number', 'created', 'about', 'login_status']
 
 
 class AdsByCategorySerializer(serializers.ModelSerializer):

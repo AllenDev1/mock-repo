@@ -20,6 +20,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
     is_active = models.BooleanField("IS ACTIVE", default=True)
+    login_status = models.BooleanField("IS LOGIN", default=True)
 
     objects = CustomUserManager()
 

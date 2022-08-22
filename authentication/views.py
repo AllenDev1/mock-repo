@@ -70,13 +70,9 @@ def google_callback(request):
     url = "https://www.googleapis.com/oauth2/v2/userinfo/"
 
     querystring = {"token": google_access_token}
-
     payload = ""
     headers = {"Authorization": "Bearer " + google_access_token}
-
     response = requests.request("GET", url, data=payload, headers=headers, params=querystring)
-
-    print(response.text)
     data = json.loads(response.text)
 
     if 'error' in data:

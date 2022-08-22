@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Blog_Category, Blog
+from .models import Blog_Category, Blog, BlogHelpful
 
 # Register your models here.
 admin.site.register(Blog_Category)
@@ -10,4 +10,11 @@ class BlogAdmin(admin.ModelAdmin):
     fields = ['title', 'body', 'blog_category', 'blog_image','created_by']
 
     def Body(self, obj):
-        return f'{obj.body[:30]}...........'
+        if len(obj.body) > 30:
+            return f'{obj.body[:30]}...........'
+        else:
+            return obj.body
+
+@admin.register(BlogHelpful)
+class BlogHelpfulAdmin(admin.ModelAdmin):
+    list_display = ['blog', 'helpful', 'created_at']
