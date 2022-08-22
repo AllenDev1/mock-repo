@@ -10,7 +10,10 @@ class BlogAdmin(admin.ModelAdmin):
     fields = ['title', 'body', 'blog_category', 'blog_image','created_by']
 
     def Body(self, obj):
-        return f'{obj.body[:30]}...........'
+        if len(obj.body) > 30:
+            return f'{obj.body[:30]}...........'
+        else:
+            return obj.body
 
 @admin.register(BlogHelpful)
 class BlogHelpfulAdmin(admin.ModelAdmin):
