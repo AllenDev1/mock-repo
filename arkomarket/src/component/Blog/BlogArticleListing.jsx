@@ -7,7 +7,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 const BlogArticleListing = () => {
 	const [blogs, setBlogs] = useState();
-    const [blogCategories, setBlogCategories] = useState();
 	useEffect(() => {
 		fetchBlogData();
 	}, []);
@@ -37,7 +36,7 @@ const BlogArticleListing = () => {
 				body={blog.body}
 				blog_image={blog.blog_image}
 				created_by={blog.created_by}
-				created_at={blog.created_at}
+				created={blog.created}
 				blog_categories={blog.blog_categories}
 			></Cards>
 		);
@@ -67,7 +66,7 @@ const BlogArticleListing = () => {
 export default BlogArticleListing;
 
 const Cards = (props) => {
-	const { title, body, blog_image, created_by, created_at, blog_categories } =
+	const { title, body, blog_image, created_by, created, blog_categories } =
 		props;
 
     const renderCategoriesTag = (categotyTag) =>{
@@ -100,7 +99,7 @@ const Cards = (props) => {
 							}}
 						></Card.Text>
 						<Card.Footer className="blog-card-footer">
-							By {created_by} | {created_at}
+							By {created_by} | {created}
 						</Card.Footer>
 					</Card.Body>
 				</Card>
