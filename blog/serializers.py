@@ -3,7 +3,7 @@ from .models import *
 
 class Blog_serializer(serializers.ModelSerializer):
     blog_categories = serializers.StringRelatedField(source='blog_category', many = True)
-    created_by = serializers.StringRelatedField(source='created_by.email')
+    created_by = serializers.StringRelatedField(source='created_by.get_full_name')
     class Meta:
         model = Blog
         fields = ['title', 'body','blog_categories', 'blog_image', 'created_by', 'created']
