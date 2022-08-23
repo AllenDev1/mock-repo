@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 import Stack from "react-bootstrap/Stack";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { convertToSlug } from "./BlogArticle";
 const BlogArticleListing = () => {
 	const [blogs, setBlogs] = useState();
 	useEffect(() => {
@@ -21,7 +22,6 @@ const BlogArticleListing = () => {
 			.request(options)
 			.then(function (response) {
 				setBlogs(response.data);
-
 			})
 			.catch(function (error) {
 				console.error(error);
@@ -66,18 +66,23 @@ const BlogArticleListing = () => {
 export default BlogArticleListing;
 
 const Cards = (props) => {
-	const { title, body, blog_image, created_by, created, blog_categories } =
-		props;
+	const {
+		id,
+		title,
+		body,
+		blog_image,
+		created_by,
+		created,
+		blog_categories,
+	} = props;
 
-    const renderCategoriesTag = (categotyTag) =>{
-        return(
-            <CardLink blog_categories = {categotyTag} ></CardLink>
-        )
-    }
+	const renderCategoriesTag = (categotyTag) => {
+		return <CardLink blog_categories={categotyTag}></CardLink>;
+	};
 
 	return (
 		<>
-			<Link to="/blogpost">
+			<Link to={"/blogpost/" + id + "/" + convertToSlug(title)}>
 				<Card className="blog-cards">
 					<Card.Img
 						className="blog-card-image"

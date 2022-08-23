@@ -104,7 +104,7 @@ function App() {
 
 					<Route path="blog" element={<Blog />} />
 
-					<Route path="blogpost" element={<BlogArticle />} />
+					<Route path="blogpost/:blog_id/:blog_title_slug" element={<BlogArticle />} />
 
 					<Route exact index element={<Home />} />
 					<Route

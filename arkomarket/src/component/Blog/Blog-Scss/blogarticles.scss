@@ -1,0 +1,131 @@
+.blog-article-conrainer {
+	margin-top: 59px;
+	.blog-article-row {
+		.blog-article-col {
+			.blog-card-link {
+				display: flex;
+				gap: 6px;
+				.cat-tag {
+					height: 27px;
+
+					background: #e0f0ff;
+					border-radius: 2px;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+
+					color: rgba(0, 0, 0, 0.8);
+					padding: 4px 10px;
+                   
+				}
+			}
+			.title-of-the-blog {
+				margin-top: 17px;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 32px;
+				line-height: 39px;
+				letter-spacing: -0.02em;
+				padding: 0%;
+				margin-bottom: 0px;
+				color: #000000;
+			}
+			.blogby-bogleat {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 15px;
+				/* identical to box height */
+				padding: 0px;
+				margin-top: 17px;
+				color: rgba(0, 0, 0, 0.5);
+			}
+			.blog-body {
+				margin-top: 35px;
+				.blog-image {
+					img {
+						width: 710px;
+						height: 406px;
+					}
+					.image-caption {
+						font-style: italic;
+						font-weight: 300;
+						font-size: 12px;
+						line-height: 15px;
+						/* identical to box height */
+
+						color: rgba(0, 0, 0, 0.6);
+						justify-content: center;
+						display: flex;
+						margin-top: 10px;
+						margin-bottom: 0px;
+						padding: 0%;
+					}
+				}
+				.blog-texts {
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 25px;
+					/* or 156% */
+
+					color: #000000;
+					margin-bottom: 35px;
+				}
+			}
+			.share-btns-blogs {
+                margin-bottom: 69px;
+                display: flex;
+                justify-content: space-between;
+
+				button {
+					background-color: transparent;
+					border: 1px solid rgba(0, 0, 0, 0.2);
+					border-radius: 4px;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 23px;
+					/* identical to box height, or 164% */
+
+					color: #000000;
+					padding: 6px 16px;
+				}
+				// .blog-share-btn {
+				// 	background-color: transparent;
+				// 	border: 1px solid rgba(0, 0, 0, 0.2);
+				// 	border-radius: 4px;
+				// 	font-style: normal;
+				// 	font-weight: 400;
+				// 	font-size: 14px;
+				// 	line-height: 23px;
+				// 	/* identical to box height, or 164% */
+
+				// 	color: #000000;
+				// 	padding: 6px 16px;
+				// }
+				.was-this-helpful-blog {
+                    display: flex;
+                    gap: 24px;
+                    vertical-align: middle;
+					.was-this-helpful-text {
+                        align-items: center;
+                        display: flex;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 17px;
+						/* identical to box height */
+
+						color: rgba(0, 0, 0, 0.8);
+					}
+                    .btns-yes-no-blog{
+                        display: flex;
+                        gap: 8px;
+                    }
+				}
+			}
+		}
+	}
+}
