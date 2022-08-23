@@ -22,21 +22,25 @@
 				}
 				.articles-stack {
 					margin-bottom: 55px;
+					.blog-cards:hover {
+						background-color: rgba(0, 0, 0, 0.03) !important;
+					}
 					.blog-cards {
 						width: 100% !important;
 						flex-direction: row;
 						gap: 24px;
 						.blog-card-image {
-                            @include for-desktop-up{
-                                width: 350px;
-                                height: 200px;
-                            }
-							
+							@include for-desktop-up {
+								width: 350px;
+								height: 200px;
+							}
 						}
 						.blog-card-body {
 							padding: 16px 0px !important;
 
 							.blog-card-body-link {
+								display: flex;
+								gap: 6px;
 								.blog-card-link {
 									height: 23px;
 
@@ -65,15 +69,15 @@
 							.blog-card-dec {
 								font-style: normal;
 								font-weight: 400;
-								font-size: 12px ;
+								font-size: 12px;
 								line-height: 15px;
-                                max-height: 45px;
+								max-height: 45px;
 								p {
 									color: rgba(0, 0, 0, 0.8);
 									display: -webkit-box;
 									width: 344px;
 									max-width: 344px;
-                                    
+
 									-webkit-line-clamp: 3;
 									-webkit-box-orient: vertical;
 									overflow: hidden;

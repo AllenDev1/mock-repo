@@ -7,12 +7,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 const BlogArticleListing = () => {
 	const [blogs, setBlogs] = useState();
-	const [title, setTtile] = useState("");
-	const [body, setBody] = useState("");
-	const [blog_image, setBlogImage] = useState("");
-	const [created_by, setCreatedBy] = useState("");
-	const [created_at, setCteatedAt] = useState("");
-
+    const [blogCategories, setBlogCategories] = useState();
 	useEffect(() => {
 		fetchBlogData();
 	}, []);
@@ -26,8 +21,8 @@ const BlogArticleListing = () => {
 		axios
 			.request(options)
 			.then(function (response) {
-				console.log(response.data);
 				setBlogs(response.data);
+
 			})
 			.catch(function (error) {
 				console.error(error);
@@ -43,7 +38,7 @@ const BlogArticleListing = () => {
 				blog_image={blog.blog_image}
 				created_by={blog.created_by}
 				created_at={blog.created_at}
-				blog_category={blog.blog_category}
+				blog_categories={blog.blog_categories}
 			></Cards>
 		);
 	};
@@ -72,14 +67,14 @@ const BlogArticleListing = () => {
 export default BlogArticleListing;
 
 const Cards = (props) => {
-	const { title, body, blog_image, created_by, created_at, blog_category } =
+	const { title, body, blog_image, created_by, created_at, blog_categories } =
 		props;
 
-	const htmlDecode = (input) => {
-		var e = document.createElement("div");
-		e.innerHTML = input;
-		return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
-	};
+    const renderCategoriesTag = (categotyTag) =>{
+        return(
+            <CardLink blog_categories = {categotyTag} ></CardLink>
+        )
+    }
 
 	return (
 		<>
@@ -92,12 +87,7 @@ const Cards = (props) => {
 					/>
 					<Card.Body className="blog-card-body">
 						<Card.Body className="blog-card-body-link">
-							<Card.Link className="blog-card-link">
-								{blog_category}
-							</Card.Link>
-							<Card.Link className="blog-card-link">
-								{blog_category}
-							</Card.Link>
+							{blog_categories?.map(renderCategoriesTag)}
 						</Card.Body>
 
 						<Card.Title className="blog-card-title ">
@@ -117,4 +107,8 @@ const Cards = (props) => {
 			</Link>
 		</>
 	);
+};
+
+const CardLink = (props) => {
+	return <div className="blog-card-link">{props.blog_categories}</div>;
 };
