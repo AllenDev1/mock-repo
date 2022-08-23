@@ -30,6 +30,10 @@ class Blog(models.Model):
     def __str__(self):
         return self.title
 
+    def created(self):
+        date = self.created_at.strftime("%B %d,%Y")
+        return date
+
 class BlogHelpful(models.Model):
     OPTIONS = (
         ('YES', 'yes'),
