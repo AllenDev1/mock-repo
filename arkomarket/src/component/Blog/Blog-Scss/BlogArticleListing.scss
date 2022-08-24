@@ -67,6 +67,7 @@
 								color: rgba(0, 0, 0, 0.8);
 							}
 							.blog-card-dec {
+								overflow: hidden;
 								font-style: normal;
 								font-weight: 400;
 								font-size: 12px;
@@ -97,6 +98,17 @@
 								padding: 0%;
 							}
 						}
+					}
+				}
+				.blog-article-advertisment {
+					.ad {
+						font-style: normal;
+						font-weight: 400;
+						font-size: 12px;
+						line-height: 15px;
+						/* identical to box height */
+
+						color: rgba(0, 0, 0, 0.5);
 					}
 				}
 			}

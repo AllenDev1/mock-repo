@@ -3,6 +3,8 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import "./Blog-Scss/BlogArticleListing.scss";
 import Card from "react-bootstrap/Card";
 import Stack from "react-bootstrap/Stack";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { convertToSlug } from "./BlogArticle";
@@ -45,7 +47,7 @@ const BlogArticleListing = () => {
 		<>
 			<Container className="blog-article-listing-cont">
 				<Row className="blog-article-listing-main-row">
-					<Col xs={9} className="blog-article-listing-main-col">
+					<Col xs={8} className="blog-article-listing-main-col">
 						<Row className="blog-article-listing-row">
 							<h2>Latest Stories</h2>
 							<Stack className="articles-stack" gap={4}>
@@ -56,7 +58,24 @@ const BlogArticleListing = () => {
 							<Button>See more</Button>
 						</div>
 					</Col>
-					<Col className="blog-article-advertisment">hello</Col>
+					<Col className="blog-article-advertisment">
+                        <p className="ad">Ad</p>
+						<Tabs
+							defaultActiveKey="ad1"
+							id="uncontrolled-tab-example"
+							className="mb-3"
+						>
+							<Tab eventKey="ad1" title="ad1">
+								hello
+							</Tab>
+							<Tab eventKey="ad2" title="ad2">
+								hello1
+							</Tab>
+							<Tab eventKey="ad3" title="ad3" >
+								hello 2
+							</Tab>
+						</Tabs>
+					</Col>
 				</Row>
 			</Container>
 		</>
