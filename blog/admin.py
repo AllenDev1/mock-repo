@@ -7,7 +7,7 @@ admin.site.register(Blog_Category)
 @admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
     list_display = ['title', 'Body', 'created_by', 'created_at']
-    fields = ['title', 'body', 'blog_category', 'blog_image','created_by']
+    fields = ['title', 'body', 'blog_category', 'blog_image','image_caption','created_by']
 
     def Body(self, obj):
         if len(obj.body) > 30:
