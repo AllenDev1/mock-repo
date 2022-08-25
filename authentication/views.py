@@ -107,3 +107,4 @@ def google_login(request):
 @login_required
 def getUser(request):
     return HttpResponse("Hello")
+    

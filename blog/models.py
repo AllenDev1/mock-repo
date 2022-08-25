@@ -23,6 +23,7 @@ class Blog(models.Model):
     body = HTMLField(blank=True, null=True)
     blog_category = models.ManyToManyField(Blog_Category)
     blog_image = models.ImageField(upload_to="images/blog_images")
+    image_caption = models.CharField(max_length=100, null=True, blank=True)
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, models.PROTECT)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
