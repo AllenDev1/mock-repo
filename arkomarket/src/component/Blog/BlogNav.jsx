@@ -8,22 +8,23 @@ import "./Blog-Scss/blog.scss";
 const BlogNav = () => {
 	return (
 		<>
-		<div className="blog-nav-div"><Container className="blog-container">
-				<Row className="blog-nav">
-					<Col className="blog-logo">
-						<img src={bloglogo} alt=".logo" />
-					</Col>
-					<Col className="search-bar">
-						<Form className="search-bar-form">
-							<Form.Control
-								className="search-blog-post"
-								placeholder="Explore with keywords"
-							/>
-						</Form>
-					</Col>
-				</Row>
-			</Container></div>
-			
+			<div className="blog-nav-div">
+				<Container className="blog-container">
+					<Row className="blog-nav">
+						<Col className="blog-logo">
+							<img src={bloglogo} alt=".logo" />
+						</Col>
+						<Col className="search-bar">
+							<Form className="search-bar-form">
+								<Form.Control
+									className="search-blog-post"
+									placeholder="Explore with keywords"
+								/>
+							</Form>
+						</Col>
+					</Row>
+				</Container>
+			</div>
 		</>
 	);
 };

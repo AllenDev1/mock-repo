@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 import Home from "./pages/home";
 import Blog from "./component/Blog/Blog";
+import Career from "./component/Career/Career";
 import Productdetails from "./pages/productdetails";
 import Editprofile from "./component/editprofile";
 import Footer from "./component/footer";
@@ -105,6 +106,7 @@ function App() {
 					<Route path="blog" element={<Blog />} />
 
 					<Route path="blogpost/:blog_id/:blog_title_slug" element={<BlogArticle />} />
+					<Route path= "career" element={<Career />} />
 
 					<Route exact index element={<Home />} />
 					<Route

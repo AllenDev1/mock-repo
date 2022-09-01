@@ -1,0 +1,27 @@
+.top-part-career {
+	height: 584px;
+	display: flex;
+	background: #000000;
+
+	margin-right: auto;
+	margin-left: auto;
+	.career-landing-page-image {
+		width: 100vw;
+	}
+	.career-landing-page-contianer {
+		.see-open-roles {
+			button {
+				position: absolute;
+				top: 345px;
+				left: 172px;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 19px;
+
+				color: #ffffff;
+				padding: 16px 24px;
+			}
+		}
+	}
+}

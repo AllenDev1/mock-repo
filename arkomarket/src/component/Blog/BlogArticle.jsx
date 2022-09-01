@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Blog-Scss/blogarticles.scss";
 import { useParams, useNavigate } from "react-router-dom";
-
 export const convertToSlug = (text) => {
 	return text
 		.toLowerCase()
@@ -83,6 +82,7 @@ const BlogArticle = () => {
 					<Col className="advertisement-article-col"></Col>
 				</Row>
 			</Container>
+			
 		</>
 	);
 };

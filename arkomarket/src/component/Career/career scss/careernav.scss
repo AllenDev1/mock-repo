@@ -1,0 +1,41 @@
+.career-nav-div {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    width: 100%;
+	height: 60px;
+	left: 0px;
+	top: 0px;
+	background: #010101;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    position: fixed;
+    z-index: 99;
+	.career-container {
+		.career-nav {
+			justify-content: space-between;
+			width: 100%;
+			height: 60px;
+
+			.career-logo {
+				flex: none;
+				padding: 10px 0px !important;
+				width: auto;
+				img {
+					width: 117px;
+					height: 40px;
+				}
+			}
+			.contact-btn {
+			
+				flex: none;
+				width: auto;
+				padding: 20.5px 0px !important;
+				a {
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}

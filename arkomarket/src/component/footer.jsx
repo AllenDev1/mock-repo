@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="footer-link2">
               <Nav.Link href="/">Buyer FAQ</Nav.Link>
               <Nav.Link href="#">Seller FAQ</Nav.Link>
-              <Nav.Link href="#">Career</Nav.Link>
+              <Nav.Link href="/career">Career</Nav.Link>
               <Nav.Link href="/blog">Blog</Nav.Link>
             </div>
             <div className="footer-links3">

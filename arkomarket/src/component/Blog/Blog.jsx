@@ -8,6 +8,7 @@ const Blog = () => {
 			<BlogNav />
 			<BlogFilter />
 			<BlogArticleListing />
+			
 		</>
 	);
 };
