@@ -104,3 +104,7 @@ def google_login(request):
     return redirect(
         f'https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email&access_type=offline&include_granted_scopes=true&response_type=code&state=zcb0vznXDbUN&redirect_uri=http://127.0.0.1:8000/auth/google/callback/&client_id={os.getenv("google_client_id")}')
 
+@login_required
+def getUser(request):
+    return HttpResponse("Hello")
+    

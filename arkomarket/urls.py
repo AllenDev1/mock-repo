@@ -51,10 +51,10 @@ urlpatterns = [
 
 
 
-                  path('auth/google/', google_views.oauth2_login, name='google_login'),
+                  path('auth/google/', google_views.oauth2_login, name='google_login_default'),
                   path('auth/google/callback/', google_callback, name='google_callback'),
                   path('google/connect', GoogleConnect.as_view(), name='google_connect'),   
-                  path('google/login/', google_login, name='google_callback'),
+                  path('google/login/', google_login, name='google_login'),
                   path('ip/', get_client_ip, name='get_ip'),
                   path('auth/user/', getLoggedInUser, name='getLoggedInUser')
 
