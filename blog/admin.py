@@ -18,3 +18,6 @@ class BlogAdmin(admin.ModelAdmin):
 @admin.register(BlogHelpful)
 class BlogHelpfulAdmin(admin.ModelAdmin):
     list_display = ['blog', 'helpful', 'created_at']
+
+    def has_add_permission(self, request):
+        return False

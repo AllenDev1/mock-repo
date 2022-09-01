@@ -1,3 +1,4 @@
+from distutils.command.upload import upload
 from turtle import update
 from django.db import models
 from django.conf import settings
@@ -131,6 +132,7 @@ class Ads(models.Model):
     sub_category = models.ForeignKey(Sub_Category, related_name="ads_categories", on_delete=models.CASCADE, default=1)
     name = models.CharField(max_length=100, null=False, blank=False, default="car")
     price = models.FloatField(null=False, blank=False)
+    image = models.ImageField(upload_to = "images/ads", blank= True, null= True)
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)

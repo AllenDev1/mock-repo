@@ -83,7 +83,7 @@ class AdsViewSet(viewsets.ModelViewSet):
     """
     queryset = Ads.objects.all()
     serializer_class = AdsSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    # permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     filter_backends = [SearchFilter]
     search_fields = ['category__name', 'category__parent__name', 'category__parent__parent__name']
 
