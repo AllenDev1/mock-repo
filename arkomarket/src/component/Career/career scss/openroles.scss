@@ -1,7 +1,7 @@
 .open-roles-container {
 	margin-top: 75px;
 	flex-direction: column;
-    margin-bottom: 101px;
+	margin-bottom: 101px;
 	.open-roles {
 		p {
 			font-style: normal;
@@ -51,6 +51,8 @@
 					}
 				}
 				.apply-now-roles {
+					display: flex;
+					align-items: center;
 					button {
 						padding: 16px 24px;
 
@@ -62,11 +64,9 @@
 						line-height: 19px;
 
 						color: #ffffff;
-                        vertical-align: baseline;
+						vertical-align: baseline;
 						background: #0071e2;
 						border-radius: 4px;
-                        display:flex;
-                        flex-direction: column;
 					}
 				}
 			}

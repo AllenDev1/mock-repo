@@ -39,6 +39,7 @@ const BlogArticle = () => {
 			.request(options)
 			.then(function (response) {
 				setBlogs(response.data);
+				console.log(response.data)
 			})
 			.catch(function (error) {
 				console.error(error);

@@ -6,7 +6,7 @@ class Blog_serializer(serializers.ModelSerializer):
     created_by = serializers.StringRelatedField(source='created_by.get_full_name')
     class Meta:
         model = Blog
-        fields = ['title', 'body','blog_categories', 'blog_image','image_caption', 'created_by', 'created']
+        fields = ['id','title', 'body','blog_categories', 'blog_image','image_caption', 'created_by', 'created']
 
 class Blog_Helpful(serializers.ModelSerializer):
     blog = serializers.StringRelatedField(source='blog.title')

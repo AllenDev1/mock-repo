@@ -6,7 +6,7 @@ from .models import *
 class CarrerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Carrer
-        field = ['title', 'job_type', 'no_of_roles', 'location', 'description']
+        field = ['id','title', 'job_type', 'no_of_roles', 'location', 'description']
 
 
 
