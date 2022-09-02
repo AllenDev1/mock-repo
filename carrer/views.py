@@ -9,10 +9,10 @@ class CarrerViewSet(viewsets.ModelViewSet):
     queryset = Carrer.objects.all()
     serializer_class = CarrerSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    http_method_names = ['get']
+    # http_method_names = ['get']
 
 class ApplicantViewSet(viewsets.ModelViewSet):
     queryset = JobApplicants.objects.all()
     serializer_class = ApplicantSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    http_method_names = ['post']
+    # http_method_names = ['post']
