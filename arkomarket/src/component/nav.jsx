@@ -95,7 +95,7 @@ const NavBar = () => {
 								</Dropdown>
 							</NavLink>
 							{isLoggedin ? (
-								<NavLink>
+								<NavLink className="user-profile-navlink">
 									<img
 										className="user-profile-image-nav"
 										src="https://images.unsplash.com/photo-1660092505599-1142e9e10a23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
